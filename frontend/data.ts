@@ -194,6 +194,18 @@ export const TOOLS: Tool[] = [
     link: 'https://squoosh.app',
     noSignupRequired: true,
     tags: ['🆓 No signup required'],
+  },
+  {
+    id: 'khroma',
+    name: 'Khroma',
+    category: 'Color Tools',
+    description: 'AI-powered color palette generator that learns your preferences',
+    pricing: 'Free',
+    rating: 4.5,
+    section: 'free',
+    link: 'https://www.khroma.co',
+    noSignupRequired: true,
+    tags: ['🆓 No signup required'],
   }
 ];
 
