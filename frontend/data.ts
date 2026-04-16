@@ -61,6 +61,7 @@ export const TOOLS: Tool[] = [
     rating: 4.5,
     tags: ['🔥 Most Used by Designers', '🔥 Popular in India'],
     section: 'top',
+    link: 'https://www.hostinger.com/in?REFERRALCODE=UWNAMAURYN6F',
   },
   {
     id: 'writesonic',
