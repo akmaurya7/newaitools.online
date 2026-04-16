@@ -1,42 +1,39 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { ThemeToggle } from './ThemeToggle.tsx';
 
 export const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-paper/90 dark:bg-dark-bg/90 backdrop-blur-md border-b border-ink/10 dark:border-dark-border/50">
+    <header className="sticky top-0 z-50 bg-paper/90 backdrop-blur-md border-b border-ink/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="font-serif text-2xl tracking-tight text-ink dark:text-dark-text">
+            <a href="#" className="font-serif text-2xl tracking-tight text-ink">
               DesignAI.tools
             </a>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 items-center">
-            <a href="#tools" className="text-ink/80 dark:text-dark-text-secondary hover:text-accent dark:hover:text-accent transition-colors text-sm font-medium">Tools</a>
-            <a href="#categories" className="text-ink/80 dark:text-dark-text-secondary hover:text-accent dark:hover:text-accent transition-colors text-sm font-medium">Categories</a>
-            <a href="#blog" className="text-ink/80 dark:text-dark-text-secondary hover:text-accent dark:hover:text-accent transition-colors text-sm font-medium">Blog</a>
-            <a href="#submit" className="text-ink/80 dark:text-dark-text-secondary hover:text-accent dark:hover:text-accent transition-colors text-sm font-medium">Submit a Tool</a>
+            <a href="#tools" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Tools</a>
+            <a href="#categories" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Categories</a>
+            <a href="#blog" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Blog</a>
+            <a href="#submit" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Submit a Tool</a>
             <a 
               href="#newsletter" 
               className="bg-accent text-white px-5 py-2.5 text-sm font-medium hover:bg-accent/90 transition-colors rounded-sm"
             >
               Get Free Toolkit
             </a>
-            <ThemeToggle />
           </nav>
 
-          {/* Mobile menu button & theme toggle */}
-          <div className="md:hidden flex items-center gap-2">
-            <ThemeToggle />
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-ink dark:text-dark-text hover:text-accent focus:outline-none"
+              className="text-ink hover:text-accent focus:outline-none"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -46,12 +43,12 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-paper dark:bg-dark-card border-b border-ink/10 dark:border-dark-border/50 absolute w-full">
+        <div className="md:hidden bg-paper border-b border-ink/10 absolute w-full">
           <div className="px-4 pt-2 pb-6 space-y-1 flex flex-col">
-            <a href="#tools" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink dark:text-dark-text hover:bg-ink/5 dark:hover:bg-white/10">Tools</a>
-            <a href="#categories" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink dark:text-dark-text hover:bg-ink/5 dark:hover:bg-white/10">Categories</a>
-            <a href="#blog" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink dark:text-dark-text hover:bg-ink/5 dark:hover:bg-white/10">Blog</a>
-            <a href="#submit" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink dark:text-dark-text hover:bg-ink/5 dark:hover:bg-white/10">Submit a Tool</a>
+            <a href="#tools" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Tools</a>
+            <a href="#categories" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Categories</a>
+            <a href="#blog" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Blog</a>
+            <a href="#submit" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Submit a Tool</a>
             <div className="pt-4 px-3">
               <a 
                 href="#newsletter" 

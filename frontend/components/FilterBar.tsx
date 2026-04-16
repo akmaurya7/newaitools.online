@@ -17,7 +17,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({ activeCategory, onSelectCa
             className={`whitespace-nowrap px-5 py-2 rounded-full text-sm font-medium transition-all border ${
               activeCategory === category
                 ? 'bg-accent border-accent text-white'
-                : 'bg-transparent border-ink/20 dark:border-dark-border text-ink dark:text-dark-text hover:border-ink/50 dark:hover:border-dark-border/80'
+                : 'bg-transparent border-ink/20 text-ink hover:border-ink/50'
             }`}
           >
             {category}
