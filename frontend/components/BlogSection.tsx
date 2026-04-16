@@ -9,7 +9,7 @@ export const BlogSection: React.FC = () => {
           <h2 className="font-serif text-3xl md:text-4xl text-ink mb-3">Editorial & Insights</h2>
           <p className="text-ink/70">Real workflows from working designers.</p>
         </div>
-        <a href="/frontend/best-ai-tools-for-designers.html" className="hidden md:block text-accent font-medium hover:underline underline-offset-4">
+        <a href="/blog" className="hidden md:block text-accent font-medium hover:underline underline-offset-4">
           View all articles &rarr;
         </a>
       </div>
@@ -18,7 +18,7 @@ export const BlogSection: React.FC = () => {
         {BLOG_POSTS.map((post) => (
           <a 
             key={post.id} 
-            href={post.id === 'post-1' ? '/frontend/best-ai-tools-for-designers.html' : '#'}
+            href={post.id === 'post-1' ? '/blog' : '#'}
             className="group cursor-pointer flex flex-col h-full no-underline"
           >
             <article className="flex flex-col h-full">
@@ -44,7 +44,7 @@ export const BlogSection: React.FC = () => {
       </div>
       
       <div className="mt-8 text-center md:hidden">
-         <a href="/frontend/best-ai-tools-for-designers.html" className="text-accent font-medium hover:underline underline-offset-4">
+         <a href="/blog" className="text-accent font-medium hover:underline underline-offset-4">
           View all articles &rarr;
         </a>
       </div>

@@ -19,7 +19,7 @@ export const Navbar: React.FC = () => {
           <nav className="hidden md:flex space-x-8 items-center">
             <a href="#tools" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Tools</a>
             <a href="#categories" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Categories</a>
-            <a href="/frontend/best-ai-tools-for-designers.html" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Blog</a>
+            <a href="/blog" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Blog</a>
             <a href="#submit" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Submit a Tool</a>
             <a 
               href="#newsletter" 
@@ -47,7 +47,7 @@ export const Navbar: React.FC = () => {
           <div className="px-4 pt-2 pb-6 space-y-1 flex flex-col">
             <a href="#tools" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Tools</a>
             <a href="#categories" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Categories</a>
-            <a href="/frontend/best-ai-tools-for-designers.html" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Blog</a>
+            <a href="/blog" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Blog</a>
             <a href="#submit" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Submit a Tool</a>
             <div className="pt-4 px-3">
               <a 
