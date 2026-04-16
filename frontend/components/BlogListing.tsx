@@ -46,20 +46,20 @@ export const BlogListing: React.FC<BlogListingProps> = ({ onNavigate }) => {
   }, [selectedCategory, searchQuery]);
 
   return (
-    <div className="min-h-screen bg-paper">
+    <div className="min-h-screen bg-paper dark:bg-dark-bg">
       {/* Header */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <button
           onClick={() => onNavigate('home')}
-          className="text-ink/60 hover:text-ink mb-8 transition-colors text-sm font-medium"
+          className="text-ink/60 dark:text-dark-text-secondary hover:text-ink dark:hover:text-dark-text mb-8 transition-colors text-sm font-medium"
         >
           ← Back to home
         </button>
 
-        <h1 className="font-serif text-5xl md:text-6xl text-ink mb-4">
+        <h1 className="font-serif text-5xl md:text-6xl text-ink dark:text-dark-text mb-4">
           Design Insights & Tutorials
         </h1>
-        <p className="text-xl text-ink/70 max-w-2xl">
+        <p className="text-xl text-ink/70 dark:text-dark-text-secondary max-w-2xl">
           Expert insights on AI tools, design workflows, and practical tutorials from the DesignAI.tools community. Updated weekly.
         </p>
       </section>
@@ -68,13 +68,13 @@ export const BlogListing: React.FC<BlogListingProps> = ({ onNavigate }) => {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         {/* Search Bar */}
         <div className="relative mb-8">
-          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-ink/40" size={20} />
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-ink/40 dark:text-dark-text-secondary/40" size={20} />
           <input
             type="text"
             placeholder="Search articles..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-12 pr-4 py-3 border border-ink/20 rounded-lg focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
+            className="w-full pl-12 pr-4 py-3 border border-ink/20 dark:border-dark-border bg-white dark:bg-dark-card text-ink dark:text-dark-text placeholder:text-ink/40 dark:placeholder:text-dark-text-secondary/40 rounded-lg focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
           />
         </div>
 
@@ -87,7 +87,7 @@ export const BlogListing: React.FC<BlogListingProps> = ({ onNavigate }) => {
               className={`px-4 py-2 rounded-full font-medium transition-all ${
                 selectedCategory === category
                   ? 'bg-accent text-white'
-                  : 'bg-ink/5 text-ink hover:bg-ink/10'
+                  : 'bg-ink/5 dark:bg-white/10 text-ink dark:text-dark-text hover:bg-ink/10 dark:hover:bg-white/20'
               }`}
             >
               {category}
@@ -96,7 +96,7 @@ export const BlogListing: React.FC<BlogListingProps> = ({ onNavigate }) => {
         </div>
 
         {/* Results count */}
-        <p className="text-sm text-ink/60 mt-6">
+        <p className="text-sm text-ink/60 dark:text-dark-text-secondary mt-6">
           {filteredPosts.length} {filteredPosts.length === 1 ? 'article' : 'articles'} found
         </p>
       </section>
@@ -108,11 +108,11 @@ export const BlogListing: React.FC<BlogListingProps> = ({ onNavigate }) => {
             {filteredPosts.map((post, index) => (
               <article
                 key={post.id}
-                className="group flex flex-col border border-ink/10 rounded-lg overflow-hidden hover:border-accent transition-all hover:shadow-lg"
+                className="group flex flex-col border border-ink/10 dark:border-dark-border bg-white dark:bg-dark-card rounded-lg overflow-hidden hover:border-accent transition-all hover:shadow-lg dark:hover:shadow-2xl dark:hover:shadow-black/30"
               >
                 {/* Placeholder for featured image */}
                 {post.featured && index === 0 && (
-                  <div className="w-full h-40 bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center" />
+                  <div className="w-full h-40 bg-gradient-to-br from-accent/20 dark:from-accent/30 to-accent/10 dark:to-accent/20 flex items-center justify-center" />
                 )}
 
                 <div className="p-6 flex flex-col flex-grow">
@@ -121,22 +121,22 @@ export const BlogListing: React.FC<BlogListingProps> = ({ onNavigate }) => {
                     <span className="text-xs font-bold uppercase tracking-wider text-accent">
                       {post.category}
                     </span>
-                    <span className="text-xs text-ink/40">{post.readTime} min read</span>
+                    <span className="text-xs text-ink/40 dark:text-dark-text-secondary/60">{post.readTime} min read</span>
                   </div>
 
                   {/* Title */}
-                  <h2 className="font-serif text-xl text-ink mb-3 group-hover:text-accent transition-colors leading-snug">
+                  <h2 className="font-serif text-xl text-ink dark:text-dark-text mb-3 group-hover:text-accent transition-colors leading-snug">
                     {post.title}
                   </h2>
 
                   {/* Excerpt */}
-                  <p className="text-ink/70 text-sm mb-4 flex-grow">
+                  <p className="text-ink/70 dark:text-dark-text-secondary text-sm mb-4 flex-grow">
                     {post.excerpt}
                   </p>
 
                   {/* Footer */}
                   <div className="flex items-center justify-between">
-                    <div className="text-xs text-ink/50">
+                    <div className="text-xs text-ink/50 dark:text-dark-text-secondary/60">
                       <time dateTime={post.publishDate}>
                         {new Date(post.publishDate).toLocaleDateString('en-US', {
                           year: 'numeric',
@@ -159,7 +159,7 @@ export const BlogListing: React.FC<BlogListingProps> = ({ onNavigate }) => {
           </div>
         ) : (
           <div className="text-center py-20">
-            <p className="text-ink/60 text-lg mb-4">
+            <p className="text-ink/60 dark:text-dark-text-secondary text-lg mb-4">
               No articles found matching your search.
             </p>
             <button
@@ -176,7 +176,7 @@ export const BlogListing: React.FC<BlogListingProps> = ({ onNavigate }) => {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="bg-ink text-paper py-16 px-4">
+      <section className="bg-ink dark:bg-dark-card text-paper dark:text-dark-text py-16 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-serif text-3xl mb-4">Get Weekly Design Insights</h2>
           <p className="text-paper/80 mb-6">

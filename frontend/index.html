@@ -72,6 +72,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
@@ -79,6 +80,12 @@
             ink: '#1A1714',
             accent: '#C8522A',
             free: '#2D6A4F',
+            // Dark mode colors
+            'dark-bg': '#0f172a',
+            'dark-card': '#1e293b',
+            'dark-border': '#334155',
+            'dark-text': '#f1f5f9',
+            'dark-text-secondary': '#cbd5e1',
           },
           fontFamily: {
             serif: ['"DM Serif Display"', 'serif'],
@@ -91,7 +98,7 @@
 
   <!-- Import Map for React -->
   </head>
-<body class="bg-paper text-ink font-sans antialiased selection:bg-accent selection:text-white">
+<body class="bg-paper dark:bg-dark-bg text-ink dark:text-dark-text font-sans antialiased selection:bg-accent selection:text-white">
   <div id="root"></div>
   <script type="module" src="./index.tsx"></script>
 </body>
