@@ -84,10 +84,12 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
         </div>
         
         <a 
-          href="#" 
+          href={tool.link || '#'} 
+          target={tool.link ? '_blank' : '_self'}
+          rel={tool.link ? 'noopener noreferrer' : ''}
           className="block w-full text-center border border-ink text-ink hover:bg-ink hover:text-paper transition-colors py-2.5 text-sm font-medium rounded-sm"
         >
-          {tool.pricing === 'Free' ? 'Start Free →' : 'Try Tool →'}
+          Try Tool →
         </a>
       </div>
     </div>

@@ -10,6 +10,8 @@ export interface Tool {
   isTopPick?: boolean;
   tags?: string[];
   section?: 'top' | 'main' | 'free';
+  link?: string;
+  noSignupRequired?: boolean;
 }
 
 export const CATEGORIES = [
@@ -161,29 +163,37 @@ export const TOOLS: Tool[] = [
     id: 'remove-bg',
     name: 'Remove.bg',
     category: 'Image Tools',
-    description: 'Remove backgrounds automatically with AI',
+    description: 'Remove image backgrounds instantly with AI',
     pricing: 'Free',
     rating: 4.7,
     section: 'free',
+    link: 'https://www.remove.bg',
+    noSignupRequired: true,
+    tags: ['🆓 No signup required'],
   },
   {
     id: 'photopea',
     name: 'Photopea',
     category: 'Design Tools',
-    description: 'Free Photoshop alternative in your browser',
+    description: 'Free browser-based alternative to Photoshop',
     pricing: 'Free',
     rating: 4.6,
-    tags: ['🔥 Popular in India'],
     section: 'free',
+    link: 'https://www.photopea.com',
+    noSignupRequired: true,
+    tags: ['🆓 No signup required', '🔥 Popular in India'],
   },
   {
-    id: 'coolors',
-    name: 'Coolors',
-    category: 'Color Tools',
-    description: 'Generate beautiful color palettes instantly',
+    id: 'squoosh',
+    name: 'Squoosh',
+    category: 'Image Tools',
+    description: 'Compress and optimize images for web performance',
     pricing: 'Free',
-    rating: 4.5,
+    rating: 4.6,
     section: 'free',
+    link: 'https://squoosh.app',
+    noSignupRequired: true,
+    tags: ['🆓 No signup required'],
   }
 ];
 
