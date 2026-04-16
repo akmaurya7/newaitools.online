@@ -1,0 +1,27 @@
+# DesignAI.tools - robots.txt
+# Google, Bing, and other search engines
+
+# Allow all bots
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/internal
+Disallow: /*.json
+Disallow: /node_modules
+Disallow: /.git
+
+# Crawl-delay for responsible crawling (in seconds)
+Crawl-delay: 1
+
+# Allow specific bots better access
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0.5
+
+# Sitemap
+Sitemap: https://designai.tools/sitemap.xml
+Sitemap: https://designai.tools/blog-sitemap.xml
