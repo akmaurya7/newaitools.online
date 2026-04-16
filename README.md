@@ -1,53 +1,101 @@
-# Vertex AI Studio Frontend App with Node.js Backend
+# New AI Tools Online
 
-This repository contains a frontend and a Node.js backend, designed to run together.
-The backend acts as a proxy, handling Google Cloud API calls.
+A modern web application showcasing AI-powered design and development tools. Built with React, TypeScript, and Vite on the frontend with a Node.js/Express backend.
 
-This project is intended for demonstration and prototyping purposes only.
-It is not intended for use in a production environment.
+## Features
 
-## Prerequisites
-
-To run this application locally, you need:
-
-*   **[Google Cloud SDK / gcloud CLI](https://cloud.google.com/sdk/docs/install)**: Follow the instructions to install the SDK.
-
-*   **gcloud Initialization**:
-    *   Initialize the gcloud CLI:
-        ```bash
-        gcloud init
-        ```
-    *   Authenticate for Application Default Credentials (needed to call Google Cloud APIs):
-        ```bash
-        gcloud auth application-default login
-        ```
-
-*   **Node.js and npm**: Ensure you have Node.js and its package manager, `npm`, installed on your machine.
+- **Modern UI**: Responsive design with React components
+- **AI Tool Directory**: Browse and filter AI tools by category
+- **Newsletter Signup**: Subscribe to stay updated
+- **Fast Performance**: Built with Vite for optimal performance
+- **Backend Proxy**: Node.js backend for secure API calls
 
 ## Project Structure
 
-The project is organized into two main directories:
+```
+newaitools.online/
+├── frontend/               # React + TypeScript frontend
+│   ├── components/        # Reusable React components
+│   ├── App.tsx           # Main app component
+│   ├── index.tsx         # Entry point
+│   └── vite.config.ts    # Vite configuration
+├── backend/              # Node.js/Express backend
+│   ├── server.js         # Express server
+│   └── package.json      # Backend dependencies
+├── vercel.json          # Vercel deployment config
+└── package.json         # Root package configuration
+```
 
-*   `frontend/`: Contains the Frontend application code.
-*   `backend/`: Contains the Node.js/Express server code to proxy Google Cloud API calls.
+## Prerequisites
 
-## Backend Environment Variables
+- **Node.js** (v16 or higher)
+- **npm** or **yarn**
 
-The `backend/.env.local` file is automatically generated when you download this application.
-It contains essential Google Cloud environment variables pre-configured based on your project settings at the time of download.
+## Installation
 
-The variables set in `backend/.env.local` are:
-*   `API_BACKEND_PORT`: The port the backend API server listens on (e.g., `5000`).
-*   `API_PAYLOAD_MAX_SIZE`: The maximum size of the request payload accepted by the backend server (e.g., `5mb`).
-*   `GOOGLE_CLOUD_LOCATION`: The Google Cloud region associated with your project.
-*   `GOOGLE_CLOUD_PROJECT`: Your Google Cloud Project ID.
+1. Clone the repository:
+```bash
+git clone https://github.com/akmaurya7/newaitools.online.git
+cd newaitools.online
+```
 
-**Note:** These variables are automatically populated during the download process.
-You can modify the values in `backend/.env.local` if you need to change them.
+2. Install dependencies:
+```bash
+npm install
+npm install --prefix frontend
+```
 
-## Installation and Running the App
+## Development
 
-To install dependencies and run your Google Cloud Vertex AI Studio App locally, execute the following command:
+Run the development server:
+```bash
+npm run dev
+```
+
+This will start:
+- Frontend dev server: `http://localhost:5173`
+- Backend server: `http://localhost:5000`
+
+## Building
+
+Build for production:
+```bash
+npm run build
+```
+
+## Deployment
+
+This project is configured for **Vercel** deployment. To deploy:
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically build and deploy
+
+The build process:
+- Installs dependencies
+- Builds the frontend with Vite
+- Serves the output
+
+## Available Scripts
 
 ```bash
-npm install && npm run dev
+npm run dev      # Start development servers
+npm run build    # Build for production
+npm run preview  # Preview production build
+```
+
+## Environment Variables
+
+Create a `.env` file in the `backend/` directory if needed for API configuration.
+
+## License
+
+MIT
+
+## Contributing
+
+Feel free to open issues and submit pull requests.
+
+---
+
+**Live Site**: [newaitools.online](https://newaitools.online)
