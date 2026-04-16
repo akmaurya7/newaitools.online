@@ -56,6 +56,17 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
         <p className="text-ink/70 text-sm mb-6 line-clamp-2">
           {tool.description}
         </p>
+        
+        {/* Tags */}
+        {tool.tags && tool.tags.length > 0 && (
+          <div className="flex flex-wrap gap-2 mb-6">
+            {tool.tags.map((tag, idx) => (
+              <span key={idx} className="text-xs bg-accent/10 text-accent font-semibold px-2 py-1 rounded-sm">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Meta & Action */}
@@ -76,7 +87,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
           href="#" 
           className="block w-full text-center border border-ink text-ink hover:bg-ink hover:text-paper transition-colors py-2.5 text-sm font-medium rounded-sm"
         >
-          Try Tool &rarr;
+          {tool.pricing === 'Free' ? 'Start Free →' : 'Try Tool →'}
         </a>
       </div>
     </div>

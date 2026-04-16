@@ -8,6 +8,8 @@ export interface Tool {
   pricing: PricingType;
   rating: number;
   isTopPick?: boolean;
+  tags?: string[];
+  section?: 'top' | 'main' | 'free';
 }
 
 export const CATEGORIES = [
@@ -18,10 +20,14 @@ export const CATEGORIES = [
   'Video',
   'Presentations',
   'Color Tools',
-  'Copywriting'
+  'Copywriting',
+  'Website Tools',
+  'Image Tools',
+  'Design Tools'
 ];
 
 export const TOOLS: Tool[] = [
+  // Top Picks Section
   {
     id: 'canva-pro',
     name: 'Canva Pro',
@@ -30,7 +36,42 @@ export const TOOLS: Tool[] = [
     pricing: 'Freemium',
     rating: 4.7,
     isTopPick: true,
+    tags: ['🔥 Most Used by Designers', '🔥 Popular in India'],
+    section: 'top',
   },
+  {
+    id: 'framer-ai',
+    name: 'Framer AI',
+    category: 'Website Tools',
+    description: 'Build client websites with AI in minutes',
+    pricing: 'Freemium',
+    rating: 4.6,
+    isTopPick: true,
+    tags: ['🔥 Most Used by Designers'],
+    section: 'top',
+  },
+  {
+    id: 'hostinger',
+    name: 'Hostinger',
+    category: 'Website Tools',
+    description: 'AI-powered website builder & hosting',
+    pricing: 'Paid',
+    rating: 4.5,
+    tags: ['🔥 Most Used by Designers', '🔥 Popular in India'],
+    section: 'top',
+  },
+  {
+    id: 'writesonic',
+    name: 'Writesonic',
+    category: 'Copywriting',
+    description: 'AI copywriting for sales pages & ads',
+    pricing: 'Freemium',
+    rating: 4.4,
+    tags: ['🔥 Most Used by Designers'],
+    section: 'top',
+  },
+
+  // Main Tools Grid
   {
     id: 'adobe-firefly',
     name: 'Adobe Firefly',
@@ -38,15 +79,17 @@ export const TOOLS: Tool[] = [
     description: 'Generate pro-grade images from text prompts',
     pricing: 'Paid',
     rating: 4.5,
+    section: 'main',
   },
   {
-    id: 'framer-ai',
-    name: 'Framer AI',
-    category: 'UI/UX',
-    description: 'Build client websites with AI in minutes',
+    id: 'leonardo-ai',
+    name: 'Leonardo AI',
+    category: 'Image Gen',
+    description: 'AI image generation for creators',
     pricing: 'Freemium',
     rating: 4.6,
-    isTopPick: true,
+    tags: ['🔥 Popular in India'],
+    section: 'main',
   },
   {
     id: 'looka',
@@ -55,6 +98,17 @@ export const TOOLS: Tool[] = [
     description: 'AI logo maker for freelance brand kits',
     pricing: 'Paid',
     rating: 4.3,
+    section: 'main',
+  },
+  {
+    id: 'durable',
+    name: 'Durable',
+    category: 'Website Tools',
+    description: 'One-page website builder for service pros',
+    pricing: 'Paid',
+    rating: 4.4,
+    tags: ['🔥 Popular in India'],
+    section: 'main',
   },
   {
     id: 'runway-ml',
@@ -63,6 +117,7 @@ export const TOOLS: Tool[] = [
     description: 'AI video generation for designer reels',
     pricing: 'Freemium',
     rating: 4.4,
+    section: 'main',
   },
   {
     id: 'uizard',
@@ -71,6 +126,7 @@ export const TOOLS: Tool[] = [
     description: 'Turn rough sketches into polished wireframes',
     pricing: 'Freemium',
     rating: 4.2,
+    section: 'main',
   },
   {
     id: 'khroma',
@@ -79,6 +135,7 @@ export const TOOLS: Tool[] = [
     description: 'AI learns your taste, generates palettes',
     pricing: 'Free',
     rating: 4.5,
+    section: 'main',
   },
   {
     id: 'presentations-ai',
@@ -87,6 +144,7 @@ export const TOOLS: Tool[] = [
     description: 'Auto-design decks from your content',
     pricing: 'Freemium',
     rating: 4.1,
+    section: 'main',
   },
   {
     id: 'copy-ai',
@@ -95,6 +153,37 @@ export const TOOLS: Tool[] = [
     description: 'Write client proposals and UX copy fast',
     pricing: 'Freemium',
     rating: 4.3,
+    section: 'main',
+  },
+
+  // Free Tools Section
+  {
+    id: 'remove-bg',
+    name: 'Remove.bg',
+    category: 'Image Tools',
+    description: 'Remove backgrounds automatically with AI',
+    pricing: 'Free',
+    rating: 4.7,
+    section: 'free',
+  },
+  {
+    id: 'photopea',
+    name: 'Photopea',
+    category: 'Design Tools',
+    description: 'Free Photoshop alternative in your browser',
+    pricing: 'Free',
+    rating: 4.6,
+    tags: ['🔥 Popular in India'],
+    section: 'free',
+  },
+  {
+    id: 'coolors',
+    name: 'Coolors',
+    category: 'Color Tools',
+    description: 'Generate beautiful color palettes instantly',
+    pricing: 'Free',
+    rating: 4.5,
+    section: 'free',
   }
 ];
 
