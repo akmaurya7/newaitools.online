@@ -212,9 +212,9 @@ export const TOOLS: Tool[] = [
 export const BLOG_POSTS = [
   {
     id: 'post-1',
-    category: 'Opinion',
-    title: '5 AI tools that replaced my $500/month design subscriptions',
-    excerpt: 'How I streamlined my freelance stack and saved money without sacrificing quality.',
+    category: 'Guide',
+    title: 'Best AI Tools for Freelance Designers (2026)',
+    excerpt: 'Save hours every week with these powerful AI tools. From Canva Pro to Framer AI, discover the top tools transforming designer workflows.',
   },
   {
     id: 'post-2',
