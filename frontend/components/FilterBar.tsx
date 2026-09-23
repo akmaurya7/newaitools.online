@@ -1,5 +1,5 @@
 import React from 'react';
-import { CATEGORIES } from '../data.ts';
+import { CATEGORIES, TOOLS } from '../data.ts';
 
 interface FilterBarProps {
   activeCategory: string;
@@ -8,19 +8,21 @@ interface FilterBarProps {
 
 export const FilterBar: React.FC<FilterBarProps> = ({ activeCategory, onSelectCategory }) => {
   return (
-    <div id="categories" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-      <div className="flex overflow-x-auto pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 hide-scrollbar gap-3">
+    <div id="categories" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+      <div className="mb-3 text-xs font-bold uppercase tracking-[0.16em] text-ink/45">Browse by category</div>
+      <div className="flex overflow-x-auto pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 hide-scrollbar gap-2">
         {CATEGORIES.map((category) => (
           <button
             key={category}
             onClick={() => onSelectCategory(category)}
-            className={`whitespace-nowrap px-5 py-2 rounded-full text-sm font-medium transition-all border ${
+            className={`whitespace-nowrap px-4 py-2.5 rounded-xl text-sm font-semibold transition-all border ${
               activeCategory === category
-                ? 'bg-accent border-accent text-white'
-                : 'bg-transparent border-ink/20 text-ink hover:border-ink/50'
+                ? 'bg-ink border-ink text-white shadow-md'
+                : 'bg-white/80 border-ink/10 text-ink/75 hover:border-accent/40 hover:text-accent'
             }`}
           >
             {category}
+            <span className={`ml-2 text-xs ${activeCategory === category ? 'text-white/60' : 'text-ink/35'}`}>{category === 'All' ? TOOLS.length : TOOLS.filter(tool => tool.category === category).length}</span>
           </button>
         ))}
       </div>

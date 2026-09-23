@@ -14,13 +14,13 @@ export const BlogListing: React.FC<BlogListingProps> = ({ onNavigate }) => {
   const [searchQuery, setSearchQuery] = useState('');
 
   useSEO({
-    title: 'Blog - DesignAI.tools | AI Design Insights & Tutorials',
+    title: 'Blog - newaitools | AI Design Insights & Tutorials',
     description: 'Read expert insights, tutorials, and case studies on using AI tools for freelance design. Updated weekly with practical workflows and tool comparisons.',
     keywords: ['Design blog', 'AI tutorials', 'Freelance design', 'Case studies', 'Design tips'],
-    canonical: 'https://designai.tools/blog',
+    canonical: 'https://newaitools.online/blog',
     breadcrumbs: [
-      { name: 'Home', url: 'https://designai.tools/' },
-      { name: 'Blog', url: 'https://designai.tools/blog' }
+      { name: 'Home', url: 'https://newaitools.online/' },
+      { name: 'Blog', url: 'https://newaitools.online/blog' }
     ]
   });
 
@@ -60,7 +60,7 @@ export const BlogListing: React.FC<BlogListingProps> = ({ onNavigate }) => {
           Design Insights & Tutorials
         </h1>
         <p className="text-xl text-ink/70 max-w-2xl">
-          Expert insights on AI tools, design workflows, and practical tutorials from the DesignAI.tools community. Updated weekly.
+          Expert insights on AI tools, design workflows, and practical tutorials from the newaitools community. Updated weekly.
         </p>
       </section>
 

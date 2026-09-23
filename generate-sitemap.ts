@@ -7,7 +7,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const DOMAIN = 'https://designai.tools';
+const DOMAIN = 'https://newaitools.online';
 
 interface URLEntry {
   loc: string;

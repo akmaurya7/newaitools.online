@@ -1,37 +1,12 @@
 import React from 'react';
+import { ArrowUpRight, Sparkles } from 'lucide-react';
 
-export const Footer: React.FC = () => {
-  return (
-    <footer className="bg-paper pt-16 pb-8 border-t border-ink/10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 mb-12">
-          
-          <div className="text-center md:text-left">
-            <a href="#" className="font-serif text-2xl tracking-tight text-ink block mb-2">
-              DesignAI.tools
-            </a>
-            <p className="text-ink/60 text-sm">
-              Helping designers work smarter with AI.
-            </p>
-          </div>
-
-          <nav className="flex flex-wrap justify-center gap-6 md:gap-8">
-            <a href="#" className="text-sm font-medium text-ink/70 hover:text-accent transition-colors">About</a>
-            <a href="#" className="text-sm font-medium text-ink/70 hover:text-accent transition-colors">Advertise</a>
-            <a href="#" className="text-sm font-medium text-ink/70 hover:text-accent transition-colors">Affiliate Disclosure</a>
-            <a href="#" className="text-sm font-medium text-ink/70 hover:text-accent transition-colors">Contact</a>
-          </nav>
-        </div>
-
-        <div className="text-center border-t border-ink/10 pt-8">
-          <p className="text-xs text-ink/40 max-w-2xl mx-auto leading-relaxed">
-            Some links on this site are affiliate links. We may earn a commission at no cost to you if you make a purchase through these links. This helps support the site and allows us to continue curating the best tools.
-          </p>
-          <p className="text-xs text-ink/40 mt-4">
-            &copy; {new Date().getFullYear()} DesignAI.tools. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
-  );
-};
+export const Footer: React.FC = () => <footer className="border-t border-ink/10 bg-white">
+  <div className="mx-auto max-w-7xl px-4 pb-8 pt-12 sm:px-6 lg:px-8">
+    <div className="flex flex-col justify-between gap-8 sm:flex-row sm:items-start">
+      <div className="max-w-sm"><a href="/" aria-label="newaitools home" className="group inline-flex items-center gap-2.5"><span className="flex h-9 w-9 items-center justify-center rounded-xl bg-ink text-white transition group-hover:bg-accent"><Sparkles size={16} /></span><span className="font-sans text-[21px] font-extrabold leading-none tracking-[-0.075em] text-ink"><span>newai</span><span className="text-accent">tools</span></span></a><p className="mt-4 text-sm leading-6 text-ink/55">A clearer way to discover useful AI tools, categories, and workflows.</p></div>
+      <nav aria-label="Footer navigation" className="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold text-ink/60"><a href="/tools" className="transition hover:text-accent">Tools</a><a href="/categories" className="transition hover:text-accent">Categories</a><a href="/workflows" className="transition hover:text-accent">Workflows</a><a href="/blog" className="inline-flex items-center gap-1 transition hover:text-accent">Insights <ArrowUpRight size={13} /></a></nav>
+    </div>
+    <div className="mt-10 flex flex-col gap-3 border-t border-ink/[0.08] pt-5 text-xs text-ink/40 sm:flex-row sm:items-center sm:justify-between"><p>Some links may be affiliate links. We may earn a commission at no extra cost to you.</p><p>© {new Date().getFullYear()} newaitools. All rights reserved.</p></div>
+  </div>
+</footer>;

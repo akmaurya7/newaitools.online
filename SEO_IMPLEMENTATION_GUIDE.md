@@ -1,4 +1,4 @@
-# DesignAI.tools - SEO Implementation Guide
+# newaitools - SEO Implementation Guide
 
 ## Overview
 Your website is now fully optimized for Google SEO as a **blog + tools directory platform**. This guide explains all the improvements made and how to maintain SEO best practices going forward.
@@ -270,7 +270,7 @@ frontend/
 ```
 
 ### Environment Setup
-1. Update domain in `index.html` meta tags (from designai.tools to your domain)
+1. Update domain in `index.html` meta tags (from newaitools.online to your domain)
 2. Upload sitemaps to Google Search Console
 3. Setup Google Analytics 4
 4. Configure robots.txt rules if needed

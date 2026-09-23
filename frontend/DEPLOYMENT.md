@@ -1,4 +1,4 @@
-# How to Deploy DesignAI.tools
+# How to Deploy newaitools
 
 Because this application was built using **React and TypeScript (`.tsx`)**, web browsers cannot run the raw files directly. You need to "build" the project into standard HTML, CSS, and JavaScript before deploying it to a live server. 
 
@@ -71,7 +71,7 @@ You will need [Node.js](https://nodejs.org/) installed on your computer.
        <meta charset="UTF-8" />
        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <title>DesignAI.tools | Best AI Tools for Designers</title>
+       <title>newaitools | Best AI Tools for Designers</title>
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -100,7 +100,7 @@ Once your local site is working, you can deploy it to a free, professional hosti
 3. Click **"Add New..." -> "Project"**.
 4. Import your GitHub repository.
 5. Vercel will automatically detect Vite. Click **Deploy**.
-6. In 1-2 minutes, your site will be live with a free SSL certificate and URL (which you can later change to a custom domain like `designai.tools`).
+6. In 1-2 minutes, your site will be live with a free SSL certificate and URL (which you can later change to a custom domain like `newaitools.online`).
 
 ### Option B: Netlify (Drag and Drop)
 If you don't want to use GitHub, you can build the site locally and drag-and-drop it.

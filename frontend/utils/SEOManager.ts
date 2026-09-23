@@ -17,8 +17,8 @@ export interface SEOConfig {
 }
 
 export class SEOManager {
-  private defaultOgImage = 'https://designai.tools/og-image.jpg';
-  private domain = 'https://designai.tools';
+  private defaultOgImage = 'https://newaitools.online/og-image.jpg';
+  private domain = 'https://newaitools.online';
 
   private setMetaTag(name: string, content: string): void {
     let tag = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement;
@@ -124,14 +124,14 @@ export class SEOManager {
       'dateModified': config.modifiedDate || new Date().toISOString(),
       'author': {
         '@type': 'Person',
-        'name': config.author || 'DesignAI.tools'
+        'name': config.author || 'newaitools'
       },
       'publisher': {
         '@type': 'Organization',
-        'name': 'DesignAI.tools',
+        'name': 'newaitools',
         'logo': {
           '@type': 'ImageObject',
-          'url': 'https://designai.tools/logo.png'
+          'url': 'https://newaitools.online/logo.png'
         }
       }
     };

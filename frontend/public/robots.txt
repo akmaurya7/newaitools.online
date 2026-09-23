@@ -1,4 +1,4 @@
-# DesignAI.tools - robots.txt
+# newaitools - robots.txt
 # Google, Bing, and other search engines
 
 # Allow all bots
@@ -23,5 +23,5 @@ Allow: /
 Crawl-delay: 0.5
 
 # Sitemap
-Sitemap: https://designai.tools/sitemap.xml
-Sitemap: https://designai.tools/blog-sitemap.xml
+Sitemap: https://newaitools.online/sitemap.xml
+Sitemap: https://newaitools.online/blog-sitemap.xml

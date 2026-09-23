@@ -32,7 +32,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
   };
 
   return (
-    <div className="group relative bg-white border border-ink/10 p-6 rounded-sm shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+    <div className="group relative bg-white border border-ink/10 p-6 rounded-2xl shadow-[0_8px_30px_rgba(26,23,20,0.04)] hover:shadow-[0_18px_50px_rgba(26,23,20,0.12)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
       
       {/* Top Pick Ribbon */}
       {tool.isTopPick && (
@@ -43,7 +43,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
 
       {/* Category Badge */}
       <div className="mb-4">
-        <span className="inline-block bg-paper text-ink text-xs font-bold uppercase tracking-wider px-2.5 py-1 border border-ink/10 rounded-sm">
+          <span className="inline-block bg-orange-50 text-accent text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 border border-accent/10 rounded-full">
           {tool.category}
         </span>
       </div>
@@ -75,19 +75,19 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
           <span className={`text-xs font-bold uppercase tracking-wider px-2 py-1 rounded-sm ${pricingClass}`}>
             {tool.pricing}
           </span>
-          <div className="flex items-center gap-1.5">
+          {tool.rating !== undefined && <div className="flex items-center gap-1.5">
             <div className="flex gap-0.5">
               {renderStars(tool.rating)}
             </div>
             <span className="text-sm font-medium text-ink/80">{tool.rating}</span>
-          </div>
+          </div>}
         </div>
         
         <a 
-          href={tool.link || '#'} 
-          target={tool.link ? '_blank' : '_self'}
-          rel={tool.link ? 'noopener noreferrer' : ''}
-          className="block w-full text-center border border-ink text-ink hover:bg-ink hover:text-paper transition-colors py-2.5 text-sm font-medium rounded-sm"
+          href={tool.link || '#tools'}
+          target={tool.link ? '_blank' : undefined}
+          rel={tool.link ? 'noopener noreferrer' : undefined}
+          className="block w-full text-center border border-ink/10 bg-ink text-white hover:bg-accent hover:border-accent transition-colors py-3 text-sm font-semibold rounded-xl"
         >
           Try Tool →
         </a>

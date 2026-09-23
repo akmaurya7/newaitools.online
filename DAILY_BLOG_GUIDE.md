@@ -55,7 +55,7 @@ Before hitting publish, verify:
 
 ```bash
 # In your terminal
-cd designai.tools
+cd newaitools.online
 
 # Build the project
 npm run build
@@ -69,7 +69,7 @@ After deploying:
 
 1. Go to [Google Search Console](https://search.google.com/search-console)
 2. Click "New URL" 
-3. Paste your blog post URL: `https://designai.tools/blog/your-slug`
+3. Paste your blog post URL: `https://newaitools.online/blog/your-slug`
 4. Click "Request Indexing"
 
 Google will crawl and index within 24-48 hours.

@@ -1,4 +1,4 @@
-# DesignAI.tools - SEO Optimization Summary
+# newaitools - SEO Optimization Summary
 
 ## ✅ Completed SEO Implementation
 
@@ -128,7 +128,7 @@ Quick reference for:
 Your website is optimized and ready to deploy! Next steps:
 
 ### Before Going Live:
-1. [ ] Update domain name (currently set to `designai.tools`)
+1. [ ] Update domain name (currently set to `newaitools.online`)
 2. [ ] Create OG image (1200x630 pixels) and upload to `frontend/public/og-image.jpg`
 3. [ ] Test on mobile (responsive design)
 4. [ ] Check all internal links work
@@ -145,7 +145,7 @@ Your website is optimized and ready to deploy! Next steps:
 ## 📁 File Structure
 
 ```
-designai.tools/
+newaitools.online/
 ├── frontend/
 │   ├── index.html ..................... Enhanced with meta tags
 │   ├── App.tsx ........................ Updated with SEO + routing
@@ -243,7 +243,7 @@ designai.tools/
 ## ⚙️ Configuration Notes
 
 ### Current Settings:
-- **Domain**: designai.tools (update in meta tags if different)
+- **Domain**: newaitools.online (update in meta tags if different)
 - **Blog Categories**: Guide, Case Study, Comparison, Tutorial, Interview
 - **Tools Categories**: 11 categories (Logo Design, UI/UX, Image Gen, etc.)
 - **Sitemap Update**: Manual (run `generate-sitemap.ts` when adding many posts)

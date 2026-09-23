@@ -12,18 +12,18 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
   const post = BLOG_POSTS.find(p => p.slug === slug);
 
   useSEO({
-    title: post ? `${post.title} | DesignAI.tools` : 'Blog Post | DesignAI.tools',
+    title: post ? `${post.title} | newaitools` : 'Blog Post | newaitools',
     description: post?.excerpt || 'Read more design insights and AI tool guides',
     keywords: post?.tags,
     type: 'blog',
     author: post?.author,
     publishDate: post?.publishDate,
     modifiedDate: post?.modifiedDate,
-    canonical: `https://designai.tools/blog/${slug}`,
+    canonical: `https://newaitools.online/blog/${slug}`,
     breadcrumbs: [
-      { name: 'Home', url: 'https://designai.tools/' },
-      { name: 'Blog', url: 'https://designai.tools/blog' },
-      { name: post?.title || 'Article', url: `https://designai.tools/blog/${slug}` }
+      { name: 'Home', url: 'https://newaitools.online/' },
+      { name: 'Blog', url: 'https://newaitools.online/blog' },
+      { name: post?.title || 'Article', url: `https://newaitools.online/blog/${slug}` }
     ]
   });
 

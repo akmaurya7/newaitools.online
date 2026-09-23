@@ -1,66 +1,27 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { ArrowUpRight, Menu, Sparkles, X } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const links = [
+    { href: '/tools', label: 'Tools' },
+    { href: '/workflows', label: 'Workflows' },
+    { href: '/categories', label: 'Categories' },
+    { href: '/blog', label: 'Insights' }
+  ];
 
-  return (
-    <header className="sticky top-0 z-50 bg-paper/90 backdrop-blur-md border-b border-ink/10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="font-serif text-2xl tracking-tight text-ink">
-              DesignAI.tools
-            </a>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8 items-center">
-            <a href="#tools" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Tools</a>
-            <a href="#categories" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Categories</a>
-            <a href="#blog" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Blog</a>
-            <a href="#submit" className="text-ink/80 hover:text-accent transition-colors text-sm font-medium">Submit a Tool</a>
-            <a 
-              href="#newsletter" 
-              className="bg-accent text-white px-5 py-2.5 text-sm font-medium hover:bg-accent/90 transition-colors rounded-sm"
-            >
-              Get Free Toolkit
-            </a>
-          </nav>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-ink hover:text-accent focus:outline-none"
-            >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Navigation */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-paper border-b border-ink/10 absolute w-full">
-          <div className="px-4 pt-2 pb-6 space-y-1 flex flex-col">
-            <a href="#tools" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Tools</a>
-            <a href="#categories" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Categories</a>
-            <a href="#blog" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Blog</a>
-            <a href="#submit" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-ink hover:bg-ink/5">Submit a Tool</a>
-            <div className="pt-4 px-3">
-              <a 
-                href="#newsletter" 
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block w-full text-center bg-accent text-white px-5 py-3 text-base font-medium hover:bg-accent/90 transition-colors rounded-sm"
-              >
-                Get Free Toolkit
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
-    </header>
-  );
+  return <header className="sticky top-0 z-50 border-b border-ink/[0.08] bg-[#f8f7f4]/90 backdrop-blur-xl">
+    <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="/" className="group flex items-center gap-2.5" aria-label="newaitools home">
+        <span className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-ink text-white transition group-hover:bg-accent"><Sparkles size={17} /><span className="absolute -right-0.5 -top-0.5 h-2 w-2 rounded-full border-2 border-[#f8f7f4] bg-emerald-400" /></span>
+        <span className="font-sans text-[21px] font-extrabold leading-none tracking-[-0.075em] text-ink"><span>newai</span><span className="text-accent">tools</span></span>
+      </a>
+      <nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">
+        {links.map(link => <a key={link.href} href={link.href} className="text-sm font-semibold text-ink/60 transition hover:text-accent">{link.label}</a>)}
+        <a href="/categories" className="inline-flex items-center gap-2 rounded-xl bg-ink px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-accent">Find a tool <ArrowUpRight size={15} /></a>
+      </nav>
+      <button className="flex h-10 w-10 items-center justify-center rounded-lg border border-ink/10 text-ink md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label={isMobileMenuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={isMobileMenuOpen}>{isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}</button>
+    </div>
+    {isMobileMenuOpen && <nav className="border-t border-ink/10 bg-white px-4 py-3 md:hidden" aria-label="Mobile navigation">{links.map(link => <a key={link.href} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="block rounded-lg px-3 py-3 text-sm font-semibold text-ink/70 hover:bg-[#f8f7f4] hover:text-accent">{link.label}</a>)}<a href="/categories" onClick={() => setIsMobileMenuOpen(false)} className="mt-2 block rounded-xl bg-ink px-4 py-3 text-center text-sm font-semibold text-white">Browse categories</a></nav>}
+  </header>;
 };
