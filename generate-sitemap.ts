@@ -6,6 +6,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import { BLOG_POSTS } from './frontend/data.ts';
 
 const DOMAIN = 'https://newaitools.online';
 
@@ -81,23 +82,7 @@ ${urlEntries}
 };
 
 const generateBlogSitemap = (): string => {
-  // In production, this would read from your blog data
-  const blogPosts = [
-    {
-      slug: 'best-ai-tools-for-freelance-designers-2026',
-      publishDate: '2026-01-15'
-    },
-    {
-      slug: 'how-i-used-framer-ai-to-deliver-a-client-site-in-4-hours',
-      publishDate: '2026-01-10'
-    },
-    {
-      slug: 'canva-pro-vs-adobe-firefly-comparison-2026',
-      publishDate: '2026-01-05'
-    }
-  ];
-
-  const urls: URLEntry[] = blogPosts.map(post => ({
+  const urls: URLEntry[] = BLOG_POSTS.map(post => ({
     loc: `${DOMAIN}/blog/${post.slug}`,
     lastmod: post.publishDate,
     changefreq: 'monthly',
@@ -118,10 +103,10 @@ const generateSitemapIndex = (): string => {
       loc: `${DOMAIN}/sitemap.xml`,
       lastmod: new Date().toISOString().split('T')[0]
     },
-    {
+    ...(BLOG_POSTS.length > 0 ? [{
       loc: `${DOMAIN}/blog-sitemap.xml`,
       lastmod: new Date().toISOString().split('T')[0]
-    }
+    }] : [])
   ];
 
   const sitemapEntries = sitemaps.map(sm => `  <sitemap>
@@ -150,12 +135,15 @@ const main = () => {
   );
   console.log('✓ Generated sitemap.xml');
 
-  // Write blog sitemap
-  fs.writeFileSync(
-    path.join(publicDir, 'blog-sitemap.xml'),
-    generateBlogSitemap()
-  );
-  console.log('✓ Generated blog-sitemap.xml');
+  // Write a blog sitemap only while published blog posts exist.
+  const blogSitemapPath = path.join(publicDir, 'blog-sitemap.xml');
+  if (BLOG_POSTS.length > 0) {
+    fs.writeFileSync(blogSitemapPath, generateBlogSitemap());
+    console.log('✓ Generated blog-sitemap.xml');
+  } else if (fs.existsSync(blogSitemapPath)) {
+    fs.unlinkSync(blogSitemapPath);
+    console.log('✓ Removed empty blog-sitemap.xml');
+  }
 
   // Write sitemap index
   fs.writeFileSync(

@@ -12,4 +12,3 @@ Disallow: /.git
 
 # Sitemap
 Sitemap: https://newaitools.online/sitemap.xml
-Sitemap: https://newaitools.online/blog-sitemap.xml
