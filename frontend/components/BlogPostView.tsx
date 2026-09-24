@@ -126,7 +126,7 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
           <div>
             <p className="font-medium text-ink">About {post.author}</p>
             <p className="text-sm text-ink/60">
-              Design strategist and AI tools enthusiast sharing practical workflows and insights.
+              Research-led guidance on AI tools, grounded in public product documentation and linked sources.
             </p>
           </div>
         </div>

@@ -123,8 +123,8 @@ export class SEOManager {
       'datePublished': config.publishDate || new Date().toISOString(),
       'dateModified': config.modifiedDate || new Date().toISOString(),
       'author': {
-        '@type': 'Person',
-        'name': config.author || 'newaitools'
+        '@type': 'Organization',
+        'name': config.author || 'newaitools Editorial'
       },
       'publisher': {
         '@type': 'Organization',
