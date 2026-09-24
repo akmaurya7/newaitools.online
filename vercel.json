@@ -4,14 +4,6 @@
   "outputDirectory": "frontend/dist",
   "framework": "vite",
   "cleanUrls": true,
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [{"type": "host", "value": "www.newaitools.online"}],
-      "destination": "https://newaitools.online/$1",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
