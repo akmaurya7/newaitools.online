@@ -87,8 +87,8 @@ const PageIntro: React.FC<{ eyebrow: string; title: string; description: string;
 export const CategoryDirectory: React.FC = () => {
   const tools = getCatalogTools();
   useSEO({
-    title: 'Explore AI Tool Categories | newaitools',
-    description: 'Browse AI tools by category, from writing and research to coding, video, automation, and more.',
+    title: 'AI Tool Categories: Writing, Video, Coding & More | newaitools',
+    description: 'Browse AI tools by category, including writing, research, image generation, video, coding, automation, business, and more.',
     keywords: ['AI tool categories', 'AI tools directory', 'AI software'],
     canonical: 'https://newaitools.online/categories',
     breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Categories', url: 'https://newaitools.online/categories' }]
@@ -132,9 +132,9 @@ export const ToolDirectory: React.FC = () => {
     return tools.filter(tool => [tool.name, tool.category, tool.description, ...(tool.tags || [])].some(value => value.toLowerCase().includes(normalized)));
   }, [query]);
   useSEO({
-    title: 'Explore AI Tools | newaitools',
-    description: 'Search and explore a curated directory of AI tools across creative, business, and technical categories.',
-    keywords: ['AI tools', 'AI directory', 'AI software'], canonical: 'https://newaitools.online/tools',
+    title: 'Best AI Tools Directory: Browse AI Software | newaitools',
+    description: 'Search and compare a curated directory of AI tools across creative, business, productivity, and technical categories.',
+    keywords: ['best AI tools', 'AI tools directory', 'AI software', 'AI tool comparison'], canonical: 'https://newaitools.online/tools',
     breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Tools', url: 'https://newaitools.online/tools' }]
   });
   return <main className="min-h-[70vh] bg-[#f8f7f4]">

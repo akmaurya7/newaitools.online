@@ -17,9 +17,9 @@ import { WorkflowDirectory, WorkflowDetail } from './components/WorkflowPages.ts
 
 const HomePage: React.FC = () => {
   useSEO({
-    title: 'Discover AI Tools & Workflows | newaitools',
-    description: 'Find the right AI tools for writing, research, design, video, coding, business, and more. Browse curated tools by category.',
-    keywords: ['AI tools', 'AI tools directory', 'AI software', 'AI tool categories'],
+    title: 'Best AI Tools Directory & Workflows | newaitools',
+    description: 'Compare the best AI tools for writing, research, design, video, coding, business, and more. Browse 32 categories and practical AI workflows.',
+    keywords: ['best AI tools', 'AI tools directory', 'AI software', 'AI workflows', 'AI tool categories'],
     canonical: 'https://newaitools.online/',
     breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }]
   });

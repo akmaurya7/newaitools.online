@@ -9,8 +9,8 @@ const BrandMark: React.FC<{ inverse?: boolean }> = ({ inverse = false }) => (
 
 export const WorkflowDirectory: React.FC = () => {
   useSEO({
-    title: 'AI Workflows | newaitools',
-    description: 'Follow practical AI toolchains from a first idea to a finished deliverable, with clear steps, handoffs, and review points.',
+    title: 'AI Workflows: Script to Video, Research & More | newaitools',
+    description: 'Follow practical AI workflows from idea to finished work, including script to video, research to article, website creation, and e-commerce.',
     keywords: ['AI workflows', 'AI toolchains', 'creator workflow', 'AI tools'],
     canonical: 'https://newaitools.online/workflows',
     breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Workflows', url: 'https://newaitools.online/workflows' }]

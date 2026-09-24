@@ -14,8 +14,8 @@ export const BlogListing: React.FC<BlogListingProps> = ({ onNavigate }) => {
   const [searchQuery, setSearchQuery] = useState('');
 
   useSEO({
-    title: 'Blog - newaitools | AI Design Insights & Tutorials',
-    description: 'Read expert insights, tutorials, and case studies on using AI tools for freelance design. Updated weekly with practical workflows and tool comparisons.',
+    title: 'AI Tools Guides, Reviews & Comparisons | newaitools',
+    description: 'Read practical AI tool guides, workflow tutorials, comparisons, and case studies for creators, teams, and growing businesses.',
     keywords: ['Design blog', 'AI tutorials', 'Freelance design', 'Case studies', 'Design tips'],
     canonical: 'https://newaitools.online/blog',
     breadcrumbs: [

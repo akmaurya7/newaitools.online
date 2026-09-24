@@ -1,0 +1,17 @@
+{
+  "name": "newaitools — AI tools directory",
+  "short_name": "newaitools",
+  "description": "Discover AI tools, categories, and practical workflows.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F2EC",
+  "theme_color": "#1A1714",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
