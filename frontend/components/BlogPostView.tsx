@@ -19,6 +19,7 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
     author: post?.author,
     publishDate: post?.publishDate,
     modifiedDate: post?.modifiedDate,
+    ogImage: post?.ogImage ? `https://newaitools.online${post.ogImage}` : undefined,
     canonical: `https://newaitools.online/blog/${slug}`,
     breadcrumbs: [
       { name: 'Home', url: 'https://newaitools.online/' },
@@ -80,6 +81,19 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
           {post.excerpt}
         </p>
       </header>
+
+      {post.ogImage && <figure className="mb-12">
+        <img
+          src={post.ogImage}
+          alt={post.ogImageAlt || `Illustration related to ${post.title}`}
+          width="1600"
+          height="900"
+          fetchPriority="high"
+          decoding="async"
+          className="aspect-[16/9] w-full rounded-2xl border border-ink/10 bg-ink/5 object-cover shadow-sm"
+        />
+        <figcaption className="mt-2 text-sm text-ink/45">{post.ogImageAlt || `Illustration related to ${post.title}`}</figcaption>
+      </figure>}
 
       {/* Article Content */}
       <div 

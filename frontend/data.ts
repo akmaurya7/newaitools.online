@@ -371,6 +371,7 @@ export interface BlogPost {
   tags: string[];
   featured?: boolean;
   ogImage?: string;
+  ogImageAlt?: string;
 }
 
 export const BLOG_POSTS: BlogPost[] = [];
