@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSEO } from '../hooks/useSEO';
 import { BLOG_POSTS } from '../data';
 import { ArrowLeft } from 'lucide-react';
@@ -32,12 +32,7 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center">
           <h1 className="text-3xl font-serif mb-4">Post not found</h1>
-          <button 
-            onClick={() => onNavigate('home')}
-            className="text-accent hover:underline"
-          >
-            ← Back to home
-          </button>
+          <a href="/blog" className="text-accent hover:underline">← Back to blog</a>
         </div>
       </div>
     );
@@ -159,12 +154,9 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
         <p className="mb-6 text-paper/80">
           Join 12,000+ designers discovering new AI tools every week
         </p>
-        <button
-          onClick={() => onNavigate('home')}
-          className="bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-sm font-medium transition-colors"
-        >
+        <a href="/tools" className="inline-block bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-sm font-medium transition-colors">
           Browse All Tools
-        </button>
+        </a>
       </div>
     </article>
   );

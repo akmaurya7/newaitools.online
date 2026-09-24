@@ -6,8 +6,8 @@ export const BlogSection: React.FC = () => {
     <section id="blog" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mb-24">
       <div className="flex justify-between items-end mb-10">
         <div>
-          <h2 className="font-serif text-3xl md:text-4xl text-ink mb-3">Editorial & Insights</h2>
-          <p className="text-ink/70">Real workflows from working designers.</p>
+          <h2 className="font-serif text-3xl md:text-4xl text-ink mb-3">From the blog</h2>
+          <p className="text-ink/70">Practical guides, comparisons, and workflows for using AI tools.</p>
         </div>
         <a href="/blog" className="hidden md:block text-accent font-medium hover:underline underline-offset-4">
           View all articles &rarr;
@@ -18,7 +18,7 @@ export const BlogSection: React.FC = () => {
         {BLOG_POSTS.map((post) => (
           <a 
             key={post.id} 
-            href={post.id === 'post-1' ? '/blog' : '#'}
+            href={`/blog/${post.slug}`}
             className="group cursor-pointer flex flex-col h-full no-underline"
           >
             <article className="flex flex-col h-full">

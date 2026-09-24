@@ -7,7 +7,7 @@ export const Navbar: React.FC = () => {
     { href: '/tools', label: 'Tools' },
     { href: '/workflows', label: 'Workflows' },
     { href: '/categories', label: 'Categories' },
-    { href: '/blog', label: 'Insights' }
+    { href: '/blog', label: 'Blog' }
   ];
 
   return <header className="sticky top-0 z-50 border-b border-ink/[0.08] bg-[#f8f7f4]/90 backdrop-blur-xl">

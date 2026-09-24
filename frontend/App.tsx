@@ -69,7 +69,7 @@ const App: React.FC = () => {
   else if (toolId) page = <ToolDetail id={decodeURIComponent(toolId)} />;
   else if (path === '/workflows') page = <WorkflowDirectory />;
   else if (workflowSlug) page = workflow ? <WorkflowDetail workflow={workflow} /> : <main className="min-h-[65vh] bg-[#f8f7f4] px-4 py-24 text-center"><h1 className="font-serif text-4xl">Workflow not found</h1><a href="/workflows" className="mt-5 inline-block font-semibold text-accent">Browse all workflows →</a></main>;
-  else if (path === '/blog') page = <BlogListing onNavigate={handleNavigate} />;
+  else if (path === '/blog') page = <BlogListing />;
   else if (blogSlug) page = <BlogPostView slug={decodeURIComponent(blogSlug)} onNavigate={handleNavigate} />;
   else if (path === '/') page = <HomePage />;
   else page = <main className="min-h-[65vh] bg-[#f8f7f4] px-4 py-24 text-center"><h1 className="font-serif text-4xl">Page not found</h1><p className="mt-3 text-ink/55">The page you’re looking for may have moved.</p><a href="/" className="mt-6 inline-block rounded-xl bg-ink px-5 py-3 text-sm font-semibold text-white">Back to home</a></main>;
