@@ -14,6 +14,7 @@ import { CategoryDetail, CategoryDirectory, ToolDirectory, categorySlug, getCata
 import { useSEO } from './hooks/useSEO.ts';
 import { WORKFLOWS } from './workflows.ts';
 import { WorkflowDirectory, WorkflowDetail } from './components/WorkflowPages.tsx';
+import { ToolDetail } from './components/ToolDetail.tsx';
 
 const HomePage: React.FC = () => {
   useSEO({
@@ -53,6 +54,7 @@ const App: React.FC = () => {
   const category = categorySlugPath ? lookupCategory(decodeURIComponent(categorySlugPath)) : undefined;
   const workflowSlug = path.match(/^\/workflow\/([^/]+)$/)?.[1];
   const workflow = workflowSlug ? WORKFLOWS.find(item => item.slug === decodeURIComponent(workflowSlug)) : undefined;
+  const toolId = path.match(/^\/tool\/([^/]+)$/)?.[1];
   const blogSlug = path.match(/^\/blog\/([^/]+)$/)?.[1];
   const handleNavigate = (destination: string) => {
     if (destination === 'home') window.location.href = '/';
@@ -64,6 +66,7 @@ const App: React.FC = () => {
   if (categorySlugPath) page = category ? <CategoryDetail category={category} /> : <main className="min-h-[65vh] bg-[#f8f7f4] px-4 py-24 text-center"><h1 className="font-serif text-4xl">Category not found</h1><a href="/categories" className="mt-5 inline-block font-semibold text-accent">Browse all categories →</a></main>;
   else if (path === '/categories') page = <CategoryDirectory />;
   else if (path === '/tools') page = <ToolDirectory />;
+  else if (toolId) page = <ToolDetail id={decodeURIComponent(toolId)} />;
   else if (path === '/workflows') page = <WorkflowDirectory />;
   else if (workflowSlug) page = workflow ? <WorkflowDetail workflow={workflow} /> : <main className="min-h-[65vh] bg-[#f8f7f4] px-4 py-24 text-center"><h1 className="font-serif text-4xl">Workflow not found</h1><a href="/workflows" className="mt-5 inline-block font-semibold text-accent">Browse all workflows →</a></main>;
   else if (path === '/blog') page = <BlogListing onNavigate={handleNavigate} />;

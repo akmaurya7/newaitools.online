@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tool } from '../data.ts';
-import { Star } from 'lucide-react';
+import { ArrowRight, Star } from 'lucide-react';
 
 interface ToolCardProps {
   tool: Tool;
@@ -50,9 +50,9 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
 
       {/* Content */}
       <div className="flex-grow">
-        <h3 className="font-serif text-2xl text-ink mb-2 group-hover:text-accent transition-colors">
+        <a href={`/tool/${encodeURIComponent(tool.id)}`} aria-label={`View details about ${tool.name}`} className="inline-block"><h3 className="font-serif text-2xl text-ink mb-2 group-hover:text-accent transition-colors">
           {tool.name}
-        </h3>
+        </h3></a>
         <p className="text-ink/70 text-sm mb-6 line-clamp-2">
           {tool.description}
         </p>
@@ -71,6 +71,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
 
       {/* Meta & Action */}
       <div className="mt-auto pt-6 border-t border-ink/5">
+        <a href={`/tool/${encodeURIComponent(tool.id)}`} className="mb-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline">Explore tool details <ArrowRight size={15} /></a>
         <div className="flex items-center justify-between mb-5">
           <span className={`text-xs font-bold uppercase tracking-wider px-2 py-1 rounded-sm ${pricingClass}`}>
             {tool.pricing}
