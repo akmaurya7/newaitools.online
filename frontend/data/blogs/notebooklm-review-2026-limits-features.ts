@@ -22,7 +22,9 @@ export const notebooklm_review_2026_limits_features: BlogPost = {
   <p>The most useful way to evaluate Gemini Notebook is as a source-grounded research workspace. It can organize supplied sources, answer questions with citations, and generate formats such as Audio Overviews and Slide Decks. Its current usage model is compute-based, so limits depend on factors such as prompt complexity, chat length, source count, model or feature use, and account access.</p>
 
   <div class="takeaway-panel">
-    <h2>Key Takeaways</h2>
+        <div class="article-jump-links"><span>Jump to section:</span><a href="#gemini-change">What changed</a><a href="#gemini-limits">Current limits</a><a href="#gemini-workflow">Research workflow</a><a href="#gemini-outputs">Output formats</a><a href="#gemini-audit">Auditability</a></div>
+
+<h2>Key Takeaways</h2>
     <ul>
       <li><strong>The name changed, not the core identity:</strong> Google renamed NotebookLM to Gemini Notebook in July 2026 and continues to position it as a standalone research tool.</li>
       <li><strong>Source size is large:</strong> Google's current help documentation lists up to 500,000 words per source or 200 MB for local uploads, with 50 sources per notebook on the free tier.</li>
@@ -32,11 +34,11 @@ export const notebooklm_review_2026_limits_features: BlogPost = {
     </ul>
   </div>
 
-  <h2>What changed from NotebookLM to Gemini Notebook?</h2>
+  <h2 id="gemini-change">What changed from NotebookLM to Gemini Notebook?</h2>
   <p>Google announced the rename on July 16, 2026. The company described the product as the same standalone experience, expanded across the Google ecosystem, and introduced a secure cloud computer that can write and execute code for supported accounts. Google said the capability was available to Google AI Ultra users and eligible Workspace customers at announcement time, with broader rollout planned for Pro users on the web.</p>
   <p>That matters because the product is no longer best understood as a simple document chat interface. The current direction is a research environment where supplied evidence, analysis tools, and generated outputs are combined in one notebook.</p>
 
-  <h2>Current source and usage limits</h2>
+  <h2 id="gemini-limits">Current source and usage limits</h2>
   <p>Google's current help documentation lists a <strong>500,000-word limit per source or 200 MB for local uploads</strong>. Google also documents a 50-source limit per notebook for free users and 100 notebooks per user. Supported source types include material such as Google Docs, Slides, Drive PDFs, web URLs, public YouTube content, ePub files, and other supported imports.</p>
   <p>The important change in September 2026 is how feature usage is measured. Google says Gemini Notebook now uses compute-based limits. The amount available for a user depends on prompt complexity, chat length, number of sources, models and features used, and related account factors. The quota refreshes every five hours until the applicable weekly limit is reached.</p>
 
@@ -54,7 +56,7 @@ export const notebooklm_review_2026_limits_features: BlogPost = {
     </table>
   </div>
 
-  <h2>How the current research workflow works</h2>
+  <h2 id="gemini-workflow">How the current research workflow works</h2>
   <p>Gemini Notebook is most useful when you define the source set before asking for polished output. A clean workflow is: collect the sources, verify that the correct material is imported, ask focused questions, inspect citations, and only then generate a final summary or deliverable.</p>
 
   <figure class="research-figure" aria-labelledby="gemini-notebook-flow-caption">
@@ -89,7 +91,7 @@ export const notebooklm_review_2026_limits_features: BlogPost = {
     <figcaption id="gemini-notebook-flow-caption">A source-first workflow keeps generated output attached to the evidence set that should support it.</figcaption>
   </figure>
 
-  <h2>Audio Overviews, Slide Decks, Infographics, and Video Overviews</h2>
+  <h2 id="gemini-outputs">Audio Overviews, Slide Decks, Infographics, and Video Overviews</h2>
   <p>Google has expanded NotebookLM's output formats beyond text. Its 2026 product updates describe Audio Overviews, Slide Decks, Infographics, and Video Overviews as ways to turn the same source-grounded notebook into different deliverables. The useful distinction is that these are presentation formats layered over a source set, not replacements for the underlying evidence.</p>
   <p>For example, a research team can keep a set of policy documents in one notebook, ask a focused question, inspect the cited answer, and then generate a presentation for a meeting. The output is easier to consume, but the source set remains the place to verify what was actually established.</p>
 
@@ -97,7 +99,7 @@ export const notebooklm_review_2026_limits_features: BlogPost = {
   <p>Google's July 2026 announcement says every notebook is beginning to receive a secure cloud computer that lets Gemini Notebook write and execute code natively. At launch, Google said this was available to Google AI Ultra users and certain Workspace customers, with additional rollout planned. This can support analysis tasks that benefit from computation, but availability depends on account and plan.</p>
   <p>For a research workflow, treat the cloud-computer feature as an analysis layer. Start with the documents and define the question, then use computation when the task genuinely requires calculations or structured data processing. Keep the source set and the analytical assumptions visible to the reviewer.</p>
 
-  <h2>How to keep Gemini Notebook research auditable</h2>
+  <h2 id="gemini-audit">How to keep Gemini Notebook research auditable</h2>
   <ol class="workflow-steps">
     <li><strong>1. Define the research question.</strong> Input: a decision or research question. Action: write exactly what you need to establish. Example: "Compare the revenue guidance in these three company filings." Expected output: a short question with explicit entities and dates. Quality gate: another person can tell what would count as an answer.</li>
     <li><strong>2. Build the notebook source set.</strong> Input: original documents, URLs, PDFs, or other supported sources. Action: import only the material relevant to the question. Example: three filings plus the relevant investor presentation. Expected output: a bounded notebook. Quality gate: every source is identifiable and relevant.</li>
