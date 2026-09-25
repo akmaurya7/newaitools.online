@@ -109,6 +109,7 @@ export const notebooklm_review_2026_limits_features: BlogPost = {
   <h2>Where Gemini Notebook fits</h2>
   <p>Gemini Notebook is a strong fit when the work begins with a defined source set and the output needs to preserve a visible relationship between evidence and synthesis. It is less useful to treat the notebook as a generic answer engine and ignore the documents that make it distinctive.</p>
   <p>For broader web research, pair the notebook with our <a href="/blog/ai-deep-research-source-first-workflow">AI deep research guide</a>. The distinction is simple: Gemini Notebook organizes a bounded source set, while a broader deep-research workflow may start by discovering the evidence itself.</p>
+  <p>For a separate trust-first workflow, see our <a href="/blog/ai-notes-client-calls-consent-first">consent-first AI meeting notes guide</a>. The same principle applies here: define the source boundary before the model produces a polished deliverable.</p>
 
   <h2>Common mistakes</h2>
   <h3>Importing too much unrelated material</h3>
