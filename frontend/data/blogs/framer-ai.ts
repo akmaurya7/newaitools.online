@@ -97,6 +97,7 @@ export const framer_ai_review: BlogPost = {
   <p>For a project with requirements outside the documented visual publishing and supported agent workflow, inspect the integration boundary before committing to the platform. For example, ask whether the required backend, authentication, deployment, code ownership, data model, or operational controls are actually supported by your chosen architecture. Avoid turning a product category assumption into a capability claim.</p>
 
   <p>For a source-first research process that is broader than a single website builder, see our <a href="/blog/ai-deep-research-source-first-workflow">AI deep research guide</a>. The same evidence-first discipline applies when an agent is generating page structure or copy.</p>
+  <p>For repository-level AI development, our <a href="/blog/ai-coding-agents-pr-first-workflow-small-teams">PR-first AI coding workflow</a> covers the separate review boundary used after generated changes leave the visual design environment.</p>
 
   <h2>Common mistakes when using Framer AI</h2>
   <h3>Starting with a vague brief</h3>
