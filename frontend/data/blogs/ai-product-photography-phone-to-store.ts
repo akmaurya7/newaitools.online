@@ -4,7 +4,7 @@ export const ai_product_photography_phone_to_store: BlogPost = {
   id: 'ai-product-photography-phone-to-store',
   slug: 'ai-product-photography-phone-to-store',
   category: 'Guide',
-  title: 'How to Create E-commerce Product Photos With AI: 2026 Guide',
+  title: 'How to Create E-commerce Product Photos With AI in 2026',
   excerpt: 'A source-first workflow for turning a real product photo into an accurate master image, controlled lifestyle variants, channel creatives, and a fact-grounded store listing.',
   author: 'newaitools Editorial',
   publishDate: '2026-09-25',
@@ -12,10 +12,10 @@ export const ai_product_photography_phone_to_store: BlogPost = {
   readTime: 10,
   tags: ['AI product photography', 'e-commerce', 'product images', 'Shopify', 'Photoroom', 'Canva', 'AI design'],
   featured: false,
-  ogImage: '/blog/images/ai-product-photography-phone-to-store.svg',
+  ogImage: '/blog/images/ai-product-photography-phone-to-store.jpg',
   ogImageAlt: 'Minimal editorial illustration showing a phone product photo becoming polished e-commerce product images through an AI workflow.',
   content: `<section class="prose-article">
-    <h1>How to Create E-commerce Product Photos With AI: 2026 Guide</h1>
+    <h1>How to Create E-commerce Product Photos With AI in 2026</h1>
 
     <p>You do not need a studio, a DSLR, or a large photography budget to produce a usable first set of e-commerce product images. A clean phone photo can now be the starting point for background removal, lighting cleanup, scene generation, resizing, and channel-specific variants.</p>
 
@@ -37,7 +37,8 @@ export const ai_product_photography_phone_to_store: BlogPost = {
 
     <p>The useful mental model is <strong>phone photo → controlled edit → channel-ready asset</strong>, rather than <strong>text prompt → imaginary product</strong>. The first approach gives you a real visual reference and makes it easier to catch unwanted changes.</p>
 
-    <h2>The Phone-to-Store Workflow</h2>
+    <h2 id="phone-to-store">The Phone-to-Store Workflow</h2>
+    <p><strong>The safest sequence is capture → accurate master → controlled variants → channel creative → store listing.</strong> The example below treats the original product photo and verified product specification as the source of truth, so each later stage has something concrete to check against.</p>
 
     <h3>1. Take a clean source photo</h3>
     <p>Put the product on a stable surface near a window or another broad light source. Clean the camera lens, keep the phone parallel to the product when possible, and avoid strong colored lighting. Take several angles rather than relying on a single shot if the product has important side details.</p>
@@ -142,7 +143,7 @@ export const ai_product_photography_phone_to_store: BlogPost = {
     <p>If an item has safety, regulatory, technical, or expensive physical characteristics, be even more conservative. The product page should represent what the customer will actually receive.</p>
 
     <h2>Commercial Use: What Should You Check?</h2>
-    <p>Commercial use is not just a question of whether a button says “commercial use.” You should review the current terms of the specific tool and plan you are using, especially if generated images are used in paid advertising, client work, or a high-volume store.</p>
+    <p>Commercial use is not just a question of whether a button says “commercial use.” Review the current terms of the specific tool and plan you are using, especially for paid advertising, client work, or high-volume production. Keep third-party asset licenses and usage restrictions separate from the AI tool's own terms.</p>
 
     <p>Also check the rights associated with any third-party images, logos, people, stock assets, or generated scenes you add to the final composition. AI generation does not automatically make every input asset commercially safe.</p>
 
@@ -151,14 +152,14 @@ export const ai_product_photography_phone_to_store: BlogPost = {
 
     <p>AI is particularly useful when the expensive part of the job is not capturing the product but producing many visual variants. A small business can photograph the real product once and then create multiple presentation formats from that source.</p>
 
-    <h2>An Example 30-Minute Production Loop</h2>
+    <h2 id="production-loop">An Example Production Loop</h2>
+    <p>Use this as a planning sequence, not a measured 30-minute benchmark. Actual production time depends on the product, source-image quality, number of variants, review depth, and the tools or plans available.</p>
     <ol>
-      <li><strong>Minutes 0-5:</strong> Clean the product and capture several phone photos in consistent light.</li>
-      <li><strong>Minutes 5-10:</strong> Select the sharpest image and create an accurate cutout.</li>
-      <li><strong>Minutes 10-15:</strong> Create one neutral catalog image.</li>
-      <li><strong>Minutes 15-22:</strong> Generate two or three lifestyle concepts.</li>
-      <li><strong>Minutes 22-27:</strong> Resize and crop the approved image for the intended channels.</li>
-      <li><strong>Minutes 27-30:</strong> Compare the final images against the original product and remove anything inaccurate.</li>
+      <li><strong>Capture:</strong> Clean the product and take several phone photos in consistent light.</li>
+      <li><strong>Master:</strong> Select the sharpest image and create the accurate cutout and neutral catalog image.</li>
+      <li><strong>Variants:</strong> Generate only the lifestyle concepts that answer a real merchandising or marketing need.</li>
+      <li><strong>Channel assets:</strong> Resize and compose the approved images for the required placements.</li>
+      <li><strong>Final QA:</strong> Compare every published asset against the original product and remove inaccurate outputs.</li>
     </ol>
 
     <p>For a repeatable store process, follow the detailed <a href="/workflow/product-photo-to-store-listing">product photo to store listing workflow</a>. That workflow extends the image-production sequence into channel creative, Shopify Magic copy, product-page setup, and a final QA gate.</p>
