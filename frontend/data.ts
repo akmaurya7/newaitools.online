@@ -480,7 +480,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: 'ai-coding-agents-pr-first-workflow-small-teams',
     slug: 'ai-coding-agents-pr-first-workflow-small-teams',
     category: 'Tutorial',
-    title: 'Don\\'t Let AI Break Your Repo: The Safest PR-First Workflow for Small Teams',
+    title: "Don't Let AI Break Your Repo: The Safest PR-First Workflow for Small Teams",
     excerpt: 'A practical way to use coding agents for scoped repository work while keeping access, testing, review, and merging visible to the team.',
     author: 'newaitools Editorial',
     publishDate: '2026-09-24',
