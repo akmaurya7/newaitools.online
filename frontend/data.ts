@@ -727,7 +727,7 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
     modifiedDate: '2026-09-25',
     readTime: 9,
     tags: ['NotebookLM', 'Gemini Notebook', 'AI research', 'Google AI', 'study tools'],
-    ogImage: '/blog/images/notebooklm-review-2026.png',
+    ogImage: '/blog/images/notebooklm-review-2026.jpg',
     ogImageAlt: 'Editorial illustration of a digital notebook analyzing multiple large documents and generating an audio overview.',
     content: `<section class="prose-article">
       <h1>NotebookLM Review (2026): Is Google's AI Research Assistant Worth It?</h1>
