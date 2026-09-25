@@ -3,8 +3,8 @@ import { BlogPost } from '../../data';
 export const ai_coding_agents_pr_first_workflow_small_teams: BlogPost = {
   id: 'ai-coding-agents-pr-first-workflow-small-teams',
   slug: 'ai-coding-agents-pr-first-workflow-small-teams',
-  category: 'Tutorial',
-  title: "Don't Let AI Break Your Repo: The Safest PR-First Workflow for Small Teams",
+  category: 'Guide',
+  title: "AI Coding Agents: A PR-First Workflow for Small Teams in 2026",
   excerpt: "A practical way to use coding agents for scoped repository work while keeping access, testing, review, and merging visible to the team.",
   author: 'newaitools Editorial',
   publishDate: '2026-09-24',
@@ -15,7 +15,7 @@ export const ai_coding_agents_pr_first_workflow_small_teams: BlogPost = {
   ogImage: '/blog/images/ai-coding-agents-pr-first.png',
   ogImageAlt: "Editorial illustration of AI-generated code changes passing through a human review gate before reaching a protected repository branch.",
   content: `<section class="prose-article">
-      <h1>Don't Let AI Break Your Repo: The Safest PR-First Workflow for Small Teams</h1>
+      <h1>AI Coding Agents: A PR-First Workflow for Small Teams in 2026</h1>
 
       <p>If an AI coding agent can edit files, run commands, and open a pull request, the tempting workflow is to give it a large task and check the result at the end. For a small team, that is usually the wrong boundary.</p>
       <p>A better default is <strong>PR first, merge later</strong>: write a narrow task, give the agent only the repository context it needs, let it work on an isolated branch or sandbox, run the normal checks, and review the diff as you would review a contribution from a new teammate. You get a useful speed boost without turning the default branch into an experiment.</p>
@@ -49,7 +49,43 @@ export const ai_coding_agents_pr_first_workflow_small_teams: BlogPost = {
       <p>GitHub documents an issue and pull-request workflow for its cloud agent and says it can create a branch, run tests, and request review. Cursor's security documentation says reading files does not require approval, sensitive actions can require approval, and <code>.cursorignore</code> can block access to selected files. Anthropic describes Claude Code's sandbox as two boundaries, filesystem and network isolation, and says its web sessions run in isolated cloud sandboxes without git credentials or signing keys inside the environment.</p>
       <p>These descriptions tell you what a product says it can constrain. They do not tell you that every repository is safe to hand to an agent. Your own secrets, CI configuration, dependency scripts, prompt-injection risks, and branch rules still matter. Browse the <a href="/tool/github-copilot">GitHub Copilot</a>, <a href="/tool/cursor">Cursor</a>, and <a href="/tool/claude-code">Claude Code</a> entries in our <a href="/category/coding-and-development">coding tools directory</a> for current links, then verify the provider's own documentation before enabling a new capability.</p>
 
-      <h2>The six-step workflow for a small team</h2>
+      <h2>The six-step PR-first workflow for a small team</h2>
+
+      <figure class="research-figure" aria-labelledby="pr-workflow-caption">
+        <svg viewBox="0 0 900 190" role="img" aria-labelledby="pr-workflow-title pr-workflow-desc">
+          <title id="pr-workflow-title">PR-first AI coding workflow</title>
+          <desc id="pr-workflow-desc">A six-stage flow from a bounded task to an approved merge: define, isolate, scope access, plan, verify, and merge.</desc>
+          <line x1="135" y1="82" x2="190" y2="82" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <line x1="285" y1="82" x2="340" y2="82" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <line x1="435" y1="82" x2="490" y2="82" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <line x1="585" y1="82" x2="640" y2="82" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <line x1="735" y1="82" x2="790" y2="82" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <g fill="currentColor">
+            <rect x="10" y="40" width="125" height="84" rx="14" opacity="0.06"/>
+            <rect x="160" y="40" width="125" height="84" rx="14" opacity="0.09"/>
+            <rect x="310" y="40" width="125" height="84" rx="14" opacity="0.12"/>
+            <rect x="460" y="40" width="125" height="84" rx="14" opacity="0.15"/>
+            <rect x="610" y="40" width="125" height="84" rx="14" opacity="0.18"/>
+            <rect x="760" y="40" width="125" height="84" rx="14" opacity="0.22"/>
+          </g>
+          <g fill="currentColor" font-family="system-ui, sans-serif" text-anchor="middle">
+            <text x="72" y="69" font-size="14" font-weight="700">1. Bound</text>
+            <text x="72" y="91" font-size="12">Define task</text>
+            <text x="222" y="69" font-size="14" font-weight="700">2. Isolate</text>
+            <text x="222" y="91" font-size="12">Branch or sandbox</text>
+            <text x="372" y="69" font-size="14" font-weight="700">3. Scope</text>
+            <text x="372" y="91" font-size="12">Access and context</text>
+            <text x="522" y="69" font-size="14" font-weight="700">4. Plan</text>
+            <text x="522" y="91" font-size="12">Review before edits</text>
+            <text x="672" y="69" font-size="14" font-weight="700">5. Verify</text>
+            <text x="672" y="91" font-size="12">Diff and tests</text>
+            <text x="822" y="69" font-size="14" font-weight="700">6. Merge</text>
+            <text x="822" y="91" font-size="12">Human approval</text>
+            <text x="450" y="166" font-size="11" opacity="0.45">PR-first boundary: the agent can do the work; the team controls the integration point.</text>
+          </g>
+        </svg>
+        <figcaption id="pr-workflow-caption">A practical sequence for keeping AI coding work reviewable from task definition through merge.</figcaption>
+      </figure>
 
       <h3>1. Turn the request into a bounded task</h3>
       <p>Give the agent a task with a visible finish line. Include the files or subsystem it may touch, the behavior that must not change, the checks to run, and the shape of the expected output. If you cannot explain how a reviewer will verify the result, the task is probably too broad.</p>
@@ -101,7 +137,7 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
       <h3>Product controls change</h3>
       <p>Plan availability, permission defaults, model routing, privacy settings, and cloud-agent behavior can change by product version, account, workspace, or administrator policy. Check the current documentation and your own organization settings before relying on a control described in an older guide.</p>
 
-      <h2>Our recommendation based on the evidence</h2>
+      <h2>A practical default for small teams</h2>
       <p>For most small teams, begin with low-risk maintenance tasks and a strict PR-first loop. Keep the task narrow, isolate the session, require checks, review the actual diff, and make the human merge the last meaningful decision. The agent can be ambitious inside that loop; the repository boundary should not be.</p>
       <p>If the team cannot answer what the agent could read, what it could change, what commands it could run, where credentials live, and who approves the merge, it is not ready for a more autonomous setup. That is not an argument against coding agents. It is the operating discipline that makes them useful.</p>
       <p>For related workflows, see our guide on <a href="/blog/ai-notes-client-calls-consent-first">consent-first AI meeting notes</a> for a similar trust-first approach to client communication, or the <a href="/blog/ai-deep-research-source-first-workflow">source-first deep research workflow</a> for verifying AI-generated research before acting on it.</p>
