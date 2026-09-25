@@ -21,6 +21,8 @@ export const ai_deep_research_source_first_workflow: BlogPost = {
       <p>ChatGPT Deep Research, Gemini Deep Research, and Perplexity Pro Search all promise some version of multi-source synthesis with links. The important difference is not which product sounds most thorough. It is <strong>how much control you have over sources, how clearly the research trail is exposed, and how easily you can turn the result into a brief someone else can audit.</strong></p>
       <p>This guide is for freelancers, marketers, researchers, and small teams who need a defensible starting brief without spending an afternoon copying search results into a document. Product details below were checked against public documentation on <strong>September 25, 2026</strong>. We did not run hands-on product tests, compare answer quality on a fixed benchmark, or inspect paid accounts.</p>
 
+      <div class="article-jump-links"><span>Jump to section:</span><a href="#tool-differences">Tool differences</a><a href="#source-first-workflow">Source-first workflow</a><a href="#citation-check">Citation verification</a><a href="#research-limits">Research limits</a><a href="#professional-default">Professional default</a></div>
+
       <blockquote>
         <p><strong>Key Takeaways</strong></p>
         <ul>
@@ -36,7 +38,7 @@ export const ai_deep_research_source_first_workflow: BlogPost = {
       <p>Those are meaningful workflow improvements. They can reduce the mechanical work of finding, opening, and grouping material. They do not turn a generated paragraph into verified evidence. The model still decides which passages to emphasize, may miss a relevant source, and can write a conclusion that is more confident than the underlying material.</p>
       <p>The right mental model is <strong>research assistant plus triage layer</strong>. Let the system widen the search and reveal a useful structure. Keep the final judgment, source check, and wording of consequential claims with a person.</p>
 
-      <h2>How the current research tools differ</h2>
+      <h2 id="tool-differences">How the current research tools differ</h2>
       <p><strong>The table below describes documented workflow controls, not a quality ranking.</strong> Features can vary by plan, region, account, workspace, and product version.</p>
       <div class="overflow-x-auto rounded-lg border border-ink/10"><table class="min-w-[760px]">
         <thead><tr><th>Tool</th><th>Documented source controls</th><th>Useful handoff</th><th>Best fit</th></tr></thead>
@@ -48,7 +50,7 @@ export const ai_deep_research_source_first_workflow: BlogPost = {
       </table></div>
       <p>For a closer look at the directory entries, see the <a href="/tool/chatgpt">ChatGPT</a>, <a href="/tool/gemini">Gemini</a>, and <a href="/tool/perplexity">Perplexity</a> pages in our <a href="/tools">tool directory</a>, then confirm current access and limits in the providers' own documentation. A directory description is a starting point, not a substitute for account-specific terms.</p>
 
-      <h2>A source-first workflow for a useful research brief</h2>
+      <h2 id="source-first-workflow">A source-first workflow for a useful research brief</h2>
 
       <figure class="research-figure" aria-labelledby="research-flow-caption">
         <svg viewBox="0 0 900 190" role="img" aria-labelledby="research-flow-title research-flow-desc">
@@ -109,7 +111,7 @@ export const ai_deep_research_source_first_workflow: BlogPost = {
       <h3>6. Produce the brief last</h3>
       <p>Only after the evidence map is usable should you ask for a one-page brief. Give it a fixed shape: answer first, evidence behind the answer, meaningful trade-offs, open questions, and a short list of links. Keep the original source list with the brief. If the result will guide a purchase, policy, health decision, legal decision, or public claim, add a human review step before anyone acts on it.</p>
 
-      <h2>Why citations still need a human check</h2>
+      <h2 id="citation-check">Why citations still need a human check</h2>
       <p><strong>Independent research gives a useful reason for this discipline.</strong> A <a href="https://www.nature.com/articles/s41586-025-10072-4">Nature study of retrieval-augmented systems for scientific literature</a> found that retrieval generally improved performance over relying on model memory, but also reported fabricated or unsupported citations in several model setups. The study is about scientific literature, not a current consumer-product leaderboard, so its numbers should not be copied into a general accuracy claim. Its practical lesson is broader: retrieval helps, but citation presence and citation support are separate questions.</p>
       <p>A 2026 paper in <a href="https://proceedings.mlr.press/v318/kakimov26a.html">Proceedings of Machine Learning Research</a> proposes auditing not only which documents are cited, but also where those documents came from. Its case study of Google AI Overviews found evidence that AI-generated documents were cited more frequently than human-authored documents in the tested setting. Another 2026 preprint, <a href="https://arxiv.org/abs/2605.23684">Synthetic Sources?</a>, reported evidence of AI-generated sources appearing among citations across four generative search engines. These are research findings with their own methods and limits, not proof that every answer from a particular tool is unreliable. They are a good argument for checking provenance instead of treating a linked answer as self-authenticating.</p>
       <p>The practical rule is simple: <strong>the more a claim matters, the closer you should get to the source that created it.</strong> Use AI to find and organize evidence. Use the original document to decide whether the evidence supports your wording.</p>
@@ -126,12 +128,12 @@ export const ai_deep_research_source_first_workflow: BlogPost = {
       </table></div>
       <p>There is no need to force one tool into every stage. A sensible workflow can use one system for discovery, a focused source set for verification, and a document or spreadsheet as the review record. The decision should follow the evidence handoff, not the product label.</p>
 
-      <h2>Limits to plan for</h2>
+      <h2 id="research-limits">Limits to plan for</h2>
       <p><strong>Access is not uniform.</strong> OpenAI, Google, and Perplexity all document differences tied to plans, regions, workspace settings, model access, or usage limits. A feature visible in a help article may not be available in your account.</p>
       <p><strong>Connected sources create a responsibility boundary.</strong> Adding Drive, Gmail, SharePoint, uploaded files, or other private material can make research more relevant, but you still need to check permissions, retention, sharing, and whether the final brief contains information the recipient should not see.</p>
       <p><strong>A polished report can hide uncertainty.</strong> Keep disputed claims and missing evidence visible. If the source does not settle the question, the correct output may be "not established yet," followed by what would resolve it.</p>
 
-      <h2>A practical default for professional research</h2>
+      <h2 id="professional-default">A practical default for professional research</h2>
       <p>For most professional research, start with the tool whose source controls and output format match the person who will review the work. Then use a source-first brief: define the decision, specify acceptable sources, inspect the plan, maintain an evidence map, verify consequential claims, and preserve the links and check date.</p>
       <p>That workflow is modest by design. It does not promise that deep research will find everything or that citations will always be right. It gives a small team something more valuable: a research result that can be questioned, updated, and handed to another person without asking them to trust a black box.</p>
       <p>For similar trust-first approaches to other AI workflows, see our guides on <a href="/blog/ai-notes-client-calls-consent-first">consent-first AI meeting notes</a> and <a href="/blog/ai-coding-agents-pr-first-workflow-small-teams">PR-first AI coding agents</a>.</p>
