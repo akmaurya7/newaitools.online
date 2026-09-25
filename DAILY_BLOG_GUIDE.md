@@ -1,184 +1,141 @@
-# Daily Blog Publishing Quick Start
+# Daily Blog Publishing Guide
 
-## For Publishing Daily Blog Posts
+This repository's blog process is based on the current editorial guidance in
+https://github.com/AgriciDaniel/claude-blog
 
-### 1. Create Blog Post Content
+## Mandatory editorial reference
 
-**File to edit**: `/frontend/data.ts`
+Before writing or updating any article, always consult the latest main branch of claude-blog. Do not rely on a remembered copy.
 
-Add your new BlogPost at the top of the array:
+At minimum, review:
+- skills/blog/SKILL.md
+- skills/blog-write/SKILL.md
+- skills/blog/templates/<selected-template>.md
+- skills/blog/references/content-templates.md
+- skills/blog/references/research-quality.md
+- skills/blog/references/synthesis-contract.md
+- skills/blog/references/visual-media.md
+- skills/blog/references/eeat-signals.md
+- skills/blog/references/internal-linking.md
+- skills/blog/references/quality-scoring.md
+- skills/blog/references/editorial-heuristics.md
+- skills/blog/references/ai-slop-detection.md
+- skills/blog/references/blog-delivery-contract.md
+- skills/blog-write/references/delivery.md
+- agents/blog-reviewer.md
 
-```typescript
-{
-  id: 'post-5',
-  slug: 'your-slug-url-format', // e.g., 'best-ui-tools-2026'
-  category: 'Guide' | 'Case Study' | 'Comparison' | 'Tutorial' | 'Interview',
-  title: 'Your SEO-Optimized Title Here',
-  excerpt: 'Short preview shown in blog listings (100-150 chars)',
-  content: `<section class="prose-article">
-    <h1>Title Matching H1</h1>
-    <p>Introduction paragraph</p>
-    
-    <h2>Section Title</h2>
-    <p>Your content here with <strong>bold</strong> and <em>italic</em></p>
-    
-    <ul>
-      <li>List item 1</li>
-      <li>List item 2</li>
-    </ul>
-  </section>`,
-  author: 'Your Name',
-  publishDate: '2026-02-16', // YYYY-MM-DD format
-  modifiedDate: undefined, // Update if edited later
-  readTime: 10, // Estimated minutes to read
-  tags: ['tag1', 'tag2', 'tag3'], // 3-5 relevant tags
-  featured: false, // Set to true for featured on homepage
-}
-```
+The reference repository is an editorial baseline. Adapt its rules to this site's React + TypeScript implementation.
 
-### 2. SEO Checklist
+## Publishing flow
 
-Before hitting publish, verify:
+Discover topic -> choose search intent -> choose claude-blog template -> research -> verify evidence -> outline -> write -> add visuals -> add internal links -> update linked workflows/tools/pages -> QA -> build -> commit -> deploy
 
-- ✅ **Title**: 50-60 characters, includes main keyword
-- ✅ **Excerpt**: 100-150 characters, compelling preview
-- ✅ **Meta**: Unique, describes article value
-- ✅ **Keywords**: Primary keyword in title, excerpt, first paragraph
-- ✅ **Length**: 800+ words recommended
-- ✅ **Structure**: H1 > H2 > H3 hierarchy
-- ✅ **Links**: 3-5 internal links to related content
-- ✅ **Formatting**: Bold key terms, lists for scannability
-- ✅ **Tags**: 3-5 relevant tags for categorization
-- ✅ **Read Time**: Estimate: ~200 words = 1 minute
+## Research
 
-### 3. Deploy Changes
+Use current web research. Prefer primary sources for product capabilities, pricing, limits, policies, and technical behavior. Use independent sources when they add evidence or context.
 
-```bash
-# In your terminal
-cd newaitools.online
+For material public claims:
+- Verify the claim in the original source.
+- Keep the relevant publication or update date when it affects interpretation.
+- Include the publisher/source name and a stable URL.
+- Record methodology or limitations when they matter.
+- Drop unsupported statistics instead of keeping them with vague wording.
+- Treat citations as verification paths, not proof by themselves.
 
-# Build the project
-npm run build
+Do not fabricate statistics, benchmarks, pricing, usage limits, product capabilities, quotes, first-hand tests, customer results, source titles, screenshots, or other evidence.
 
-# The built files are ready for deployment
-```
+## Template selection
 
-### 4. Submit to Google
+Choose the template that matches the actual reader intent.
+- How-to/process -> how-to-guide
+- Best/list -> listicle
+- Case study/results -> case-study
+- X vs Y -> comparison
+- Broad comprehensive topic -> pillar-page
+- Genuine hands-on review -> product-review
+- Opinion/trend analysis -> thought-leadership
+- Multi-source/expert collection -> roundup
+- Technical walkthrough with tested code -> tutorial
+- Timely announcement/news -> news-analysis
+- Original research -> data-research
+- Q&A reference -> faq-knowledge
 
-After deploying:
+Do not call something a review or case study without the corresponding evidence.
 
-1. Go to [Google Search Console](https://search.google.com/search-console)
-2. Click "New URL" 
-3. Paste your blog post URL: `https://newaitools.online/blog/your-slug`
-4. Click "Request Indexing"
+## Article structure
 
-Google will crawl and index within 24-48 hours.
+Use one H1, then H2 and H3 only.
 
----
+Important sections should answer the heading early. A summary or Key Takeaways block should appear near the top when it helps the reader.
 
-## Content Ideas for Daily Posts
+Use tables, lists, diagrams, screenshots, or charts only when they clarify the material. Prefer useful visuals over decorative filler.
 
-### Guiding Framework
-Each post should answer ONE specific question readers have:
+FAQ sections are optional and should answer genuine reader questions.
 
-### Monday Ideas (Most Popular)
-- "How to use [Tool] for [Task]"
-- "[Tool] Tutorial for Beginners"
-- "5 AI Tools for [Category]"
+Avoid formulaic AI prose, repetitive transitions, vague superlatives, and em/en dashes in synthesized prose.
 
-### Wednesday Ideas (Mid-week Boost)
-- "[Tool A] vs [Tool B] Comparison"
-- "Case Study: How I..."
-- "Mistakes Using [Tool]"
+## Internal linking
 
-### Friday Ideas (Weekend Resource)
-- "Weekly AI Tool Roundup"
-- "Designer Interview"
-- "Workflow: [Designer Name]"
+Each article should contain contextual internal links to relevant pages.
 
-### Evergreen Ideas (Anytime)
-- "Free Alternatives to [Premium Tool]"
-- "Hidden Features in [Tool]"
-- "Setup Guide: Getting Started with [Tool]"
-- "Improving Your Design with [Tool]"
+Use descriptive anchors and link to the page that actually delivers on the promise.
 
----
+Every new article must be checked for:
+- at least 3 contextual internal links when relevant
+- no generic anchors such as click here, read more, or this article
+- no broken URLs
+- no unresolved INTERNAL-LINK placeholders
+- reciprocal links where they are contextually useful
+- no orphaning of the new page
 
-## HTML Formatting Reference
+## Critical workflow consistency rule
 
-```html
-<!-- Headings -->
-<h2>Main Topic</h2>
-<h3>Subtopic</h3>
+A blog link is a promise of a useful next step.
 
-<!-- Text styles -->
-<strong>Bold text</strong>
-<em>Italic text</em>
-<code>code snippet</code>
+Whenever an article mentions or links to a workflow:
+1. Open the workflow page.
+2. Verify the tools and sequence against current official documentation.
+3. Update the workflow in the same change when anything is missing or stale.
+4. Make each step executable and example-driven.
+5. Show Input -> Action -> Example -> Expected Output -> Quality Gate -> Handoff.
+6. Explain manual versus automatic handoffs where relevant.
+7. Make sure the article uses the same examples, tool names, sequence, and verification logic.
+8. Update any linked tool entry, category page, renderer, sitemap, or related article required by the change.
 
-<!-- Lists -->
-<ul>
-  <li>Unordered list item</li>
-  <li>Another item</li>
-</ul>
+This rule applies both to scheduled and manual publishing.
 
-<ol>
-  <li>First step</li>
-  <li>Second step</li>
-</ol>
+## Technical publishing
 
-<!-- Links -->
-<a href="https://example.com">Link text</a>
+The site's current blog schema is TypeScript data rendered by BlogPostView.tsx.
 
-<!-- Blockquote -->
-<blockquote>Quote text here</blockquote>
+When adding a post:
+- Register it in frontend/data/blogs/index.ts.
+- Keep the slug stable once published.
+- Add a local cover/OG asset and descriptive alt text.
+- Confirm canonical, Open Graph, Twitter, and BlogPosting metadata through the existing SEO layer.
+- Use the site's existing HTML structure: section class="prose-article".
+- Keep external source URLs as normal HTML links. Never paste tool citation tokens into TypeScript source.
+- Keep inline SVGs sanitized and accessible when used.
+- Update supporting pages whenever article claims or links require it.
+- Run npm run build before publication when the environment allows it.
 
-<!-- Line break -->
-<hr>
+## Quality review
 
-<!-- Section wrapper (required) -->
-<section class="prose-article">
-  Your content...
-</section>
-```
+Before publication, perform:
+1. factual/source review
+2. structure and readability review
+3. internal-link audit
+4. asset and image-alt audit
+5. metadata/canonical/OG review
+6. workflow/tool/category consistency audit
+7. final sweep for placeholders, fabricated claims, unsupported first-person experience, and em/en dashes
 
----
+The upstream claude-blog delivery contract calls for reviewer score >= 90/100 and zero P0 issues. Apply that as the editorial target for automated blog work.
 
-## Publishing Timeline Recommendation
+## Maintenance
 
-- **New blogs**: 3-5 posts per week minimum for first 3 months
-- **Established blogs**: 2-3 posts per week consistent
-- **Mature blogs**: 1-2 posts per week of high-quality content
+Substantive changes should update modifiedDate.
 
-Quality > Quantity. A single 2,000-word article beats ten 300-word ones.
+Do not change dates merely to create freshness signals.
 
----
-
-## FAQ
-
-**Q: How long until my posts rank?**
-A: 2-6 weeks for initial crawl/index, 2-6 months to rank in top 10.
-
-**Q: Can I edit posts after publishing?**
-A: Yes! Update whenever, it improves rankings. Update `modifiedDate` in data.ts.
-
-**Q: Should I use images?**
-A: Highly recommended. Add descriptions in alt text for SEO.
-
-**Q: What about internal links?**
-A: Link to relevant blog posts and tool pages. 3-5 per post is ideal.
-
-**Q: How do I know what to write about?**
-A: Check Google Search Console for queries people use to find you, then write posts targeting those keywords.
-
----
-
-## Support & Maintenance
-
-- Check Google Search Console weekly for errors
-- Monitor blog analytics in Google Analytics 4
-- Update top-performing posts every 3-6 months
-- Build backlinks by sharing on social/communities
-- Track keyword rankings monthly
-
-Good luck with your daily posting! 🚀
+Update existing posts when a material product change, factual correction, broken link, workflow mismatch, or editorial-quality issue is discovered.
