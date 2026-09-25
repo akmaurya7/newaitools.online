@@ -35,7 +35,7 @@ export const TOOLS: Tool[] = [
     pricing: 'Freemium',
     rating: 4.7,
     isTopPick: true,
-    tags: ['🔥 Most Used by Designers', '🔥 Popular in India'],
+    tags: ['ðŸ”¥ Most Used by Designers', 'ðŸ”¥ Popular in India'],
     section: 'top',
     link: 'https://www.canva.com/',
   },
@@ -47,7 +47,7 @@ export const TOOLS: Tool[] = [
     pricing: 'Freemium',
     rating: 4.6,
     isTopPick: true,
-    tags: ['🔥 Most Used by Designers'],
+    tags: ['ðŸ”¥ Most Used by Designers'],
     section: 'top',
     link: 'https://www.framer.com/ai/',
   },
@@ -58,7 +58,7 @@ export const TOOLS: Tool[] = [
     description: 'AI-powered website builder & hosting',
     pricing: 'Paid',
     rating: 4.5,
-    tags: ['🔥 Most Used by Designers', '🔥 Popular in India'],
+    tags: ['ðŸ”¥ Most Used by Designers', 'ðŸ”¥ Popular in India'],
     section: 'top',
     link: 'https://www.hostinger.com/in?REFERRALCODE=UWNAMAURYN6F',
   },
@@ -69,7 +69,7 @@ export const TOOLS: Tool[] = [
     description: 'AI copywriting for sales pages & ads',
     pricing: 'Freemium',
     rating: 4.4,
-    tags: ['🔥 Most Used by Designers'],
+    tags: ['ðŸ”¥ Most Used by Designers'],
     section: 'top',
     link: 'https://writesonic.com/',
   },
@@ -92,7 +92,7 @@ export const TOOLS: Tool[] = [
     description: 'AI image generation for creators',
     pricing: 'Freemium',
     rating: 4.6,
-    tags: ['🔥 Popular in India'],
+    tags: ['ðŸ”¥ Popular in India'],
     section: 'main',
     link: 'https://leonardo.ai/',
   },
@@ -113,7 +113,7 @@ export const TOOLS: Tool[] = [
     description: 'One-page website builder for service pros',
     pricing: 'Paid',
     rating: 4.4,
-    tags: ['🔥 Popular in India'],
+    tags: ['ðŸ”¥ Popular in India'],
     section: 'main',
     link: 'https://durable.co/',
   },
@@ -179,7 +179,7 @@ export const TOOLS: Tool[] = [
     section: 'free',
     link: 'https://www.remove.bg',
     noSignupRequired: true,
-    tags: ['🆓 No signup required'],
+    tags: ['ðŸ†“ No signup required'],
   },
   {
     id: 'photopea',
@@ -191,7 +191,7 @@ export const TOOLS: Tool[] = [
     section: 'free',
     link: 'https://www.photopea.com',
     noSignupRequired: true,
-    tags: ['🆓 No signup required', '🔥 Popular in India'],
+    tags: ['ðŸ†“ No signup required', 'ðŸ”¥ Popular in India'],
   },
   {
     id: 'squoosh',
@@ -203,7 +203,7 @@ export const TOOLS: Tool[] = [
     section: 'free',
     link: 'https://squoosh.app',
     noSignupRequired: true,
-    tags: ['🆓 No signup required'],
+    tags: ['ðŸ†“ No signup required'],
   },
   {
     id: 'khroma',
@@ -215,7 +215,7 @@ export const TOOLS: Tool[] = [
     section: 'free',
     link: 'https://www.khroma.co',
     noSignupRequired: true,
-    tags: ['🆓 No signup required'],
+    tags: ['ðŸ†“ No signup required'],
   },
   ...[
     ['chatgpt','ChatGPT','Writing & Text','An all-purpose assistant for writing, analysis, research and creative work.','https://chatgpt.com/','Freemium'],
@@ -290,13 +290,13 @@ export const TOOLS: Tool[] = [
     ['chatgpt-image-generation','ChatGPT image generation','Image & Graphic Design','Create and edit images with image generation built into ChatGPT.','https://chatgpt.com/','Freemium'],
     ['photoshop','Photoshop + Firefly','Image & Graphic Design','Edit, composite, and generate imagery using Photoshop and Firefly.','https://www.adobe.com/products/photoshop.html','Paid'],
     ['adobe','Adobe','Image & Graphic Design','Explore Adobe creative apps and AI-powered tools for visual work.','https://www.adobe.com/creativecloud.html','Paid'],
-    ['google-image-generation','Google Image Generation','Image & Graphic Design','Generate and edit images with Google’s image creation tools.','https://gemini.google.com/','Freemium'],
-    ['stable-diffusion','Stable Diffusion','Image & Graphic Design','Generate and edit images using Stability AI’s image models.','https://stability.ai/stable-image','Freemium'],
+    ['google-image-generation','Google Image Generation','Image & Graphic Design','Generate and edit images with Googleâ€™s image creation tools.','https://gemini.google.com/','Freemium'],
+    ['stable-diffusion','Stable Diffusion','Image & Graphic Design','Generate and edit images using Stability AIâ€™s image models.','https://stability.ai/stable-image','Freemium'],
     ['adobe-express','Adobe Express','Image & Graphic Design','Create social graphics, flyers, and branded designs with AI features.','https://www.adobe.com/express/','Freemium'],
     ['figma-ai','Figma AI','Image & Graphic Design','Use AI-assisted features to explore, design, and prototype interfaces.','https://www.figma.com/ai/','Freemium'],
     ['galileo-ai','Google Stitch (formerly Galileo AI)','Image & Graphic Design','Generate and refine interface designs with Google Stitch, the successor to Galileo AI.','https://stitch.withgoogle.com/','Freemium'],
     ['relume','Relume','Website & App Creation','Generate site maps and wireframes for website projects.','https://www.relume.ai/','Freemium'],
-    ['google-veo','Google Veo','Video','Create video from prompts with Google DeepMind’s video generation model.','https://deepmind.google/models/veo/','Freemium'],
+    ['google-veo','Google Veo','Video','Create video from prompts with Google DeepMindâ€™s video generation model.','https://deepmind.google/models/veo/','Freemium'],
     ['kling-ai','Kling AI','Video','Generate and edit video from text and image prompts.','https://kling.ai/','Freemium'],
     ['adobe-premiere','Adobe Premiere','Video','Edit video with AI-assisted tools for creators and professionals.','https://www.adobe.com/products/premiere.html','Paid'],
     ['davinci-resolve','DaVinci Resolve','Video','Edit, color grade, and finish video with intelligent production tools.','https://www.blackmagicdesign.com/products/davinciresolve','Freemium'],
@@ -351,7 +351,7 @@ export const TOOLS: Tool[] = [
     ['fathom','Fathom','Meetings & Communication','Record, transcribe, and summarize video meetings.','https://fathom.video/','Freemium'],
     ['zoom-ai-companion','Zoom AI Companion','Meetings & Communication','AI assistance for meeting summaries and communication workflows.','https://www.zoom.com/en/ai-assistant/','Freemium'],
     ['glean','Glean','Knowledge Management','Search and use company knowledge across connected workplace apps.','https://www.glean.com/','Paid'],
-    ['gpt-models','GPT Models','AI Infrastructure / Models / APIs','OpenAI’s GPT model family and APIs for building AI-powered products.','https://platform.openai.com/docs/models','Paid'],
+    ['gpt-models','GPT Models','AI Infrastructure / Models / APIs','OpenAIâ€™s GPT model family and APIs for building AI-powered products.','https://platform.openai.com/docs/models','Paid'],
     ['llama','Llama','AI Infrastructure / Models / APIs','Open models from Meta for research and AI application development.','https://www.llama.com/','Free'],
     ['qwen','Qwen','AI Infrastructure / Models / APIs','Family of AI models and developer resources from Alibaba.','https://qwen.ai/','Freemium'],
   ].map(([id,name,category,description,link,pricing]) => ({ id, name, category, description, link, pricing: pricing as PricingType, section: 'main' as const }))
@@ -373,7 +373,6 @@ export interface BlogPost {
   ogImage?: string;
   ogImageAlt?: string;
 }
-
 export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'ai-notes-client-calls-consent-first',
@@ -383,35 +382,48 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'A practical guide to deciding when to use AI meeting notes, how to explain them to clients, and how to review and share the smallest useful record.',
     author: 'newaitools Editorial',
     publishDate: '2026-09-24',
-    readTime: 8,
+    modifiedDate: '2026-09-25',
+    readTime: 10,
     tags: ['AI meeting notes', 'freelancers', 'client communication', 'privacy', 'productivity'],
     featured: true,
     ogImage: '/blog/images/ai-notes-client-calls.webp',
     ogImageAlt: 'Editorial illustration of a client video call flowing into a human-reviewed meeting summary, with a visible consent check and one action item passed forward.',
-    content: `
+    content: `<section class="prose-article">
+      <h1>AI Notes on Client Calls: A Consent-First Workflow for Freelancers</h1>
+
       <p>If you use an AI notetaker on a client call, treat it as a guest that needs an introduction and a clear purpose. Tell the client what the tool will capture, ask for an affirmative yes before it starts, and offer a no-recording option without friction. Then review the draft notes yourself and share only the agreed follow-up, not a recording or full transcript by default.</p>
-      <p>This workflow takes a little more care than switching on an assistant for every meeting. It also makes the useful part of AI notes—remembering decisions and next steps—less likely to create an unexpected privacy or client-trust problem.</p>
+      <p>This workflow takes a little more care than switching on an assistant for every meeting. It also makes the useful part of AI notes, remembering decisions and next steps, less likely to create an unexpected privacy or client-trust problem.</p>
+
+      <blockquote>
+        <p><strong>Key Takeaways</strong></p>
+        <ul>
+          <li><strong>Start with the minimum useful capture.</strong> Choose the least detailed record that solves the recall problem, then decide how long it is useful and who needs access.</li>
+          <li><strong>Get a clear yes before recording starts.</strong> Product notifications are useful, but they are not the same as confirmed consent from each participant.</li>
+          <li><strong>Review every AI-generated fact before sharing.</strong> Fluent wording does not mean the record is correct. Check names, dates, commitments, and action owners.</li>
+          <li><strong>Delete raw material when it is no longer needed.</strong> Make deletion part of the workflow, not an occasional cleanup project.</li>
+        </ul>
+      </blockquote>
 
       <h2>What this guide covers</h2>
-      <p>This is a practical operating guide for independent professionals and small teams, not legal advice. Product features and account settings change, so the details below were checked against public help pages on <strong>September 24, 2026</strong>. We did not test these products or inspect paid accounts. Availability, defaults, and controls can vary by plan, administrator policy, meeting platform, and product version.</p>
+      <p><strong>This is a practical operating guide for independent professionals and small teams, not legal advice.</strong> Product features and account settings change, so the details below were checked against public help pages on <strong>September 24, 2026</strong>. We did not test these products or inspect paid accounts. Availability, defaults, and controls can vary by plan, administrator policy, meeting platform, and product version.</p>
 
       <h2>Start with the minimum useful capture</h2>
-      <p>Before choosing an app, ask what you actually need to remember. A project kick-off may need decisions, owners, and deadlines. A confidential discovery call may be better served by a few manual notes and a client-approved recap. A complete audio or video archive is often more information than the follow-up requires.</p>
+      <p><strong>Before choosing an app, ask what you actually need to remember.</strong> A project kick-off may need decisions, owners, and deadlines. A confidential discovery call may be better served by a few manual notes and a client-approved recap. A complete audio or video archive is often more information than the follow-up requires.</p>
       <p>Think of this as a <strong>capture budget</strong>: choose the least detailed record that solves the recall problem, then decide how long it is useful and who needs access. The order matters. A summary can still expose sensitive details, but a transcript or recording preserves much more raw conversation and is easier to search, forward, or misunderstand later.</p>
 
       <h2>What the current tools do differently</h2>
-      <p>“AI notes” describes several different capture methods. A meeting app may process speech during the call without keeping a transcript; another feature may save notes to cloud storage; a third-party assistant may join as a visible participant or offer a bot-free desktop mode. Check the actual mode and sharing defaults you plan to use.</p>
-      <table>
+      <p><strong>"AI notes" describes several different capture methods with different privacy implications.</strong> A meeting app may process speech during the call without keeping a transcript; another feature may save notes to cloud storage; a third-party assistant may join as a visible participant or offer a bot-free desktop mode. Check the actual mode and sharing defaults you plan to use.</p>
+      <div class="overflow-x-auto rounded-lg border border-ink/10"><table class="min-w-[640px]">
         <thead><tr><th>Option</th><th>What the documentation says</th><th>Useful check before a client call</th></tr></thead>
         <tbody>
           <tr><td><strong>Manual notes</strong></td><td>No meeting audio needs to be sent to a transcription service. You choose what to write down.</td><td>Agree what will be recorded in writing and keep the notes to decisions and actions.</td></tr>
-          <tr><td><strong>Microsoft Teams Copilot</strong></td><td>Microsoft documents an “Only during the meeting” mode that can generate notes and tasks without recording or transcribing. Its help page says the prompts and responses may still be retained under an organization’s Purview policies.</td><td>Confirm the mode, organization policy, and whether you need any post-meeting recap. Without a transcript, Copilot is not available in the Recap tab afterward.</td></tr>
-          <tr><td><strong>Google Meet “Take notes for me”</strong></td><td>Meeting notes are saved in the organizer’s Drive and follow the organization’s Meet retention policy. An administrator can enable a participant-consent requirement for notes, recordings, and transcripts on supported editions; Google says this setting is off by default.</td><td>Check whether the admin setting is actually enabled, who can access the document, and whether invited guests receive it. A setting existing in the admin console does not mean your account uses it.</td></tr>
-          <tr><td><strong>Fathom</strong></td><td>Current documentation describes bot-free transcript-only capture as well as audio-only and bot-based audio-and-video modes. The legacy bot-based consent email has eligibility limits; same-day meetings do not trigger it, and no response does not stop capture.</td><td>Select the capture mode deliberately, ask in the meeting, and inspect attendee auto-share settings. Fathom offers “summary only” and “nothing” as alternatives to automatically sharing a recording.</td></tr>
+          <tr><td><strong>Microsoft Teams Copilot</strong></td><td>Microsoft documents an "Only during the meeting" mode that can generate notes and tasks without recording or transcribing. Its help page says the prompts and responses may still be retained under an organization's Purview policies.</td><td>Confirm the mode, organization policy, and whether you need any post-meeting recap. Without a transcript, Copilot is not available in the Recap tab afterward.</td></tr>
+          <tr><td><strong>Google Meet "Take notes for me"</strong></td><td>Meeting notes are saved in the organizer's Drive and follow the organization's Meet retention policy. An administrator can enable a participant-consent requirement for notes, recordings, and transcripts on supported editions; Google says this setting is off by default.</td><td>Check whether the admin setting is actually enabled, who can access the document, and whether invited guests receive it. A setting existing in the admin console does not mean your account uses it.</td></tr>
+          <tr><td><strong>Fathom</strong></td><td>Current documentation describes bot-free transcript-only capture as well as audio-only and bot-based audio-and-video modes. The legacy bot-based consent email has eligibility limits; same-day meetings do not trigger it, and no response does not stop capture.</td><td>Select the capture mode deliberately, ask in the meeting, and inspect attendee auto-share settings. Fathom offers "summary only" and "nothing" as alternatives to automatically sharing a recording.</td></tr>
           <tr><td><strong>Otter</strong></td><td>Its recording-permissions guide describes advance and in-meeting notices and calls for affirmative individual permission. Workspace controls for pre-meeting notifications and custom retention require admin attention; custom retention is set up through an account manager.</td><td>Check whether your workspace has those controls and what the participant sees. A pre-meeting email alone is not the same as confirming everyone agrees when the call begins.</td></tr>
         </tbody>
-      </table>
-      <p>Sources: <a href="https://support.microsoft.com/en-us/teams/copilot/use-copilot-without-transcribing-or-recording-a-teams-meeting-or-call">Microsoft’s Copilot no-transcription guide</a>; <a href="https://support.google.com/meet/answer/14754931?hl=en">Google Meet notes help</a> and <a href="https://workspaceupdates.googleblog.com/2026/04/require-explicit-consent-for-take-notes-with-Gemini-recordings-and-transcripts-in-Google-Meet.html">Google’s participant-consent announcement</a>; <a href="https://help.fathom.video/en/articles/294272">Fathom’s consent-email rules</a>, <a href="https://help.fathom.video/en/articles/11577345">capture modes</a>, and <a href="https://help.fathom.video/en/articles/7574785">sharing controls</a>; <a href="https://help.otter.ai/hc/en-us/articles/39339238308503-Recording-Permissions-with-Otter">Otter’s recording-permissions guide</a> and <a href="https://help.otter.ai/hc/en-us/articles/19500988656279-Set-a-custom-Data-Retention-policy">retention policy guide</a>.</p>
+      </table></div>
+      <p>Sources: <a href="https://support.microsoft.com/en-us/teams/copilot/use-copilot-without-transcribing-or-recording-a-teams-meeting-or-call">Microsoft's Copilot no-transcription guide</a>; <a href="https://support.google.com/meet/answer/14754931?hl=en">Google Meet notes help</a> and <a href="https://workspaceupdates.googleblog.com/2026/04/require-explicit-consent-for-take-notes-with-Gemini-recordings-and-transcripts-in-Google-Meet.html">Google's participant-consent announcement</a>; <a href="https://help.fathom.video/en/articles/294272">Fathom's consent-email rules</a>, <a href="https://help.fathom.video/en/articles/11577345">capture modes</a>, and <a href="https://help.fathom.video/en/articles/7574785">sharing controls</a>; <a href="https://help.otter.ai/hc/en-us/articles/39339238308503-Recording-Permissions-with-Otter">Otter's recording-permissions guide</a> and <a href="https://help.otter.ai/hc/en-us/articles/19500988656279-Set-a-custom-Data-Retention-policy">retention policy guide</a>.</p>
 
       <h2>A repeatable workflow for a client call</h2>
       <h3>1. Decide what is off limits</h3>
@@ -419,35 +431,50 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Rules for recording and processing vary by location and context. A software prompt is not a legal determination. If the call crosses jurisdictions or involves regulated or privileged information, get guidance from the appropriate legal, privacy, or compliance adviser before using the tool.</p>
 
       <h3>2. Explain the purpose before the meeting</h3>
-      <p>Give the client time to ask questions before joining. State the tool or service, why you want it, what it captures, where the notes will be stored, who can access them, whether anything is shared automatically, and when you plan to delete it. Avoid vague phrases like “AI helps us work better.” Name the concrete activity: transcription, summarization, action-item extraction, or recording.</p>
-      <p><strong>Invite wording:</strong> “For accurate project notes, I’d like to use [tool] to [transcribe the call / prepare a short summary]. The notes will be stored in [location], visible to [people], and I will not share the recording or transcript. Would you be comfortable with that? We can keep the call unrecorded and I’ll send a short recap instead.”</p>
+      <p>Give the client time to ask questions before joining. State the tool or service, why you want it, what it captures, where the notes will be stored, who can access them, whether anything is shared automatically, and when you plan to delete it. Avoid vague phrases like "AI helps us work better." Name the concrete activity: transcription, summarization, action-item extraction, or recording.</p>
+      <p><strong>Invite wording:</strong> "For accurate project notes, I'd like to use [tool] to [transcribe the call / prepare a short summary]. The notes will be stored in [location], visible to [people], and I will not share the recording or transcript. Would you be comfortable with that? We can keep the call unrecorded and I'll send a short recap instead."</p>
 
       <h3>3. Ask again before capture starts</h3>
       <p>At the start of the call, briefly identify the assistant and ask whether everyone agrees. Wait for an affirmative answer. If someone declines, pause or remove the assistant, confirm capture has stopped, and continue with manual notes or reschedule if the recording is essential. Do not make the client argue for the option that protects their privacy.</p>
-      <p>This distinction is important in the product details. Google now offers an administrator-controlled explicit-consent prompt for certain Meet features, but the option is off by default. Fathom says its advance consent email can miss same-day meetings, and its older bot-based flow can still capture when a guest does not respond. Treat product notifications as useful notice mechanisms, not as proof that a particular client has agreed.</p>
+      <p>This distinction matters in the product details. Google now offers an administrator-controlled explicit-consent prompt for certain Meet features, but the option is off by default. Fathom says its advance consent email can miss same-day meetings, and its older bot-based flow can still capture when a guest does not respond. Treat product notifications as useful notice mechanisms, not as proof that a particular client has agreed.</p>
 
       <h3>4. Choose the least detailed mode that works</h3>
-      <p>If all you need is a decision list, do not keep video by default. Where the tool offers a no-recording or transcript-only setting, read what “transcript only” means for that version: it may avoid saving audio or video, while still processing and retaining text. The data life cycle matters more than the mode label. Check the provider’s current privacy and retention terms, your account’s deletion controls, and whether generated notes are automatically shared.</p>
+      <p>If all you need is a decision list, do not keep video by default. Where the tool offers a no-recording or transcript-only setting, read what "transcript only" means for that version: it may avoid saving audio or video, while still processing and retaining text. The data life cycle matters more than the mode label. Check the provider's current privacy and retention terms, your account's deletion controls, and whether generated notes are automatically shared.</p>
 
       <h3>5. Review every client-facing fact</h3>
       <p>Use the AI output as a draft. Check names, dates, numbers, commitments, speakers, negations, and action owners against your own notes or the conversation. Pay special attention to a tentative idea the summary might turn into a promise, or a suggestion that could be misattributed to the client. If you cannot verify a detail, leave it out or ask the client to confirm.</p>
       <p>Google warns that notes may be incomplete, inaccurate, or unavailable. Microsoft likewise tells users to check AI-generated recaps. Fluent wording is not evidence that the record is correct.</p>
 
       <h3>6. Share a concise, permission-aware recap</h3>
-      <p>Send the edited project recap through the channel you already use with the client. Keep it to decisions, open questions, owners, and dates. Do not automatically send a full transcript or recording link. Check that document permissions are restricted to intended recipients: a calendar invite or a “share with attendees” setting can include people who did not attend or do not need a copy. Fathom’s documentation, for example, says automatic sharing may go to all calendar invitees and that a recording set to “anyone with the link” remains accessible to anyone who receives that link.</p>
+      <p>Send the edited project recap through the channel you already use with the client. Keep it to decisions, open questions, owners, and dates. Do not automatically send a full transcript or recording link. Check that document permissions are restricted to intended recipients: a calendar invite or a "share with attendees" setting can include people who did not attend or do not need a copy. Fathom's documentation, for example, says automatic sharing may go to all calendar invitees and that a recording set to "anyone with the link" remains accessible to anyone who receives that link.</p>
 
       <h3>7. Remove what you no longer need</h3>
       <p>Make deletion part of the workflow, not an occasional cleanup project. Set a reminder or retention rule for raw audio, video, and transcripts; keep only the final notes that your project and recordkeeping requirements call for. Check whether deletion from the meeting app also removes exports, shared files, or connected-storage copies. If a client asks to stop capture or remove a record, follow your agreed process and confirm what you can delete.</p>
 
       <h2>When the client says no</h2>
-      <p>Respond plainly: “No problem. I’ll take notes manually and send you the decisions and next steps for confirmation.” You can keep a short agenda, pause at decision points to write them down, then send a recap and ask the client to correct it. If you are joining someone else’s meeting and an unfamiliar assistant appears, ask who controls the recording, what it captures, and who can see the result. The Associated Press’s reporting on workplace AI notetakers documents privacy and voice-data concerns and quotes experts recommending that people ask where meeting data goes, why it is stored, and when it will be deleted. The same questions are sensible due diligence for a freelancer choosing a vendor.</p>
+      <p><strong>Respond plainly: "No problem. I'll take notes manually and send you the decisions and next steps for confirmation."</strong> You can keep a short agenda, pause at decision points to write them down, then send a recap and ask the client to correct it. If you are joining someone else's meeting and an unfamiliar assistant appears, ask who controls the recording, what it captures, and who can see the result. The <a href="https://www.ap.org/news-highlights/spotlights/2026/ai-notetakers-promise-easy-meeting-recaps-but-some-professionals-question-their-use/">Associated Press's reporting on workplace AI notetakers</a> documents privacy and voice-data concerns and quotes experts recommending that people ask where meeting data goes, why it is stored, and when it will be deleted. The same questions are sensible due diligence for a freelancer choosing a vendor.</p>
 
       <h2>Practical takeaway</h2>
       <p>AI notes can help a freelancer keep projects moving, but a trustworthy workflow begins before the recording control does. Choose the minimum capture, explain it in ordinary language, obtain a clear yes, check the generated record, share a short recap with the right people, and delete the raw material when it is no longer needed. When consent is uncertain or the subject is sensitive, manual notes are a perfectly useful fallback.</p>
+      <p>If you are exploring how AI coding assistants fit into a similar trust-first approach, see our guide on <a href="/blog/ai-coding-agents-pr-first-workflow-small-teams">AI coding agents with a PR-first workflow</a>. For research tasks that need verified sources rather than meeting capture, our <a href="/blog/ai-deep-research-source-first-workflow">source-first deep research workflow</a> covers a comparable process.</p>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>Do I need consent to use AI notes on a client call?</h3>
+      <p>Laws vary by jurisdiction, and this guide does not offer legal advice. In practice, asking for a clear yes before capture starts protects the client relationship regardless of the specific legal requirement. If you are unsure, ask a qualified adviser before enabling the tool.</p>
+
+      <h3>Which AI notetaker is the most private?</h3>
+      <p>Privacy depends on the capture mode, sharing defaults, retention settings, and account configuration you actually use, not just the product name. Manual notes remain the most private option. Among AI tools, check what each stores, who can access it, and when it is deleted for your specific plan.</p>
+
+      <h3>Can I use AI notes if my client does not want a recording?</h3>
+      <p>Some tools offer modes that process speech without saving a full recording or transcript. Microsoft Teams Copilot documents an "Only during the meeting" mode, and Fathom offers a transcript-only capture option. Read what each mode retains and confirm with the client that the specific capture method is acceptable.</p>
+
+      <h3>How long should I keep AI-generated meeting notes?</h3>
+      <p>Keep only the final edited recap for as long as your project and recordkeeping requirements call for. Set a reminder or retention rule for raw audio, video, and transcripts, and delete them once the follow-up actions are complete. Check whether deletion from the meeting app also removes exports and shared copies.</p>
 
       <h2>Research notes and sources</h2>
       <p>We reviewed official help and product documentation from <a href="https://support.microsoft.com/en-us/teams/copilot/use-copilot-without-transcribing-or-recording-a-teams-meeting-or-call">Microsoft</a>, <a href="https://support.google.com/meet/answer/14754931?hl=en">Google Meet</a>, <a href="https://help.fathom.video/en/articles/294272">Fathom</a>, and <a href="https://help.otter.ai/hc/en-us/articles/39339238308503-Recording-Permissions-with-Otter">Otter</a>, then checked the privacy stakes against an <a href="https://www.ap.org/news-highlights/spotlights/2026/ai-notetakers-promise-easy-meeting-recaps-but-some-professionals-question-their-use/">Associated Press report</a> published July 9, 2026. This article compares documented features and workflows; it is not a hands-on product test, a security audit, or a legal opinion.</p>
-    `
+    </section>`
   },
   {
     id: 'ai-coding-agents-pr-first-workflow-small-teams',
@@ -457,41 +484,45 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'A practical way to use coding agents for scoped repository work while keeping access, testing, review, and merging visible to the team.',
     author: 'newaitools Editorial',
     publishDate: '2026-09-24',
-    readTime: 9,
+    modifiedDate: '2026-09-25',
+    readTime: 11,
     tags: ['AI coding agents', 'software development', 'code review', 'developer productivity', 'security'],
     ogImage: '/blog/images/ai-coding-agents-pr-first.png',
     ogImageAlt: 'Editorial illustration of AI-generated code changes passing through a human review gate before reaching a protected repository branch.',
-    content: `
+    content: `<section class="prose-article">
+      <h1>AI Coding Agents for Small Teams: A PR-First Workflow That Keeps Humans in Control</h1>
+
       <p>If an AI coding agent can edit files, run commands, and open a pull request, the tempting workflow is to give it a large task and check the result at the end. For a small team, that is usually the wrong boundary.</p>
       <p>A better default is <strong>PR first, merge later</strong>: write a narrow task, give the agent only the repository context it needs, let it work on an isolated branch or sandbox, run the normal checks, and review the diff as you would review a contribution from a new teammate. You get a useful speed boost without turning the default branch into an experiment.</p>
       <p>This guide explains how that workflow maps to the current capabilities documented for GitHub Copilot cloud agent, Cursor, and Claude Code. The product details below were checked on <strong>September 24, 2026</strong>. We did not run hands-on tests or make a claim about which agent writes the best code.</p>
 
-      <h2>Key takeaways</h2>
-      <ul>
-        <li><strong>Make the pull request the safety boundary.</strong> Agents can prepare changes; a person decides whether they belong in the product.</li>
-        <li><strong>Start with a small, testable task.</strong> “Update the checkout flow” is a project. “Add validation for this input and cover these three cases” is an agent-sized request.</li>
-        <li><strong>Choose the execution surface deliberately.</strong> Cloud agents, IDE agents, and local sandboxes expose different controls and different failure modes.</li>
-        <li><strong>Review the diff, not the agent’s confidence.</strong> A passing test suite is evidence about the tests that ran, not proof that the change is correct.</li>
-        <li><strong>Keep secrets, deployment credentials, and production access outside the session.</strong> A repository agent should not need broad access to do ordinary feature work.</li>
-      </ul>
+      <blockquote>
+        <p><strong>Key Takeaways</strong></p>
+        <ul>
+          <li><strong>Make the pull request the safety boundary.</strong> Agents can prepare changes; a person decides whether they belong in the product.</li>
+          <li><strong>Start with a small, testable task.</strong> "Update the checkout flow" is a project. "Add validation for this input and cover these three cases" is an agent-sized request.</li>
+          <li><strong>Review the diff, not the agent's confidence.</strong> A passing test suite is evidence about the tests that ran, not proof that the change is correct.</li>
+          <li><strong>Keep secrets, deployment credentials, and production access outside the session.</strong> A repository agent should not need broad access to do ordinary feature work.</li>
+        </ul>
+      </blockquote>
 
       <h2>Why a PR-first workflow is the useful middle ground</h2>
-      <p>Small teams often have two bad options: use an agent so cautiously that it only answers questions, or let it make broad changes and rely on a hurried final glance. A pull request creates a more useful middle layer. The agent can research, edit, test, and explain its work; the team can inspect the exact files, checks, and assumptions before merging.</p>
-      <p>That structure also matches the guardrails vendors are documenting. GitHub says its cloud agent works in an ephemeral, firewalled environment, creates changes on a branch, and cannot push directly to the default branch. GitHub also says an agent-created pull request still needs human review and merge approval. Those are product controls, not a replacement for your repository’s own branch protection, tests, or review standards.</p>
-      <p>Independent research points in the same direction. A 2026 study of more than 33,000 agent-authored pull requests found that security-related agent PRs had lower merge rates and longer review latency than non-security PRs. A separate study found that reviewer engagement was the strongest correlation with successful integration, while larger changes and force pushes were associated with lower merge likelihood. The implication is practical: <strong>the quality of the collaboration loop matters as much as the agent’s ability to produce code.</strong></p>
+      <p><strong>Small teams often have two bad options: use an agent so cautiously that it only answers questions, or let it make broad changes and rely on a hurried final glance.</strong> A pull request creates a more useful middle layer. The agent can research, edit, test, and explain its work; the team can inspect the exact files, checks, and assumptions before merging.</p>
+      <p>That structure also matches the guardrails vendors are documenting. GitHub says its cloud agent works in an ephemeral, firewalled environment, creates changes on a branch, and cannot push directly to the default branch. GitHub also says an agent-created pull request still needs human review and merge approval. Those are product controls, not a replacement for your repository's own branch protection, tests, or review standards.</p>
+      <p>Independent research points in the same direction. A 2026 study of more than 33,000 agent-authored pull requests found that security-related agent PRs had lower merge rates and longer review latency than non-security PRs. A separate study found that reviewer engagement was the strongest correlation with successful integration, while larger changes and force pushes were associated with lower merge likelihood. The practical takeaway: <strong>the quality of the collaboration loop matters as much as the agent's ability to produce code.</strong></p>
 
       <h2>What the current tools actually give you</h2>
-      <p>The names overlap, but the working model is different. Use the option that matches where you want the review to happen.</p>
+      <p><strong>The names overlap, but the working model is different.</strong> Use the option that matches where you want the review to happen.</p>
       <div class="overflow-x-auto rounded-lg border border-ink/10"><table class="min-w-[640px]">
-        <thead><tr><th>Execution surface</th><th>Best fit</th><th>Documented controls</th><th>Important caveat</th></tr></thead>
+        <thead><tr><th>Execution surface</th><th>Best fit</th><th>Documented controls</th><th>Worth checking</th></tr></thead>
         <tbody>
           <tr><td><strong>GitHub Copilot cloud agent</strong></td><td>Issue-to-PR maintenance and small feature work</td><td>Ephemeral environment, firewall, branch restriction, human merge</td><td>Requires the right plan and repository enablement; workflow runs may need approval</td></tr>
           <tr><td><strong>Cursor agent</strong></td><td>Interactive work inside an editor</td><td><code>.cursorignore</code>, approval for terminal commands, limited default network access</td><td>File edits can save immediately; run modes are best-effort guardrails</td></tr>
           <tr><td><strong>Claude Code</strong></td><td>Terminal-led work with configurable permissions</td><td>Permission modes plus filesystem and network sandboxing</td><td>Bypass-style autonomy should be reserved for a genuinely isolated environment</td></tr>
         </tbody>
       </table></div>
-      <p>GitHub documents an issue and pull-request workflow for its cloud agent and says it can create a branch, run tests, and request review. Cursor’s security documentation says reading files does not require approval, sensitive actions can require approval, and <code>.cursorignore</code> can block access to selected files. Anthropic describes Claude Code’s sandbox as two boundaries—filesystem and network isolation—and says its web sessions run in isolated cloud sandboxes without git credentials or signing keys inside the environment.</p>
-      <p>These descriptions tell you what a product says it can constrain. They do not tell you that every repository is safe to hand to an agent. Your own secrets, CI configuration, dependency scripts, prompt-injection risks, and branch rules still matter.</p>
+      <p>GitHub documents an issue and pull-request workflow for its cloud agent and says it can create a branch, run tests, and request review. Cursor's security documentation says reading files does not require approval, sensitive actions can require approval, and <code>.cursorignore</code> can block access to selected files. Anthropic describes Claude Code's sandbox as two boundaries, filesystem and network isolation, and says its web sessions run in isolated cloud sandboxes without git credentials or signing keys inside the environment.</p>
+      <p>These descriptions tell you what a product says it can constrain. They do not tell you that every repository is safe to hand to an agent. Your own secrets, CI configuration, dependency scripts, prompt-injection risks, and branch rules still matter. Browse the <a href="/tool/github-copilot">GitHub Copilot</a>, <a href="/tool/cursor">Cursor</a>, and <a href="/tool/claude-code">Claude Code</a> entries in our <a href="/category/coding-and-development">coding tools directory</a> for current links, then verify the provider's own documentation before enabling a new capability.</p>
 
       <h2>The six-step workflow for a small team</h2>
 
@@ -507,18 +538,18 @@ Done when: Invalid addresses are rejected and valid submissions behave as before
 Output: Summarize changed files, checks run, and any remaining uncertainty.</code></pre>
 
       <h3>2. Put the agent on a branch or in a sandbox</h3>
-      <p>Do not make the default branch the agent’s scratch space. For a hosted workflow, confirm the provider’s branch and repository limits. For local work, use a clean branch or worktree. If the agent needs to run project commands, make sure those commands cannot see unrelated credentials, personal files, or production tokens.</p>
+      <p>Do not make the default branch the agent's scratch space. For a hosted workflow, confirm the provider's branch and repository limits. For local work, use a clean branch or worktree. If the agent needs to run project commands, make sure those commands cannot see unrelated credentials, personal files, or production tokens.</p>
       <p>This is also where you decide whether the task belongs in an agent at all. A small UI refactor may be appropriate. A change involving payment authorization, production infrastructure, secret rotation, or regulated data may need a more controlled process and a human-led implementation.</p>
 
       <h3>3. Give it repository context, not unrestricted authority</h3>
       <p>Repository instructions are useful when they describe conventions the reviewer actually expects: supported runtime versions, test commands, directory ownership, accessibility requirements, and files that must not be edited. They are not a substitute for operating-system permissions or a sandbox.</p>
-      <p>Use ignore files, permission rules, workspace trust, and repository settings where the tool supports them. Keep the scope narrow. A prompt that says “use any files and commands needed” may save a few minutes while making the review boundary much harder to reason about.</p>
+      <p>Use ignore files, permission rules, workspace trust, and repository settings where the tool supports them. Keep the scope narrow. A prompt that says "use any files and commands needed" may save a few minutes while making the review boundary much harder to reason about.</p>
 
       <h3>4. Ask for a plan before implementation when the task is ambiguous</h3>
       <p>For a multi-file change, ask the agent to inspect the repository and propose a plan first. Check whether it identified the right entry points, tests, and non-goals. Then let it implement only after the plan is clear. This separates misunderstanding from execution, which is cheaper to correct.</p>
 
       <h3>5. Require evidence in the pull request</h3>
-      <p>The agent’s final message should not be “done.” Ask for a concise summary of changed files, commands run, test results, assumptions, and known limitations. In the pull request, look for a small diff, focused tests, and a description that a teammate can understand without replaying the session.</p>
+      <p>The agent's final message should not be "done." Ask for a concise summary of changed files, commands run, test results, assumptions, and known limitations. In the pull request, look for a small diff, focused tests, and a description that a teammate can understand without replaying the session.</p>
       <p>Review generated code at the same risk points you would review human code: authentication and authorization, input handling, error paths, data exposure, dependency changes, migrations, shell commands, workflow files, and anything that changes defaults. Let automated checks catch repetition; let a person decide whether the behavior belongs in the system.</p>
 
       <h3>6. Merge only after the loop converges</h3>
@@ -531,10 +562,9 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
           <tr><td>Async maintenance from an issue</td><td>GitHub Copilot cloud agent</td><td>The documented flow is already organized around a branch, pull request, checks, and review.</td></tr>
           <tr><td>Fast, interactive iteration in an editor</td><td>Cursor</td><td>You can keep a developer in the loop while using file exclusions and command approvals.</td></tr>
           <tr><td>Terminal control and explicit sandboxing</td><td>Claude Code</td><td>Permission modes and filesystem/network boundaries make the execution model visible.</td></tr>
-          <tr><td>Highly sensitive or irreversible work</td><td>Human-led implementation first</td><td>Do not confuse an agent’s safety setting with a compliance decision or a production change-control process.</td></tr>
+          <tr><td>Highly sensitive or irreversible work</td><td>Human-led implementation first</td><td>Do not confuse an agent's safety setting with a compliance decision or a production change-control process.</td></tr>
         </tbody>
       </table></div>
-      <p>For a team already using the <a href="/category/coding-and-development">coding and development tool directory</a>, the practical choice is less about picking a universal winner and more about matching the task to the review surface. Browse the <a href="/tool/github-copilot">GitHub Copilot</a>, <a href="/tool/cursor">Cursor</a>, and <a href="/tool/claude-code">Claude Code</a> entries for the current directory links, then verify the provider’s own documentation before enabling a new capability.</p>
 
       <h2>Three limits to plan for</h2>
       <h3>Guardrails are layers, not magic</h3>
@@ -549,10 +579,25 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
       <h2>Our recommendation based on the evidence</h2>
       <p>For most small teams, begin with low-risk maintenance tasks and a strict PR-first loop. Keep the task narrow, isolate the session, require checks, review the actual diff, and make the human merge the last meaningful decision. The agent can be ambitious inside that loop; the repository boundary should not be.</p>
       <p>If the team cannot answer what the agent could read, what it could change, what commands it could run, where credentials live, and who approves the merge, it is not ready for a more autonomous setup. That is not an argument against coding agents. It is the operating discipline that makes them useful.</p>
+      <p>For related workflows, see our guide on <a href="/blog/ai-notes-client-calls-consent-first">consent-first AI meeting notes</a> for a similar trust-first approach to client communication, or the <a href="/blog/ai-deep-research-source-first-workflow">source-first deep research workflow</a> for verifying AI-generated research before acting on it.</p>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>Can AI coding agents write production-ready code?</h3>
+      <p>Agents can produce working code for well-scoped tasks, but "production-ready" depends on your review, testing, and deployment standards. Treat agent output as a draft contribution that needs the same inspection you would give a new teammate's first pull request.</p>
+
+      <h3>Is it safe to give a coding agent access to my repository?</h3>
+      <p>Safety depends on the access boundaries you set. Use branch protection, ignore files, scoped permissions, and sandbox environments. Keep secrets, deployment credentials, and production access outside the agent's session. No product control replaces your own security configuration.</p>
+
+      <h3>How do I decide between GitHub Copilot, Cursor, and Claude Code?</h3>
+      <p>Match the tool to the review surface. GitHub Copilot cloud agent fits async issue-to-PR workflows. Cursor fits interactive editor-based iteration with a developer in the loop. Claude Code fits terminal-led work with explicit permission controls. For sensitive or irreversible changes, lead the implementation yourself.</p>
+
+      <h3>What size task should I give a coding agent?</h3>
+      <p>Start with tasks that have a clear finish line and can be verified by reading the diff and running tests. "Add validation for this input and cover these three cases" works well. "Refactor the entire checkout system" is too broad. If you cannot explain how a reviewer will verify the result, the task is probably too large.</p>
 
       <h2>Research notes and sources</h2>
-      <p>We reviewed official documentation from <a href="https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows">GitHub Agentic Workflows</a>, <a href="https://docs.github.com/en/copilot/responsible-use/agents">GitHub’s Copilot Agents safety overview</a>, <a href="https://docs.github.com/en/copilot/how-tos/copilot-on-github/use-copilot-agents/overview">GitHub’s cloud-agent guide</a>, <a href="https://prod.cursor.com/docs/agent/security">Cursor’s Agent Security documentation</a>, and Anthropic’s <a href="https://www.anthropic.com/engineering/claude-code-sandboxing">Claude Code sandboxing explanation</a>. We also reviewed two independent 2026 studies of agent-authored pull requests: <a href="https://arxiv.org/abs/2601.00477">Security in the Age of AI Teammates</a> and <a href="https://arxiv.org/abs/2602.19441">When AI Teammates Meet Code Review</a>. This is a documentation-based workflow guide, not a hands-on product test, security audit, or guarantee of code quality.</p>
-    `
+      <p>We reviewed official documentation from <a href="https://docs.github.com/en/copilot/concepts/agents/about-github-agentic-workflows">GitHub Agentic Workflows</a>, <a href="https://docs.github.com/en/copilot/responsible-use/agents">GitHub's Copilot Agents safety overview</a>, <a href="https://docs.github.com/en/copilot/how-tos/copilot-on-github/use-copilot-agents/overview">GitHub's cloud-agent guide</a>, <a href="https://prod.cursor.com/docs/agent/security">Cursor's Agent Security documentation</a>, and Anthropic's <a href="https://www.anthropic.com/engineering/claude-code-sandboxing">Claude Code sandboxing explanation</a>. We also reviewed two independent 2026 studies of agent-authored pull requests: <a href="https://arxiv.org/abs/2601.00477">Security in the Age of AI Teammates</a> and <a href="https://arxiv.org/abs/2602.19441">When AI Teammates Meet Code Review</a>. This is a documentation-based workflow guide, not a hands-on product test, security audit, or guarantee of code quality.</p>
+    </section>`
   },
   {
     id: 'ai-deep-research-source-first-workflow',
@@ -562,31 +607,35 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
     excerpt: 'How freelancers, marketers, and small teams can use AI research tools to build a useful brief without confusing citations with proof.',
     author: 'newaitools Editorial',
     publishDate: '2026-09-25',
-    readTime: 9,
+    modifiedDate: '2026-09-25',
+    readTime: 11,
     tags: ['AI research', 'deep research', 'source verification', 'ChatGPT', 'Gemini', 'Perplexity', 'freelancers'],
     ogImage: '/blog/images/ai-deep-research-source-first.png',
     ogImageAlt: 'Editorial illustration of a researcher checking several source streams before passing a verified summary into a concise research brief.',
-    content: `
+    content: `<section class="prose-article">
+      <h1>AI Deep Research for Work: A Source-First Workflow That Holds Up</h1>
+
       <p><strong>Use AI deep research when the question needs several sources, not when you only need one current fact.</strong> The useful workflow is to define the decision you are trying to make, set a source policy, let the tool build a draft map of the evidence, and then verify the claims that matter in the original documents.</p>
       <p>ChatGPT Deep Research, Gemini Deep Research, and Perplexity Pro Search all promise some version of multi-source synthesis with links. The important difference is not which product sounds most thorough. It is <strong>how much control you have over sources, how clearly the research trail is exposed, and how easily you can turn the result into a brief someone else can audit.</strong></p>
       <p>This guide is for freelancers, marketers, researchers, and small teams who need a defensible starting brief without spending an afternoon copying search results into a document. Product details below were checked against public documentation on <strong>September 25, 2026</strong>. We did not run hands-on product tests, compare answer quality on a fixed benchmark, or inspect paid accounts.</p>
 
-      <h2>Key takeaways</h2>
-      <ul>
-        <li><strong>A citation is a trail, not a warranty.</strong> Open the source and check whether it actually supports the sentence you plan to repeat.</li>
-        <li><strong>Choose the research surface by the handoff.</strong> ChatGPT emphasizes source controls and downloadable reports; Gemini is strongest when the work belongs with Google Search, Drive, Gmail, or NotebookLM; Perplexity keeps the answer-and-links loop compact.</li>
-        <li><strong>Ask for an evidence map before polished prose.</strong> Separate facts, interpretation, disagreement, and unanswered questions before asking for a final brief.</li>
-        <li><strong>Verify the claims that can change a decision.</strong> Prices, policies, product limits, medical or legal claims, and numbers deserve a direct check against a primary source.</li>
-        <li><strong>Record freshness and scope.</strong> A brief should say what was checked, when it was checked, which sources were included, and what the tool could not establish.</li>
-      </ul>
+      <blockquote>
+        <p><strong>Key Takeaways</strong></p>
+        <ul>
+          <li><strong>A citation is a trail, not a warranty.</strong> Open the source and check whether it actually supports the sentence you plan to repeat.</li>
+          <li><strong>Choose the research surface by the handoff.</strong> ChatGPT fits controlled source lists; Gemini fits Google Workspace workflows; Perplexity fits fast discovery.</li>
+          <li><strong>Ask for an evidence map before polished prose.</strong> Separate facts, interpretation, disagreement, and unanswered questions before requesting a final brief.</li>
+          <li><strong>Verify the claims that can change a decision.</strong> Prices, policies, product limits, and numbers deserve a direct check against a primary source.</li>
+        </ul>
+      </blockquote>
 
-      <h2>What “deep research” changes—and what it does not</h2>
-      <p>Ordinary search is good for a quick lookup. A deep-research mode is designed for a question that requires a plan, several searches, source reading, and a synthesized report. OpenAI describes Deep Research as a tool for multi-step questions and says a report includes citations or source links, a source list, activity history, and export options. Google’s help documentation says Gemini creates a research plan that you can edit before it starts, while Perplexity describes Pro Search as a multi-search process that synthesizes sources and shows how it approached the question.</p>
+      <h2>What "deep research" changes, and what it does not</h2>
+      <p><strong>Ordinary search is good for a quick lookup. Deep-research modes are designed for questions that require a plan, several searches, source reading, and a synthesized report.</strong> OpenAI describes Deep Research as a tool for multi-step questions and says a report includes citations or source links, a source list, activity history, and export options. Google's help documentation says Gemini creates a research plan that you can edit before it starts, while Perplexity describes Pro Search as a multi-search process that synthesizes sources and shows how it approached the question.</p>
       <p>Those are meaningful workflow improvements. They can reduce the mechanical work of finding, opening, and grouping material. They do not turn a generated paragraph into verified evidence. The model still decides which passages to emphasize, may miss a relevant source, and can write a conclusion that is more confident than the underlying material.</p>
       <p>The right mental model is <strong>research assistant plus triage layer</strong>. Let the system widen the search and reveal a useful structure. Keep the final judgment, source check, and wording of consequential claims with a person.</p>
 
       <h2>How the current research tools differ</h2>
-      <p>The table below describes documented workflow controls, not a quality ranking. Features can vary by plan, region, account, workspace, and product version.</p>
+      <p><strong>The table below describes documented workflow controls, not a quality ranking.</strong> Features can vary by plan, region, account, workspace, and product version.</p>
       <div class="overflow-x-auto rounded-lg border border-ink/10"><table class="min-w-[760px]">
         <thead><tr><th>Tool</th><th>Documented source controls</th><th>Useful handoff</th><th>Best fit</th></tr></thead>
         <tbody>
@@ -595,11 +644,11 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
           <tr><td><strong>Perplexity Pro Search</strong></td><td>Multiple search modes include Web, Academic, Finance, and Files. The documentation says it searches across sources and provides direct links.</td><td>A compact answer with linked sources and follow-up questions in the same session.</td><td>Fast source discovery, landscape scans, and a quick first pass before deeper verification.</td></tr>
         </tbody>
       </table></div>
-      <p>For a closer look at the directory entries, see the <a href="/tool/chatgpt">ChatGPT</a>, <a href="/tool/gemini">Gemini</a>, and <a href="/tool/perplexity">Perplexity</a> pages, then confirm current access and limits in the providers’ own documentation. A directory description is a starting point, not a substitute for account-specific terms.</p>
+      <p>For a closer look at the directory entries, see the <a href="/tool/chatgpt">ChatGPT</a>, <a href="/tool/gemini">Gemini</a>, and <a href="/tool/perplexity">Perplexity</a> pages in our <a href="/tools">tool directory</a>, then confirm current access and limits in the providers' own documentation. A directory description is a starting point, not a substitute for account-specific terms.</p>
 
       <h2>A source-first workflow for a useful research brief</h2>
       <h3>1. Start with a decision, not a topic</h3>
-      <p>“Research AI video tools” is a topic. “Choose a tool for a two-person marketing team that needs captioned social clips, shared review, and predictable export” is a decision. The second version gives the research a stopping point and makes irrelevant information easier to reject.</p>
+      <p>"Research AI video tools" is a topic. "Choose a tool for a two-person marketing team that needs captioned social clips, shared review, and predictable export" is a decision. The second version gives the research a stopping point and makes irrelevant information easier to reject.</p>
       <p>Write down the audience, the decision, the date by which the answer must be current, and the two or three constraints that would change the recommendation. If you cannot say what the brief will help someone decide, the prompt is still too broad.</p>
 
       <h3>2. Set a source policy before the tool searches</h3>
@@ -617,13 +666,13 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
 
       <h3>5. Ask the tool to show disagreement</h3>
       <p>A smooth consensus is not automatically a good research result. Ask for claims that sources disagree about, evidence that is missing, and conclusions that depend on an assumption. If every source says the same thing, check whether they are all quoting one original announcement.</p>
-      <p>This is especially important for recommendations. The best option for a freelancer may not be the best option for an enterprise team, and a documented feature may still be awkward in a particular workflow. Ask for the consequence of each difference, not just a longer list of features.</p>
+      <p>This matters most for recommendations. The best option for a freelancer may not be the best option for an enterprise team, and a documented feature may still be awkward in a particular workflow. Ask for the consequence of each difference, not just a longer list of features.</p>
 
       <h3>6. Produce the brief last</h3>
       <p>Only after the evidence map is usable should you ask for a one-page brief. Give it a fixed shape: answer first, evidence behind the answer, meaningful trade-offs, open questions, and a short list of links. Keep the original source list with the brief. If the result will guide a purchase, policy, health decision, legal decision, or public claim, add a human review step before anyone acts on it.</p>
 
       <h2>Why citations still need a human check</h2>
-      <p>Independent research gives a useful reason for this discipline. A <a href="https://www.nature.com/articles/s41586-025-10072-4">Nature study of retrieval-augmented systems for scientific literature</a> found that retrieval generally improved performance over relying on model memory, but also reported fabricated or unsupported citations in several model setups. The study is about scientific literature, not a current consumer-product leaderboard, so its numbers should not be copied into a general accuracy claim. Its practical lesson is broader: retrieval helps, but citation presence and citation support are separate questions.</p>
+      <p><strong>Independent research gives a useful reason for this discipline.</strong> A <a href="https://www.nature.com/articles/s41586-025-10072-4">Nature study of retrieval-augmented systems for scientific literature</a> found that retrieval generally improved performance over relying on model memory, but also reported fabricated or unsupported citations in several model setups. The study is about scientific literature, not a current consumer-product leaderboard, so its numbers should not be copied into a general accuracy claim. Its practical lesson is broader: retrieval helps, but citation presence and citation support are separate questions.</p>
       <p>A 2026 paper in <a href="https://proceedings.mlr.press/v318/kakimov26a.html">Proceedings of Machine Learning Research</a> proposes auditing not only which documents are cited, but also where those documents came from. Its case study of Google AI Overviews found evidence that AI-generated documents were cited more frequently than human-authored documents in the tested setting. Another 2026 preprint, <a href="https://arxiv.org/abs/2605.23684">Synthetic Sources?</a>, reported evidence of AI-generated sources appearing among citations across four generative search engines. These are research findings with their own methods and limits, not proof that every answer from a particular tool is unreliable. They are a good argument for checking provenance instead of treating a linked answer as self-authenticating.</p>
       <p>The practical rule is simple: <strong>the more a claim matters, the closer you should get to the source that created it.</strong> Use AI to find and organize evidence. Use the original document to decide whether the evidence supports your wording.</p>
 
@@ -642,14 +691,29 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
       <h2>Limits to plan for</h2>
       <p><strong>Access is not uniform.</strong> OpenAI, Google, and Perplexity all document differences tied to plans, regions, workspace settings, model access, or usage limits. A feature visible in a help article may not be available in your account.</p>
       <p><strong>Connected sources create a responsibility boundary.</strong> Adding Drive, Gmail, SharePoint, uploaded files, or other private material can make research more relevant, but you still need to check permissions, retention, sharing, and whether the final brief contains information the recipient should not see.</p>
-      <p><strong>A polished report can hide uncertainty.</strong> Keep disputed claims and missing evidence visible. If the source does not settle the question, the correct output may be “not established yet,” followed by what would resolve it.</p>
+      <p><strong>A polished report can hide uncertainty.</strong> Keep disputed claims and missing evidence visible. If the source does not settle the question, the correct output may be "not established yet," followed by what would resolve it.</p>
 
       <h2>Our recommendation based on the evidence</h2>
       <p>For most professional research, start with the tool whose source controls and output format match the person who will review the work. Then use a source-first brief: define the decision, specify acceptable sources, inspect the plan, maintain an evidence map, verify consequential claims, and preserve the links and check date.</p>
       <p>That workflow is modest by design. It does not promise that deep research will find everything or that citations will always be right. It gives a small team something more valuable: a research result that can be questioned, updated, and handed to another person without asking them to trust a black box.</p>
+      <p>For similar trust-first approaches to other AI workflows, see our guides on <a href="/blog/ai-notes-client-calls-consent-first">consent-first AI meeting notes</a> and <a href="/blog/ai-coding-agents-pr-first-workflow-small-teams">PR-first AI coding agents</a>.</p>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>Which AI deep research tool is the most accurate?</h3>
+      <p>Accuracy depends on the question, source availability, and how you verify the result. No tool consistently produces error-free output. ChatGPT Deep Research, Gemini Deep Research, and Perplexity Pro Search each have strengths in source control, workspace integration, and speed respectively. The workflow you apply after the tool finishes matters more than the product label.</p>
+
+      <h3>Can I trust the citations in an AI research report?</h3>
+      <p>A citation means the tool found a source, not that the source supports the exact claim in the report. Independent research has documented fabricated and unsupported citations in retrieval-augmented systems. Always open the linked source and check whether it actually supports the sentence you plan to repeat.</p>
+
+      <h3>How do I use AI research for client work without making mistakes?</h3>
+      <p>Start with a clear decision question and a source policy. Ask for an evidence map before polished prose. Verify the claims that could change the recommendation in the original documents. Record what was checked, when, and what the tool could not establish. Add a human review step before acting on the result.</p>
+
+      <h3>Is Perplexity better than ChatGPT for research?</h3>
+      <p>They serve different stages. Perplexity Pro Search is well suited to fast discovery and landscape scans with linked leads. ChatGPT Deep Research offers more control over source lists and produces downloadable reports with an audit trail. Many workflows benefit from using one tool for discovery and another for deeper verification.</p>
 
       <h2>Research notes and sources</h2>
-      <p>We reviewed current public documentation from <a href="https://help.openai.com/en/articles/10500283-deep-research-in-chatgpt">OpenAI’s Deep Research help page</a>, <a href="https://support.google.com/gemini/answer/15719111?hl=en">Google’s Gemini Deep Research help page</a>, and <a href="https://www.perplexity.ai/help-center/en/articles/10352903-what-is-pro-search">Perplexity’s Pro Search documentation</a> on September 25, 2026. We also reviewed independent work from <a href="https://www.nature.com/articles/s41586-025-10072-4">Nature</a>, <a href="https://proceedings.mlr.press/v318/kakimov26a.html">Proceedings of Machine Learning Research</a>, and the <a href="https://arxiv.org/abs/2605.23684">Synthetic Sources?</a> preprint. This article compares documented workflows and research evidence; it is not a hands-on product test, a benchmark, a security audit, or legal, medical, or financial advice.</p>
-    `
+      <p>We reviewed current public documentation from <a href="https://help.openai.com/en/articles/10500283-deep-research-in-chatgpt">OpenAI's Deep Research help page</a>, <a href="https://support.google.com/gemini/answer/15719111?hl=en">Google's Gemini Deep Research help page</a>, and <a href="https://www.perplexity.ai/help-center/en/articles/10352903-what-is-pro-search">Perplexity's Pro Search documentation</a> on September 25, 2026. We also reviewed independent work from <a href="https://www.nature.com/articles/s41586-025-10072-4">Nature</a>, <a href="https://proceedings.mlr.press/v318/kakimov26a.html">Proceedings of Machine Learning Research</a>, and the <a href="https://arxiv.org/abs/2605.23684">Synthetic Sources?</a> preprint. This article compares documented workflows and research evidence; it is not a hands-on product test, a benchmark, a security audit, or legal, medical, or financial advice.</p>
+    </section>`
   }
 ];
