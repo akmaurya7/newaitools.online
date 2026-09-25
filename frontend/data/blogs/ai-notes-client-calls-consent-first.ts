@@ -52,6 +52,38 @@ export const ai_notes_client_calls_consent_first: BlogPost = {
       <p>Sources: <a href="https://support.microsoft.com/en-us/teams/copilot/use-copilot-without-transcribing-or-recording-a-teams-meeting-or-call">Microsoft's Copilot no-transcription guide</a>; <a href="https://support.google.com/meet/answer/14754931?hl=en">Google Meet notes help</a> and <a href="https://workspaceupdates.googleblog.com/2026/04/require-explicit-consent-for-take-notes-with-Gemini-recordings-and-transcripts-in-Google-Meet.html">Google's participant-consent announcement</a>; <a href="https://help.fathom.video/en/articles/294272">Fathom's consent-email rules</a>, <a href="https://help.fathom.video/en/articles/11577345">capture modes</a>, and <a href="https://help.fathom.video/en/articles/7574785">sharing controls</a>; <a href="https://help.otter.ai/hc/en-us/articles/39339238308503-Recording-Permissions-with-Otter">Otter's recording-permissions guide</a> and <a href="https://help.otter.ai/hc/en-us/articles/19500988656279-Set-a-custom-Data-Retention-policy">retention policy guide</a>.</p>
 
       <h2>A repeatable workflow for a client call</h2>
+
+      <figure class="research-figure" aria-labelledby="consent-flow-caption">
+        <svg viewBox="0 0 900 170" role="img" aria-labelledby="consent-flow-title consent-flow-desc">
+          <title id="consent-flow-title">Consent-first AI meeting notes workflow</title>
+          <desc id="consent-flow-desc">A five-stage workflow from policy and participant notice through approved capture, review, sharing, and retention.</desc>
+          <line x1="155" y1="75" x2="205" y2="75" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <line x1="315" y1="75" x2="365" y2="75" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <line x1="475" y1="75" x2="525" y2="75" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <line x1="635" y1="75" x2="685" y2="75" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <g fill="currentColor">
+            <rect x="20" y="38" width="135" height="74" rx="14" opacity="0.07"/>
+            <rect x="205" y="38" width="110" height="74" rx="14" opacity="0.1"/>
+            <rect x="365" y="38" width="110" height="74" rx="14" opacity="0.13"/>
+            <rect x="525" y="38" width="110" height="74" rx="14" opacity="0.16"/>
+            <rect x="685" y="38" width="135" height="74" rx="14" opacity="0.2"/>
+          </g>
+          <g fill="currentColor" font-family="system-ui, sans-serif" text-anchor="middle">
+            <text x="87" y="66" font-size="14" font-weight="700">1. Notice</text>
+            <text x="87" y="87" font-size="12">Policy + consent</text>
+            <text x="260" y="66" font-size="14" font-weight="700">2. Capture</text>
+            <text x="260" y="87" font-size="12">Approved tool</text>
+            <text x="420" y="66" font-size="14" font-weight="700">3. Review</text>
+            <text x="420" y="87" font-size="12">Correct notes</text>
+            <text x="580" y="66" font-size="14" font-weight="700">4. Share</text>
+            <text x="580" y="87" font-size="12">Right recipients</text>
+            <text x="752" y="66" font-size="14" font-weight="700">5. Retain</text>
+            <text x="752" y="87" font-size="12">Delete on policy</text>
+          </g>
+          <text x="450" y="148" text-anchor="middle" font-size="11" fill="currentColor" opacity="0.45">Capture is only one part of a trustworthy meeting-notes process.</text>
+        </svg>
+        <figcaption id="consent-flow-caption">Keep consent, review, sharing, and retention inside the same operating procedure.</figcaption>
+      </figure>
       <h3>1. Decide what is off limits</h3>
       <p>Before sending an invitation, check your contract, client instructions, workplace rules, and the sensitivity of the subject. For a call involving confidential business plans, personal data, legal advice, health information, or another sensitive topic, consider manual notes or a platform setting that does not save a transcript. If a client agreement or governing policy prohibits recording or external processing, do not add a notetaker just because the calendar integration makes it easy.</p>
       <p>Rules for recording and processing vary by location and context. A software prompt is not a legal determination. If the call crosses jurisdictions or involves regulated or privileged information, get guidance from the appropriate legal, privacy, or compliance adviser before using the tool.</p>
