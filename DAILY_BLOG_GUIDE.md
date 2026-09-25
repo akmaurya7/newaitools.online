@@ -5,7 +5,7 @@ https://github.com/AgriciDaniel/claude-blog
 
 ## Mandatory editorial reference
 
-Before writing or updating any article, always consult the latest main branch of claude-blog. Do not rely on a remembered copy.
+Before writing or updating any article, always consult the latest main branch of claude-blog. Do not rely on a remembered copy. Record the upstream commit SHA used for the run so the editorial baseline is reproducible.
 
 At minimum, review:
 - skills/blog/SKILL.md
@@ -24,7 +24,7 @@ At minimum, review:
 - skills/blog-write/references/delivery.md
 - agents/blog-reviewer.md
 
-The reference repository is an editorial baseline. Adapt its rules to this site's React + TypeScript implementation.
+The reference repository is an editorial baseline. Adapt its rules to this site's React + TypeScript implementation. For claude-blog v2.2.0, treat the five-gate delivery contract as the quality model: capability discovery, format completeness, visual verification, blocking content review, and asset/link integrity. Do not claim the upstream markdown/PDF pipeline passed when only the NewAITools adaptation was checked.
 
 ## Publishing flow
 
@@ -41,6 +41,7 @@ For material public claims:
 - Record methodology or limitations when they matter.
 - Drop unsupported statistics instead of keeping them with vague wording.
 - Treat citations as verification paths, not proof by themselves.
+- For time-sensitive or changing product information, re-check the current official documentation in the same run.
 
 Do not fabricate statistics, benchmarks, pricing, usage limits, product capabilities, quotes, first-hand tests, customer results, source titles, screenshots, or other evidence.
 
@@ -73,6 +74,8 @@ Use tables, lists, diagrams, screenshots, or charts only when they clarify the m
 FAQ sections are optional and should answer genuine reader questions.
 
 Avoid formulaic AI prose, repetitive transitions, vague superlatives, and em/en dashes in synthesized prose.
+
+For longer posts, add a table of contents or jump navigation when it materially improves scanning. Do not force navigation, charts, statistics, FAQs, or fixed word counts when the topic does not warrant them.
 
 ## Internal linking
 
@@ -111,7 +114,8 @@ The site's current blog schema is TypeScript data rendered by BlogPostView.tsx.
 When adding a post:
 - Register it in frontend/data/blogs/index.ts.
 - Keep the slug stable once published.
-- Add a local cover/OG asset and descriptive alt text.
+- Add a local raster cover/OG asset where possible; raw SVG should not be used as the social OG image.
+- Use descriptive alt text for every image.
 - Confirm canonical, Open Graph, Twitter, and BlogPosting metadata through the existing SEO layer.
 - Use the site's existing HTML structure: section class="prose-article".
 - Keep external source URLs as normal HTML links. Never paste tool citation tokens into TypeScript source.
@@ -128,7 +132,8 @@ Before publication, perform:
 4. asset and image-alt audit
 5. metadata/canonical/OG review
 6. workflow/tool/category consistency audit
-7. final sweep for placeholders, fabricated claims, unsupported first-person experience, and em/en dashes
+7. editorial pattern review for repetitive or formulaic structure
+8. final sweep for placeholders, fabricated claims, unsupported first-person experience, and em/en dashes
 
 The upstream claude-blog delivery contract calls for reviewer score >= 90/100 and zero P0 issues. Apply that as the editorial target for automated blog work.
 
@@ -138,4 +143,4 @@ Substantive changes should update modifiedDate.
 
 Do not change dates merely to create freshness signals.
 
-Update existing posts when a material product change, factual correction, broken link, workflow mismatch, or editorial-quality issue is discovered.
+Update existing posts when a material product change, factual correction, broken link, workflow mismatch, or editorial-quality issue is discovered. Re-check the latest claude-blog main branch before every maintenance pass.
