@@ -3,6 +3,9 @@ export interface WorkflowStep {
   href: string;
   action: string;
   handoff: string;
+  example?: string;
+  output?: string;
+  qualityGate?: string;
   guideUrl?: string;
   guideLabel?: string;
 }
@@ -79,20 +82,70 @@ export const WORKFLOWS: Workflow[] = [
   },
   {
     slug: 'product-photo-to-store-listing',
-    title: 'Product photo to a polished store listing',
-    shortTitle: 'Product photo → listing → storefront',
-    tagline: 'Prepare a product image and listing copy, then review the complete page in your store.',
-    description: 'A practical e-commerce workflow for improving product presentation while preserving accurate product details and a trustworthy listing.',
+    title: 'Phone product photo to a polished store listing',
+    shortTitle: 'Phone photo → AI image → listing → storefront',
+    tagline: 'Turn a real phone photo into an accurate catalog image, controlled lifestyle variants, and a reviewed product page.',
+    description: 'An end-to-end e-commerce workflow for taking one real product photo, improving its presentation with AI, generating only the visual variants you need, writing listing copy from verified product facts, and publishing only after a factual and visual quality check.',
     category: 'E-commerce & Design',
-    deliverable: 'A reviewed product image and product page draft ready for the storefront.',
+    deliverable: 'A verified master product image, optional lifestyle variants, accurate listing copy, and a reviewed storefront product page.',
     steps: [
-      { tool: 'Adobe Firefly', href: 'https://firefly.adobe.com/', action: 'Prepare or edit a product image, for example by refining a background or creating supporting campaign imagery that fits your product.', handoff: 'Inspect the image closely to ensure the product itself remains represented accurately and export the approved asset.' },
-      { tool: 'Shopify Magic', href: 'https://www.shopify.com/magic', action: 'Draft a product description from accurate product facts such as materials, dimensions, compatibility, and intended use.', handoff: 'Correct all generated details and remove any unsupported claims before saving.' , guideUrl: 'https://help.shopify.com/en/manual/products/details/product-descriptions/shopify-magic', guideLabel: 'Shopify product description guidance' },
-      { tool: 'Shopify', href: 'https://www.shopify.com/', action: 'Add the approved image and edited description to the product record. Complete price, inventory, shipping, variants, and product metadata.', handoff: 'Preview the page on mobile and desktop, verify product facts and purchasing details, then publish the listing.' }
+      {
+        tool: 'Photoroom',
+        href: 'https://www.photoroom.com/',
+        action: 'Start from the real phone photo. Remove the background, correct the canvas, and create a clean master product image. Then use AI Backgrounds or Product Beautifier when a studio-style presentation is needed. Keep the original source image unchanged.',
+        handoff: 'Export or save the approved master image before creating more variants. Do not continue if the product shape, color, label, proportions, or important physical details have changed.',
+        example: 'Input: a phone photo of a 500 ml stainless-steel water bottle on a kitchen table. Request: clean white background, centered product, realistic soft contact shadow, no changes to the bottle itself.',
+        output: 'A clean catalog/master image of the actual bottle, suitable as the reference asset for the remaining workflow.',
+        qualityGate: 'Compare the master against the original photo: logo, cap, bottle shape, finish, color, and accessories must remain accurate.',
+        guideUrl: 'https://help.photoroom.com/en/articles/6741465-how-to-use-ai-backgrounds',
+        guideLabel: 'Photoroom AI Backgrounds guide'
+      },
+      {
+        tool: 'Photoroom',
+        href: 'https://www.photoroom.com/',
+        action: 'Create one or more controlled lifestyle variants from the approved product image. Describe the environment, lighting, surface, and composition rather than asking AI to invent a replacement product. For larger catalogs, use consistent settings/templates and batch workflows where appropriate.',
+        handoff: 'Select only the variants that represent a plausible customer use case. Keep the master catalog image separate from lifestyle imagery so the listing always has an accurate product reference.',
+        example: 'Prompt: “Place this exact stainless-steel bottle on a bright wooden desk beside a notebook, natural morning light, realistic soft shadow, commercial e-commerce photography. Keep the bottle shape, logo, color, and cap unchanged.”',
+        output: 'Two or three approved lifestyle images that show context without changing the real product.',
+        qualityGate: 'Check perspective, scale, reflections, shadows, logo/label text, color, and physical geometry against the master image.',
+        guideUrl: 'https://help.photoroom.com/en/articles/11161812-how-to-use-product-beautifier',
+        guideLabel: 'Photoroom Product Beautifier guide'
+      },
+      {
+        tool: 'Canva',
+        href: 'https://www.canva.com/',
+        action: 'Use the approved product image(s) to prepare channel-specific creative: storefront graphics, social posts, promotional banners, or ad layouts. Keep the actual product asset unchanged and add verified text separately rather than relying on AI-generated packaging or signage text.',
+        handoff: 'Export the final approved image variants in the dimensions and formats required by the destination channel. Keep an uncompressed/master copy for future edits.',
+        example: 'Create a 1:1 promotional graphic using the approved bottle image, headline “Stay Hydrated Anywhere”, one verified feature (“500 ml”), and a clean brand background. Do not invent specifications.',
+        output: 'Channel-ready image assets with consistent branding and readable, verified copy.',
+        qualityGate: 'Check crop, product visibility, text spelling, claims, logo usage, and mobile readability before export.'
+      },
+      {
+        tool: 'Shopify Magic',
+        href: 'https://www.shopify.com/magic',
+        action: 'Generate a first draft of the product description from facts you supply: product type, material, dimensions/capacity, features, compatibility, use cases, variants, and approved keywords. Treat the generated text as a draft, not as a source of facts.',
+        handoff: 'Edit the generated description against your product specification sheet. Remove invented benefits, specifications, compatibility claims, guarantees, or other unsupported statements before saving.',
+        example: 'Input facts: “Stainless-steel bottle; 500 ml; screw cap; leak-resistant when closed; BPA-free only if verified by the manufacturer; suitable for cold beverages; available in black and silver.” Ask for a concise store description in a friendly, factual tone.',
+        output: 'A readable draft description grounded in supplied product facts.',
+        qualityGate: 'Every material specification and product claim must be traceable to the supplied product information or manufacturer documentation.',
+        guideUrl: 'https://help.shopify.com/en/manual/products/details/product-descriptions/shopify-magic',
+        guideLabel: 'Shopify Magic product description guidance'
+      },
+      {
+        tool: 'Shopify',
+        href: 'https://www.shopify.com/',
+        action: 'Create or update the product record with the approved master image, selected lifestyle images, edited description, title, variants, price, inventory, shipping information, product category, and relevant metadata. Preview the complete product page before publishing.',
+        handoff: 'Use the storefront preview to perform the final content, visual, mobile, and purchasing-flow checks. Publish only after every required field and asset has passed review.',
+        example: 'Product page: “500 ml Stainless-Steel Bottle” with master image first, lifestyle image second, verified capacity/material details, black/silver variants, correct price and inventory, and a concise factual description.',
+        output: 'A complete product page draft that is ready for publication after final QA.',
+        qualityGate: 'Verify image order, product title, variants, price, inventory, shipping, description, mobile layout, links, and checkout path. Confirm the published page matches the real product.'
+      }
     ],
     notes: [
-      'Move the approved image and copy into the store yourself; these steps do not imply automatic transfer between separate products.',
-      'AI-generated product copy and media should be reviewed for factual accuracy and faithful product representation before publishing.'
+      'The recommended flow is sequential: real source photo → verified master image → controlled lifestyle variants → channel creative → fact-grounded description → storefront entry → final QA.',
+      'The tools do not automatically pass every asset or decision to the next product. Save/export the approved output at each handoff and carry it forward deliberately.',
+      'AI-generated images can produce plausible but inaccurate product details. Treat the original photo and product specification as the source of truth.',
+      'Shopify states that merchants are responsible for the accuracy of AI-generated product descriptions and recommends reviewing generated content closely before publishing. citeturn0search0'
     ]
   }
 ];
