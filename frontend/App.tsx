@@ -18,7 +18,7 @@ import { ToolDetail } from './components/ToolDetail.tsx';
 
 const HomePage: React.FC = () => {
   useSEO({
-    title: 'Best AI Tools Directory & Workflows | newaitools',
+    title: 'Best AI Tools Directory 2026: Compare AI Software & Workflows',
     description: 'Compare the best AI tools for writing, research, design, video, coding, business, and more. Browse 32 categories and practical AI workflows.',
     keywords: ['best AI tools', 'AI tools directory', 'AI software', 'AI workflows', 'AI tool categories'],
     canonical: 'https://newaitools.online/',
