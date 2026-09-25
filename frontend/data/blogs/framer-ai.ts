@@ -22,7 +22,9 @@ export const framer_ai_review: BlogPost = {
   <p>This guide is based on current public Framer documentation and product updates checked on September 25, 2026. It is <strong>not a hands-on performance test</strong>, and it does not claim that Framer is universally the right choice for every kind of website.</p>
 
   <div class="takeaway-panel">
-    <h2>Key Takeaways</h2>
+        <div class="article-jump-links"><span>Jump to section:</span><a href="#framer-ai-now">What Framer AI does now</a><a href="#framer-agents">Agents and Skills</a><a href="#framer-credits">AI credits</a><a href="#framer-workflow">Practical workflow</a><a href="#framer-mistakes">Common mistakes</a></div>
+
+<h2>Key Takeaways</h2>
     <ul>
       <li><strong>AI stays on the canvas:</strong> Framer describes a workflow where the agent creates and edits pages, sections, copy, and visuals directly inside the project.</li>
       <li><strong>Skills make repeated work more consistent:</strong> Framer's September 22, 2026 update lets teams save reusable guidance for design systems, writing style, CMS structure, and checks.</li>
@@ -31,7 +33,7 @@ export const framer_ai_review: BlogPost = {
     </ul>
   </div>
 
-  <h2>What Framer AI does now</h2>
+  <h2 id="framer-ai-now">What Framer AI does now</h2>
   <p>Framer's current AI website builder is designed around an editable project rather than a static generated mockup. Its official AI page says you can describe the website, page, or update you need and have the agent create editable pages, sections, copy, and visuals directly in the project. The same page describes continuing the task in conversation or taking over on the canvas.</p>
   <p>That distinction matters because the handoff is not "generate and export." The generated work becomes part of the same visual project where a designer can inspect layouts, components, spacing, styles, CMS content, and page structure.</p>
 
@@ -67,15 +69,15 @@ export const framer_ai_review: BlogPost = {
     <figcaption id="framer-flow-caption">Framer's documented AI flow keeps generated work in the editable project so the team can refine it before publishing.</figcaption>
   </figure>
 
-  <h2>How Framer Agents fit into the workflow</h2>
+  <h2 id="framer-agents">How Framer Agents fit into the workflow</h2>
   <p>Framer's Agents documentation describes several tasks beyond initial page generation. Agents can help create and edit websites, work with CMS content, and operate with project context. Framer also documents connections for external agents such as Claude Code, Codex in ChatGPT, Cursor, and Gemini.</p>
   <p>This creates a practical split between <strong>canvas-native work</strong> and <strong>external technical work</strong>. A designer can keep page structure, styles, and components visible in Framer while a technical agent can handle a supported technical task. The exact access and setup depend on the feature and workspace configuration, so check the current provider documentation before designing an automated handoff.</p>
 
-  <h2>What Skills change for teams</h2>
+  <h2 id="framer-skills">What Skills change for teams</h2>
   <p>Framer announced Skills on September 22, 2026. The feature stores reusable instructions and context for how a team wants repeated work done. Framer says a Skill can capture design-system guidance, writing style, CMS structure, and the checks an agent should perform before finishing. Skills can reference project pages, components, and styles.</p>
   <p>The practical value is repeatability. Instead of rewriting the same design constraints in every prompt, a team can preserve them as project guidance. That does not remove review, because a reusable instruction can still be incomplete or unsuitable for a particular page.</p>
 
-  <h2>AI credits and plan limits</h2>
+  <h2 id="framer-credits">AI credits and plan limits</h2>
   <p>Framer's current help documentation says AI credits are a shared monthly workspace allowance. The amount used by a request depends on its complexity and the amount of work the Agent performs. On the Free plan, Framer currently lists a one-time 500-credit allowance, and credit-using features pause when that allowance is exhausted. Paid plans renew credits with the plan billing cycle, and unused included credits do not roll over.</p>
   <p>These details matter when you design an AI production loop. A large, multi-step agent request can consume more credits than a small edit, so splitting work into clear tasks can make usage easier to understand. Do not treat the exact allowance as permanent: Framer's help article was updated September 15, 2026 and plan details can change.</p>
 
@@ -83,7 +85,7 @@ export const framer_ai_review: BlogPost = {
   <p>Framer's current AI page lists an SEO check workflow that can review page metadata, social previews, image alt text, and other SEO settings. The page also describes CMS content assistance and reusable context for design-system, content, and project-specific work.</p>
   <p>The important boundary is that an SEO check is a review aid, not proof that a page will rank. A final publishing pass should still verify title and description accuracy, indexability, canonical behavior, image text alternatives, links, content claims, and mobile presentation.</p>
 
-  <h2>A practical Framer AI workflow for a SaaS landing page</h2>
+  <h2 id="framer-workflow">A practical Framer AI workflow for a SaaS landing page</h2>
   <ol class="workflow-steps">
     <li><strong>1. Write a concrete brief.</strong> Input: your product, audience, goal, key page sections, brand constraints, and required call to action. Example: "Create a SaaS landing page for a developer API platform with hero, proof, pricing, FAQ, and a signup CTA. Use our existing spacing and button styles." Expected output: an initial editable page. Quality gate: the page contains the required sections and does not invent product claims.</li>
     <li><strong>2. Give the Agent relevant project context.</strong> Input: the pages, components, and styles that define the intended design. Action: reference existing project context instead of restating every rule. Example: point the Agent at the current pricing section and button component. Expected output: changes that fit the existing project. Quality gate: compare typography, spacing, component reuse, and content structure with the source context.</li>
@@ -99,7 +101,7 @@ export const framer_ai_review: BlogPost = {
   <p>Browse our <a href="/category/website-and-app-creation">Website &amp; App Creation directory</a> for related builders and site tools. For a source-first research process that is broader than a single website builder, see our <a href="/blog/ai-deep-research-source-first-workflow">AI deep research guide</a>. The same evidence-first discipline applies when an agent is generating page structure or copy.</p>
   <p>For repository-level AI development, our <a href="/blog/ai-coding-agents-pr-first-workflow-small-teams">PR-first AI coding workflow</a> covers the separate review boundary used after generated changes leave the visual design environment.</p>
 
-  <h2>Common mistakes when using Framer AI</h2>
+  <h2 id="framer-mistakes">Common mistakes when using Framer AI</h2>
   <h3>Starting with a vague brief</h3>
   <p>"Make me a great website" leaves too many decisions implicit. Define the audience, page type, sections, content constraints, and review condition.</p>
   <h3>Generating copy without a fact source</h3>
