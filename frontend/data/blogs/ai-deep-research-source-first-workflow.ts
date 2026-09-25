@@ -4,7 +4,7 @@ export const ai_deep_research_source_first_workflow: BlogPost = {
   id: 'ai-deep-research-source-first-workflow',
   slug: 'ai-deep-research-source-first-workflow',
   category: 'Guide',
-  title: "Fact-Check Your AI: The Bulletproof Deep Research Workflow You Need Right Now",
+  title: "AI Deep Research: A Source-First Workflow for 2026",
   excerpt: "How freelancers, marketers, and small teams can use AI research tools to build a useful brief without confusing citations with proof.",
   author: 'newaitools Editorial',
   publishDate: '2026-09-25',
@@ -15,7 +15,7 @@ export const ai_deep_research_source_first_workflow: BlogPost = {
   ogImage: '/blog/images/ai-deep-research-source-first.png',
   ogImageAlt: "Editorial illustration of a researcher checking several source streams before passing a verified summary into a concise research brief.",
   content: `<section class="prose-article">
-      <h1>Fact-Check Your AI: The Bulletproof Deep Research Workflow You Need Right Now</h1>
+      <h1>AI Deep Research: A Source-First Workflow for 2026</h1>
 
       <p><strong>Use AI deep research when the question needs several sources, not when you only need one current fact.</strong> The useful workflow is to define the decision you are trying to make, set a source policy, let the tool build a draft map of the evidence, and then verify the claims that matter in the original documents.</p>
       <p>ChatGPT Deep Research, Gemini Deep Research, and Perplexity Pro Search all promise some version of multi-source synthesis with links. The important difference is not which product sounds most thorough. It is <strong>how much control you have over sources, how clearly the research trail is exposed, and how easily you can turn the result into a brief someone else can audit.</strong></p>
@@ -49,6 +49,42 @@ export const ai_deep_research_source_first_workflow: BlogPost = {
       <p>For a closer look at the directory entries, see the <a href="/tool/chatgpt">ChatGPT</a>, <a href="/tool/gemini">Gemini</a>, and <a href="/tool/perplexity">Perplexity</a> pages in our <a href="/tools">tool directory</a>, then confirm current access and limits in the providers' own documentation. A directory description is a starting point, not a substitute for account-specific terms.</p>
 
       <h2>A source-first workflow for a useful research brief</h2>
+
+      <figure class="research-figure" aria-labelledby="research-flow-caption">
+        <svg viewBox="0 0 900 190" role="img" aria-labelledby="research-flow-title research-flow-desc">
+          <title id="research-flow-title">Source-first AI research workflow</title>
+          <desc id="research-flow-desc">A research sequence from decision question to source policy, evidence map, original-source verification, disagreement check, and final brief.</desc>
+          <line x1="135" y1="82" x2="190" y2="82" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <line x1="285" y1="82" x2="340" y2="82" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <line x1="435" y1="82" x2="490" y2="82" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <line x1="585" y1="82" x2="640" y2="82" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <line x1="735" y1="82" x2="790" y2="82" stroke="currentColor" stroke-width="2" opacity="0.22"/>
+          <g fill="currentColor">
+            <rect x="10" y="40" width="125" height="84" rx="14" opacity="0.06"/>
+            <rect x="160" y="40" width="125" height="84" rx="14" opacity="0.09"/>
+            <rect x="310" y="40" width="125" height="84" rx="14" opacity="0.12"/>
+            <rect x="460" y="40" width="125" height="84" rx="14" opacity="0.15"/>
+            <rect x="610" y="40" width="125" height="84" rx="14" opacity="0.18"/>
+            <rect x="760" y="40" width="125" height="84" rx="14" opacity="0.22"/>
+          </g>
+          <g fill="currentColor" font-family="system-ui, sans-serif" text-anchor="middle">
+            <text x="72" y="69" font-size="14" font-weight="700">1. Decide</text>
+            <text x="72" y="91" font-size="12">Define the decision</text>
+            <text x="222" y="69" font-size="14" font-weight="700">2. Source</text>
+            <text x="222" y="91" font-size="12">Set evidence policy</text>
+            <text x="372" y="69" font-size="14" font-weight="700">3. Map</text>
+            <text x="372" y="91" font-size="12">Build evidence map</text>
+            <text x="522" y="69" font-size="14" font-weight="700">4. Verify</text>
+            <text x="522" y="91" font-size="12">Open original sources</text>
+            <text x="672" y="69" font-size="14" font-weight="700">5. Challenge</text>
+            <text x="672" y="91" font-size="12">Find disagreement</text>
+            <text x="822" y="69" font-size="14" font-weight="700">6. Brief</text>
+            <text x="822" y="91" font-size="12">Write the final handoff</text>
+            <text x="450" y="166" font-size="11" opacity="0.45">Research output: a traceable brief, not an unverified summary.</text>
+          </g>
+        </svg>
+        <figcaption id="research-flow-caption">The key handoff happens at verification: each consequential claim is checked against the source that created it.</figcaption>
+      </figure>
       <h3>1. Start with a decision, not a topic</h3>
       <p>"Research AI video tools" is a topic. "Choose a tool for a two-person marketing team that needs captioned social clips, shared review, and predictable export" is a decision. The second version gives the research a stopping point and makes irrelevant information easier to reject.</p>
       <p>Write down the audience, the decision, the date by which the answer must be current, and the two or three constraints that would change the recommendation. If you cannot say what the brief will help someone decide, the prompt is still too broad.</p>
@@ -95,7 +131,7 @@ export const ai_deep_research_source_first_workflow: BlogPost = {
       <p><strong>Connected sources create a responsibility boundary.</strong> Adding Drive, Gmail, SharePoint, uploaded files, or other private material can make research more relevant, but you still need to check permissions, retention, sharing, and whether the final brief contains information the recipient should not see.</p>
       <p><strong>A polished report can hide uncertainty.</strong> Keep disputed claims and missing evidence visible. If the source does not settle the question, the correct output may be "not established yet," followed by what would resolve it.</p>
 
-      <h2>Our recommendation based on the evidence</h2>
+      <h2>A practical default for professional research</h2>
       <p>For most professional research, start with the tool whose source controls and output format match the person who will review the work. Then use a source-first brief: define the decision, specify acceptable sources, inspect the plan, maintain an evidence map, verify consequential claims, and preserve the links and check date.</p>
       <p>That workflow is modest by design. It does not promise that deep research will find everything or that citations will always be right. It gives a small team something more valuable: a research result that can be questioned, updated, and handed to another person without asking them to trust a black box.</p>
       <p>For similar trust-first approaches to other AI workflows, see our guides on <a href="/blog/ai-notes-client-calls-consent-first">consent-first AI meeting notes</a> and <a href="/blog/ai-coding-agents-pr-first-workflow-small-teams">PR-first AI coding agents</a>.</p>
