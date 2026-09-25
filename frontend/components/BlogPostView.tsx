@@ -208,7 +208,7 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
       <div className="mt-20 p-8 bg-ink text-paper rounded-lg text-center">
         <h3 className="font-serif text-2xl mb-3">Discover More Design Tools</h3>
         <p className="mb-6 text-paper/80">
-          Join 12,000+ designers discovering new AI tools every week
+          Research-led guides, comparisons, and practical AI tool workflows
         </p>
         <a href="/tools" className="inline-block bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-sm font-medium transition-colors">
           Browse All Tools
