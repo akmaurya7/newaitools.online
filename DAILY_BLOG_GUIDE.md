@@ -28,7 +28,7 @@ The reference repository is an editorial baseline. Adapt its rules to this site'
 
 ## Publishing flow
 
-Discover topic -> choose search intent -> choose claude-blog template -> research -> verify evidence -> outline -> write -> add visuals -> add internal links -> update linked workflows/tools/pages -> QA -> build -> commit -> deploy
+Discover topic -> choose search intent -> choose claude-blog template -> research -> verify evidence -> outline -> write -> add visuals -> add internal links -> update linked workflows/tools/pages -> local/static QA -> build verification -> branch -> PR -> Vercel/CI verification -> merge -> deploy
 
 ## Research
 
@@ -121,7 +121,7 @@ When adding a post:
 - Keep external source URLs as normal HTML links. Never paste tool citation tokens into TypeScript source.
 - Keep inline SVGs sanitized and accessible when used.
 - Update supporting pages whenever article claims or links require it.
-- Run npm run build before publication when the environment allows it.
+- Run `npm run build` before publication whenever a runnable project environment is available. If a local build environment is not available, do not claim the code was locally verified; use a branch/PR and require the repository's Vercel/CI build to pass before merging to `main`.
 
 ## Quality review
 
