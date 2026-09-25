@@ -168,7 +168,13 @@ export const ai_product_photography_phone_to_store: BlogPost = {
 
     <p>For the broader site workflow, explore our <a href="/category/e-commerce">E-commerce tools</a> and <a href="/category/image-graphic-design">Image &amp; Graphic Design tools</a> to see the tools that can fit into each stage.</p>
 
-    <h2>Research Notes</h2>
-    <p>This guide is intended as a practical workflow rather than a claim that one AI product-photo tool is universally better than another. Tool capabilities, pricing, usage limits, commercial terms, and image-generation behavior can change, so verify the current product documentation and plan terms before making a production or purchasing decision.</p>
+    <h2>Research Notes &amp; Official References</h2>
+    <p>This guide is intended as a practical workflow rather than a claim that one AI product-photo tool is universally better than another. The workflow was checked against current official product documentation on September 25, 2026. Tool capabilities, pricing, usage limits, commercial terms, and image-generation behavior can change, so verify the current documentation and plan terms before making a production or purchasing decision.</p>
+    <ul>
+      <li><a href="https://help.photoroom.com/en/articles/6741465-how-to-use-ai-backgrounds" target="_blank" rel="noreferrer">Photoroom: AI Backgrounds</a> — source-image workflow, prompt/reference-image backgrounds, and batch consistency details.</li>
+      <li><a href="https://help.photoroom.com/en/articles/11161812-how-to-use-product-beautifier" target="_blank" rel="noreferrer">Photoroom: Product Beautifier</a> — source-photo based studio-style product generation and review workflow.</li>
+      <li><a href="https://www.canva.com/help/background-remover/" target="_blank" rel="noreferrer">Canva: Background Remover</a> — current background-removal workflow and limitations.</li>
+      <li><a href="https://help.shopify.com/en/manual/products/details/product-descriptions/shopify-magic" target="_blank" rel="noreferrer">Shopify Help: Automatically generating product descriptions</a> — current Shopify Magic workflow and the requirement to review generated copy for accuracy.</li>
+    </ul>
   </section>`
 };
