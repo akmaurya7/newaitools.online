@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">AI product photography from a phone photo</title>
+<desc id="desc">A phone product photo becomes polished e-commerce catalog and lifestyle images through an AI workflow.</desc>
+<rect width="1200" height="630" fill="#f5efe6"/>
+<rect x="70" y="70" width="1060" height="490" rx="36" fill="#fffaf2" stroke="#2f3a45" stroke-width="3"/>
+<rect x="125" y="135" width="300" height="360" rx="32" fill="#e7edf1" stroke="#2f3a45" stroke-width="3"/>
+<rect x="155" y="175" width="240" height="220" rx="18" fill="#d7c3aa"/>
+<circle cx="275" cy="285" r="72" fill="#fffaf2" stroke="#2f3a45" stroke-width="3"/>
+<rect x="245" y="255" width="60" height="70" rx="10" fill="#9aa7b2"/>
+<path d="M470 315 H625" stroke="#2f3a45" stroke-width="6" stroke-linecap="round"/>
+<path d="M600 285 L630 315 L600 345" fill="none" stroke="#2f3a45" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="670" y="145" width="390" height="150" rx="24" fill="#dce9e0" stroke="#2f3a45" stroke-width="3"/>
+<rect x="710" y="185" width="110" height="70" rx="14" fill="#fffaf2" stroke="#2f3a45" stroke-width="3"/>
+<circle cx="765" cy="220" r="20" fill="#9aa7b2"/>
+<path d="M850 185 H1015 M850 220 H980 M850 255 H945" stroke="#2f3a45" stroke-width="8" stroke-linecap="round"/>
+<rect x="670" y="335" width="390" height="150" rx="24" fill="#e9ded4" stroke="#2f3a45" stroke-width="3"/>
+<circle cx="760" cy="410" r="52" fill="#fffaf2" stroke="#2f3a45" stroke-width="3"/>
+<path d="M725 430 C745 395 770 395 795 430" fill="none" stroke="#9aa7b2" stroke-width="8" stroke-linecap="round"/>
+<path d="M825 385 H1015 M825 420 H990 M825 455 H950" stroke="#2f3a45" stroke-width="8" stroke-linecap="round"/>
+<text x="125" y="105" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#2f3a45">PHONE PHOTO → AI PRODUCT IMAGES</text>
+<text x="670" y="525" font-family="Arial, sans-serif" font-size="24" fill="#2f3a45">catalog • lifestyle • channel variants</text>
+</svg>
