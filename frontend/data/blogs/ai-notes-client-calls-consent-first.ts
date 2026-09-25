@@ -4,7 +4,7 @@ export const ai_notes_client_calls_consent_first: BlogPost = {
   id: 'ai-notes-client-calls-consent-first',
   slug: 'ai-notes-client-calls-consent-first',
   category: 'Guide',
-  title: "Stop Losing Client Trust: The Ultimate Consent-First AI Meeting Notes Workflow",
+  title: "AI Meeting Notes: A Consent-First Workflow for Client Calls in 2026",
   excerpt: "A practical guide to deciding when to use AI meeting notes, how to explain them to clients, and how to review and share the smallest useful record.",
   author: 'newaitools Editorial',
   publishDate: '2026-09-24',
@@ -15,7 +15,7 @@ export const ai_notes_client_calls_consent_first: BlogPost = {
   ogImage: '/blog/images/ai-notes-client-calls.webp',
   ogImageAlt: "Editorial illustration of a client video call flowing into a human-reviewed meeting summary, with a visible consent check and one action item passed forward.",
   content: `<section class="prose-article">
-      <h1>Stop Losing Client Trust: The Ultimate Consent-First AI Meeting Notes Workflow</h1>
+      <h1>AI Meeting Notes: A Consent-First Workflow for Client Calls in 2026</h1>
 
       <p>If you use an AI notetaker on a client call, treat it as a guest that needs an introduction and a clear purpose. Tell the client what the tool will capture, ask for an affirmative yes before it starts, and offer a no-recording option without friction. Then review the draft notes yourself and share only the agreed follow-up, not a recording or full transcript by default.</p>
       <p>This workflow takes a little more care than switching on an assistant for every meeting. It also makes the useful part of AI notes, remembering decisions and next steps, less likely to create an unexpected privacy or client-trust problem.</p>
