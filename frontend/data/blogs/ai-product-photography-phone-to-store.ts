@@ -12,7 +12,7 @@ export const ai_product_photography_phone_to_store: BlogPost = {
   readTime: 10,
   tags: ['AI product photography', 'e-commerce', 'product images', 'Shopify', 'Photoroom', 'Canva', 'AI design'],
   featured: false,
-  ogImage: '/blog/images/ai-product-photography-phone-to-store.jpg',
+  ogImage: '/blog/images/ai-product-photography-phone-to-store.svg',
   ogImageAlt: 'Minimal editorial illustration showing a phone product photo becoming polished e-commerce product images through an AI workflow.',
   content: `<section class="prose-article">
     <h1>How to Create E-commerce Product Photos With AI in 2026</h1>
