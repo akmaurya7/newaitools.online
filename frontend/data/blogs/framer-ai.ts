@@ -96,6 +96,8 @@ export const framer_ai_review: BlogPost = {
   <p>Framer's documented strengths are visual website creation, editable page generation, CMS workflows, reusable project context, and agent-assisted iteration. That makes it a natural candidate for marketing sites, landing pages, content-driven websites, and design-led publishing workflows.</p>
   <p>For a project with requirements outside the documented visual publishing and supported agent workflow, inspect the integration boundary before committing to the platform. For example, ask whether the required backend, authentication, deployment, code ownership, data model, or operational controls are actually supported by your chosen architecture. Avoid turning a product category assumption into a capability claim.</p>
 
+  <p>For a source-first research process that is broader than a single website builder, see our <a href="/blog/ai-deep-research-source-first-workflow">AI deep research guide</a>. The same evidence-first discipline applies when an agent is generating page structure or copy.</p>
+
   <h2>Common mistakes when using Framer AI</h2>
   <h3>Starting with a vague brief</h3>
   <p>"Make me a great website" leaves too many decisions implicit. Define the audience, page type, sections, content constraints, and review condition.</p>
