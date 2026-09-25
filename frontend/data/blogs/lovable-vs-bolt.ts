@@ -119,6 +119,7 @@ export const lovable_vs_bolt_comparison: BlogPost = {
   <h2 id="handoff">GitHub and production handoff</h2>
   <p>The important question after generation is whether the application can leave the builder cleanly. Lovable's current materials say you own the code you create and provide GitHub-oriented workflows through the platform. Bolt also documents repository and GitHub-oriented workflows as part of its developer experience. The exact sync behavior depends on the current product configuration, so the final handoff should be verified inside the account before production use.</p>
   <p>For a professional repository, keep the same boundary used in our <a href="/blog/ai-coding-agents-pr-first-workflow-small-teams">PR-first AI coding workflow</a>: generated changes should reach a reviewable branch, pass tests, and then be merged by the normal repository process. This separates rapid app generation from production change control.</p>
+  <p>For the research and verification side of AI-assisted work, see our <a href="/blog/ai-deep-research-source-first-workflow">source-first deep research workflow</a>, which applies the same evidence and handoff discipline to research tasks.</p>
   <p>Also keep the deployment handoff explicit. The builder can generate or modify an application, but repository ownership, branch protection, secrets, CI checks, and production release approval remain separate controls.</p>
 
   <h2 id="decision">How to choose by workflow</h2>
