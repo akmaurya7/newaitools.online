@@ -1,3 +1,4 @@
+import { lovable_vs_bolt_comparison } from './lovable-vs-bolt';
 import { framer_ai_review } from './framer-ai';
 import { ai_notes_client_calls_consent_first } from './ai-notes-client-calls-consent-first';
 import { ai_coding_agents_pr_first_workflow_small_teams } from './ai-coding-agents-pr-first-workflow-small-teams';
@@ -7,6 +8,7 @@ import { notebooklm_review_2026_limits_features } from './notebooklm-review-2026
 import { BlogPost } from '../../data';
 
 export const BLOG_POSTS: BlogPost[] = [
+  lovable_vs_bolt_comparison,
   framer_ai_review,
   ai_notes_client_calls_consent_first,
   ai_coding_agents_pr_first_workflow_small_teams,
