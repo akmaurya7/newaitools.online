@@ -1,0 +1,9 @@
+Perform your twice-daily blog generation task:
+1. Review `frontend/data.ts` and `frontend/data/blogs` to find one AI tool that either doesn't have a blog post yet, OR has a recent major update that warrants a new, separate blog post.
+2. Conduct a complete, in-depth analysis of this tool using the skills from the `claude-blog` plugin.
+3. Write the new blog post in its own individual `.ts` file inside `frontend/data/blogs/` (and export/import it into `frontend/data/blogs/index.ts`).
+4. Ensure the blog has a highly engaging, hookable, attention-grabbing title.
+5. Generate a light, clean, and minimal image for it using the `generate_image` tool and place it in `frontend/public/blog/images/`.
+6. Run `npx tsx generate-sitemap.ts` to update the sitemaps.
+7. Test the project by running `npm run build`. 
+8. If the build passes, commit and push all changes to GitHub.
