@@ -14,7 +14,7 @@ export const categorySlug = (category: string) => category.toLowerCase().replace
 const categoryDescriptions: Record<string, string> = {
   'Writing & Text': 'Write, edit, summarize, and polish everything from quick notes to long-form content.',
   'Research & Knowledge': 'Find answers, explore sources, and make sense of the information you work with.',
-  'Image & Graphic Design': 'Generate images, shape visual identities, and speed up everyday design work.',
+  'Image & Graphic Design': 'Discover design tools and AI design tools for generating images, shaping visual identities, and speeding up everyday design work.',
   'Video': 'Create, edit, and transform video for campaigns, stories, and social content.',
   'Audio & Music': 'Make speech, music, podcasts, and audio production easier with AI.',
   'Coding & Development': 'Move from idea to code with assistants for building, debugging, and shipping software.',
@@ -156,7 +156,7 @@ export const CategoryDetail: React.FC<{ category: string }> = ({ category }) => 
   useSEO({
     title: `${category} AI Tools | newaitools`,
     description: categoryDescriptions[category] || `Explore AI tools in ${category}.`,
-    keywords: [category, `${category} AI tools`, 'AI tools'],
+    keywords: [category, `${category} AI tools`, 'AI tools', ...(category === 'Image & Graphic Design' ? ['design tools', 'designtools', 'designai'] : [])],
     canonical: `https://newaitools.online/category/${categorySlug(category)}`,
     breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Categories', url: 'https://newaitools.online/categories' }, { name: category, url: `https://newaitools.online/category/${categorySlug(category)}` }]
   });
