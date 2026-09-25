@@ -378,7 +378,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: 'ai-notes-client-calls-consent-first',
     slug: 'ai-notes-client-calls-consent-first',
     category: 'Guide',
-    title: 'AI Notes on Client Calls: A Consent-First Workflow for Freelancers',
+    title: 'Stop Losing Client Trust: The Ultimate Consent-First AI Meeting Notes Workflow',
     excerpt: 'A practical guide to deciding when to use AI meeting notes, how to explain them to clients, and how to review and share the smallest useful record.',
     author: 'newaitools Editorial',
     publishDate: '2026-09-24',
@@ -389,7 +389,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ogImage: '/blog/images/ai-notes-client-calls.webp',
     ogImageAlt: 'Editorial illustration of a client video call flowing into a human-reviewed meeting summary, with a visible consent check and one action item passed forward.',
     content: `<section class="prose-article">
-      <h1>AI Notes on Client Calls: A Consent-First Workflow for Freelancers</h1>
+      <h1>Stop Losing Client Trust: The Ultimate Consent-First AI Meeting Notes Workflow</h1>
 
       <p>If you use an AI notetaker on a client call, treat it as a guest that needs an introduction and a clear purpose. Tell the client what the tool will capture, ask for an affirmative yes before it starts, and offer a no-recording option without friction. Then review the draft notes yourself and share only the agreed follow-up, not a recording or full transcript by default.</p>
       <p>This workflow takes a little more care than switching on an assistant for every meeting. It also makes the useful part of AI notes, remembering decisions and next steps, less likely to create an unexpected privacy or client-trust problem.</p>
@@ -480,7 +480,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: 'ai-coding-agents-pr-first-workflow-small-teams',
     slug: 'ai-coding-agents-pr-first-workflow-small-teams',
     category: 'Tutorial',
-    title: 'AI Coding Agents for Small Teams: A PR-First Workflow That Keeps Humans in Control',
+    title: 'Don\\'t Let AI Break Your Repo: The Safest PR-First Workflow for Small Teams',
     excerpt: 'A practical way to use coding agents for scoped repository work while keeping access, testing, review, and merging visible to the team.',
     author: 'newaitools Editorial',
     publishDate: '2026-09-24',
@@ -490,7 +490,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ogImage: '/blog/images/ai-coding-agents-pr-first.png',
     ogImageAlt: 'Editorial illustration of AI-generated code changes passing through a human review gate before reaching a protected repository branch.',
     content: `<section class="prose-article">
-      <h1>AI Coding Agents for Small Teams: A PR-First Workflow That Keeps Humans in Control</h1>
+      <h1>Don't Let AI Break Your Repo: The Safest PR-First Workflow for Small Teams</h1>
 
       <p>If an AI coding agent can edit files, run commands, and open a pull request, the tempting workflow is to give it a large task and check the result at the end. For a small team, that is usually the wrong boundary.</p>
       <p>A better default is <strong>PR first, merge later</strong>: write a narrow task, give the agent only the repository context it needs, let it work on an isolated branch or sandbox, run the normal checks, and review the diff as you would review a contribution from a new teammate. You get a useful speed boost without turning the default branch into an experiment.</p>
@@ -603,7 +603,7 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
     id: 'ai-deep-research-source-first-workflow',
     slug: 'ai-deep-research-source-first-workflow',
     category: 'Guide',
-    title: 'AI Deep Research for Work: A Source-First Workflow That Holds Up',
+    title: 'Fact-Check Your AI: The Bulletproof Deep Research Workflow You Need Right Now',
     excerpt: 'How freelancers, marketers, and small teams can use AI research tools to build a useful brief without confusing citations with proof.',
     author: 'newaitools Editorial',
     publishDate: '2026-09-25',
@@ -613,7 +613,7 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
     ogImage: '/blog/images/ai-deep-research-source-first.png',
     ogImageAlt: 'Editorial illustration of a researcher checking several source streams before passing a verified summary into a concise research brief.',
     content: `<section class="prose-article">
-      <h1>AI Deep Research for Work: A Source-First Workflow That Holds Up</h1>
+      <h1>Fact-Check Your AI: The Bulletproof Deep Research Workflow You Need Right Now</h1>
 
       <p><strong>Use AI deep research when the question needs several sources, not when you only need one current fact.</strong> The useful workflow is to define the decision you are trying to make, set a source policy, let the tool build a draft map of the evidence, and then verify the claims that matter in the original documents.</p>
       <p>ChatGPT Deep Research, Gemini Deep Research, and Perplexity Pro Search all promise some version of multi-source synthesis with links. The important difference is not which product sounds most thorough. It is <strong>how much control you have over sources, how clearly the research trail is exposed, and how easily you can turn the result into a brief someone else can audit.</strong></p>
