@@ -37,7 +37,7 @@ export const ai_notes_client_calls_consent_first: BlogPost = {
       <p><strong>Before choosing an app, ask what you actually need to remember.</strong> A project kick-off may need decisions, owners, and deadlines. A confidential discovery call may be better served by a few manual notes and a client-approved recap. A complete audio or video archive is often more information than the follow-up requires.</p>
       <p>Think of this as a <strong>capture budget</strong>: choose the least detailed record that solves the recall problem, then decide how long it is useful and who needs access. The order matters. A summary can still expose sensitive details, but a transcript or recording preserves much more raw conversation and is easier to search, forward, or misunderstand later.</p>
 
-      <h2>What the current tools do differently</h2>
+      <h2 id="tool-differences">What the current tools do differently</h2>
       <p><strong>"AI notes" describes several different capture methods with different privacy implications.</strong> A meeting app may process speech during the call without keeping a transcript; another feature may save notes to cloud storage; a third-party assistant may join as a visible participant or offer a bot-free desktop mode. Check the actual mode and sharing defaults you plan to use.</p>
       <div class="overflow-x-auto rounded-lg border border-ink/10"><table class="min-w-[640px]">
         <thead><tr><th>Option</th><th>What the documentation says</th><th>Useful check before a client call</th></tr></thead>
@@ -51,7 +51,7 @@ export const ai_notes_client_calls_consent_first: BlogPost = {
       </table></div>
       <p>Sources: <a href="https://support.microsoft.com/en-us/teams/copilot/use-copilot-without-transcribing-or-recording-a-teams-meeting-or-call">Microsoft's Copilot no-transcription guide</a>; <a href="https://support.google.com/meet/answer/14754931?hl=en">Google Meet notes help</a> and <a href="https://workspaceupdates.googleblog.com/2026/04/require-explicit-consent-for-take-notes-with-Gemini-recordings-and-transcripts-in-Google-Meet.html">Google's participant-consent announcement</a>; <a href="https://help.fathom.video/en/articles/294272">Fathom's consent-email rules</a>, <a href="https://help.fathom.video/en/articles/11577345">capture modes</a>, and <a href="https://help.fathom.video/en/articles/7574785">sharing controls</a>; <a href="https://help.otter.ai/hc/en-us/articles/39339238308503-Recording-Permissions-with-Otter">Otter's recording-permissions guide</a> and <a href="https://help.otter.ai/hc/en-us/articles/19500988656279-Set-a-custom-Data-Retention-policy">retention policy guide</a>.</p>
 
-      <h2>A repeatable workflow for a client call</h2>
+      <h2 id="client-workflow">A repeatable workflow for a client call</h2>
 
       <figure class="research-figure" aria-labelledby="consent-flow-caption">
         <svg viewBox="0 0 900 170" role="img" aria-labelledby="consent-flow-title consent-flow-desc">
@@ -109,7 +109,7 @@ export const ai_notes_client_calls_consent_first: BlogPost = {
       <h3>7. Remove what you no longer need</h3>
       <p>Make deletion part of the workflow, not an occasional cleanup project. Set a reminder or retention rule for raw audio, video, and transcripts; keep only the final notes that your project and recordkeeping requirements call for. Check whether deletion from the meeting app also removes exports, shared files, or connected-storage copies. If a client asks to stop capture or remove a record, follow your agreed process and confirm what you can delete.</p>
 
-      <h2>When the client says no</h2>
+      <h2 id="no-recording">When the client says no</h2>
       <p><strong>Respond plainly: "No problem. I'll take notes manually and send you the decisions and next steps for confirmation."</strong> You can keep a short agenda, pause at decision points to write them down, then send a recap and ask the client to correct it. If you are joining someone else's meeting and an unfamiliar assistant appears, ask who controls the recording, what it captures, and who can see the result. The <a href="https://www.ap.org/news-highlights/spotlights/2026/ai-notetakers-promise-easy-meeting-recaps-but-some-professionals-question-their-use/">Associated Press's reporting on workplace AI notetakers</a> documents privacy and voice-data concerns and quotes experts recommending that people ask where meeting data goes, why it is stored, and when it will be deleted. The same questions are sensible due diligence for a freelancer choosing a vendor.</p>
 
       <h2>Practical takeaway</h2>
@@ -118,7 +118,7 @@ export const ai_notes_client_calls_consent_first: BlogPost = {
       <p>AI notes can help a freelancer keep projects moving, but a trustworthy workflow begins before the recording control does. Choose the minimum capture, explain it in ordinary language, obtain a clear yes, check the generated record, share a short recap with the right people, and delete the raw material when it is no longer needed. When consent is uncertain or the subject is sensitive, manual notes are a perfectly useful fallback.</p>
       <p>If you are exploring how AI coding assistants fit into a similar trust-first approach, see our guide on <a href="/blog/ai-coding-agents-pr-first-workflow-small-teams">AI coding agents with a PR-first workflow</a>. For research tasks that need verified sources rather than meeting capture, our <a href="/blog/ai-deep-research-source-first-workflow">source-first deep research workflow</a> covers a comparable process.</p>
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="faq">Frequently asked questions</h2>
 
       <h3>Do I need consent to use AI notes on a client call?</h3>
       <p>Laws vary by jurisdiction, and this guide does not offer legal advice. In practice, asking for a clear yes before capture starts protects the client relationship regardless of the specific legal requirement. If you are unsure, ask a qualified adviser before enabling the tool.</p>
