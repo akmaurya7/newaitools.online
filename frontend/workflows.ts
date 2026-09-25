@@ -145,7 +145,7 @@ export const WORKFLOWS: Workflow[] = [
       'The recommended flow is sequential: real source photo → verified master image → controlled lifestyle variants → channel creative → fact-grounded description → storefront entry → final QA.',
       'The tools do not automatically pass every asset or decision to the next product. Save/export the approved output at each handoff and carry it forward deliberately.',
       'AI-generated images can produce plausible but inaccurate product details. Treat the original photo and product specification as the source of truth.',
-      'Shopify's current guidance says merchants are responsible for the accuracy of AI-generated product descriptions and should review generated content closely before publishing.'
+      "Shopify's current guidance says merchants are responsible for the accuracy of AI-generated product descriptions and should review generated content closely before publishing."
     ]
   }
 ];
