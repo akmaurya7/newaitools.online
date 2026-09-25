@@ -7,7 +7,7 @@ https://github.com/AgriciDaniel/claude-blog
 
 ## Required rule
 
-Before writing, rewriting, researching, reviewing, or publishing any blog post, consult the latest `main` branch of the reference repository. Do not rely on a remembered or copied version of its guidance.
+Before writing, rewriting, researching, reviewing, or publishing any blog post, consult the latest `main` branch of the reference repository. Do not rely on a remembered or copied version of its guidance. Record the upstream commit SHA used for the run so the editorial baseline is reproducible.
 
 At minimum, review:
 
@@ -43,6 +43,7 @@ Every published article should:
 12. Maintain accurate publish/modified dates and page metadata.
 13. Review product, pricing, workflow, and capability claims against current official documentation.
 14. Run the site's own build/QA checks where available before publishing.
+15. Treat claude-blog v2.2.0's five-gate delivery contract as the quality model: capability discovery, format completeness, visual verification, blocking content review, and asset/link integrity. Adapt these gates to NewAITools' React + TypeScript/Vite architecture rather than pretending the upstream markdown/PDF artifact pipeline was run.
 
 ## Workflow consistency rule
 
@@ -64,4 +65,4 @@ A product review may claim hands-on findings only when the test actually happene
 
 ## Maintenance rule
 
-When upstream `claude-blog` changes, future blog runs must re-check the current reference and apply relevant changes. Existing articles should be updated when a material editorial, factual, SEO, or workflow-consistency issue is discovered.
+When upstream `claude-blog` changes, future blog runs must re-check the current reference and apply relevant changes. Existing articles should be updated when a material editorial, factual, SEO, or workflow-consistency issue is discovered. For long posts, add navigation aids where they materially improve scanning. Do not force a table of contents, statistics, charts, FAQs, or fixed word counts when the topic does not warrant them.
