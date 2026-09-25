@@ -11,4 +11,4 @@ Disallow: /node_modules
 Disallow: /.git
 
 # Sitemap
-Sitemap: https://newaitools.online/sitemap.xml
+Sitemap: https://newaitools.online/sitemap_index.xml
