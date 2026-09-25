@@ -31,12 +31,14 @@ export const ai_coding_agents_pr_first_workflow_small_teams: BlogPost = {
         </ul>
       </blockquote>
 
-      <h2>Why a PR-first workflow is the useful middle ground</h2>
+          <div class="article-jump-links"><span>Jump to section:</span><a href="#pr-why">Why PR first</a><a href="#coding-tools">Current coding agents</a><a href="#pr-workflow">Six-step workflow</a><a href="#coding-guardrails">Guardrails</a><a href="#coding-default">Practical default</a></div>
+
+<h2 id="pr-why">Why a PR-first workflow is the useful middle ground</h2>
       <p><strong>Small teams often have two bad options: use an agent so cautiously that it only answers questions, or let it make broad changes and rely on a hurried final glance.</strong> A pull request creates a more useful middle layer. The agent can research, edit, test, and explain its work; the team can inspect the exact files, checks, and assumptions before merging.</p>
       <p>That structure also matches the guardrails vendors are documenting. GitHub says its cloud agent works in an ephemeral, firewalled environment, creates changes on a branch, and cannot push directly to the default branch. GitHub also says an agent-created pull request still needs human review and merge approval. Those are product controls, not a replacement for your repository's own branch protection, tests, or review standards.</p>
       <p>Independent research points in the same direction. A 2026 study of more than 33,000 agent-authored pull requests found that security-related agent PRs had lower merge rates and longer review latency than non-security PRs. A separate study found that reviewer engagement was the strongest correlation with successful integration, while larger changes and force pushes were associated with lower merge likelihood. The practical takeaway: <strong>the quality of the collaboration loop matters as much as the agent's ability to produce code.</strong></p>
 
-      <h2>What the current tools actually give you</h2>
+      <h2 id="coding-tools">What the current tools actually give you</h2>
       <p><strong>The names overlap, but the working model is different.</strong> Use the option that matches where you want the review to happen.</p>
       <div class="overflow-x-auto rounded-lg border border-ink/10"><table class="min-w-[640px]">
         <thead><tr><th>Execution surface</th><th>Best fit</th><th>Documented controls</th><th>Worth checking</th></tr></thead>
@@ -49,7 +51,7 @@ export const ai_coding_agents_pr_first_workflow_small_teams: BlogPost = {
       <p>GitHub documents an issue and pull-request workflow for its cloud agent and says it can create a branch, run tests, and request review. Cursor's security documentation says reading files does not require approval, sensitive actions can require approval, and <code>.cursorignore</code> can block access to selected files. Anthropic describes Claude Code's sandbox as two boundaries, filesystem and network isolation, and says its web sessions run in isolated cloud sandboxes without git credentials or signing keys inside the environment.</p>
       <p>These descriptions tell you what a product says it can constrain. They do not tell you that every repository is safe to hand to an agent. Your own secrets, CI configuration, dependency scripts, prompt-injection risks, and branch rules still matter. Browse the <a href="/tool/github-copilot">GitHub Copilot</a>, <a href="/tool/cursor">Cursor</a>, and <a href="/tool/claude-code">Claude Code</a> entries in our <a href="/category/coding-and-development">coding tools directory</a> for current links, then verify the provider's own documentation before enabling a new capability.</p>
 
-      <h2>The six-step PR-first workflow for a small team</h2>
+      <h2 id="pr-workflow">The six-step PR-first workflow for a small team</h2>
 
       <figure class="research-figure" aria-labelledby="pr-workflow-caption">
         <svg viewBox="0 0 900 190" role="img" aria-labelledby="pr-workflow-title pr-workflow-desc">
@@ -127,7 +129,7 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
         </tbody>
       </table></div>
 
-      <h2>Three limits to plan for</h2>
+      <h2 id="coding-guardrails">Three limits to plan for</h2>
       <h3>Guardrails are layers, not magic</h3>
       <p>Permissions, branch restrictions, network controls, and code scanning reduce the blast radius. They do not make prompt injection, malicious dependencies, or a misunderstood requirement disappear. Treat an agent as an untrusted contributor with useful tools, not as a trusted employee with implicit context.</p>
 
@@ -137,7 +139,7 @@ Output: Summarize changed files, checks run, and any remaining uncertainty.</cod
       <h3>Product controls change</h3>
       <p>Plan availability, permission defaults, model routing, privacy settings, and cloud-agent behavior can change by product version, account, workspace, or administrator policy. Check the current documentation and your own organization settings before relying on a control described in an older guide.</p>
 
-      <h2>A practical default for small teams</h2>
+      <h2 id="coding-default">A practical default for small teams</h2>
       <p>For most small teams, begin with low-risk maintenance tasks and a strict PR-first loop. Keep the task narrow, isolate the session, require checks, review the actual diff, and make the human merge the last meaningful decision. The agent can be ambitious inside that loop; the repository boundary should not be.</p>
       <p>If the team cannot answer what the agent could read, what it could change, what commands it could run, where credentials live, and who approves the merge, it is not ready for a more autonomous setup. That is not an argument against coding agents. It is the operating discipline that makes them useful.</p>
       <p>For related workflows, see our guide on <a href="/blog/ai-notes-client-calls-consent-first">consent-first AI meeting notes</a> for a similar trust-first approach to client communication, or the <a href="/blog/ai-deep-research-source-first-workflow">source-first deep research workflow</a> for verifying AI-generated research before acting on it.</p>
