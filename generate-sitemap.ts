@@ -73,7 +73,7 @@ const generateMainSitemap = (): string => {
   WORKFLOWS.forEach(workflow => {
     urls.push({
       loc: `${DOMAIN}/workflow/${workflow.slug}`,
-      changefreq: 'monthly',
+      changefreq: 'weekly',
       priority: 0.7
     });
   });
@@ -82,7 +82,7 @@ const generateMainSitemap = (): string => {
   TOOLS.forEach(tool => {
     urls.push({
       loc: `${DOMAIN}/tool/${tool.id}`,
-      changefreq: 'monthly',
+      changefreq: 'weekly',
       priority: 0.6
     });
   });
@@ -99,7 +99,7 @@ const generateBlogSitemap = (): string => {
   const urls: URLEntry[] = BLOG_POSTS.map(post => ({
     loc: `${DOMAIN}/blog/${post.slug}`,
     lastmod: post.publishDate,
-    changefreq: 'monthly',
+    changefreq: 'daily',
     priority: 0.8
   }));
 
