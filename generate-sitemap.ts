@@ -6,7 +6,8 @@
 
 import fs from 'fs';
 import path from 'path';
-import { BLOG_POSTS } from './frontend/data.ts';
+import { BLOG_POSTS, TOOLS, CATEGORIES } from './frontend/data.ts';
+import { WORKFLOWS } from './frontend/workflows.ts';
 
 const DOMAIN = 'https://newaitools.online';
 
@@ -26,6 +27,8 @@ const generateURL = (url: URLEntry): string => {
   </url>`;
 };
 
+const categorySlug = (category: string) => category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
 const generateMainSitemap = (): string => {
   const urls: URLEntry[] = [
     {
@@ -40,38 +43,49 @@ const generateMainSitemap = (): string => {
       changefreq: 'daily',
       priority: 0.9
     },
-    // Tool category pages
     {
-      loc: `${DOMAIN}/?category=Logo Design`,
+      loc: `${DOMAIN}/categories`,
       changefreq: 'weekly',
-      priority: 0.7
+      priority: 0.8
     },
     {
-      loc: `${DOMAIN}/?category=UI/UX`,
-      changefreq: 'weekly',
-      priority: 0.7
+      loc: `${DOMAIN}/tools`,
+      changefreq: 'daily',
+      priority: 0.8
     },
     {
-      loc: `${DOMAIN}/?category=Image Gen`,
+      loc: `${DOMAIN}/workflows`,
       changefreq: 'weekly',
-      priority: 0.7
-    },
-    {
-      loc: `${DOMAIN}/?category=Video`,
-      changefreq: 'weekly',
-      priority: 0.7
-    },
-    {
-      loc: `${DOMAIN}/?category=Presentations`,
-      changefreq: 'weekly',
-      priority: 0.7
-    },
-    {
-      loc: `${DOMAIN}/?category=Copywriting`,
-      changefreq: 'weekly',
-      priority: 0.7
+      priority: 0.8
     }
   ];
+
+  // Add all categories
+  CATEGORIES.forEach(category => {
+    urls.push({
+      loc: `${DOMAIN}/category/${categorySlug(category)}`,
+      changefreq: 'weekly',
+      priority: 0.7
+    });
+  });
+
+  // Add all workflows
+  WORKFLOWS.forEach(workflow => {
+    urls.push({
+      loc: `${DOMAIN}/workflow/${workflow.slug}`,
+      changefreq: 'monthly',
+      priority: 0.7
+    });
+  });
+
+  // Add all tools
+  TOOLS.forEach(tool => {
+    urls.push({
+      loc: `${DOMAIN}/tool/${tool.id}`,
+      changefreq: 'monthly',
+      priority: 0.6
+    });
+  });
 
   const urlEntries = urls.map(generateURL).join('\n');
 
