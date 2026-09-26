@@ -34,9 +34,9 @@ export const canva_ai_2_0_workflow_2026: BlogPost = {
 
     <h2>What Is Canva AI 2.0?</h2>
 
-    <p>Canva AI 2.0 is Canva's newer conversational and agentic design layer. In Canva's September 2026 product announcement, the company describes four foundational capabilities: conversational design, agentic orchestration, layered object intelligence, and a Memory Library. It also describes connected workflows for connectors, scheduling, web research, brand intelligence, Canva Code 2.0, and Sheets AI. urlCanva's official AI 2.0 announcementhttps://www.canva.com/newsroom/news/canva-create-2026-ai/</p>
+    <p>Canva AI 2.0 is Canva's newer conversational and agentic design layer. In Canva's September 2026 product announcement, the company describes four foundational capabilities: conversational design, agentic orchestration, layered object intelligence, and a Memory Library. It also describes connected workflows for connectors, scheduling, web research, brand intelligence, Canva Code 2.0, and Sheets AI. <a href="https://www.canva.com/newsroom/news/canva-create-2026-ai/">Canva's official AI 2.0 announcement</a></p>
 
-    <p>The useful distinction is between <strong>generating a finished-looking picture</strong> and <strong>building an editable design system</strong>. Canva's stated goal is the second: individual elements remain editable, so a user can change a headline, image, font, or other object without rebuilding the entire design. Independent coverage from The Verge and Engadget described the same shift toward prompt-driven, multi-step design and editable outputs when Canva first previewed AI 2.0. urlThe Verge's Canva AI 2.0 coveragehttps://www.theverge.com/tech/913068/canva-ai-2-update-prompt-based-editing-availability</p>
+    <p>The useful distinction is between <strong>generating a finished-looking picture</strong> and <strong>building an editable design system</strong>. Canva's stated goal is the second: individual elements remain editable, so a user can change a headline, image, font, or other object without rebuilding the entire design. Independent coverage from The Verge and Engadget described the same shift toward prompt-driven, multi-step design and editable outputs when Canva first previewed AI 2.0. <a href="https://www.theverge.com/tech/913068/canva-ai-2-update-prompt-based-editing-availability">The Verge's Canva AI 2.0 coverage</a></p>
 
     <h2>The Right Mental Model: Brief → Design → Refine → Verify</h2>
 
@@ -119,7 +119,7 @@ export const canva_ai_2_0_workflow_2026: BlogPost = {
 
     <h2>4. Connect the Sources Your Design Actually Needs</h2>
 
-    <p>Canva says its connectors can bring context from services such as Slack, Gmail, Google Drive, Google Calendar, Notion, Zoom, HubSpot, Microsoft tools, Atlassian, and Linear into creative workflows. The company gives examples such as turning meeting transcripts into summaries, customer emails into sales material, or workplace activity into a newsletter. urlCanva AI 2.0 connectors and workflowshttps://www.canva.com/newsroom/news/canva-create-2026-ai/</p>
+    <p>Canva says its connectors can bring context from services such as Slack, Gmail, Google Drive, Google Calendar, Notion, Zoom, HubSpot, Microsoft tools, Atlassian, and Linear into creative workflows. The company gives examples such as turning meeting transcripts into summaries, customer emails into sales material, or workplace activity into a newsletter. <a href="https://www.canva.com/newsroom/news/canva-create-2026-ai/">Canva AI 2.0 connectors and workflows</a></p>
 
     <p>For a small team, the useful pattern is <strong>source → draft → review</strong>. For example, a product manager could provide an approved launch brief and supporting documents, ask Canva AI to turn them into a presentation, and then review every product claim before the deck is shared.</p>
 
@@ -184,7 +184,7 @@ export const canva_ai_2_0_workflow_2026: BlogPost = {
 
     <p>That can make AI 2.0 useful when the exact template does not exist or when the task involves several connected deliverables. It does not mean templates are obsolete. A well-designed template can still be the faster and more controlled option for a repetitive asset with strict brand requirements.</p>
 
-    <p>Independent coverage from Engadget described Canva's AI 2.0 preview as a move toward conversational, multi-step work, including connections to external services and scheduled tasks. The Verge similarly highlighted prompt-driven editing, persistent memory, and third-party integrations. These reports support the broader workflow shift, but they should not be read as independent benchmarks of output quality. urlEngadget's Canva AI 2.0 preview reporthttps://www.engadget.com/ai/canva-starts-previewing-a-more-powerful-version-of-its-ai-assistant-130000966.html</p>
+    <p>Independent coverage from Engadget described Canva's AI 2.0 preview as a move toward conversational, multi-step work, including connections to external services and scheduled tasks. The Verge similarly highlighted prompt-driven editing, persistent memory, and third-party integrations. These reports support the broader workflow shift, but they should not be read as independent benchmarks of output quality. <a href="https://www.engadget.com/ai/canva-starts-previewing-a-more-powerful-version-of-its-ai-assistant-130000966.html">Engadget's Canva AI 2.0 preview report</a></p>
 
     <h2>A Practical Workflow You Can Reuse</h2>
 
@@ -201,7 +201,7 @@ export const canva_ai_2_0_workflow_2026: BlogPost = {
 
     <h2>Availability and What to Expect</h2>
 
-    <p>Canva's current announcement describes AI 2.0 as a research preview and says general availability is rolling out over the following weeks. Because this is a staged rollout, a reader may see different access or feature availability depending on account and rollout status. Canva also lists separate plan categories on its site, so check the current product surface before planning a workflow around a feature. urlCanva AI 2.0 official announcementhttps://www.canva.com/newsroom/news/canva-create-2026-ai/</p>
+    <p>Canva's current announcement describes AI 2.0 as a research preview and says general availability is rolling out over the following weeks. Because this is a staged rollout, a reader may see different access or feature availability depending on account and rollout status. Canva also lists separate plan categories on its site, so check the current product surface before planning a workflow around a feature. <a href="https://www.canva.com/newsroom/news/canva-create-2026-ai/">Canva AI 2.0 official announcement</a></p>
 
     <p><strong>Research note:</strong> This article is based on Canva's current product documentation and announcement plus independent reporting. It is not a hands-on benchmark of Canva AI 2.0 output quality, and this article does not claim that every feature is available to every account today.</p>
 
