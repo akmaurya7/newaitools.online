@@ -1,7 +1,9 @@
 import React from 'react';
 import { ArrowLeft, ArrowRight, Check, ExternalLink, Lightbulb, Sparkles } from 'lucide-react';
 import { TOOLS } from '../data.ts';
+import { TOOL_ANALYSES } from '../data/tool-analyses/index.ts';
 import { useSEO } from '../hooks/useSEO.ts';
+import { ToolAnalysisSections } from './ToolAnalysisSections.tsx';
 
 const categoryGuidance: Record<string, { audience: string; tasks: string[]; workflow: string; evaluate: string[] }> = {
   'Writing & Text': { audience: 'writers, marketers, students, and teams who create or refine written content', tasks: ['Drafting and rewriting content', 'Summarizing or adapting material', 'Generating ideas and variations'], workflow: 'Give it a clear brief, audience, tone, and source material. Review the result for accuracy and voice, then edit before publishing.', evaluate: ['Quality and control of its writing', 'Support for your languages and formats', 'Privacy terms for submitted content'] },
@@ -20,34 +22,63 @@ const categoryGuidance: Record<string, { audience: string; tasks: string[]; work
 const defaultGuidance = (category: string) => ({
   audience: `people and teams working on ${category.toLowerCase()} tasks`,
   tasks: [`Support work in ${category.toLowerCase()}`, 'Speed up repetitive or time-consuming steps', 'Explore ideas and produce a useful first draft'],
-  workflow: `Start with a specific goal and representative input. Review the output against your requirements, confirm important details, and check the provider's documentation for capabilities that matter to your use case.`,
+  workflow: 'Start with a specific goal and representative input. Review the output against your requirements, confirm important details, and check the provider documentation for capabilities that matter to your use case.',
   evaluate: ['Fit with your actual workflow and team', 'Supported formats, integrations, and usage limits', 'Privacy, security, and terms for your use case'],
 });
 
 export const ToolDetail: React.FC<{ id: string }> = ({ id }) => {
   const tool = TOOLS.find(item => item.id === id);
   if (!tool) return <main className="min-h-[65vh] bg-[#f8f7f4] px-4 py-24 text-center"><h1 className="font-serif text-4xl">Tool not found</h1><p className="mt-3 text-ink/55">This tool may have moved or is no longer listed.</p><a href="/tools" className="mt-6 inline-flex items-center gap-2 font-semibold text-accent"><ArrowLeft size={16} />Browse all tools</a></main>;
+
+  const analysis = tool.analysisId ? TOOL_ANALYSES[tool.analysisId] : undefined;
   const guidance = categoryGuidance[tool.category] || defaultGuidance(tool.category);
-  useSEO({ title: `${tool.name}: Uses, Overview & Details | newaitools`, description: `${tool.description}. Learn what ${tool.name} is for, who may find it useful, common tasks, and what to consider.`, keywords: [tool.name, tool.category, 'AI tool', ...guidance.tasks], canonical: `https://newaitools.online/tool/${encodeURIComponent(tool.id)}`, breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Tools', url: 'https://newaitools.online/tools' }, { name: tool.name, url: `https://newaitools.online/tool/${encodeURIComponent(tool.id)}` }] });
-  const pricingDescription = tool.pricing === 'Free' ? 'Listed as free in this directory. Check the provider for current usage limits and terms.' : tool.pricing === 'Paid' ? 'Listed as paid in this directory. Check the provider for current plans, billing terms, and any trial options.' : 'Listed as freemium in this directory, which generally means free access with paid plans or upgrades. Check the provider for current limits and plan details.';
+  const pageDescription = analysis?.summary || `${tool.description}. Learn what ${tool.name} is for, who may find it useful, common tasks, and what to consider.`;
+  const seoKeywords = [tool.name, tool.category, 'AI tool', ...guidance.tasks, ...(analysis ? ['pricing', 'features', 'limitations', 'privacy', 'integrations'] : [])];
+
+  useSEO({
+    title: analysis ? `${tool.name}: Deep Analysis, Pricing, Features & Limits | newaitools` : `${tool.name}: Uses, Overview & Details | newaitools`,
+    description: pageDescription,
+    keywords: seoKeywords,
+    canonical: `https://newaitools.online/tool/${encodeURIComponent(tool.id)}`,
+    breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Tools', url: 'https://newaitools.online/tools' }, { name: tool.name, url: `https://newaitools.online/tool/${encodeURIComponent(tool.id)}` }]
+  });
+
+  const categorySlug = tool.category.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
   return <main className="min-h-[70vh] bg-[#f8f7f4]">
-    <section className="border-b border-ink/10 bg-white"><div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
-      <a href="/tools" className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-ink/55 hover:text-accent"><ArrowLeft size={16} />All tools</a>
-      <div className="flex flex-wrap gap-2"><a href={`/category/${tool.category.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} className="rounded-full border border-accent/15 bg-orange-50 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-accent">{tool.category}</a><span className="rounded-full bg-ink/5 px-3 py-1.5 text-xs font-bold text-ink/65">{tool.pricing}</span>{tool.isTopPick && <span className="rounded-full bg-accent/10 px-3 py-1.5 text-xs font-bold text-accent">Directory top pick</span>}</div>
-      <p className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-accent"><Sparkles size={14} />Tool guide</p>
-      <h1 className="mt-2 font-serif text-4xl leading-tight text-ink sm:text-5xl md:text-6xl">{tool.name}</h1>
-      <p className="mt-4 max-w-3xl text-lg leading-8 text-ink/65">{tool.description}</p>
-      <div className="mt-7 flex flex-wrap items-center gap-4">{tool.rating !== undefined && <p className="text-sm font-semibold text-ink/65">Directory rating: <span className="text-ink">{tool.rating} / 5</span></p>}<a href={tool.link || '#'} target={tool.link ? '_blank' : undefined} rel={tool.link ? 'noopener noreferrer' : undefined} className="inline-flex items-center gap-2 rounded-xl bg-ink px-5 py-3 text-sm font-bold text-white transition hover:bg-accent">Visit {tool.name} <ExternalLink size={15} /></a></div>
-    </div></section>
-    <div className="mx-auto grid max-w-5xl gap-6 px-4 py-10 sm:px-6 md:grid-cols-[minmax(0,1fr)_280px] md:py-14 lg:px-8">
-      <div className="space-y-6">
-        <section className="rounded-2xl border border-ink/[0.08] bg-white p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">01 · Overview</p><h2 className="mt-2 font-serif text-2xl text-ink">What is {tool.name} for?</h2><p className="mt-3 text-sm leading-7 text-ink/65">{tool.name} is listed in <a className="font-semibold text-accent hover:underline" href={`/category/${tool.category.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`}>{tool.category}</a>. It may be useful for {guidance.audience}. {tool.description}</p></section>
-        <section className="rounded-2xl border border-ink/[0.08] bg-white p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">02 · Who it helps</p><h2 className="mt-2 font-serif text-2xl text-ink">Common use cases</h2><ul className="mt-5 space-y-3">{guidance.tasks.map(task => <li key={task} className="flex gap-3 text-sm leading-6 text-ink/65"><Check size={17} className="mt-0.5 shrink-0 text-accent" />{task}</li>)}</ul></section>
-        <section className="rounded-2xl border border-ink/[0.08] bg-white p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">03 · Getting value</p><h2 className="mt-2 font-serif text-2xl text-ink">A practical way to use it</h2><p className="mt-3 text-sm leading-7 text-ink/65">{guidance.workflow}</p></section>
-        <section className="rounded-2xl border border-ink/[0.08] bg-white p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">04 · Choosing well</p><h2 className="mt-2 font-serif text-2xl text-ink">What to evaluate</h2><ul className="mt-5 space-y-3">{guidance.evaluate.map(item => <li key={item} className="flex gap-3 text-sm leading-6 text-ink/65"><Lightbulb size={17} className="mt-0.5 shrink-0 text-accent" />{item}</li>)}</ul></section>
-        <section className="rounded-2xl border border-ink/[0.08] bg-white p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">05 · Cost</p><h2 className="mt-2 font-serif text-2xl text-ink">Pricing model</h2><p className="mt-3 text-sm leading-7 text-ink/65">{pricingDescription} Pricing and features can change; the provider’s site has the latest information.</p></section>
+    <section className="border-b border-ink/10 bg-white">
+      <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+        <a href="/tools" className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-ink/55 hover:text-accent"><ArrowLeft size={16} />All tools</a>
+        <div className="flex flex-wrap gap-2">
+          <a href={`/category/${categorySlug}`} className="rounded-full border border-accent/15 bg-orange-50 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-accent">{tool.category}</a>
+          <span className="rounded-full bg-ink/5 px-3 py-1.5 text-xs font-bold text-ink/65">{tool.pricing}</span>
+          {tool.isTopPick && <span className="rounded-full bg-accent/10 px-3 py-1.5 text-xs font-bold text-accent">Directory top pick</span>}
+          {analysis && <span className="rounded-full bg-ink/5 px-3 py-1.5 text-xs font-bold text-ink/65">Deep research</span>}
+        </div>
+        <p className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-accent"><Sparkles size={14} />Tool guide</p>
+        <h1 className="mt-2 font-serif text-4xl leading-tight text-ink sm:text-5xl md:text-6xl">{tool.name}</h1>
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-ink/65">{analysis?.summary || tool.description}</p>
+        <div className="mt-7 flex flex-wrap items-center gap-4">
+          {tool.rating !== undefined && <p className="text-sm font-semibold text-ink/65">Directory rating: <span className="text-ink">{tool.rating} / 5</span></p>}
+          {analysis && <p className="text-sm font-semibold text-ink/65">Research checked: <span className="text-ink">{analysis.lastVerified}</span></p>}
+          <a href={tool.link || '#'} target={tool.link ? '_blank' : undefined} rel={tool.link ? 'noopener noreferrer' : undefined} className="inline-flex items-center gap-2 rounded-xl bg-ink px-5 py-3 text-sm font-bold text-white transition hover:bg-accent">Visit {tool.name} <ExternalLink size={15} /></a>
+        </div>
       </div>
-      <aside className="h-fit rounded-2xl border border-ink/[0.08] bg-white p-6 md:sticky md:top-6"><h2 className="font-serif text-xl text-ink">At a glance</h2><dl className="mt-5 space-y-4 text-sm"><div><dt className="text-xs font-bold uppercase tracking-wider text-ink/40">Category</dt><dd className="mt-1 font-medium text-ink">{tool.category}</dd></div><div><dt className="text-xs font-bold uppercase tracking-wider text-ink/40">Pricing label</dt><dd className="mt-1 font-medium text-ink">{tool.pricing}</dd></div>{tool.rating !== undefined && <div><dt className="text-xs font-bold uppercase tracking-wider text-ink/40">Directory rating</dt><dd className="mt-1 font-medium text-ink">{tool.rating} / 5</dd></div>}{tool.noSignupRequired && <div><dt className="text-xs font-bold uppercase tracking-wider text-ink/40">Access</dt><dd className="mt-1 font-medium text-ink">No signup required</dd></div>}</dl>{tool.tags?.length ? <div className="mt-5 border-t border-ink/10 pt-4"><h3 className="text-xs font-bold uppercase tracking-wider text-ink/40">Directory tags</h3><div className="mt-2 flex flex-wrap gap-2">{tool.tags.map(tag => <span key={tag} className="rounded-full bg-[#f8f7f4] px-2.5 py-1 text-xs text-ink/65">{tag.replace(/^🔥\s*/, '')}</span>)}</div></div> : null}<a href={tool.link || '#'} target={tool.link ? '_blank' : undefined} rel={tool.link ? 'noopener noreferrer' : undefined} className="mt-6 flex items-center justify-center gap-2 rounded-xl bg-accent px-4 py-3 text-sm font-bold text-white transition hover:bg-ink">Open provider site <ArrowRight size={15} /></a><p className="mt-3 text-xs leading-5 text-ink/40">Details on this page are a directory guide. Confirm current features, pricing, and terms with the provider.</p></aside>
+    </section>
+
+    <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 md:py-14 lg:px-8">
+      {analysis ? <ToolAnalysisSections analysis={analysis} /> : (
+        <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_280px]">
+          <div className="space-y-6">
+            <section className="rounded-2xl border border-ink/[0.08] bg-white p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">01 · Overview</p><h2 className="mt-2 font-serif text-2xl text-ink">What is {tool.name} for?</h2><p className="mt-3 text-sm leading-7 text-ink/65">{tool.name} is listed in <a className="font-semibold text-accent hover:underline" href={`/category/${categorySlug}`}>{tool.category}</a>. It may be useful for {guidance.audience}. {tool.description}</p></section>
+            <section className="rounded-2xl border border-ink/[0.08] bg-white p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">02 · Who it helps</p><h2 className="mt-2 font-serif text-2xl text-ink">Common use cases</h2><ul className="mt-5 space-y-3">{guidance.tasks.map(task => <li key={task} className="flex gap-3 text-sm leading-6 text-ink/65"><Check size={17} className="mt-0.5 shrink-0 text-accent" />{task}</li>)}</ul></section>
+            <section className="rounded-2xl border border-ink/[0.08] bg-white p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">03 · Getting value</p><h2 className="mt-2 font-serif text-2xl text-ink">A practical way to use it</h2><p className="mt-3 text-sm leading-7 text-ink/65">{guidance.workflow}</p></section>
+            <section className="rounded-2xl border border-ink/[0.08] bg-white p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">04 · Choosing well</p><h2 className="mt-2 font-serif text-2xl text-ink">What to evaluate</h2><ul className="mt-5 space-y-3">{guidance.evaluate.map(item => <li key={item} className="flex gap-3 text-sm leading-6 text-ink/65"><Lightbulb size={17} className="mt-0.5 shrink-0 text-accent" />{item}</li>)}</ul></section>
+            <section className="rounded-2xl border border-ink/[0.08] bg-white p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">05 · Cost</p><h2 className="mt-2 font-serif text-2xl text-ink">Pricing model</h2><p className="mt-3 text-sm leading-7 text-ink/65">{tool.pricing === 'Free' ? 'Listed as free in this directory. Check the provider for current usage limits and terms.' : tool.pricing === 'Paid' ? 'Listed as paid in this directory. Check the provider for current plans, billing terms, and any trial options.' : 'Listed as freemium in this directory, which generally means free access with paid plans or upgrades. Check the provider for current limits and plan details.'}</p></section>
+          </div>
+          <aside className="h-fit rounded-2xl border border-ink/[0.08] bg-white p-6 md:sticky md:top-6"><h2 className="font-serif text-xl text-ink">At a glance</h2><dl className="mt-5 space-y-4 text-sm"><div><dt className="text-xs font-bold uppercase tracking-wider text-ink/40">Category</dt><dd className="mt-1 font-medium text-ink">{tool.category}</dd></div><div><dt className="text-xs font-bold uppercase tracking-wider text-ink/40">Pricing label</dt><dd className="mt-1 font-medium text-ink">{tool.pricing}</dd></div>{tool.rating !== undefined && <div><dt className="text-xs font-bold uppercase tracking-wider text-ink/40">Directory rating</dt><dd className="mt-1 font-medium text-ink">{tool.rating} / 5</dd></div>}{tool.noSignupRequired && <div><dt className="text-xs font-bold uppercase tracking-wider text-ink/40">Access</dt><dd className="mt-1 font-medium text-ink">No signup required</dd></div>}</dl>{tool.tags?.length ? <div className="mt-5 border-t border-ink/10 pt-4"><h3 className="text-xs font-bold uppercase tracking-wider text-ink/40">Directory tags</h3><div className="mt-2 flex flex-wrap gap-2">{tool.tags.map(tag => <span key={tag} className="rounded-full bg-[#f8f7f4] px-2.5 py-1 text-xs text-ink/65">{tag.replace(/^🔥\s*/, '')}</span>)}</div></div> : null}<a href={tool.link || '#'} target={tool.link ? '_blank' : undefined} rel={tool.link ? 'noopener noreferrer' : undefined} className="mt-6 flex items-center justify-center gap-2 rounded-xl bg-accent px-4 py-3 text-sm font-bold text-white transition hover:bg-ink">Open provider site <ArrowRight size={15} /></a><p className="mt-3 text-xs leading-5 text-ink/40">Details on this page are a directory guide. Confirm current features, pricing, and terms with the provider.</p></aside>
+        </div>
+      )}
     </div>
   </main>;
 };
