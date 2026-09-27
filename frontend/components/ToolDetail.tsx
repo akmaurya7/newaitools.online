@@ -30,7 +30,7 @@ export const ToolDetail: React.FC<{ id: string }> = ({ id }) => {
   const tool = TOOLS.find(item => item.id === id);
   if (!tool) return <main className="min-h-[65vh] bg-[#f8f7f4] px-4 py-24 text-center"><h1 className="font-serif text-4xl">Tool not found</h1><p className="mt-3 text-ink/55">This tool may have moved or is no longer listed.</p><a href="/tools" className="mt-6 inline-flex items-center gap-2 font-semibold text-accent"><ArrowLeft size={16} />Browse all tools</a></main>;
 
-  const analysis = tool.analysisId ? TOOL_ANALYSES[tool.analysisId] : undefined;
+  const analysis = tool.analysisId ? TOOL_ANALYSES[tool.analysisId] : TOOL_ANALYSES[tool.id];
   const guidance = categoryGuidance[tool.category] || defaultGuidance(tool.category);
   const pageDescription = analysis?.summary || `${tool.description}. Learn what ${tool.name} is for, who may find it useful, common tasks, and what to consider.`;
   const seoKeywords = [tool.name, tool.category, 'AI tool', ...guidance.tasks, ...(analysis ? ['pricing', 'features', 'limitations', 'privacy', 'integrations'] : [])];
