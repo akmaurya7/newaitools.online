@@ -38,11 +38,11 @@ export const ai_spreadsheet_analysis_verification_2026: BlogPost = {
 
     <p>That is why the strongest workflow separates <strong>generation</strong> from <strong>verification</strong>. AI can suggest the question to ask, write a formula, summarize a table, produce a chart, or run a calculation. The person using the result remains responsible for checking whether the calculation actually matches the question.</p>
 
-    <p>OpenAI's current documentation makes this distinction explicit for code-backed data analysis: users can review the generated code, outputs, and assumptions before relying on a result. citeturn15search1</p>
+    <p>OpenAI's current documentation makes this distinction explicit for code-backed data analysis: users can review the generated code, outputs, and assumptions before relying on a result.</p>
 
     <h2>1. Prepare the spreadsheet before uploading it</h2>
 
-    <p>Good analysis starts with good tabular structure. OpenAI recommends descriptive column headers, one record per row, and avoiding multiple unrelated tables or empty rows that split a dataset. Microsoft gives similar guidance for Excel's Analyze Data feature: a clean Excel table with one row of unique headers works better than merged cells or multi-row headers. citeturn15search1turn15search0</p>
+    <p>Good analysis starts with good tabular structure. OpenAI recommends descriptive column headers, one record per row, and avoiding multiple unrelated tables or empty rows that split a dataset. Microsoft gives similar guidance for Excel's Analyze Data feature: a clean Excel table with one row of unique headers works better than merged cells or multi-row headers.</p>
 
     <p>Before using an AI tool, check:</p>
 
@@ -157,7 +157,7 @@ export const ai_spreadsheet_analysis_verification_2026: BlogPost = {
       <li>Use a table when exact values matter more than visual pattern recognition.</li>
     </ul>
 
-    <p>Microsoft's Analyze Data can return visuals such as tables, charts, and PivotTables, while Julius documents chart and visualization generation from uploaded data. citeturn15search0turn15search6</p>
+    <p>Microsoft's Analyze Data can return visuals such as tables, charts, and PivotTables, while Julius documents chart and visualization generation from uploaded data.</p>
 
     <p>If the chart looks surprising, do not immediately accept it as a discovery. Check the underlying rows, aggregation, date grouping, and filters first.</p>
 
