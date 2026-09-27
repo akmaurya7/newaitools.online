@@ -12,7 +12,7 @@ export const hostinger_ai_builder_2026: BlogPost = {
   readTime: 11,
   tags: ['Hostinger AI Builder', 'AI website builder', 'AI app builder', 'Hostinger Horizons', 'Website & App Creation', 'vibe coding'],
   featured: false,
-  ogImage: '/blog/images/hostinger-ai-builder-2026.webp',
+  ogImage: '/blog/images/hostinger-ai-builder-2026.svg',
   ogImageAlt: 'Editorial illustration of Hostinger AI Builder turning a natural-language prompt into a responsive website and web app with hosting, database, and authentication.',
   content: `<section class="prose-article">
     <p class="article-deck">Hostinger's AI product changed shape in August 2026. What used to be a conventional website builder plus a separate Horizons app-building experience is now one AI Builder with manual and agentic modes. The important question is no longer whether it can make a homepage. It is how much of the website or web-app stack it can build, host, connect, and operate before you need to take over.</p>
@@ -242,5 +242,5 @@ export const hostinger_ai_builder_2026: BlogPost = {
     <p><strong>Primary sources:</strong> <a href="https://www.hostinger.com/blog/ai-builder-launch/">Hostinger AI Builder launch announcement, August 18, 2026</a>; <a href="https://www.hostinger.com/in/ai-builder/pricing">Hostinger AI Builder pricing</a>; <a href="https://www.hostinger.com/support/hostinger-ai-builder-agentic-mode-product-overview/">Hostinger AI Builder agentic-mode overview</a>; <a href="https://www.hostinger.com/support/11136677-hostinger-ai-builder-agentic-mode-ai-credits/">Hostinger AI Builder AI credits and top-ups</a>; <a href="https://www.hostinger.com/support/hostinger-ai-builder-agentic-mode-understanding-dynamic-credits/">Hostinger dynamic credits documentation</a>; <a href="https://www.hostinger.com/legal/special-terms">Hostinger AI Builder Special Terms, revised August 18, 2026</a>; <a href="https://www.hostinger.com/legal/dpa">Hostinger Data Processing Addendum, revised September 15, 2026</a>; <a href="https://www.hostinger.com/support/hostinger-agents-how-your-data-is-handled/">Hostinger Agent data handling and privacy</a>.</p>
 
     <p><strong>Independent context:</strong> <a href="https://www.techradar.com/pro/what-is-hostinger-ai-web-builder-everything-we-know-about-the-helpful-ai-website-building-tool">TechRadar's Hostinger AI Web Builder overview</a>; <a href="https://www.expertmarket.com/website-builders/hostinger-review">ExpertMarket's Hostinger review</a>; <a href="https://www.reddit.com/r/Hostinger/">Hostinger community discussions on Reddit</a>.</p>
-  </section>\`
+  </section>`
 };
