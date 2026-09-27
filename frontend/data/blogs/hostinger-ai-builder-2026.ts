@@ -14,7 +14,7 @@ export const hostinger_ai_builder_2026: BlogPost = {
   featured: false,
   ogImage: '/blog/images/hostinger-ai-builder-2026.webp',
   ogImageAlt: 'Editorial illustration of Hostinger AI Builder turning a natural-language prompt into a responsive website and web app with hosting, database, and authentication.',
-  content: \`<section class="prose-article">
+  content: `<section class="prose-article">
     <p class="article-deck">Hostinger's AI product changed shape in August 2026. What used to be a conventional website builder plus a separate Horizons app-building experience is now one AI Builder with manual and agentic modes. The important question is no longer whether it can make a homepage. It is how much of the website or web-app stack it can build, host, connect, and operate before you need to take over.</p>
 
     <p>This analysis focuses on the current Hostinger AI Builder experience documented by Hostinger and independent sources checked on September 27, 2026. It is documentation-based, not a hands-on benchmark. Pricing is especially volatile, so the figures below are date-checked and should be treated as a snapshot rather than a permanent rate card.</p>
