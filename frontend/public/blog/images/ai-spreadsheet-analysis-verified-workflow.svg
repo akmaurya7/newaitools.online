@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">AI-assisted spreadsheet analysis with human verification</title>
+<desc id="desc">Editorial illustration of a spreadsheet being analyzed by AI, followed by human verification of formulas, insights, and final results.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1e3a5f"/></linearGradient>
+<linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#eff6ff"/><stop offset="100%" stop-color="#f8fafc"/></linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-opacity=".25"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<circle cx="1380" cy="120" r="220" fill="#60a5fa" opacity=".12"/><circle cx="180" cy="760" r="260" fill="#34d399" opacity=".10"/>
+<g filter="url(#shadow)">
+<rect x="110" y="155" width="780" height="520" rx="30" fill="#111827" stroke="#475569" stroke-width="8"/>
+<rect x="150" y="195" width="700" height="440" rx="16" fill="url(#panel)"/>
+<g stroke="#cbd5e1" stroke-width="2"><path d="M150 265H850M150 335H850M150 405H850M150 475H850M150 545H850M250 195V635M390 195V635M530 195V635M670 195V635M760 195V635"/></g>
+<rect x="260" y="278" width="115" height="44" rx="8" fill="#bfdbfe"/><rect x="400" y="278" width="115" height="44" rx="8" fill="#bbf7d0"/><rect x="540" y="278" width="115" height="44" rx="8" fill="#fde68a"/>
+<rect x="260" y="348" width="115" height="44" rx="8" fill="#dbeafe"/><rect x="400" y="348" width="115" height="44" rx="8" fill="#dcfce7"/><rect x="540" y="348" width="115" height="44" rx="8" fill="#fef3c7"/>
+<rect x="260" y="418" width="255" height="44" rx="8" fill="#e0e7ff"/>
+<rect x="260" y="488" width="395" height="44" rx="8" fill="#d1fae5"/>
+<text x="180" y="235" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a">Spreadsheet</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="930" y="135" width="530" height="300" rx="28" fill="#fff"/>
+<text x="970" y="185" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a">AI analysis</text>
+<circle cx="985" cy="235" r="14" fill="#3b82f6"/><text x="1015" y="244" font-family="Arial,sans-serif" font-size="20" fill="#334155">Suggested calculation</text>
+<rect x="970" y="265" width="430" height="50" rx="12" fill="#eff6ff"/><text x="995" y="298" font-family="monospace" font-size="20" fill="#1e40af">SUM + group by month</text>
+<circle cx="985" cy="350" r="14" fill="#10b981"/><text x="1015" y="359" font-family="Arial,sans-serif" font-size="20" fill="#334155">Trend and outlier check</text>
+</g>
+<g filter="url(#shadow)">
+<rect x="930" y="485" width="530" height="260" rx="28" fill="#ecfdf5"/>
+<circle cx="985" cy="545" r="25" fill="#10b981"/><path d="M973 545l9 9 17-20" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1030" y="552" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#064e3b">Human verification</text>
+<text x="970" y="605" font-family="Arial,sans-serif" font-size="19" fill="#166534">✓ Recalculate important numbers</text>
+<text x="970" y="645" font-family="Arial,sans-serif" font-size="19" fill="#166534">✓ Check filters and assumptions</text>
+<text x="970" y="685" font-family="Arial,sans-serif" font-size="19" fill="#166534">✓ Confirm source data</text>
+</g>
+<path d="M890 395 C915 395 915 330 930 330" fill="none" stroke="#60a5fa" stroke-width="6" stroke-linecap="round"/>
+<path d="M1195 435 C1195 465 1195 465 1195 485" fill="none" stroke="#34d399" stroke-width="6" stroke-linecap="round"/>
+<text x="110" y="790" font-family="Arial,sans-serif" font-size="46" font-weight="800" fill="#fff">AI spreadsheet analysis</text>
+<text x="110" y="835" font-family="Arial,sans-serif" font-size="24" fill="#cbd5e1">Explore faster. Verify the numbers. Then decide.</text>
+</svg>
