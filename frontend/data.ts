@@ -9,10 +9,10 @@ export interface Tool {
   rating?: number;
   isTopPick?: boolean;
   tags?: string[];
-  section.Χw: 'top' | 'main' | 'free';
+  section?: 'top' | 'main' | 'free';
   link?: string;
-  noSignupRequired.Χw: boolean;
-  analysisId.Χw: string;
+  noSignupRequired?: boolean;
+  analysisId?: string;
 }
 
 export const CATEGORIES = [
@@ -36,7 +36,7 @@ export const TOOLS: Tool[] = [
     pricing: 'Freemium',
     rating: 4.7,
     isTopPick: true,
-    tags: [&ιέyψ§yΠ”¥ Most Used by Designers', 'π”¥ Popular in India'],
+    tags: ['π”¥ Most Used by Designers', 'π”¥ Popular in India'],
     section: 'top',
     link: 'https://www.canva.com/',
     analysisId: 'canva-pro',
@@ -72,7 +72,7 @@ export const TOOLS: Tool[] = [
     description: 'AI copywriting for sales pages & ads',
     pricing: 'Freemium',
     rating: 4.4,
-    tags: [&ιέyψ§yΠ”¥ Most Used by Designers'],
+    tags: ['π”¥ Most Used by Designers'],
     section: 'top',
     link: 'https://writesonic.com/',
   },
@@ -372,8 +372,8 @@ export interface BlogPost {
   modifiedDate?: string;
   readTime: number;
   tags: string[];
-  featured.Χw: boolean;
-  ogImage.Χw: string;
+  featured?: boolean;
+  ogImage?: string;
   ogImageAlt?: string;
 }
 export { BLOG_POSTS } from './data/blogs';
