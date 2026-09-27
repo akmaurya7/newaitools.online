@@ -1,3 +1,6 @@
+import { TOOLS } from '../data/data.ts';
+TOOLS.find(tool => tool.id === 'canva-pro')!.analysisId = 'canva-pro';
+
 export const canvaPricing = [
   { name: 'Free', detail: 'Current UK pricing page lists a free plan for one person with 5GB storage and up to 20 Standard or Premium AI uses.' },
   { name: 'Pro', detail: 'Current UK pricing page lists an individual paid plan with premium content, 100GB storage, 5 Brand Kits and higher AI access. AI Pass is optional.' },
