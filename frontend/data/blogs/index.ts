@@ -7,6 +7,7 @@ import { notebooklm_review_2026_limits_features } from './notebooklm-review-2026
 import { ai_product_photography_phone_to_store } from './ai-product-photography-phone-to-store';
 import { canva_ai_2_0_workflow_2026 } from './canva-ai-2-0-workflow-2026';
 import { ai_spreadsheet_analysis_verification_2026 } from './ai-spreadsheet-analysis-verification-2026';
+import { hostinger_ai_builder_2026 } from './hostinger-ai-builder-2026';
 
 import { BlogPost } from '../../data';
 
@@ -20,4 +21,5 @@ export const BLOG_POSTS: BlogPost[] = [
   ai_product_photography_phone_to_store,
   canva_ai_2_0_workflow_2026,
   ai_spreadsheet_analysis_verification_2026,
+  hostinger_ai_builder_2026,
 ];
