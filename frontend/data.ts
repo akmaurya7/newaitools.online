@@ -12,6 +12,7 @@ export interface Tool {
   section?: 'top' | 'main' | 'free';
   link?: string;
   noSignupRequired?: boolean;
+  analysisId?: string;
 }
 
 export const CATEGORIES = [
@@ -61,6 +62,7 @@ export const TOOLS: Tool[] = [
     tags: ['🔥 Most Used by Designers', '🔥 Popular in India'],
     section: 'top',
     link: 'https://www.hostinger.com/in?REFERRALCODE=UWNAMAURYN6F',
+    analysisId: 'hostinger',
   },
   {
     id: 'writesonic',
