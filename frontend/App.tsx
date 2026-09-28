@@ -7,14 +7,20 @@ import { StatsBanner } from './components/StatsBanner.tsx';
 import { BlogSection } from './components/BlogSection.tsx';
 import { Newsletter } from './components/Newsletter.tsx';
 import { Footer } from './components/Footer.tsx';
-import { BlogListing } from './components/BlogListing.tsx';
-import { BlogPostView } from './components/BlogPostView.tsx';
+import { lazy, Suspense } from 'react';
 import { CATEGORIES, TOOLS } from './data.ts';
-import { CategoryDetail, CategoryDirectory, ToolDirectory, categorySlug, getCatalogTools, lookupCategory } from './components/DirectoryPages.tsx';
+import { categorySlug, getCatalogTools, lookupCategory } from './components/DirectoryPages.tsx';
 import { useSEO } from './hooks/useSEO.ts';
 import { WORKFLOWS } from './workflows.ts';
-import { WorkflowDirectory, WorkflowDetail } from './components/WorkflowPages.tsx';
-import { ToolDetail } from './components/ToolDetail.tsx';
+
+const CategoryDirectory = lazy(() => import('./components/DirectoryPages.tsx').then(m => ({ default: m.CategoryDirectory })));
+const ToolDirectory = lazy(() => import('./components/DirectoryPages.tsx').then(m => ({ default: m.ToolDirectory })));
+const CategoryDetail = lazy(() => import('./components/DirectoryPages.tsx').then(m => ({ default: m.CategoryDetail })));
+const WorkflowDirectory = lazy(() => import('./components/WorkflowPages.tsx').then(m => ({ default: m.WorkflowDirectory })));
+const WorkflowDetail = lazy(() => import('./components/WorkflowPages.tsx').then(m => ({ default: m.WorkflowDetail })));
+const ToolDetail = lazy(() => import('./components/ToolDetail.tsx').then(m => ({ default: m.ToolDetail })));
+const BlogListing = lazy(() => import('./components/BlogListing.tsx').then(m => ({ default: m.BlogListing })));
+const BlogPostView = lazy(() => import('./components/BlogPostView.tsx').then(m => ({ default: m.BlogPostView })));
 
 const HomePage: React.FC = () => {
   useSEO({
@@ -74,7 +80,9 @@ const App: React.FC = () => {
   else if (path === '/') page = <HomePage />;
   else page = <main className="min-h-[65vh] bg-[#f8f7f4] px-4 py-24 text-center"><h1 className="font-serif text-4xl">Page not found</h1><p className="mt-3 text-ink/55">The page you’re looking for may have moved.</p><a href="/" className="mt-6 inline-block rounded-xl bg-ink px-5 py-3 text-sm font-semibold text-white">Back to home</a></main>;
 
-  return <div className="min-h-screen flex flex-col"><Navbar /><div className="flex-grow">{page}</div><Footer /></div>;
+  return <div className="min-h-screen flex flex-col"><Navbar /><div className="flex-grow">
+    <Suspense fallback={<main className="min-h-[70vh] bg-[#f8f7f4] px-4 py-24 text-center"><p className="text-sm font-medium text-ink/50">Loading page…</p></main>}>{page}</Suspense>
+  </div><Footer /></div>;
 };
 
 export default App;
