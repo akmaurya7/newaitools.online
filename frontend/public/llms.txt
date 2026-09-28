@@ -1,0 +1,10 @@
+# newaitools.online
+
+newaitools is a curated directory of the best AI tools, categories, and practical end-to-end workflows.
+
+## Links
+- [Home](https://newaitools.online/)
+- [Tools Directory](https://newaitools.online/tools)
+- [Workflows](https://newaitools.online/workflows)
+- [Categories](https://newaitools.online/categories)
+- [Blog](https://newaitools.online/blog)

@@ -15,7 +15,7 @@ export default {
       colors: {
         paper: '#F5F2EC',
         ink: '#1A1714',
-        accent: '#C8522A',
+        accent: '#B84A25',
         free: '#2D6A4F',
       },
       fontFamily: {

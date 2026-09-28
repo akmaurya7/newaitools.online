@@ -1,0 +1,20 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "newaitools.online"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:newaitools.online:website:directory",
+      "displayName": "newaitools AI Directory",
+      "type": "text/html",
+      "url": "https://newaitools.online/",
+      "description": "A curated directory of the best AI tools, categories, and practical end-to-end workflows.",
+      "representativeQueries": [
+        "Find the best AI tool for video editing",
+        "Compare AI website builders",
+        "What are the top AI tools for research?"
+      ]
+    }
+  ]
+}
