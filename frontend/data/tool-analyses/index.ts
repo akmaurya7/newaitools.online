@@ -9,6 +9,7 @@ import { lookaAnalysis } from './looka.ts';
 import { durableAnalysis } from './durable.ts';
 import { uizardAnalysis } from './uizard.ts';
 import { runwayAnalysis } from './runway-ml.ts';
+import { khromaAnalysis } from './khroma-free.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -21,4 +22,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   durable: durableAnalysis,
   uizard: uizardAnalysis,
   'runway-ml': runwayAnalysis,
+  'khroma-free': khromaAnalysis,
 };
