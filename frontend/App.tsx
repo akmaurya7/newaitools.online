@@ -8,8 +8,8 @@ import { BlogSection } from './components/BlogSection.tsx';
 import { Newsletter } from './components/Newsletter.tsx';
 import { Footer } from './components/Footer.tsx';
 import { lazy, Suspense } from 'react';
-import { CATEGORIES, TOOLS } from './data.ts';
-import { categorySlug, getCatalogTools, lookupCategory } from './components/DirectoryPages.tsx';
+import { CATEGORIES, TOP_PICKS } from './data/home.ts';
+import { categorySlug, lookupCategory } from './components/DirectoryPages.tsx';
 import { useSEO } from './hooks/useSEO.ts';
 import { WORKFLOWS } from './workflows.ts';
 
@@ -31,16 +31,14 @@ const HomePage: React.FC = () => {
     breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }]
   });
 
-  const topPicks = TOOLS.filter(tool => tool.section === 'top').slice(0, 3);
+  const topPicks = TOP_PICKS;
   const categoryPreviews = CATEGORIES.slice(0, 6);
-  const catalog = getCatalogTools();
   return <main className="flex-grow bg-[#f8f7f4]">
     <Hero />
     <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
       <div className="mb-7 flex items-end justify-between gap-4"><div><p className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-accent"><Compass size={14} /> Explore by intent</p><h2 className="font-serif text-3xl text-ink md:text-4xl">Start with a category</h2></div><a href="/categories" className="hidden items-center gap-2 text-sm font-semibold text-accent sm:flex">All categories <ArrowRight size={16} /></a></div>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">{categoryPreviews.map((item, index) => {
-        const count = catalog.filter(tool => tool.category === item).length;
-        return <a key={item} href={`/category/${categorySlug(item)}`} className="group flex items-center justify-between rounded-2xl border border-ink/[0.08] bg-white p-5 transition hover:-translate-y-0.5 hover:border-accent/25 hover:shadow-lg"><span className="flex items-center gap-4"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#f6eee8] text-sm font-bold text-accent">{String(index + 1).padStart(2, '0')}</span><span><span className="block font-semibold text-ink">{item}</span><span className="mt-1 block text-xs text-ink/45">{count} {count === 1 ? 'tool' : 'tools'}</span></span></span><ArrowRight size={17} className="text-ink/30 transition group-hover:translate-x-1 group-hover:text-accent" /></a>;
+        return <a key={item} href={`/category/${categorySlug(item)}`} className="group flex items-center justify-between rounded-2xl border border-ink/[0.08] bg-white p-5 transition hover:-translate-y-0.5 hover:border-accent/25 hover:shadow-lg"><span className="flex items-center gap-4"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#f6eee8] text-sm font-bold text-accent">{String(index + 1).padStart(2, '0')}</span><span><span className="block font-semibold text-ink">{item}</span></span></span><ArrowRight size={17} className="text-ink/30 transition group-hover:translate-x-1 group-hover:text-accent" /></a>;
       })}</div>
       <a href="/categories" className="mt-5 flex items-center justify-center gap-2 rounded-xl border border-ink/10 bg-white px-4 py-3 text-sm font-semibold text-ink transition hover:border-accent/25 hover:text-accent sm:hidden">See all categories <ArrowRight size={16} /></a>
     </section>
