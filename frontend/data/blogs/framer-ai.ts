@@ -12,7 +12,7 @@ export const framer_ai_review: BlogPost = {
   readTime: 9,
   tags: ['Framer AI', 'Website & App Creation', 'AI website builder', 'Web Design', 'No-Code'],
   featured: false,
-  ogImage: '/blog/images/framer_ai_minimal.jpg',
+  ogImage: '/blog/images/framer_ai_minimal.webp',
   ogImageAlt: 'Editorial illustration of an AI website agent working on a visual design canvas',
   content: `<section class="prose-article">
   <h1>Framer AI in 2026: Features, Workflow, and Limits</h1>

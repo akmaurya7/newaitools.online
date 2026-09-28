@@ -48,7 +48,7 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
       {/* Back Button */}
       <button 
         onClick={() => onNavigate('blog')}
-        className="flex items-center gap-2 text-ink/60 hover:text-ink mb-8 transition-colors"
+        className="flex items-center gap-2 text-ink/70 hover:text-ink mb-8 transition-colors"
       >
         <ArrowLeft size={20} />
         <span>Back to blog</span>
@@ -60,7 +60,7 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
           <span className="text-xs font-bold uppercase tracking-wider text-accent">
             {post.category}
           </span>
-          <div className="flex items-center gap-4 mt-2 text-sm text-ink/60">
+          <div className="flex items-center gap-4 mt-2 text-sm text-ink/70">
             <span>{post.author}</span>
             <span>•</span>
             <time dateTime={post.publishDate}>
@@ -92,7 +92,7 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
           decoding="async"
           className="aspect-[16/9] w-full rounded-2xl border border-ink/10 bg-ink/5 object-cover shadow-sm"
         />
-        <figcaption className="mt-2 text-sm text-ink/45">{post.ogImageAlt || `Illustration related to ${post.title}`}</figcaption>
+        <figcaption className="mt-2 text-sm text-ink/70">{post.ogImageAlt || `Illustration related to ${post.title}`}</figcaption>
       </figure>}
 
       {/* Article Content */}
@@ -146,7 +146,7 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
       {/* Article Meta */}
       <footer className="border-t border-ink/10 pt-8 mb-16">
         <div className="mb-6">
-          <h3 className="text-sm font-bold uppercase tracking-wider text-ink/60 mb-3">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-ink/70 mb-3">
             Tags
           </h3>
           <div className="flex flex-wrap gap-2">
@@ -167,7 +167,7 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
           <div className="w-12 h-12 bg-accent rounded-full" />
           <div>
             <p className="font-medium text-ink">About {post.author}</p>
-            <p className="text-sm text-ink/60">
+            <p className="text-sm text-ink/70">
               Research-led guidance on AI tools, grounded in public product documentation and linked sources.
             </p>
           </div>
@@ -195,7 +195,7 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
                 <h3 className="font-serif text-lg text-ink group-hover:text-accent transition-colors mt-2 leading-snug">
                   {relatedPost.title}
                 </h3>
-                <p className="text-sm text-ink/60 mt-2 line-clamp-2">
+                <p className="text-sm text-ink/70 mt-2 line-clamp-2">
                   {relatedPost.excerpt}
                 </p>
               </a>

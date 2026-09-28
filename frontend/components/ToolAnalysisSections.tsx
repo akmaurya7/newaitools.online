@@ -13,7 +13,7 @@ const Card: React.FC<{ eyebrow: string; title: string; children: React.ReactNode
 const Bullets: React.FC<{ items: string[]; icon?: 'check' | 'shield' }> = ({ items, icon = 'check' }) => (
   <ul className="space-y-3">
     {items.map(item => (
-      <li key={item} className="flex gap-3 text-sm leading-6 text-ink/65">
+      <li key={item} className="flex gap-3 text-sm leading-6 text-ink/70">
         {icon === 'shield' ? <ShieldCheck size={17} className="mt-0.5 shrink-0 text-accent" /> : <Check size={17} className="mt-0.5 shrink-0 text-accent" />}
         <span>{item}</span>
       </li>
@@ -26,7 +26,7 @@ const FeatureList: React.FC<{ items: { name: string; detail: string }[] }> = ({ 
     {items.map(item => (
       <div key={item.name} className="py-4 first:pt-0 last:pb-0">
         <h3 className="text-sm font-bold text-ink">{item.name}</h3>
-        <p className="mt-1 text-sm leading-6 text-ink/65">{item.detail}</p>
+        <p className="mt-1 text-sm leading-6 text-ink/70">{item.detail}</p>
       </div>
     ))}
   </div>
@@ -34,7 +34,7 @@ const FeatureList: React.FC<{ items: { name: string; detail: string }[] }> = ({ 
 
 const Sources: React.FC<{ analysis: ToolAnalysis }> = ({ analysis }) => (
   <Card eyebrow="13 · Research trail" title="Sources checked">
-    <p className="mb-5 text-sm leading-6 text-ink/55">
+    <p className="mb-5 text-sm leading-6 text-ink/70">
       Research verified on {analysis.lastVerified}. Official documentation is used for product capabilities, limits, pricing, legal terms and technical details; the independent source is used only for comparison context.
     </p>
     <div className="space-y-3">
@@ -48,7 +48,7 @@ const Sources: React.FC<{ analysis: ToolAnalysis }> = ({ analysis }) => (
         >
           <span>
             <span className="block text-sm font-semibold text-ink">{source.title}</span>
-            <span className="mt-1 block text-xs text-ink/45">{source.publisher} · {source.type === 'official' ? 'Official source' : 'Independent source'}</span>
+            <span className="mt-1 block text-xs text-ink/70">{source.publisher} · {source.type === 'official' ? 'Official source' : 'Independent source'}</span>
           </span>
           <ExternalLink size={15} className="mt-0.5 shrink-0 text-ink/30 transition group-hover:text-accent" />
         </a>
@@ -60,18 +60,18 @@ const Sources: React.FC<{ analysis: ToolAnalysis }> = ({ analysis }) => (
 export const ToolAnalysisSections: React.FC<{ analysis: ToolAnalysis }> = ({ analysis }) => (
   <div className="space-y-6">
     <Card eyebrow="01 · Research snapshot" title="What is it, and what does it solve?">
-      <p className="text-sm leading-7 text-ink/65">{analysis.summary}</p>
+      <p className="text-sm leading-7 text-ink/70">{analysis.summary}</p>
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         <div className="rounded-xl bg-[#f8f7f4] p-4">
-          <p className="text-xs font-bold uppercase tracking-wider text-ink/40">Company</p>
+          <p className="text-xs font-bold uppercase tracking-wider text-ink/70">Company</p>
           <p className="mt-1 text-sm font-semibold text-ink">{analysis.company}</p>
         </div>
         <div className="rounded-xl bg-[#f8f7f4] p-4">
-          <p className="text-xs font-bold uppercase tracking-wider text-ink/40">Status</p>
+          <p className="text-xs font-bold uppercase tracking-wider text-ink/70">Status</p>
           <p className="mt-1 text-sm font-semibold text-ink">{analysis.status}</p>
         </div>
       </div>
-      <p className="mt-5 text-sm leading-7 text-ink/65">{analysis.problemSolved}</p>
+      <p className="mt-5 text-sm leading-7 text-ink/70">{analysis.problemSolved}</p>
       <a href={analysis.officialUrl} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-accent hover:underline">
         Official product page <ExternalLink size={14} />
       </a>
@@ -84,7 +84,7 @@ export const ToolAnalysisSections: React.FC<{ analysis: ToolAnalysis }> = ({ ana
     </Card>
 
     <Card eyebrow="03 · How it works" title="From prompt to published product">
-      <p className="text-sm leading-7 text-ink/65">{analysis.howItWorks}</p>
+      <p className="text-sm leading-7 text-ink/70">{analysis.howItWorks}</p>
       <div className="mt-6 grid gap-3 md:grid-cols-3">
         {['Describe', 'Generate', 'Test + publish'].map((step, index) => (
           <div key={step} className="rounded-xl border border-ink/[0.08] p-4">
@@ -103,11 +103,11 @@ export const ToolAnalysisSections: React.FC<{ analysis: ToolAnalysis }> = ({ ana
       <div className="space-y-5">
         <div>
           <h3 className="text-sm font-bold text-ink">AI model/provider visibility</h3>
-          <p className="mt-1 text-sm leading-6 text-ink/65">{analysis.aiAndModels}</p>
+          <p className="mt-1 text-sm leading-6 text-ink/70">{analysis.aiAndModels}</p>
         </div>
         <div>
           <h3 className="text-sm font-bold text-ink">Inputs and outputs</h3>
-          <p className="mt-1 text-sm leading-6 text-ink/65">{analysis.inputsOutputs}</p>
+          <p className="mt-1 text-sm leading-6 text-ink/70">{analysis.inputsOutputs}</p>
         </div>
       </div>
     </Card>
@@ -135,11 +135,11 @@ export const ToolAnalysisSections: React.FC<{ analysis: ToolAnalysis }> = ({ ana
       <div className="space-y-5">
         <div>
           <h3 className="flex items-center gap-2 text-sm font-bold text-ink"><ShieldCheck size={16} className="text-accent" /> Privacy and data handling</h3>
-          <p className="mt-2 text-sm leading-7 text-ink/65">{analysis.privacy}</p>
+          <p className="mt-2 text-sm leading-7 text-ink/70">{analysis.privacy}</p>
         </div>
         <div className="border-t border-ink/[0.08] pt-5">
           <h3 className="text-sm font-bold text-ink">Ownership and copyright</h3>
-          <p className="mt-2 text-sm leading-7 text-ink/65">{analysis.ownership}</p>
+          <p className="mt-2 text-sm leading-7 text-ink/70">{analysis.ownership}</p>
         </div>
       </div>
     </Card>
@@ -162,7 +162,7 @@ export const ToolAnalysisSections: React.FC<{ analysis: ToolAnalysis }> = ({ ana
       <div className="mt-7 rounded-2xl bg-[#f8f7f4] p-5">
         <h3 className="flex items-center gap-2 text-sm font-bold text-ink"><Sparkles size={16} className="text-accent" /> Suggested end-to-end workflow</h3>
         <ol className="mt-4 space-y-3">
-          {analysis.workflow.map(step => <li key={step} className="text-sm leading-6 text-ink/65">{step}</li>)}
+          {analysis.workflow.map(step => <li key={step} className="text-sm leading-6 text-ink/70">{step}</li>)}
         </ol>
       </div>
     </Card>

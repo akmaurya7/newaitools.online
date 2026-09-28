@@ -12,7 +12,7 @@ export const lovable_vs_bolt_comparison: BlogPost = {
   readTime: 10,
   tags: ['Lovable', 'Bolt.new', 'Website & App Creation', 'AI App Builders', 'Full-Stack Development'],
   featured: true,
-  ogImage: '/blog/images/lovable-vs-bolt.jpg',
+  ogImage: '/blog/images/lovable-vs-bolt.webp',
   ogImageAlt: 'Editorial illustration comparing two AI app-building workflows',
   content: `<section class="prose-article">
   <h1>Lovable vs Bolt.new: How Their AI App Builders Differ in 2026</h1>

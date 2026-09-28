@@ -32,18 +32,9 @@
           </div>
         </div>
       </header>
-      <main class="flex-grow bg-[#f8f7f4]">
-        <section class="relative mx-auto mb-16 mt-4 max-w-7xl overflow-hidden rounded-[32px] bg-gradient-to-br from-orange-100 via-amber-50 to-emerald-50 px-4 pt-12 sm:rounded-[44px] sm:px-6 lg:px-8 md:pt-16">
-          <div class="mx-auto max-w-4xl py-12 text-center md:py-16">
-            <span class="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/15 bg-white/80 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-accent shadow-sm"><span class="h-2 w-2 rounded-full bg-emerald-500"></span> The AI directory for getting things done</span>
-            <h1 class="font-serif text-5xl leading-[1.05] text-ink mb-6 md:text-7xl">
-              Find the right AI tool<br class="hidden md:block"> for <span class="text-accent">what’s next.</span>
-            </h1>
-            <p class="text-lg md:text-xl text-ink/65 mb-10 max-w-2xl mx-auto">
-              Explore trusted tools for creating, researching, building, and getting more done. Search by tool or browse by category.
-            </p>
-          </div>
-        </section>
+      <main class="flex-grow bg-[#f8f7f4] min-h-[65vh] flex items-center justify-center">
+        <!-- Generic minimal loader to satisfy FCP/LCP without causing massive CLS when route mounts -->
+        <div class="h-8 w-8 animate-spin rounded-full border-2 border-ink/20 border-t-accent"></div>
       </main>
     </div>
   </div>

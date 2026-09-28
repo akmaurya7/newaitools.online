@@ -12,7 +12,7 @@ export const ai_coding_agents_pr_first_workflow_small_teams: BlogPost = {
   readTime: 11,
   tags: ["AI coding agents","software development","code review","developer productivity","security"],
   featured: false,
-  ogImage: '/blog/images/ai-coding-agents-pr-first.png',
+  ogImage: '/blog/images/ai-coding-agents-pr-first.webp',
   ogImageAlt: "Editorial illustration of AI-generated code changes passing through a human review gate before reaching a protected repository branch.",
   content: `<section class="prose-article">
       <h1>AI Coding Agents: A PR-First Workflow for Small Teams in 2026</h1>

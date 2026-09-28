@@ -12,7 +12,7 @@ export const notebooklm_review_2026_limits_features: BlogPost = {
   readTime: 10,
   tags: ['Gemini Notebook', 'NotebookLM', 'AI research', 'Google AI', 'research workflow'],
   featured: false,
-  ogImage: '/blog/images/notebooklm-review-2026.jpg',
+  ogImage: '/blog/images/notebooklm-review-2026.webp',
   ogImageAlt: 'Editorial illustration of Gemini Notebook organizing research sources and generating evidence-based outputs',
   content: `<section class="prose-article">
   <h1>Gemini Notebook (NotebookLM): Features, Limits, and Workflow in 2026</h1>

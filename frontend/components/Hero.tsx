@@ -8,7 +8,7 @@ export const Hero: React.FC = () => {
       <h1 className="font-serif text-5xl leading-[1.05] text-ink mb-6 md:text-7xl">
         Find the right AI tool<br className="hidden md:block" /> for <span className="text-accent">what’s next.</span>
       </h1>
-      <p className="text-lg md:text-xl text-ink/65 mb-10 max-w-2xl mx-auto">
+      <p className="text-lg md:text-xl text-ink/70 mb-10 max-w-2xl mx-auto">
         Explore trusted tools for creating, researching, building, and getting more done. Search by tool or browse by category.
       </p>
       
@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
         </a>
       </div>
 
-      <div className="inline-flex items-center justify-center space-x-2 text-sm font-medium text-ink/60 bg-ink/5 px-4 py-2 rounded-full">
+      <div className="inline-flex items-center justify-center space-x-2 text-sm font-medium text-ink/70 bg-ink/5 px-4 py-2 rounded-full">
         <span>Curated across 32 categories</span>
         <span>&middot;</span>
         <span>Tools for every workflow</span>

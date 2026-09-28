@@ -34,7 +34,7 @@ export const Newsletter: React.FC = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email address"
-              className="flex-grow px-4 py-3 bg-paper border border-ink/20 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent rounded-sm text-ink placeholder:text-ink/40"
+              className="flex-grow px-4 py-3 bg-paper border border-ink/20 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent rounded-sm text-ink placeholder:text-ink/70"
             />
             <button
               type="submit"
@@ -45,7 +45,7 @@ export const Newsletter: React.FC = () => {
           </form>
         )}
 
-        <p className="mt-6 text-sm text-ink/50 font-medium">
+        <p className="mt-6 text-sm text-ink/70 font-medium">
           Join 4,200+ designers already subscribed
         </p>
       </div>

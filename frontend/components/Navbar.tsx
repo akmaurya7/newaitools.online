@@ -17,7 +17,7 @@ export const Navbar: React.FC = () => {
         <span className="font-sans text-[21px] font-extrabold leading-none tracking-[-0.075em] text-ink"><span>newai</span><span className="text-accent">tools</span></span>
       </a>
       <nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">
-        {links.map(link => <a key={link.href} href={link.href} className="text-sm font-semibold text-ink/60 transition hover:text-accent">{link.label}</a>)}
+        {links.map(link => <a key={link.href} href={link.href} className="text-sm font-semibold text-ink/70 transition hover:text-accent">{link.label}</a>)}
         <a href="/categories" className="inline-flex items-center gap-2 rounded-xl bg-ink px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-accent">Find a tool <ArrowUpRight size={15} /></a>
       </nav>
       <button className="flex h-10 w-10 items-center justify-center rounded-lg border border-ink/10 text-ink md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label={isMobileMenuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={isMobileMenuOpen}>{isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}</button>

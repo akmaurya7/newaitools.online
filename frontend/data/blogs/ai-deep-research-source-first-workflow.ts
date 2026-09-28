@@ -12,7 +12,7 @@ export const ai_deep_research_source_first_workflow: BlogPost = {
   readTime: 11,
   tags: ["AI research","deep research","source verification","ChatGPT","Gemini","Perplexity","freelancers"],
   featured: false,
-  ogImage: '/blog/images/ai-deep-research-source-first.png',
+  ogImage: '/blog/images/ai-deep-research-source-first.webp',
   ogImageAlt: "Editorial illustration of a researcher checking several source streams before passing a verified summary into a concise research brief.",
   content: `<section class="prose-article">
       <h1>AI Deep Research: A Source-First Workflow for 2026</h1>

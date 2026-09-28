@@ -3,13 +3,22 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {"dev": "vite", "build": "vite build", "preview": "vite preview"},
-  "dependencies": {"react": "latest", "react-dom": "latest", "lucide-react": "latest"},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
   "devDependencies": {
     "@types/node": "latest",
     "@vitejs/plugin-react": "latest",
     "autoprefixer": "10.4.20",
     "postcss": "8.4.49",
+    "sharp": "^0.35.5",
     "tailwindcss": "3.4.17",
     "typescript": "latest",
     "vite": "latest"
