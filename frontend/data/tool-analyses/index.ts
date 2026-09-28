@@ -8,6 +8,7 @@ import { writesonicAnalysis } from './writesonic.ts';
 import { lookaAnalysis } from './looka.ts';
 import { durableAnalysis } from './durable.ts';
 import { uizardAnalysis } from './uizard.ts';
+import { runwayAnalysis } from './runway-ml.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -19,4 +20,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   looka: lookaAnalysis,
   durable: durableAnalysis,
   uizard: uizardAnalysis,
+  'runway-ml': runwayAnalysis,
 };
