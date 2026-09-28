@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #F5F2EC;
+  --color-ink: #1A1714;
+  --color-accent: #C8522A;
+  --color-free: #2D6A4F;
+  --font-family-serif: "DM Serif Display", serif;
+  --font-family-sans: "DM Sans", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: #F5F2EC;
+    color: #1A1714;
+    font-family: "DM Sans", sans-serif;
+  }
+}
