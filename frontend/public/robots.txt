@@ -6,7 +6,9 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /api/internal
-Disallow: /*.json
+# Allow Agentic Browsing
+Allow: /*ai-catalog.json
+Allow: /.well-known/ai-catalog.json
 Disallow: /node_modules
 Disallow: /.git
 
