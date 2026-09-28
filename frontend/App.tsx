@@ -8,8 +8,8 @@ import { BlogSection } from './components/BlogSection.tsx';
 import { Newsletter } from './components/Newsletter.tsx';
 import { Footer } from './components/Footer.tsx';
 import { lazy, Suspense } from 'react';
-import { CATEGORIES, TOP_PICKS } from './data/home.ts';
-import { categorySlug, lookupCategory } from './components/DirectoryPages.tsx';
+import { TOP_PICKS } from './data/home.ts';
+import { categorySlug, lookupCategory, HOME_CATEGORIES } from './utils/categoryRoutes.ts';
 import { useSEO } from './hooks/useSEO.ts';
 import { WORKFLOWS } from './workflows.ts';
 
@@ -32,7 +32,7 @@ const HomePage: React.FC = () => {
   });
 
   const topPicks = TOP_PICKS;
-  const categoryPreviews = CATEGORIES.slice(0, 6);
+  const categoryPreviews = HOME_CATEGORIES.slice(0, 6);
   return <main className="flex-grow bg-[#f8f7f4]">
     <Hero />
     <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
