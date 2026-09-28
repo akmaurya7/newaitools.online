@@ -16,9 +16,9 @@
   "devDependencies": {
     "@types/node": "latest",
     "@vitejs/plugin-react": "latest",
-    "tailwindcss": "4.1.13",
+    "tailwindcss": "4.3.3",
     "typescript": "latest",
     "vite": "latest",
-    "@tailwindcss/vite": "4.1.13"
+    "@tailwindcss/vite": "4.3.3"
   }
 }
