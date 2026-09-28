@@ -56,14 +56,18 @@ export const writesonicAnalysis: ToolAnalysis = {
     'Google Search Console, Google Search, Google Keyword Planner, Ahrefs, Google Analytics and Looker Studio.',
     'Vercel, Cloudflare, Fastly, Akamai, Google Cloud CDN and Amazon CloudFront.',
     'ChatGPT, Claude, Claude Code and Codex through current MCP capabilities.',
-    'Zapier for no-code automation across connected applications.'
+    'Zapier for no-code automation across connected applications.',
+    'MCP connections for ChatGPT, Claude, Claude Code, Codex, Cursor, Lovable, n8n and Notion.',
+    'Chrome extension for AI query fanouts, Google keyword data and citation capture.'
   ],
   developer: [
     'API access is activated from the Writesonic API dashboard; official documentation warns not to commit API keys to public repositories.',
     'Current integrations documentation describes REST endpoints and webhooks for visibility data, fixes, CMS and reporting workflows.',
     'The API example exposes visibility score, citation share, share of voice and sentiment for a date range and market.',
     'MCP lets AI assistants query live visibility data and return reports, charts and breakdowns.',
-    'Chatsonic has a documented API workflow with web search and memory capabilities.'
+    'Chatsonic has a documented API workflow with web search and memory capabilities.',
+    'The current public API exposes REST endpoints and webhooks for visibility metrics, citations, Brand Explorer and Action Center workflows.',
+    'Writesonic documents MCP access that lets connected AI clients query live visibility reports, citations and Action Center data.'
   ],
   privacy: 'Writesonic’s privacy policy, last updated May 13, 2026, says AI inputs are sent to the relevant model provider to generate outputs. It says Writesonic does not use Customer Data to train or fine-tune general-purpose/foundation/large-language models, while allowing de-identified inputs, outputs and usage data to operate, secure, debug, evaluate and improve the service. Customer data may be processed in the US and other countries. Writesonic states it is SOC 2 Type 2 audited.',
   ownership: 'The Terms define inputs and outputs as Customer Data and make the customer responsible for lawful use and third-party rights. Writesonic receives a license to process inputs as necessary to provide/support the service. Its no-training commitment applies to Customer Data unless a customer expressly opts into a separate program, while de-identified data may still be used for service improvement. Commercial publication therefore still needs human factual, rights and brand review.',
@@ -102,6 +106,8 @@ export const writesonicAnalysis: ToolAnalysis = {
     { title: 'AI Content Agent', publisher: 'Writesonic', url: 'https://writesonic.com/ai-content-agent', type: 'official' },
     { title: 'AI Visibility Action Center', publisher: 'Writesonic', url: 'https://writesonic.com/ai-visibility-action-center', type: 'official' },
     { title: 'Integrations, REST API, webhooks and MCP', publisher: 'Writesonic', url: 'https://writesonic.com/integrations', type: 'official' },
+    { title: 'Public API + Writesonic', publisher: 'Writesonic', url: 'https://writesonic.com/integrations/api', type: 'official' },
+    { title: 'MCP', publisher: 'Writesonic', url: 'https://writesonic.com/mcp', type: 'official' },
     { title: 'AI Article Writer overview', publisher: 'Writesonic Documentation', url: 'https://docs.writesonic.com/docs/ai-article-writer', type: 'official' },
     { title: 'AI Document Editor', publisher: 'Writesonic Documentation', url: 'https://docs.writesonic.com/docs/ai-document-editor', type: 'official' },
     { title: 'Privacy Policy', publisher: 'Writesonic Legal', url: 'https://writesonic.com/legal/privacy-policy', type: 'official' },
