@@ -17,6 +17,8 @@
     "@types/node": "latest",
     "@vitejs/plugin-react": "latest",
     "typescript": "latest",
-    "vite": "latest"
+    "vite": "latest",
+    "tailwindcss": "latest",
+    "@tailwindcss/vite": "latest"
   }
 }
