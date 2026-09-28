@@ -6,12 +6,11 @@ import { seoManager, SEOConfig } from '../utils/SEOManager';
  * Usage: useSEO({ title: '...', description: '...' })
  */
 export const useSEO = (config: SEOConfig) => {
+  const configKey = JSON.stringify(config);
   useEffect(() => {
     seoManager.setPageSEO(config);
-    
-    // Scroll to top on page change
     window.scrollTo(0, 0);
-  }, [config]);
+  }, [configKey]);
 };
 
 export default useSEO;
