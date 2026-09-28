@@ -16,6 +16,16 @@ export default defineConfig(({ mode }) => {
       // Performance optimizations
       build: {
         target: 'es2020',
+        minify: 'terser',
+        terserOptions: {
+          compress: {
+            drop_console: true,
+            drop_debugger: true,
+            passes: 2,
+          },
+        },
+        cssMinify: true,
+        cssCodeSplit: true,
         // Code splitting for better caching
         rollupOptions: {
           output: {

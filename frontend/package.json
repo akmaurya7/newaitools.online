@@ -22,6 +22,7 @@
     "postcss": "8.4.49",
     "sharp": "^0.35.5",
     "tailwindcss": "3.4.17",
+    "terser": "^5.31.0",
     "typescript": "latest",
     "vite": "latest"
   }

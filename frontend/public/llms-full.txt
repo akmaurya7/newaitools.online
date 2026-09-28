@@ -1,0 +1,101 @@
+# newaitools.online — Full Documentation
+
+> A curated directory of the best AI tools, categories, and practical end-to-end workflows for creators, developers, and small teams.
+
+## About
+
+newaitools.online is an independent AI tools directory. It helps users find, compare, and evaluate AI software across 32 categories. The site features curated tool listings with pricing information, practical multi-step workflow guides, and research-led blog articles with tool reviews and comparisons.
+
+## Site Structure
+
+### Home Page (/)
+The home page features:
+- Hero section with search call-to-action
+- Category preview grid (top 6 categories)
+- Popular tools showcase (curated top picks)
+- Workflow previews (2 featured workflows)
+- Statistics banner
+- Blog article previews
+- Newsletter signup
+
+### Tools Directory (/tools)
+A searchable, filterable directory of all AI tools. Each tool listing includes:
+- Tool name and description
+- Category classification
+- Pricing model (Free, Freemium, Paid, Enterprise)
+- Tags for discoverability
+- Link to detailed tool page
+
+### Categories (/categories)
+Browse AI tools organized into 32 categories:
+1. Writing & Text — Write, edit, summarize, and polish content
+2. Research & Knowledge — Find answers and explore sources
+3. Image & Graphic Design — Generate images, design assets
+4. Video — Create, edit, and transform video content
+5. Audio & Music — Speech, music, podcasts, audio production
+6. Coding & Development — Code assistants, debugging, shipping
+7. Website & App Creation — Build websites and apps faster
+8. Data & Analytics — Explore datasets, generate insights
+9. Productivity — Task management, automation, efficiency
+10. Business & Operations — Business workflows and planning
+11. Marketing & Advertising — Campaign planning and content
+12. Sales & CRM — Customer management and lead tracking
+13. Social Media — Content creation and scheduling
+14. Education & Learning — Personal learning experiences
+15. Presentations & Documents — Decks and document creation
+16. Automation & AI Agents — Multi-step workflows and agents
+17. Customer Support — Faster customer service
+18. E-commerce — Product content and store operations
+19. Finance — Financial analysis and reporting
+20. Legal — Legal research and document workflows
+21. Healthcare — Clinical documentation and healthcare AI
+22. HR & Recruitment — Recruiting and people operations
+23. IT & DevOps — Infrastructure and technical operations
+24. 3D & Game Development — 3D assets and game creation
+25. Translation & Localization — Cross-language content adaptation
+26. SEO — Search demand research and visibility
+27. Meetings & Communication — Conversation capture and notes
+28. Personal / Lifestyle — Personal planning and everyday AI
+29. Scientific & Academic — Academic research and knowledge
+30. Knowledge Management — Document and workspace organization
+31. Specialized Industry AI — Focused professional workflows
+32. AI Infrastructure / Models / APIs — Foundational AI models
+
+### Workflows (/workflows)
+Step-by-step guides showing how AI tools work together:
+- Script-to-Video workflow
+- Research-to-Article workflow
+- Website Creation workflow
+- E-commerce Product Launch workflow
+
+Each workflow includes: tool recommendations, step-by-step instructions, handoff points, quality gates, and example outputs.
+
+### Blog (/blog)
+Research-led articles covering:
+- Tool Reviews — Testing real tasks from start to finish
+- Tool Comparisons — Side-by-side evaluations using the same criteria
+- Workflow Tutorials — Repeatable processes with screenshots and prompts
+
+### Individual Tool Pages (/tool/[slug])
+Detailed pages for each AI tool with:
+- Full description and use cases
+- Pricing details
+- Category context
+- Related tools
+
+### Individual Category Pages (/category/[slug])
+Filtered views showing all tools in a specific category with search functionality.
+
+### Individual Workflow Pages (/workflow/[slug])
+Detailed workflow guides with numbered steps, tool links, examples, outputs, handoffs, and quality gates.
+
+## Technical Details
+- Built with React + Vite + TypeScript
+- Styled with Tailwind CSS
+- Deployed on Vercel
+- SPA with client-side routing
+- SEO managed via dynamic meta tags and structured data (JSON-LD)
+- Sitemaps at /sitemap_index.xml
+
+## Contact
+Website: https://newaitools.online

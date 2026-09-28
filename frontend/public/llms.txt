@@ -1,10 +1,21 @@
 # newaitools.online
 
-newaitools is a curated directory of the best AI tools, categories, and practical end-to-end workflows.
+> A curated directory of the best AI tools, categories, and practical end-to-end workflows.
 
-## Links
-- [Home](https://newaitools.online/)
-- [Tools Directory](https://newaitools.online/tools)
-- [Workflows](https://newaitools.online/workflows)
-- [Categories](https://newaitools.online/categories)
-- [Blog](https://newaitools.online/blog)
+newaitools helps people discover, compare, and choose AI tools across 32 categories. It includes curated tool listings with pricing and descriptions, practical step-by-step AI workflows, and research-led blog articles.
+
+## Pages
+
+- [Home](https://newaitools.online/): Main landing page with featured tools, category previews, and workflow highlights
+- [Tools Directory](https://newaitools.online/tools): Searchable directory of all AI tools with filtering
+- [Categories](https://newaitools.online/categories): Browse 32 AI tool categories organized by use case
+- [Workflows](https://newaitools.online/workflows): Step-by-step AI workflow guides from idea to finished work
+- [Blog](https://newaitools.online/blog): Research-led reviews, comparisons, and tutorials
+
+## Categories
+
+Writing & Text, Research & Knowledge, Image & Graphic Design, Video, Audio & Music, Coding & Development, Website & App Creation, Data & Analytics, Productivity, Business & Operations, Marketing & Advertising, Sales & CRM, Social Media, Education & Learning, Presentations & Documents, Automation & AI Agents, Customer Support, E-commerce, Finance, Legal, Healthcare, HR & Recruitment, IT & DevOps, 3D & Game Development, Translation & Localization, SEO, Meetings & Communication, Personal / Lifestyle, Scientific & Academic, Knowledge Management, Specialized Industry AI, AI Infrastructure / Models / APIs
+
+## Optional
+
+- [Full Documentation](https://newaitools.online/llms-full.txt)

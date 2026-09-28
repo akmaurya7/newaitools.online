@@ -1,7 +1,8 @@
 {
   "specVersion": "1.0",
   "host": {
-    "displayName": "newaitools.online"
+    "displayName": "newaitools.online",
+    "url": "https://newaitools.online"
   },
   "entries": [
     {
@@ -9,11 +10,64 @@
       "displayName": "newaitools AI Directory",
       "type": "text/html",
       "url": "https://newaitools.online/",
-      "description": "A curated directory of the best AI tools, categories, and practical end-to-end workflows.",
+      "description": "A curated directory of the best AI tools, categories, and practical end-to-end workflows. Compare AI software across 32 categories.",
       "representativeQueries": [
         "Find the best AI tool for video editing",
         "Compare AI website builders",
-        "What are the top AI tools for research?"
+        "What are the top AI tools for research?",
+        "Best AI tools for writing",
+        "AI tools directory"
+      ]
+    },
+    {
+      "identifier": "urn:air:newaitools.online:website:tools",
+      "displayName": "AI Tools Directory",
+      "type": "text/html",
+      "url": "https://newaitools.online/tools",
+      "description": "Search and compare a curated directory of AI tools across creative, business, productivity, and technical categories. Filter by name, category, or task.",
+      "representativeQueries": [
+        "Search AI tools",
+        "Find AI software for my project",
+        "Browse all AI tools",
+        "AI tool comparison directory"
+      ]
+    },
+    {
+      "identifier": "urn:air:newaitools.online:website:categories",
+      "displayName": "AI Tool Categories",
+      "type": "text/html",
+      "url": "https://newaitools.online/categories",
+      "description": "Browse AI tools organized into 32 categories including Writing, Video, Coding, Design, Marketing, Automation, and more.",
+      "representativeQueries": [
+        "AI tool categories",
+        "What categories of AI tools exist?",
+        "Browse AI tools by category",
+        "AI tools for marketing"
+      ]
+    },
+    {
+      "identifier": "urn:air:newaitools.online:website:workflows",
+      "displayName": "AI Workflows",
+      "type": "text/html",
+      "url": "https://newaitools.online/workflows",
+      "description": "Practical step-by-step AI workflow guides showing how to chain AI tools together from idea to finished work, including script-to-video and research-to-article workflows.",
+      "representativeQueries": [
+        "AI workflow guide",
+        "How to chain AI tools together",
+        "Script to video workflow",
+        "AI content creation workflow"
+      ]
+    },
+    {
+      "identifier": "urn:air:newaitools.online:website:blog",
+      "displayName": "newaitools Blog",
+      "type": "text/html",
+      "url": "https://newaitools.online/blog",
+      "description": "Research-led AI tool reviews, thoughtful comparisons, and practical workflow tutorials for creators and small teams.",
+      "representativeQueries": [
+        "AI tool reviews",
+        "AI tool comparison articles",
+        "Best AI tools blog"
       ]
     }
   ]

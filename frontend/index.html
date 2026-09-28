@@ -18,8 +18,11 @@
   <title>Best AI Tools Directory 2026: Compare AI Software & Workflows</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" as="style">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"></noscript>
 </head>
 <body class="bg-paper text-ink font-sans antialiased selection:bg-accent selection:text-white">
   <script>
@@ -29,6 +32,9 @@
     .skel-content { display: none; }
     html[data-path="/"] #skel-home { display: block; }
     html[data-path^="/blog"] #skel-blog { display: block; }
+    html[data-path="/categories"] #skel-categories { display: block; }
+    html[data-path="/workflows"] #skel-workflows { display: block; }
+    html[data-path="/tools"] #skel-tools { display: block; }
   </style>
   <div id="root">
     <div class="min-h-screen flex flex-col">
@@ -63,7 +69,7 @@
           <div class="mx-auto max-w-4xl py-12 text-center md:py-16">
             <span class="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/15 bg-white/80 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-accent shadow-sm"><span class="h-2 w-2 rounded-full bg-emerald-500"></span> The AI directory for getting things done</span>
             <h1 class="font-serif text-5xl leading-[1.05] text-ink mb-6 md:text-7xl">
-              Find the right AI tool<br class="hidden md:block"> for <span class="text-accent">what’s next.</span>
+              Find the right AI tool<br class="hidden md:block"> for <span class="text-accent">what's next.</span>
             </h1>
             <p class="text-lg md:text-xl text-ink/70 mb-10 max-w-2xl mx-auto">
               Explore trusted tools for creating, researching, building, and getting more done. Search by tool or browse by category.
@@ -90,19 +96,83 @@
           </div>
         </section>
       </main>
+
+      <!-- CATEGORIES SKELETON -->
+      <main id="skel-categories" class="skel-content min-h-[70vh] bg-[#f8f7f4]">
+        <section class="border-b border-ink/10 bg-white">
+          <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-20 lg:px-8">
+            <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-accent">Browse the directory</p>
+            <h1 class="max-w-4xl font-serif text-4xl leading-tight text-ink sm:text-5xl md:text-6xl">What do you want to get done?</h1>
+            <p class="mt-5 max-w-2xl text-base leading-7 text-ink/70 md:text-lg">Start with a category to find tools built for the kind of work you have in mind. Each collection brings relevant products together in one place.</p>
+          </div>
+        </section>
+      </main>
+
+      <!-- WORKFLOWS SKELETON -->
+      <main id="skel-workflows" class="skel-content min-h-[70vh] bg-[#f8f7f4]">
+        <section class="relative overflow-hidden border-b border-ink/[0.08] bg-[#201d1a] text-white">
+          <div class="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
+            <a href="/" class="mb-10 inline-flex items-center gap-2 text-sm font-semibold text-white/80 transition hover:text-white">← Back to discovery</a>
+            <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-orange-200">Practical toolchains</p>
+            <h1 class="max-w-3xl font-serif text-5xl leading-[1.04] sm:text-6xl md:text-7xl">A tool is a start.<br><span class="text-orange-200">A workflow gets it done.</span></h1>
+            <p class="mt-6 max-w-2xl text-base leading-7 text-white/80 md:text-lg">See how useful AI tools fit together, step by step.</p>
+          </div>
+        </section>
+      </main>
+
+      <!-- TOOLS SKELETON -->
+      <main id="skel-tools" class="skel-content min-h-[70vh] bg-[#f8f7f4]">
+        <section class="border-b border-ink/10 bg-white">
+          <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-20 lg:px-8">
+            <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-accent">The full directory</p>
+            <h1 class="max-w-4xl font-serif text-4xl leading-tight text-ink sm:text-5xl md:text-6xl">Explore AI tools</h1>
+            <p class="mt-5 max-w-2xl text-base leading-7 text-ink/70 md:text-lg">Search the directory or narrow your discovery by a category. Find the right product for your next idea, project, or workflow.</p>
+          </div>
+        </section>
+      </main>
       
       <!-- GENERIC SKELETON -->
       <main id="skel-generic" class="skel-content flex-grow bg-[#f8f7f4] min-h-[65vh] flex items-center justify-center">
         <div class="h-8 w-8 animate-spin rounded-full border-2 border-ink/20 border-t-accent"></div>
       </main>
       
+      <!-- FOOTER SKELETON - prevents CLS by reserving space -->
+      <footer class="border-t border-ink/10 bg-white">
+        <div class="mx-auto max-w-7xl px-4 pb-8 pt-12 sm:px-6 lg:px-8">
+          <div class="flex flex-col justify-between gap-8 sm:flex-row sm:items-start">
+            <div class="max-w-sm">
+              <span class="group inline-flex items-center gap-2.5">
+                <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-ink text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>
+                </span>
+                <span class="font-sans text-[21px] font-extrabold leading-none tracking-[-0.075em] text-ink"><span>newai</span><span class="text-accent">tools</span></span>
+              </span>
+              <p class="mt-4 text-sm leading-6 text-ink/70">A clearer way to discover useful AI tools, categories, and workflows.</p>
+            </div>
+            <nav aria-label="Footer navigation" class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold text-ink/70">
+              <a href="/tools" class="transition hover:text-accent">Tools</a>
+              <a href="/categories" class="transition hover:text-accent">Categories</a>
+              <a href="/workflows" class="transition hover:text-accent">Workflows</a>
+              <a href="/blog" class="transition hover:text-accent">Blog</a>
+            </nav>
+          </div>
+          <div class="mt-10 flex flex-col gap-3 border-t border-ink/[0.08] pt-5 text-xs text-ink/70 sm:flex-row sm:items-center sm:justify-between">
+            <p>Some links may be affiliate links. We may earn a commission at no extra cost to you.</p>
+            <p>&copy; 2026 newaitools. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
       <script>
-        if (!document.documentElement.getAttribute('data-path').match(/^(\/$|\/blog)/)) {
-          document.getElementById('skel-generic').style.display = 'flex';
-        }
+        (function() {
+          var p = document.documentElement.getAttribute('data-path');
+          if (!p.match(/^(\/$|\/blog|\/categories$|\/workflows$|\/tools$)/)) {
+            document.getElementById('skel-generic').style.display = 'flex';
+          }
+        })();
       </script>
     </div>
   </div>
   <script type="module" src="./index.tsx"></script>
 </body>
-</html>
+</html>
