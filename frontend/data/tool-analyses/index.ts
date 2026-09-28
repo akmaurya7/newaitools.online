@@ -6,6 +6,7 @@ import { adobeFireflyAnalysis } from './adobe-firefly.ts';
 import { leonardoAnalysis } from './leonardo-ai.ts';
 import { writesonicAnalysis } from './writesonic.ts';
 import { lookaAnalysis } from './looka.ts';
+import { durableAnalysis } from './durable.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -15,4 +16,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'leonardo-ai': leonardoAnalysis,
   writesonic: writesonicAnalysis,
   looka: lookaAnalysis,
+  durable: durableAnalysis,
 };
