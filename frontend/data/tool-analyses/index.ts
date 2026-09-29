@@ -12,6 +12,7 @@ import { runwayAnalysis } from './runway-ml.ts';
 import { khromaAnalysis } from './khroma-free.ts';
 import { presentationsAiAnalysis } from './presentations-ai.ts';
 import { copyAiAnalysis } from './copy-ai.ts';
+import { removeBgAnalysis } from './remove-bg.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -27,4 +28,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'khroma-free': khromaAnalysis,
   'presentations-ai': presentationsAiAnalysis,
   'copy-ai': copyAiAnalysis,
+  'remove-bg': removeBgAnalysis,
 };
