@@ -21,6 +21,7 @@ import { geminiAnalysis } from './gemini.ts';
 import { jasperAnalysis } from './jasper.ts';
 import { grammarlyAnalysis } from './grammarly.ts';
 import { quillbotAnalysis } from './quillbot.ts';
+import { perplexityAnalysis } from './perplexity.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -45,4 +46,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   jasper: jasperAnalysis,
   grammarly: grammarlyAnalysis,
   quillbot: quillbotAnalysis,
+  perplexity: perplexityAnalysis,
 };
