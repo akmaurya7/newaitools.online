@@ -13,6 +13,7 @@ import { khromaAnalysis } from './khroma-free.ts';
 import { presentationsAiAnalysis } from './presentations-ai.ts';
 import { copyAiAnalysis } from './copy-ai.ts';
 import { removeBgAnalysis } from './remove-bg.ts';
+import { photopeaAnalysis } from './photopea.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -29,4 +30,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'presentations-ai': presentationsAiAnalysis,
   'copy-ai': copyAiAnalysis,
   'remove-bg': removeBgAnalysis,
+  photopea: photopeaAnalysis,
 };
