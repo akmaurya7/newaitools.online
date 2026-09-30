@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">AI voice agent workflow</title>
+<desc id="desc">Editorial illustration of a person speaking to an AI voice agent connected to business tools, with low latency, security, and human handoff.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f5fbff"/><stop offset="1" stop-color="#eef4ff"/></linearGradient>
+  <linearGradient id="agent" x1="0" x2="1"><stop offset="0" stop-color="#dbeafe"/><stop offset="1" stop-color="#ede9fe"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".14"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<circle cx="1330" cy="150" r="180" fill="#dbeafe" opacity=".35"/>
+<circle cx="250" cy="680" r="210" fill="#dcfce7" opacity=".28"/>
+<g filter="url(#shadow)">
+  <rect x="600" y="180" width="400" height="300" rx="44" fill="url(#agent)" stroke="#b9c8f4" stroke-width="4"/>
+  <rect x="695" y="245" width="210" height="125" rx="35" fill="#172554"/>
+  <circle cx="760" cy="306" r="18" fill="#67e8f9"/><circle cx="840" cy="306" r="18" fill="#67e8f9"/>
+  <path d="M760 340 Q800 370 840 340" fill="none" stroke="#67e8f9" stroke-width="8" stroke-linecap="round"/>
+  <text x="800" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17325c">VOICE AGENT</text>
+</g>
+<g fill="none" stroke-linecap="round">
+  <path d="M340 320 C420 320 470 280 600 300" stroke="#3b82f6" stroke-width="10"/>
+  <path d="M1000 300 C1110 280 1160 320 1260 320" stroke="#10b981" stroke-width="10"/>
+</g>
+<g stroke="#3b82f6" stroke-width="7" stroke-linecap="round" opacity=".9">
+  <path d="M390 350v-30M415 365v-60M440 350v-30M465 370v-70M490 350v-30M515 365v-60"/>
+</g>
+<g stroke="#10b981" stroke-width="7" stroke-linecap="round" opacity=".9">
+  <path d="M1085 350v-30M1110 365v-60M1135 350v-30M1160 370v-70M1185 350v-30M1210 365v-60"/>
+</g>
+<g filter="url(#shadow)">
+  <rect x="120" y="245" width="280" height="230" rx="36" fill="#fff"/>
+  <circle cx="250" cy="325" r="62" fill="#e0f2fe"/>
+  <rect x="225" y="315" width="50" height="75" rx="24" fill="#334155"/>
+  <path d="M210 365 Q250 415 290 365" fill="none" stroke="#334155" stroke-width="12" stroke-linecap="round"/>
+  <text x="250" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#17325c">SPEAK</text>
+</g>
+<g filter="url(#shadow)">
+  <rect x="1260" y="245" width="260" height="230" rx="36" fill="#fff"/>
+  <circle cx="1390" cy="325" r="58" fill="#dcfce7"/>
+  <path d="M1360 325 h60 M1375 305 v40 M1405 305 v40" stroke="#15803d" stroke-width="10" stroke-linecap="round"/>
+  <text x="1390" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#17325c">RESPOND</text>
+</g>
+<g stroke="#8b5cf6" stroke-width="4" stroke-dasharray="12 12" fill="none">
+  <path d="M800 480 C800 555 360 530 360 625"/>
+  <path d="M800 480 C800 555 600 530 600 625"/>
+  <path d="M800 480 C800 555 1000 530 1000 625"/>
+  <path d="M800 480 C800 555 1240 530 1240 625"/>
+</g>
+<g filter="url(#shadow)" font-family="Arial, sans-serif" text-anchor="middle">
+  <g><rect x="240" y="610" width="240" height="110" rx="26" fill="#fff"/><text x="360" y="675" font-size="23" font-weight="700" fill="#17325c">Calendar</text></g>
+  <g><rect x="480" y="610" width="240" height="110" rx="26" fill="#fff"/><text x="600" y="675" font-size="23" font-weight="700" fill="#17325c">CRM</text></g>
+  <g><rect x="880" y="610" width="240" height="110" rx="26" fill="#fff"/><text x="1000" y="675" font-size="23" font-weight="700" fill="#17325c">Data &amp; Tools</text></g>
+  <g><rect x="1120" y="610" width="240" height="110" rx="26" fill="#fff"/><text x="1240" y="675" font-size="23" font-weight="700" fill="#17325c">Human Handoff</text></g>
+</g>
+<g font-family="Arial, sans-serif">
+  <rect x="420" y="770" width="760" height="70" rx="35" fill="#fff" opacity=".9"/>
+  <text x="800" y="815" text-anchor="middle" font-size="25" font-weight="700" fill="#17325c">LOW LATENCY  •  CONTROLLED TOOLS  •  HUMAN OVERSIGHT</text>
+</g>
+</svg>
