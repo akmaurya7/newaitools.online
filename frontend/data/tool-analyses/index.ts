@@ -19,6 +19,7 @@ import { chatgptAnalysis } from './chatgpt.ts';
 import { claudeAnalysis } from './claude.ts';
 import { geminiAnalysis } from './gemini.ts';
 import { jasperAnalysis } from './jasper.ts';
+import { grammarlyAnalysis } from './grammarly.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -41,4 +42,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   claude: claudeAnalysis,
   gemini: geminiAnalysis,
   jasper: jasperAnalysis,
+  grammarly: grammarlyAnalysis,
 };
