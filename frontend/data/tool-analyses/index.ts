@@ -14,6 +14,7 @@ import { presentationsAiAnalysis } from './presentations-ai.ts';
 import { copyAiAnalysis } from './copy-ai.ts';
 import { removeBgAnalysis } from './remove-bg.ts';
 import { photopeaAnalysis } from './photopea.ts';
+import { squooshAnalysis } from './squoosh.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -31,4 +32,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'copy-ai': copyAiAnalysis,
   'remove-bg': removeBgAnalysis,
   photopea: photopeaAnalysis,
+  squoosh: squooshAnalysis,
 };
