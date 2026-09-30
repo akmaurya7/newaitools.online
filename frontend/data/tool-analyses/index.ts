@@ -16,6 +16,7 @@ import { removeBgAnalysis } from './remove-bg.ts';
 import { photopeaAnalysis } from './photopea.ts';
 import { squooshAnalysis } from './squoosh.ts';
 import { chatgptAnalysis } from './chatgpt.ts';
+import { claudeAnalysis } from './claude.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -35,4 +36,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   photopea: photopeaAnalysis,
   squoosh: squooshAnalysis,
   chatgpt: chatgptAnalysis,
+  claude: claudeAnalysis,
 };
