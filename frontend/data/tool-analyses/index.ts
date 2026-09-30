@@ -17,6 +17,7 @@ import { photopeaAnalysis } from './photopea.ts';
 import { squooshAnalysis } from './squoosh.ts';
 import { chatgptAnalysis } from './chatgpt.ts';
 import { claudeAnalysis } from './claude.ts';
+import { geminiAnalysis } from './gemini.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -37,4 +38,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   squoosh: squooshAnalysis,
   chatgpt: chatgptAnalysis,
   claude: claudeAnalysis,
+  gemini: geminiAnalysis,
 };
