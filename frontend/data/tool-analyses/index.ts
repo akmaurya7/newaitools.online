@@ -20,6 +20,7 @@ import { claudeAnalysis } from './claude.ts';
 import { geminiAnalysis } from './gemini.ts';
 import { jasperAnalysis } from './jasper.ts';
 import { grammarlyAnalysis } from './grammarly.ts';
+import { quillbotAnalysis } from './quillbot.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -43,4 +44,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   gemini: geminiAnalysis,
   jasper: jasperAnalysis,
   grammarly: grammarlyAnalysis,
+  quillbot: quillbotAnalysis,
 };
