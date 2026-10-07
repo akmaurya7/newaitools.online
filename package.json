@@ -6,7 +6,8 @@
     "preview": "npm run preview --prefix frontend"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
     "tailwindcss": "4.3.3",
-    "@tailwindcss/vite": "4.3.3"
+    "tsx": "^4.23.15"
   }
 }
