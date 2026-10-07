@@ -26,6 +26,7 @@ import { notebooklmAnalysis } from './notebooklm.ts';
 import { cursorAnalysis } from './cursor.ts';
 
 import { githubCopilotAnalysis } from './github-copilot.ts';
+import { elevenlabsAnalysis } from './elevenlabs.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -53,4 +54,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   notebooklm: notebooklmAnalysis,
   cursor: cursorAnalysis,
   'github-copilot': githubCopilotAnalysis,
+  elevenlabs: elevenlabsAnalysis,
 };
