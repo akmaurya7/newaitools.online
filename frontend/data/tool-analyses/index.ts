@@ -30,6 +30,7 @@ import { elevenlabsAnalysis } from './elevenlabs.ts';
 import { midjourneyAnalysis } from './midjourney.ts';
 import { sunoAnalysis } from './suno.ts';
 import { windsurfAnalysis } from './windsurf.ts';
+import { heygenAnalysis } from './heygen.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -62,4 +63,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   midjourney: midjourneyAnalysis,
   suno: sunoAnalysis,
   windsurf: windsurfAnalysis,
+  heygen: heygenAnalysis,
 };
