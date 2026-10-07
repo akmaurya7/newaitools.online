@@ -76,6 +76,7 @@ export const TOOLS: Tool[] = [
     tags: ['🔥 Most Used by Designers'],
     section: 'top',
     link: 'https://writesonic.com/',
+    analysisId: 'writesonic',
   },
 
   // Main Tools Grid
@@ -88,6 +89,7 @@ export const TOOLS: Tool[] = [
     rating: 4.5,
     section: 'main',
     link: 'https://firefly.adobe.com/',
+    analysisId: 'adobe-firefly',
   },
   {
     id: 'leonardo-ai',
@@ -99,6 +101,7 @@ export const TOOLS: Tool[] = [
     tags: ['🔥 Popular in India'],
     section: 'main',
     link: 'https://leonardo.ai/',
+    analysisId: 'leonardo-ai',
   },
   {
     id: 'looka',
@@ -109,6 +112,7 @@ export const TOOLS: Tool[] = [
     rating: 4.3,
     section: 'main',
     link: 'https://looka.com/',
+    analysisId: 'looka',
   },
   {
     id: 'durable',
@@ -120,6 +124,7 @@ export const TOOLS: Tool[] = [
     tags: ['🔥 Popular in India'],
     section: 'main',
     link: 'https://durable.co/',
+    analysisId: 'durable',
   },
   {
     id: 'runway-ml',
@@ -130,6 +135,7 @@ export const TOOLS: Tool[] = [
     rating: 4.4,
     section: 'main',
     link: 'https://runwayml.com/',
+    analysisId: 'runway-ml',
   },
   {
     id: 'uizard',
@@ -140,6 +146,7 @@ export const TOOLS: Tool[] = [
     rating: 4.2,
     section: 'main',
     link: 'https://uizard.io/',
+    analysisId: 'uizard',
   },
   {
     id: 'khroma-free',
@@ -150,6 +157,7 @@ export const TOOLS: Tool[] = [
     rating: 4.5,
     section: 'main',
     link: 'https://www.khroma.co/',
+    analysisId: 'khroma-free',
   },
   {
     id: 'presentations-ai',
@@ -160,6 +168,7 @@ export const TOOLS: Tool[] = [
     rating: 4.1,
     section: 'main',
     link: 'https://www.presentations.ai/',
+    analysisId: 'presentations-ai',
   },
   {
     id: 'copy-ai',
@@ -170,6 +179,7 @@ export const TOOLS: Tool[] = [
     rating: 4.3,
     section: 'main',
     link: 'https://www.copy.ai/',
+    analysisId: 'copy-ai',
   },
 
   // Free Tools Section
@@ -182,6 +192,7 @@ export const TOOLS: Tool[] = [
     rating: 4.7,
     section: 'free',
     link: 'https://www.remove.bg',
+    analysisId: 'remove-bg',
     noSignupRequired: true,
     tags: ['⚡ No signup required'],
   },
@@ -194,6 +205,7 @@ export const TOOLS: Tool[] = [
     rating: 4.6,
     section: 'free',
     link: 'https://www.photopea.com',
+    analysisId: 'photopea',
     noSignupRequired: true,
     tags: ['⚡ No signup required', '🔥 Popular in India'],
   },
@@ -206,6 +218,7 @@ export const TOOLS: Tool[] = [
     rating: 4.6,
     section: 'free',
     link: 'https://squoosh.app',
+    analysisId: 'squoosh',
     noSignupRequired: true,
     tags: ['⚡ No signup required'],
   },
