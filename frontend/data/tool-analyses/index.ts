@@ -29,6 +29,7 @@ import { githubCopilotAnalysis } from './github-copilot.ts';
 import { elevenlabsAnalysis } from './elevenlabs.ts';
 import { midjourneyAnalysis } from './midjourney.ts';
 import { sunoAnalysis } from './suno.ts';
+import { windsurfAnalysis } from './windsurf.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -60,4 +61,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   elevenlabs: elevenlabsAnalysis,
   midjourney: midjourneyAnalysis,
   suno: sunoAnalysis,
+  windsurf: windsurfAnalysis,
 };
