@@ -98,4 +98,4 @@ Detailed workflow guides with numbered steps, tool links, examples, outputs, han
 - Sitemaps at /sitemap_index.xml
 
 ## Contact
-Website: https://newaitools.online
+Website: https://www.newaitools.online

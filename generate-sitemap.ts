@@ -8,8 +8,9 @@ import fs from 'fs';
 import path from 'path';
 import { BLOG_POSTS, TOOLS, CATEGORIES } from './frontend/data.ts';
 import { WORKFLOWS } from './frontend/workflows.ts';
+import { categorySlug } from './frontend/utils/categoryRoutes.ts';
 
-const DOMAIN = 'https://newaitools.online';
+const DOMAIN = 'https://www.newaitools.online';
 
 interface URLEntry {
   loc: string;
@@ -26,8 +27,6 @@ const generateURL = (url: URLEntry): string => {
     ${url.priority ? `<priority>${url.priority}</priority>` : ''}
   </url>`;
 };
-
-const categorySlug = (category: string) => category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
 const generateMainSitemap = (): string => {
   const urls: URLEntry[] = [
@@ -81,7 +80,7 @@ const generateMainSitemap = (): string => {
   ];
 
   // Add all categories
-  CATEGORIES.forEach(category => {
+  CATEGORIES.filter(category => TOOLS.some(tool => tool.category === category)).forEach(category => {
     urls.push({
       loc: `${DOMAIN}/category/${categorySlug(category)}`,
       changefreq: 'weekly',

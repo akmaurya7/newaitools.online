@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">newaitools — Find the right AI tool</title>
+  <desc id="desc">Research-led AI tool reviews, comparisons, and practical workflows.</desc>
+  <rect width="1200" height="630" fill="#f8f7f4"/>
+  <circle cx="1030" cy="90" r="260" fill="#f6eee8"/>
+  <circle cx="180" cy="600" r="220" fill="#e8f2ed"/>
+  <rect x="92" y="92" width="72" height="72" rx="20" fill="#201d1a"/>
+  <path d="M128 108l-8 24-24 8 24 8 8 24 8-24 24-8-24-8z" fill="#fff"/>
+  <text x="92" y="260" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#c15f35" letter-spacing="5">NEWAItools</text>
+  <text x="92" y="370" font-family="Georgia, serif" font-size="76" font-weight="700" fill="#201d1a">Find the right</text>
+  <text x="92" y="455" font-family="Georgia, serif" font-size="76" font-weight="700" fill="#c15f35">AI tool.</text>
+  <text x="95" y="525" font-family="Arial, sans-serif" font-size="26" fill="#514943">Research-led reviews, comparisons, and workflows.</text>
+</svg>

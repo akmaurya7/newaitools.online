@@ -2,7 +2,7 @@
   "name": "newaitools.online",
   "scripts": {
     "dev": "npm run dev --prefix frontend",
-    "build": "npx tsx generate-sitemap.ts && npm run build --prefix frontend",
+    "build": "npx tsx generate-sitemap.ts && npm run build --prefix frontend && npx tsx generate-static-seo.ts",
     "preview": "npm run preview --prefix frontend"
   },
   "devDependencies": {

@@ -17,8 +17,8 @@ export interface SEOConfig {
 }
 
 export class SEOManager {
-  private defaultOgImage = 'https://newaitools.online/og-image.jpg';
-  private domain = 'https://newaitools.online';
+  private defaultOgImage = 'https://www.newaitools.online/og-image.svg';
+  private domain = 'https://www.newaitools.online';
 
   private setMetaTag(name: string, content: string): void {
     let tag = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement;
@@ -131,7 +131,7 @@ export class SEOManager {
         'name': 'newaitools',
         'logo': {
           '@type': 'ImageObject',
-          'url': 'https://newaitools.online/logo.png'
+          'url': 'https://www.newaitools.online/favicon.svg'
         }
       }
     };
@@ -175,18 +175,15 @@ export class SEOManager {
       '@type': 'SoftwareApplication',
       'name': tool.name,
       'description': tool.description,
-      'applicationCategory': 'DesignApplication',
-      'offers': {
-        '@type': 'Offer',
-        'price': tool.pricing === 'Free' ? '0' : 'varies',
-        'priceCurrency': 'USD',
-        'availability': 'https://schema.org/InStock'
-      },
-      'aggregateRating': {
-        '@type': 'AggregateRating',
-        'ratingValue': tool.rating,
-        'ratingCount': tool.ratingCount || 100
-      }
+      'applicationCategory': tool.category,
+      ...(tool.pricing === 'Free' ? { 'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'USD' } } : {}),
+      ...(tool.rating !== undefined && tool.ratingCount ? {
+        'aggregateRating': {
+          '@type': 'AggregateRating',
+          'ratingValue': tool.rating,
+          'ratingCount': tool.ratingCount
+        }
+      } : {})
     };
 
     this.setJsonLd(`product-schema-${tool.id}`, schemaData);

@@ -29,8 +29,8 @@ const HomePage: React.FC = () => {
     title: 'Best AI Tools Directory 2026: Compare AI Software & Workflows',
     description: 'Compare the best AI tools for writing, research, design, video, coding, business, and more. Browse 32 categories and practical AI workflows.',
     keywords: ['best AI tools', 'AI tools directory', 'AI software', 'AI workflows', 'AI tool categories'],
-    canonical: 'https://newaitools.online/',
-    breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }]
+    canonical: 'https://www.newaitools.online/',
+    breadcrumbs: [{ name: 'Home', url: 'https://www.newaitools.online/' }]
   });
 
   const topPicks = TOP_PICKS;
@@ -56,7 +56,10 @@ const HomePage: React.FC = () => {
 
 const App: React.FC = () => {
   const path = window.location.pathname.replace(/\/$/, '') || '/';
-  useEffect(() => { trackPageView(); }, [path]);
+  useEffect(() => {
+    trackPageView();
+    window.setTimeout(() => document.dispatchEvent(new Event('app-ready')), 0);
+  }, [path]);
   const categorySlugPath = path.match(/^\/category\/([^/]+)$/)?.[1];
   const category = categorySlugPath ? lookupCategory(decodeURIComponent(categorySlugPath)) : undefined;
   const workflowSlug = path.match(/^\/workflow\/([^/]+)$/)?.[1];

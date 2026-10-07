@@ -14,8 +14,8 @@ export const BlogListing: React.FC = () => {
     title: 'AI Tools Blog | newaitools',
     description: 'Research-led AI tool reviews, thoughtful comparisons, and practical workflows for creators and small teams.',
     keywords: ['AI tools blog', 'AI tool reviews', 'AI tool comparisons', 'AI workflows'],
-    canonical: 'https://newaitools.online/blog',
-    breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Blog', url: 'https://newaitools.online/blog' }]
+    canonical: 'https://www.newaitools.online/blog',
+    breadcrumbs: [{ name: 'Home', url: 'https://www.newaitools.online/' }, { name: 'Blog', url: 'https://www.newaitools.online/blog' }]
   });
 
   return <main className="min-h-[70vh] bg-[#f8f7f4]">

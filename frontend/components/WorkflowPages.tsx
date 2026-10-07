@@ -12,8 +12,8 @@ export const WorkflowDirectory: React.FC = () => {
     title: 'AI Workflows: Script to Video, Research & More | newaitools',
     description: 'Follow practical AI workflows from idea to finished work, including script to video, research to article, website creation, and e-commerce.',
     keywords: ['AI workflows', 'AI toolchains', 'creator workflow', 'AI tools'],
-    canonical: 'https://newaitools.online/workflows',
-    breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Workflows', url: 'https://newaitools.online/workflows' }]
+    canonical: 'https://www.newaitools.online/workflows',
+    breadcrumbs: [{ name: 'Home', url: 'https://www.newaitools.online/' }, { name: 'Workflows', url: 'https://www.newaitools.online/workflows' }]
   });
 
   return <main className="min-h-[70vh] bg-[#f8f7f4]">
@@ -51,8 +51,8 @@ export const WorkflowDetail: React.FC<{ workflow: Workflow }> = ({ workflow }) =
     title: `${workflow.title} | AI Workflow | newaitools`,
     description: workflow.tagline,
     keywords: ['AI workflow', workflow.category, ...workflow.steps.map(step => step.tool)],
-    canonical: `https://newaitools.online/workflow/${workflow.slug}`,
-    breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Workflows', url: 'https://newaitools.online/workflows' }, { name: workflow.shortTitle, url: `https://newaitools.online/workflow/${workflow.slug}` }]
+    canonical: `https://www.newaitools.online/workflow/${workflow.slug}`,
+    breadcrumbs: [{ name: 'Home', url: 'https://www.newaitools.online/' }, { name: 'Workflows', url: 'https://www.newaitools.online/workflows' }, { name: workflow.shortTitle, url: `https://www.newaitools.online/workflow/${workflow.slug}` }]
   });
 
   return <main className="min-h-[70vh] bg-[#f8f7f4] pb-16">

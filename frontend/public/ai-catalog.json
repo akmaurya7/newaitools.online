@@ -8,7 +8,7 @@
       "identifier": "urn:air:newaitools.online:website:directory",
       "displayName": "newaitools AI Directory (Full Docs)",
       "type": "text/markdown; profile=\"urn:air:agent-skills\"",
-      "url": "https://newaitools.online/llms-full.txt",
+      "url": "https://www.newaitools.online/llms-full.txt",
       "description": "Comprehensive agentic documentation of the best AI tools, categories, and practical end-to-end workflows.",
       "representativeQueries": [
         "Find the best AI tool for video editing",
@@ -25,7 +25,7 @@
       "identifier": "urn:air:newaitools.online:website:summary",
       "displayName": "newaitools AI Summary",
       "type": "text/markdown; profile=\"urn:air:agent-skills\"",
-      "url": "https://newaitools.online/llms.txt",
+      "url": "https://www.newaitools.online/llms.txt",
       "description": "A concise summary of the newaitools directory and its capabilities.",
       "representativeQueries": [
         "What is newaitools.online?",

@@ -1,1189 +1,1183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://newaitools.online/</loc>
+    <loc>https://www.newaitools.online/</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/blog</loc>
+    <loc>https://www.newaitools.online/blog</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/categories</loc>
+    <loc>https://www.newaitools.online/categories</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tools</loc>
+    <loc>https://www.newaitools.online/tools</loc>
     
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/workflows</loc>
+    <loc>https://www.newaitools.online/workflows</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/about</loc>
+    <loc>https://www.newaitools.online/about</loc>
     
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/contact</loc>
+    <loc>https://www.newaitools.online/contact</loc>
     
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/privacy-policy</loc>
+    <loc>https://www.newaitools.online/privacy-policy</loc>
     
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/terms-of-service</loc>
+    <loc>https://www.newaitools.online/terms-of-service</loc>
     
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/writing-text</loc>
+    <loc>https://www.newaitools.online/category/writing-and-text</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/research-knowledge</loc>
+    <loc>https://www.newaitools.online/category/research-and-knowledge</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/image-graphic-design</loc>
+    <loc>https://www.newaitools.online/category/image-and-graphic-design</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/video</loc>
+    <loc>https://www.newaitools.online/category/video</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/audio-music</loc>
+    <loc>https://www.newaitools.online/category/audio-and-music</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/coding-development</loc>
+    <loc>https://www.newaitools.online/category/coding-and-development</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/website-app-creation</loc>
+    <loc>https://www.newaitools.online/category/website-and-app-creation</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/data-analytics</loc>
+    <loc>https://www.newaitools.online/category/data-and-analytics</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/productivity</loc>
+    <loc>https://www.newaitools.online/category/productivity</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/business-operations</loc>
+    <loc>https://www.newaitools.online/category/business-and-operations</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/marketing-advertising</loc>
+    <loc>https://www.newaitools.online/category/marketing-and-advertising</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/sales-crm</loc>
+    <loc>https://www.newaitools.online/category/sales-and-crm</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/social-media</loc>
+    <loc>https://www.newaitools.online/category/social-media</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/education-learning</loc>
+    <loc>https://www.newaitools.online/category/education-and-learning</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/presentations-documents</loc>
+    <loc>https://www.newaitools.online/category/presentations-and-documents</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/automation-ai-agents</loc>
+    <loc>https://www.newaitools.online/category/automation-and-ai-agents</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/customer-support</loc>
+    <loc>https://www.newaitools.online/category/customer-support</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/e-commerce</loc>
+    <loc>https://www.newaitools.online/category/e-commerce</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/finance</loc>
+    <loc>https://www.newaitools.online/category/finance</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/legal</loc>
+    <loc>https://www.newaitools.online/category/legal</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/healthcare</loc>
+    <loc>https://www.newaitools.online/category/healthcare</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/hr-recruitment</loc>
+    <loc>https://www.newaitools.online/category/hr-and-recruitment</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/it-devops</loc>
+    <loc>https://www.newaitools.online/category/it-and-devops</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/3d-game-development</loc>
+    <loc>https://www.newaitools.online/category/3d-and-game-development</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/translation-localization</loc>
+    <loc>https://www.newaitools.online/category/translation-and-localization</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/seo</loc>
+    <loc>https://www.newaitools.online/category/seo</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/meetings-communication</loc>
+    <loc>https://www.newaitools.online/category/meetings-and-communication</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/personal-lifestyle</loc>
+    <loc>https://www.newaitools.online/category/scientific-and-academic</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/scientific-academic</loc>
+    <loc>https://www.newaitools.online/category/specialized-industry-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/specialized-industry-ai</loc>
+    <loc>https://www.newaitools.online/category/knowledge-management</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/knowledge-management</loc>
+    <loc>https://www.newaitools.online/category/ai-infrastructure-models-apis</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/category/ai-infrastructure-models-apis</loc>
+    <loc>https://www.newaitools.online/workflow/script-to-social-video</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/workflow/script-to-social-video</loc>
+    <loc>https://www.newaitools.online/workflow/research-to-published-article</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/workflow/research-to-published-article</loc>
+    <loc>https://www.newaitools.online/workflow/idea-to-live-website</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/workflow/idea-to-live-website</loc>
+    <loc>https://www.newaitools.online/workflow/product-photo-to-store-listing</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/workflow/product-photo-to-store-listing</loc>
+    <loc>https://www.newaitools.online/tool/canva-pro</loc>
     
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://newaitools.online/tool/canva-pro</loc>
-    
-    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/framer-ai</loc>
+    <loc>https://www.newaitools.online/tool/framer-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/hostinger</loc>
+    <loc>https://www.newaitools.online/tool/hostinger</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/writesonic</loc>
+    <loc>https://www.newaitools.online/tool/writesonic</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/adobe-firefly</loc>
+    <loc>https://www.newaitools.online/tool/adobe-firefly</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/leonardo-ai</loc>
+    <loc>https://www.newaitools.online/tool/leonardo-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/looka</loc>
+    <loc>https://www.newaitools.online/tool/looka</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/durable</loc>
+    <loc>https://www.newaitools.online/tool/durable</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/runway-ml</loc>
+    <loc>https://www.newaitools.online/tool/runway-ml</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/uizard</loc>
+    <loc>https://www.newaitools.online/tool/uizard</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/khroma-free</loc>
+    <loc>https://www.newaitools.online/tool/khroma-free</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/presentations-ai</loc>
+    <loc>https://www.newaitools.online/tool/presentations-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/copy-ai</loc>
+    <loc>https://www.newaitools.online/tool/copy-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/remove-bg</loc>
+    <loc>https://www.newaitools.online/tool/remove-bg</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/photopea</loc>
+    <loc>https://www.newaitools.online/tool/photopea</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/squoosh</loc>
+    <loc>https://www.newaitools.online/tool/squoosh</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/khroma</loc>
+    <loc>https://www.newaitools.online/tool/khroma</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/chatgpt</loc>
+    <loc>https://www.newaitools.online/tool/chatgpt</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/claude</loc>
+    <loc>https://www.newaitools.online/tool/claude</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/gemini</loc>
+    <loc>https://www.newaitools.online/tool/gemini</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/jasper</loc>
+    <loc>https://www.newaitools.online/tool/jasper</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/grammarly</loc>
+    <loc>https://www.newaitools.online/tool/grammarly</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/quillbot</loc>
+    <loc>https://www.newaitools.online/tool/quillbot</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/perplexity</loc>
+    <loc>https://www.newaitools.online/tool/perplexity</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/notebooklm</loc>
+    <loc>https://www.newaitools.online/tool/notebooklm</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/elicit</loc>
+    <loc>https://www.newaitools.online/tool/elicit</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/midjourney</loc>
+    <loc>https://www.newaitools.online/tool/midjourney</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/ideogram</loc>
+    <loc>https://www.newaitools.online/tool/ideogram</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/photoroom</loc>
+    <loc>https://www.newaitools.online/tool/photoroom</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/heygen</loc>
+    <loc>https://www.newaitools.online/tool/heygen</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/synthesia</loc>
+    <loc>https://www.newaitools.online/tool/synthesia</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/descript</loc>
+    <loc>https://www.newaitools.online/tool/descript</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/elevenlabs</loc>
+    <loc>https://www.newaitools.online/tool/elevenlabs</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/suno</loc>
+    <loc>https://www.newaitools.online/tool/suno</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/github-copilot</loc>
+    <loc>https://www.newaitools.online/tool/github-copilot</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/cursor</loc>
+    <loc>https://www.newaitools.online/tool/cursor</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/windsurf</loc>
+    <loc>https://www.newaitools.online/tool/windsurf</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/replit</loc>
+    <loc>https://www.newaitools.online/tool/replit</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/lovable</loc>
+    <loc>https://www.newaitools.online/tool/lovable</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/v0</loc>
+    <loc>https://www.newaitools.online/tool/v0</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/julius</loc>
+    <loc>https://www.newaitools.online/tool/julius</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/power-bi</loc>
+    <loc>https://www.newaitools.online/tool/power-bi</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/notion-ai</loc>
+    <loc>https://www.newaitools.online/tool/notion-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/microsoft-copilot</loc>
+    <loc>https://www.newaitools.online/tool/microsoft-copilot</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/zapier</loc>
+    <loc>https://www.newaitools.online/tool/zapier</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/make</loc>
+    <loc>https://www.newaitools.online/tool/make</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/n8n</loc>
+    <loc>https://www.newaitools.online/tool/n8n</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/intercom</loc>
+    <loc>https://www.newaitools.online/tool/intercom</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/hubspot</loc>
+    <loc>https://www.newaitools.online/tool/hubspot</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/deepseek</loc>
+    <loc>https://www.newaitools.online/tool/deepseek</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/mistral</loc>
+    <loc>https://www.newaitools.online/tool/mistral</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/deepl</loc>
+    <loc>https://www.newaitools.online/tool/deepl</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/semrush</loc>
+    <loc>https://www.newaitools.online/tool/semrush</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/ahrefs</loc>
+    <loc>https://www.newaitools.online/tool/ahrefs</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/surfer</loc>
+    <loc>https://www.newaitools.online/tool/surfer</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/clearscope</loc>
+    <loc>https://www.newaitools.online/tool/clearscope</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/otter</loc>
+    <loc>https://www.newaitools.online/tool/otter</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/meshy</loc>
+    <loc>https://www.newaitools.online/tool/meshy</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/harvey</loc>
+    <loc>https://www.newaitools.online/tool/harvey</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/abridge</loc>
+    <loc>https://www.newaitools.online/tool/abridge</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/linkedin-learning</loc>
+    <loc>https://www.newaitools.online/tool/linkedin-learning</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/fireflies</loc>
+    <loc>https://www.newaitools.online/tool/fireflies</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/salesforce</loc>
+    <loc>https://www.newaitools.online/tool/salesforce</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/pika</loc>
+    <loc>https://www.newaitools.online/tool/pika</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/luma</loc>
+    <loc>https://www.newaitools.online/tool/luma</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/sora</loc>
+    <loc>https://www.newaitools.online/tool/sora</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/grammarly-business</loc>
+    <loc>https://www.newaitools.online/tool/grammarly-business</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/frase</loc>
+    <loc>https://www.newaitools.online/tool/frase</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/scite</loc>
+    <loc>https://www.newaitools.online/tool/scite</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/crew-ai</loc>
+    <loc>https://www.newaitools.online/tool/crew-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/webflow</loc>
+    <loc>https://www.newaitools.online/tool/webflow</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/wix</loc>
+    <loc>https://www.newaitools.online/tool/wix</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/monday-ai</loc>
+    <loc>https://www.newaitools.online/tool/monday-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/buffer-ai</loc>
+    <loc>https://www.newaitools.online/tool/buffer-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/shopify-magic</loc>
+    <loc>https://www.newaitools.online/tool/shopify-magic</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/quickbooks</loc>
+    <loc>https://www.newaitools.online/tool/quickbooks</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/eightfold</loc>
+    <loc>https://www.newaitools.online/tool/eightfold</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/amazon-q</loc>
+    <loc>https://www.newaitools.online/tool/amazon-q</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/sudowrite</loc>
+    <loc>https://www.newaitools.online/tool/sudowrite</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/novelai</loc>
+    <loc>https://www.newaitools.online/tool/novelai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/rytr</loc>
+    <loc>https://www.newaitools.online/tool/rytr</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/chatgpt-deep-research</loc>
+    <loc>https://www.newaitools.online/tool/chatgpt-deep-research</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/gemini-deep-research</loc>
+    <loc>https://www.newaitools.online/tool/gemini-deep-research</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/consensus</loc>
+    <loc>https://www.newaitools.online/tool/consensus</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/semantic-scholar</loc>
+    <loc>https://www.newaitools.online/tool/semantic-scholar</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/google-ai-tools</loc>
+    <loc>https://www.newaitools.online/tool/google-ai-tools</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/chatgpt-image-generation</loc>
+    <loc>https://www.newaitools.online/tool/chatgpt-image-generation</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/photoshop</loc>
+    <loc>https://www.newaitools.online/tool/photoshop</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/adobe</loc>
+    <loc>https://www.newaitools.online/tool/adobe</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/google-image-generation</loc>
+    <loc>https://www.newaitools.online/tool/google-image-generation</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/stable-diffusion</loc>
+    <loc>https://www.newaitools.online/tool/stable-diffusion</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/adobe-express</loc>
+    <loc>https://www.newaitools.online/tool/adobe-express</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/figma-ai</loc>
+    <loc>https://www.newaitools.online/tool/figma-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/galileo-ai</loc>
+    <loc>https://www.newaitools.online/tool/galileo-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/relume</loc>
+    <loc>https://www.newaitools.online/tool/relume</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/google-veo</loc>
+    <loc>https://www.newaitools.online/tool/google-veo</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/kling-ai</loc>
+    <loc>https://www.newaitools.online/tool/kling-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/adobe-premiere</loc>
+    <loc>https://www.newaitools.online/tool/adobe-premiere</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/davinci-resolve</loc>
+    <loc>https://www.newaitools.online/tool/davinci-resolve</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/capcut</loc>
+    <loc>https://www.newaitools.online/tool/capcut</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/d-id</loc>
+    <loc>https://www.newaitools.online/tool/d-id</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/tavus</loc>
+    <loc>https://www.newaitools.online/tool/tavus</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/google-cloud-speech</loc>
+    <loc>https://www.newaitools.online/tool/google-cloud-speech</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/openai-audio</loc>
+    <loc>https://www.newaitools.online/tool/openai-audio</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/azure-ai-speech</loc>
+    <loc>https://www.newaitools.online/tool/azure-ai-speech</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/playht</loc>
+    <loc>https://www.newaitools.online/tool/playht</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/udio</loc>
+    <loc>https://www.newaitools.online/tool/udio</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/stable-audio</loc>
+    <loc>https://www.newaitools.online/tool/stable-audio</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/adobe-podcast</loc>
+    <loc>https://www.newaitools.online/tool/adobe-podcast</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/krisp</loc>
+    <loc>https://www.newaitools.online/tool/krisp</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/claude-code</loc>
+    <loc>https://www.newaitools.online/tool/claude-code</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/openai-codex</loc>
+    <loc>https://www.newaitools.online/tool/openai-codex</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/gemini-code-assist</loc>
+    <loc>https://www.newaitools.online/tool/gemini-code-assist</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/bolt</loc>
+    <loc>https://www.newaitools.online/tool/bolt</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/tableau-ai</loc>
+    <loc>https://www.newaitools.online/tool/tableau-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/mem</loc>
+    <loc>https://www.newaitools.online/tool/mem</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/obsidian-ai</loc>
+    <loc>https://www.newaitools.online/tool/obsidian-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/salesforce-einstein</loc>
+    <loc>https://www.newaitools.online/tool/salesforce-einstein</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/apollo</loc>
+    <loc>https://www.newaitools.online/tool/apollo</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/clay</loc>
+    <loc>https://www.newaitools.online/tool/clay</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/gong</loc>
+    <loc>https://www.newaitools.online/tool/gong</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/opusclip</loc>
+    <loc>https://www.newaitools.online/tool/opusclip</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/hootsuite</loc>
+    <loc>https://www.newaitools.online/tool/hootsuite</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/metricool</loc>
+    <loc>https://www.newaitools.online/tool/metricool</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/vidiq</loc>
+    <loc>https://www.newaitools.online/tool/vidiq</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/gamma</loc>
+    <loc>https://www.newaitools.online/tool/gamma</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/beautiful-ai</loc>
+    <loc>https://www.newaitools.online/tool/beautiful-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/openai-agents</loc>
+    <loc>https://www.newaitools.online/tool/openai-agents</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/claude-agents</loc>
+    <loc>https://www.newaitools.online/tool/claude-agents</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/gemini-agents</loc>
+    <loc>https://www.newaitools.online/tool/gemini-agents</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/copilot-studio</loc>
+    <loc>https://www.newaitools.online/tool/copilot-studio</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/lindy</loc>
+    <loc>https://www.newaitools.online/tool/lindy</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/relevance-ai</loc>
+    <loc>https://www.newaitools.online/tool/relevance-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/autogen</loc>
+    <loc>https://www.newaitools.online/tool/autogen</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/zendesk-ai</loc>
+    <loc>https://www.newaitools.online/tool/zendesk-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/ada</loc>
+    <loc>https://www.newaitools.online/tool/ada</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/lexis-plus-ai</loc>
+    <loc>https://www.newaitools.online/tool/lexis-plus-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/westlaw-ai</loc>
+    <loc>https://www.newaitools.online/tool/westlaw-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/cocounsel</loc>
+    <loc>https://www.newaitools.online/tool/cocounsel</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/nuance-dax</loc>
+    <loc>https://www.newaitools.online/tool/nuance-dax</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/nabla</loc>
+    <loc>https://www.newaitools.online/tool/nabla</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/google-health-ai</loc>
+    <loc>https://www.newaitools.online/tool/google-health-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/tripo</loc>
+    <loc>https://www.newaitools.online/tool/tripo</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/rodin</loc>
+    <loc>https://www.newaitools.online/tool/rodin</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/blender-ai</loc>
+    <loc>https://www.newaitools.online/tool/blender-ai</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/google-translate</loc>
+    <loc>https://www.newaitools.online/tool/google-translate</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/granola</loc>
+    <loc>https://www.newaitools.online/tool/granola</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/fathom</loc>
+    <loc>https://www.newaitools.online/tool/fathom</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/zoom-ai-companion</loc>
+    <loc>https://www.newaitools.online/tool/zoom-ai-companion</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/glean</loc>
+    <loc>https://www.newaitools.online/tool/glean</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/gpt-models</loc>
+    <loc>https://www.newaitools.online/tool/gpt-models</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/llama</loc>
+    <loc>https://www.newaitools.online/tool/llama</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://newaitools.online/tool/qwen</loc>
+    <loc>https://www.newaitools.online/tool/qwen</loc>
     
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

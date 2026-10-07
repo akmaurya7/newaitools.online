@@ -90,8 +90,8 @@ export const CategoryDirectory: React.FC = () => {
     title: 'AI Tool Categories: Writing, Video, Coding & More | newaitools',
     description: 'Browse AI tools by category, including writing, research, image generation, video, coding, automation, business, and more.',
     keywords: ['AI tool categories', 'AI tools directory', 'AI software'],
-    canonical: 'https://newaitools.online/categories',
-    breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Categories', url: 'https://newaitools.online/categories' }]
+    canonical: 'https://www.newaitools.online/categories',
+    breadcrumbs: [{ name: 'Home', url: 'https://www.newaitools.online/' }, { name: 'Categories', url: 'https://www.newaitools.online/categories' }]
   });
 
   return <main className="min-h-[70vh] bg-[#f8f7f4]">
@@ -134,8 +134,8 @@ export const ToolDirectory: React.FC = () => {
   useSEO({
     title: 'Best AI Tools Directory: Browse AI Software | newaitools',
     description: 'Search and compare a curated directory of AI tools across creative, business, productivity, and technical categories.',
-    keywords: ['best AI tools', 'AI tools directory', 'AI software', 'AI tool comparison'], canonical: 'https://newaitools.online/tools',
-    breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Tools', url: 'https://newaitools.online/tools' }]
+    keywords: ['best AI tools', 'AI tools directory', 'AI software', 'AI tool comparison'], canonical: 'https://www.newaitools.online/tools',
+    breadcrumbs: [{ name: 'Home', url: 'https://www.newaitools.online/' }, { name: 'Tools', url: 'https://www.newaitools.online/tools' }]
   });
   return <main className="min-h-[70vh] bg-[#f8f7f4]">
     <PageIntro eyebrow="The full directory" title="Explore AI tools" description="Search the directory or narrow your discovery by a category. Find the right product for your next idea, project, or workflow." />
@@ -157,8 +157,8 @@ export const CategoryDetail: React.FC<{ category: string }> = ({ category }) => 
     title: `${category} AI Tools | newaitools`,
     description: categoryDescriptions[category] || `Explore AI tools in ${category}.`,
     keywords: [category, `${category} AI tools`, 'AI tools', ...(category === 'Image & Graphic Design' ? ['design tools', 'designtools', 'designai'] : [])],
-    canonical: `https://newaitools.online/category/${categorySlug(category)}`,
-    breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Categories', url: 'https://newaitools.online/categories' }, { name: category, url: `https://newaitools.online/category/${categorySlug(category)}` }]
+    canonical: `https://www.newaitools.online/category/${categorySlug(category)}`,
+    breadcrumbs: [{ name: 'Home', url: 'https://www.newaitools.online/' }, { name: 'Categories', url: 'https://www.newaitools.online/categories' }, { name: category, url: `https://www.newaitools.online/category/${categorySlug(category)}` }]
   });
   return <main className="min-h-[70vh] bg-[#f8f7f4]">
     <section className="border-b border-ink/10 bg-white">

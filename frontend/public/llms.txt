@@ -6,11 +6,11 @@ newaitools helps people discover, compare, and choose AI tools across 32 categor
 
 ## Pages
 
-- [Home](https://newaitools.online/): Main landing page with featured tools, category previews, and workflow highlights
-- [Tools Directory](https://newaitools.online/tools): Searchable directory of all AI tools with filtering
-- [Categories](https://newaitools.online/categories): Browse 32 AI tool categories organized by use case
-- [Workflows](https://newaitools.online/workflows): Step-by-step AI workflow guides from idea to finished work
-- [Blog](https://newaitools.online/blog): Research-led reviews, comparisons, and tutorials
+- [Home](https://www.newaitools.online/): Main landing page with featured tools, category previews, and workflow highlights
+- [Tools Directory](https://www.newaitools.online/tools): Searchable directory of all AI tools with filtering
+- [Categories](https://www.newaitools.online/categories): Browse 32 AI tool categories organized by use case
+- [Workflows](https://www.newaitools.online/workflows): Step-by-step AI workflow guides from idea to finished work
+- [Blog](https://www.newaitools.online/blog): Research-led reviews, comparisons, and tutorials
 
 ## Categories
 
@@ -18,4 +18,4 @@ Writing & Text, Research & Knowledge, Image & Graphic Design, Video, Audio & Mus
 
 ## Optional
 
-- [Full Documentation](https://newaitools.online/llms-full.txt)
+- [Full Documentation](https://www.newaitools.online/llms-full.txt)

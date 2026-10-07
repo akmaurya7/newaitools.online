@@ -16,4 +16,4 @@ Allow: /llms.txt
 Allow: /llms-full.txt
 
 # Sitemap
-Sitemap: https://newaitools.online/sitemap_index.xml
+Sitemap: https://www.newaitools.online/sitemap_index.xml

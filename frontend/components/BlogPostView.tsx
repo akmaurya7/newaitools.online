@@ -19,12 +19,12 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ slug, onNavigate }) 
     author: post?.author,
     publishDate: post?.publishDate,
     modifiedDate: post?.modifiedDate,
-    ogImage: post?.ogImage ? `https://newaitools.online${post.ogImage}` : undefined,
-    canonical: `https://newaitools.online/blog/${slug}`,
+    ogImage: post?.ogImage ? `https://www.newaitools.online${post.ogImage}` : undefined,
+    canonical: `https://www.newaitools.online/blog/${slug}`,
     breadcrumbs: [
-      { name: 'Home', url: 'https://newaitools.online/' },
-      { name: 'Blog', url: 'https://newaitools.online/blog' },
-      { name: post?.title || 'Article', url: `https://newaitools.online/blog/${slug}` }
+      { name: 'Home', url: 'https://www.newaitools.online/' },
+      { name: 'Blog', url: 'https://www.newaitools.online/blog' },
+      { name: post?.title || 'Article', url: `https://www.newaitools.online/blog/${slug}` }
     ]
   });
 

@@ -4,7 +4,7 @@ import { useSEO } from '../hooks/useSEO.ts';
 type TrustPageProps = { title: string; description: string; children: React.ReactNode };
 
 const TrustPage: React.FC<TrustPageProps> = ({ title, description, children }) => {
-  useSEO({ title: `${title} | newaitools`, description, canonical: `https://newaitools.online/${title.toLowerCase().replace(/\s+/g, '-')}` });
+  useSEO({ title: `${title} | newaitools`, description, canonical: `https://www.newaitools.online/${title.toLowerCase().replace(/\s+/g, '-')}` });
   return <main className="min-h-[70vh] bg-[#f8f7f4] px-4 py-14 sm:px-6 md:py-20 lg:px-8">
     <article className="prose prose-stone mx-auto max-w-3xl rounded-3xl border border-ink/[0.08] bg-white p-7 sm:p-10">
       <p className="not-prose text-xs font-bold uppercase tracking-[0.18em] text-accent">newaitools</p>

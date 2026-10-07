@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ArrowLeft, ArrowRight, Check, ExternalLink, Lightbulb, Sparkles } from 'lucide-react';
 import { TOOLS } from '../data.ts';
 import { TOOL_ANALYSES } from '../data/tool-analyses/index.ts';
 import { useSEO } from '../hooks/useSEO.ts';
 import { ToolAnalysisSections } from './ToolAnalysisSections.tsx';
+import { seoManager } from '../utils/SEOManager';
 
 const categoryGuidance: Record<string, { audience: string; tasks: string[]; workflow: string; evaluate: string[] }> = {
   'Writing & Text': { audience: 'writers, marketers, students, and teams who create or refine written content', tasks: ['Drafting and rewriting content', 'Summarizing or adapting material', 'Generating ideas and variations'], workflow: 'Give it a clear brief, audience, tone, and source material. Review the result for accuracy and voice, then edit before publishing.', evaluate: ['Quality and control of its writing', 'Support for your languages and formats', 'Privacy terms for submitted content'] },
@@ -39,9 +40,10 @@ export const ToolDetail: React.FC<{ id: string }> = ({ id }) => {
     title: analysis ? `${tool.name}: Deep Analysis, Pricing, Features & Limits | newaitools` : `${tool.name}: Uses, Overview & Details | newaitools`,
     description: pageDescription,
     keywords: seoKeywords,
-    canonical: `https://newaitools.online/tool/${encodeURIComponent(tool.id)}`,
-    breadcrumbs: [{ name: 'Home', url: 'https://newaitools.online/' }, { name: 'Tools', url: 'https://newaitools.online/tools' }, { name: tool.name, url: `https://newaitools.online/tool/${encodeURIComponent(tool.id)}` }]
+    canonical: `https://www.newaitools.online/tool/${encodeURIComponent(tool.id)}`,
+    breadcrumbs: [{ name: 'Home', url: 'https://www.newaitools.online/' }, { name: 'Tools', url: 'https://www.newaitools.online/tools' }, { name: tool.name, url: `https://www.newaitools.online/tool/${encodeURIComponent(tool.id)}` }]
   });
+  useEffect(() => { seoManager.setProductSchema(tool); }, [tool]);
 
   const categorySlug = tool.category.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
