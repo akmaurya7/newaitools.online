@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ArrowRight, Compass, Layers3, Sparkles, Workflow } from 'lucide-react';
 import { Navbar } from './components/Navbar.tsx';
 import { Hero } from './components/Hero.tsx';
@@ -12,6 +12,8 @@ import { TOP_PICKS } from './data/home.ts';
 import { categorySlug, lookupCategory, HOME_CATEGORIES } from './utils/categoryRoutes.ts';
 import { useSEO } from './hooks/useSEO.ts';
 import { WORKFLOWS } from './workflows.ts';
+import { trackPageView } from './utils/analytics.ts';
+import { AboutPage, ContactPage, PrivacyPage, TermsPage } from './components/TrustPages.tsx';
 
 const CategoryDirectory = lazy(() => import('./components/DirectoryPages.tsx').then(m => ({ default: m.CategoryDirectory })));
 const ToolDirectory = lazy(() => import('./components/DirectoryPages.tsx').then(m => ({ default: m.ToolDirectory })));
@@ -54,6 +56,7 @@ const HomePage: React.FC = () => {
 
 const App: React.FC = () => {
   const path = window.location.pathname.replace(/\/$/, '') || '/';
+  useEffect(() => { trackPageView(); }, [path]);
   const categorySlugPath = path.match(/^\/category\/([^/]+)$/)?.[1];
   const category = categorySlugPath ? lookupCategory(decodeURIComponent(categorySlugPath)) : undefined;
   const workflowSlug = path.match(/^\/workflow\/([^/]+)$/)?.[1];
@@ -74,6 +77,10 @@ const App: React.FC = () => {
   else if (path === '/workflows') page = <WorkflowDirectory />;
   else if (workflowSlug) page = workflow ? <WorkflowDetail workflow={workflow} /> : <main className="min-h-[65vh] bg-[#f8f7f4] px-4 py-24 text-center"><h1 className="font-serif text-4xl">Workflow not found</h1><a href="/workflows" className="mt-5 inline-block font-semibold text-accent">Browse all workflows →</a></main>;
   else if (path === '/blog') page = <BlogListing />;
+  else if (path === '/about') page = <AboutPage />;
+  else if (path === '/privacy-policy') page = <PrivacyPage />;
+  else if (path === '/terms-of-service') page = <TermsPage />;
+  else if (path === '/contact') page = <ContactPage />;
   else if (blogSlug) page = <BlogPostView slug={decodeURIComponent(blogSlug)} onNavigate={handleNavigate} />;
   else if (path === '/') page = <HomePage />;
   else page = <main className="min-h-[65vh] bg-[#f8f7f4] px-4 py-24 text-center"><h1 className="font-serif text-4xl">Page not found</h1><p className="mt-3 text-ink/70">The page you’re looking for may have moved.</p><a href="/" className="mt-6 inline-block rounded-xl bg-ink px-5 py-3 text-sm font-semibold text-white">Back to home</a></main>;

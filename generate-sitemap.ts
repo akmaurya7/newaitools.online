@@ -57,6 +57,26 @@ const generateMainSitemap = (): string => {
       loc: `${DOMAIN}/workflows`,
       changefreq: 'weekly',
       priority: 0.8
+    },
+    {
+      loc: `${DOMAIN}/about`,
+      changefreq: 'monthly',
+      priority: 0.4
+    },
+    {
+      loc: `${DOMAIN}/contact`,
+      changefreq: 'monthly',
+      priority: 0.3
+    },
+    {
+      loc: `${DOMAIN}/privacy-policy`,
+      changefreq: 'yearly',
+      priority: 0.2
+    },
+    {
+      loc: `${DOMAIN}/terms-of-service`,
+      changefreq: 'yearly',
+      priority: 0.2
     }
   ];
 
