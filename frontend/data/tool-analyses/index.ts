@@ -27,6 +27,7 @@ import { cursorAnalysis } from './cursor.ts';
 
 import { githubCopilotAnalysis } from './github-copilot.ts';
 import { elevenlabsAnalysis } from './elevenlabs.ts';
+import { midjourneyAnalysis } from './midjourney.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -55,4 +56,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   cursor: cursorAnalysis,
   'github-copilot': githubCopilotAnalysis,
   elevenlabs: elevenlabsAnalysis,
+  midjourney: midjourneyAnalysis,
 };
