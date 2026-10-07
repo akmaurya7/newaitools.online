@@ -371,7 +371,7 @@ export const TOOLS: Tool[] = [
     ['gpt-models','GPT Models','AI Infrastructure / Models / APIs','OpenAIâ€™s GPT model family and APIs for building AI-powered products.','https://platform.openai.com/docs/models','Paid'],
     ['llama','Llama','AI Infrastructure / Models / APIs','Open models from Meta for research and AI application development.','https://www.llama.com/','Free'],
     ['qwen','Qwen','AI Infrastructure / Models / APIs','Family of AI models and developer resources from Alibaba.','https://qwen.ai/','Freemium'],
-  ].map(([id,name,category,description,link,pricing]) => ({ id, name, category, description, link, pricing: pricing as PricingType, section: 'main' as const }))
+  ].map(([id,name,category,description,link,pricing]) => ({ id, name, category, description, link, pricing: pricing as PricingType, section: 'main' as const, analysisId: id }))
 ];
 
 export interface BlogPost {

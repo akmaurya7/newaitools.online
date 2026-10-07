@@ -23,6 +23,7 @@ import { grammarlyAnalysis } from './grammarly.ts';
 import { quillbotAnalysis } from './quillbot.ts';
 import { perplexityAnalysis } from './perplexity.ts';
 import { notebooklmAnalysis } from './notebooklm.ts';
+import { cursorAnalysis } from './cursor.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -49,4 +50,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   quillbot: quillbotAnalysis,
   perplexity: perplexityAnalysis,
   notebooklm: notebooklmAnalysis,
+  cursor: cursorAnalysis,
 };
