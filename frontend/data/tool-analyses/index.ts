@@ -28,6 +28,8 @@ import { cursorAnalysis } from './cursor.ts';
 import { githubCopilotAnalysis } from './github-copilot.ts';
 import { elevenlabsAnalysis } from './elevenlabs.ts';
 import { midjourneyAnalysis } from './midjourney.ts';
+import { sunoAnalysis } from './suno.ts';
+
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -57,4 +59,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'github-copilot': githubCopilotAnalysis,
   elevenlabs: elevenlabsAnalysis,
   midjourney: midjourneyAnalysis,
+  suno: sunoAnalysis,
 };
