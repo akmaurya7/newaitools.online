@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Cursor vs Windsurf: AI Code Editors in 2026</title>
+  <desc id="desc">Editorial comparison illustration showing Cursor Composer with multi-file diffs alongside Windsurf Cascade with real-time agentic flow and terminal integration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e131f"/>
+      <stop offset="50%" stop-color="#182032"/>
+      <stop offset="100%" stop-color="#23192d"/>
+    </linearGradient>
+    <linearGradient id="cursorCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="windsurfCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e2e38"/>
+      <stop offset="100%" stop-color="#0b1c24"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="280" cy="180" r="320" fill="#38bdf8" opacity="0.06"/>
+  <circle cx="1320" cy="740" r="360" fill="#06b6d4" opacity="0.06"/>
+  <circle cx="800" cy="450" r="280" fill="#a855f7" opacity="0.04"/>
+
+  <text x="100" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">Cursor vs Windsurf</text>
+  <text x="100" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#94a3b8">Comparing AI Code Editors for Full-Stack Development in 2026</text>
+
+  <g filter="url(#cardShadow)">
+    <rect x="100" y="220" width="670" height="570" rx="24" fill="url(#cursorCard)" stroke="#334155" stroke-width="2"/>
+    <rect x="140" y="260" width="130" height="34" rx="8" fill="#38bdf8" fill-opacity="0.15"/>
+    <text x="205" y="283" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#38bdf8" text-anchor="middle">CURSOR</text>
+    <text x="140" y="335" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Composer &amp; Cursor Tab</text>
+    <text x="140" y="365" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8">Multi-file speculative diffs and predictive editing</text>
+
+    <rect x="140" y="405" width="590" height="100" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="170" cy="435" r="8" fill="#38bdf8"/>
+    <text x="195" y="440" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Composer Multi-File Agent</text>
+    <text x="195" y="468" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Generates, coordinates, and edits across multiple files simultaneously.</text>
+    <text x="195" y="490" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Supports Normal Mode and Agent Mode with terminal commands.</text>
+
+    <rect x="140" y="525" width="590" height="100" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="170" cy="555" r="8" fill="#818cf8"/>
+    <text x="195" y="560" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Cursor Tab (Next-Action Autocomplete)</text>
+    <text x="195" y="588" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Predicts future cursor jumps and multi-line structural edits ahead.</text>
+    <text x="195" y="610" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Trained specifically on developer revision patterns.</text>
+
+    <rect x="140" y="645" width="590" height="110" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="170" cy="675" r="8" fill="#34d399"/>
+    <text x="195" y="680" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Context Indexing &amp; Rules</text>
+    <text x="195" y="708" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Embeds local repo with @codebase, @files, @docs, and .cursor/rules.</text>
+    <text x="195" y="730" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">500 fast requests/month on Pro ($20/mo) with flexible model switching.</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <rect x="830" y="220" width="670" height="570" rx="24" fill="url(#windsurfCard)" stroke="#155e75" stroke-width="2"/>
+    <rect x="870" y="260" width="140" height="34" rx="8" fill="#06b6d4" fill-opacity="0.15"/>
+    <text x="940" y="283" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#06b6d4" text-anchor="middle">WINDSURF</text>
+    <text x="870" y="335" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Cascade &amp; Supercomplete</text>
+    <text x="870" y="365" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8">Deep agentic flow and real-time execution</text>
+
+    <rect x="870" y="405" width="590" height="100" rx="14" fill="#0b1c24" stroke="#155e75" stroke-width="1.5"/>
+    <circle cx="900" cy="435" r="8" fill="#06b6d4"/>
+    <text x="925" y="440" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Cascade Agentic Flows</text>
+    <text x="925" y="468" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Combines chat, write, and command execution into unified Flows.</text>
+    <text x="925" y="490" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Real-time terminal execution, test runs, and continuous checkpoints.</text>
+
+    <rect x="870" y="525" width="590" height="100" rx="14" fill="#0b1c24" stroke="#155e75" stroke-width="1.5"/>
+    <circle cx="900" cy="555" r="8" fill="#22d3ee"/>
+    <text x="925" y="560" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Supercomplete Streaming Engine</text>
+    <text x="925" y="588" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Ultra-low latency completions with contextual cursor navigations.</text>
+    <text x="925" y="610" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Powered by Codeium proprietary indexing and inference stack.</text>
+
+    <rect x="870" y="645" width="590" height="110" rx="14" fill="#0b1c24" stroke="#155e75" stroke-width="1.5"/>
+    <circle cx="900" cy="675" r="8" fill="#2dd4bf"/>
+    <text x="925" y="680" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Cascade Lens &amp; Rules</text>
+    <text x="925" y="708" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Deep codebase indexing with @-mentions and .windsurfrules.</text>
+    <text x="925" y="730" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">500 prompt credits/month on Pro ($15-$20/mo) with team-level pooling.</text>
+  </g>
+
+  <text x="800" y="845" font-family="system-ui, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">Editorial comparison of documented features, workflows, and developer ergonomics. Not an official vendor benchmark.</text>
+</svg>

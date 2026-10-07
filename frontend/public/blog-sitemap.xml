@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://newaitools.online/blog/cursor-vs-windsurf-2026-full-stack-comparison</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://newaitools.online/blog/lovable-vs-bolt-2026-production-code-benchmark</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>daily</changefreq>
@@ -45,6 +51,12 @@
   <url>
     <loc>https://newaitools.online/blog/canva-ai-2-0-workflow-2026</loc>
     <lastmod>2026-09-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://newaitools.online/blog/ai-spreadsheet-analysis-verification-2026</loc>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>

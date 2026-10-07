@@ -1,3 +1,4 @@
+import { cursor_vs_windsurf_comparison } from './cursor-vs-windsurf';
 import { lovable_vs_bolt_comparison } from './lovable-vs-bolt';
 import { framer_ai_review } from './framer-ai';
 import { ai_notes_client_calls_consent_first } from './ai-notes-client-calls-consent-first';
@@ -13,6 +14,7 @@ import { ai_voice_agents_2026 } from './ai-voice-agents-2026';
 import { BlogPost } from '../../data';
 
 export const BLOG_POSTS: BlogPost[] = [
+  cursor_vs_windsurf_comparison,
   lovable_vs_bolt_comparison,
   framer_ai_review,
   ai_notes_client_calls_consent_first,
