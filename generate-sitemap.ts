@@ -7,6 +7,7 @@
 import fs from 'fs';
 import path from 'path';
 import { BLOG_POSTS, TOOLS, CATEGORIES } from './frontend/data.ts';
+import { TOOL_ANALYSES } from './frontend/data/tool-analyses/index.ts';
 import { WORKFLOWS } from './frontend/workflows.ts';
 import { categorySlug } from './frontend/utils/categoryRoutes.ts';
 
@@ -99,10 +100,13 @@ const generateMainSitemap = (): string => {
 
   // Add all tools
   TOOLS.forEach(tool => {
+    const analysisId = tool.analysisId || tool.id;
+    const analysis = TOOL_ANALYSES[analysisId];
     urls.push({
       loc: `${DOMAIN}/tool/${tool.id}`,
-      changefreq: 'weekly',
-      priority: 0.6
+      lastmod: analysis?.lastVerified || new Date().toISOString().split('T')[0],
+      changefreq: analysis ? 'daily' : 'weekly',
+      priority: analysis ? 0.8 : 0.6
     });
   });
 

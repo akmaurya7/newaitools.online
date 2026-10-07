@@ -25,6 +25,7 @@ import { perplexityAnalysis } from './perplexity.ts';
 import { notebooklmAnalysis } from './notebooklm.ts';
 import { cursorAnalysis } from './cursor.ts';
 
+import { githubCopilotAnalysis } from './github-copilot.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -51,4 +52,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   perplexity: perplexityAnalysis,
   notebooklm: notebooklmAnalysis,
   cursor: cursorAnalysis,
+  'github-copilot': githubCopilotAnalysis,
 };
