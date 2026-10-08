@@ -34,8 +34,9 @@ import { heygenAnalysis } from './heygen.ts';
 import { v0Analysis } from './v0.ts';
 import { lovableAnalysis } from './lovable.ts';
 import { synthesiaAnalysis } from './synthesia.ts';
-
 import { descriptAnalysis } from './descript.ts';
+import { ideogramAnalysis } from './ideogram.ts';
+
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -72,4 +73,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   lovable: lovableAnalysis,
   synthesia: synthesiaAnalysis,
   descript: descriptAnalysis,
+  ideogram: ideogramAnalysis,
 };
