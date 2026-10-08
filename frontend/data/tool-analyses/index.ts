@@ -40,6 +40,7 @@ import { photoroomAnalysis } from './photoroom.ts';
 import { elicitAnalysis } from './elicit.ts';
 import { replitAnalysis } from './replit.ts';
 import { boltAnalysis } from './bolt.ts';
+import { deepseekAnalysis } from './deepseek.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -82,4 +83,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   elicit: elicitAnalysis,
   replit: replitAnalysis,
   bolt: boltAnalysis,
+  deepseek: deepseekAnalysis,
 };
