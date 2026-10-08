@@ -248,7 +248,7 @@ export const TOOLS: Tool[] = [
     ['ideogram','Ideogram','Image Generation','Generate images with strong typography and graphic layouts.','https://ideogram.ai/','Freemium'],
     ['photoroom','Photoroom','Image Generation','Create product visuals and remove image backgrounds.','https://www.photoroom.com/','Freemium'],
     ['heygen','HeyGen','Video','Create presenter videos, avatars and localized content.','https://www.heygen.com/','Freemium'],
-    ['synthesia','Synthesia','Video','Make studio-style AI avatar videos from a script.','https://www.synthesia.io/','Paid'],
+    ['synthesia','Synthesia','Video','Make studio-style AI avatar videos from a script.','https://www.synthesia.io/','Freemium'],
     ['descript','Descript','Audio & Music','Edit podcasts and videos by editing the transcript.','https://www.descript.com/','Freemium'],
     ['elevenlabs','ElevenLabs','Audio & Music','Generate natural speech, voices and audio experiences.','https://elevenlabs.io/','Freemium'],
     ['suno','Suno','Audio & Music','Create original songs and music from text prompts.','https://suno.com/','Freemium'],

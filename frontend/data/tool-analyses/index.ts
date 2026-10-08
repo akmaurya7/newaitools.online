@@ -33,6 +33,7 @@ import { windsurfAnalysis } from './windsurf.ts';
 import { heygenAnalysis } from './heygen.ts';
 import { v0Analysis } from './v0.ts';
 import { lovableAnalysis } from './lovable.ts';
+import { synthesiaAnalysis } from './synthesia.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -68,4 +69,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   heygen: heygenAnalysis,
   v0: v0Analysis,
   lovable: lovableAnalysis,
+  synthesia: synthesiaAnalysis,
 };
