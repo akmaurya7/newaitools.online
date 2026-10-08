@@ -42,6 +42,7 @@ import { replitAnalysis } from './replit.ts';
 import { boltAnalysis } from './bolt.ts';
 import { deepseekAnalysis } from './deepseek.ts';
 
+import { notionAiAnalysis } from './notion-ai.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -84,4 +85,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   replit: replitAnalysis,
   bolt: boltAnalysis,
   deepseek: deepseekAnalysis,
+  'notion-ai': notionAiAnalysis,
 };
