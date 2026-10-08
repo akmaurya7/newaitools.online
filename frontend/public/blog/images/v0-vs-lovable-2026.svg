@@ -1,0 +1,84 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">v0 vs Lovable: AI Web App Builders in 2026</title>
+  <desc id="desc">Editorial comparison illustration showing v0 Next.js component generation alongside Lovable full-stack Supabase app scaffolding.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f162b"/>
+    </linearGradient>
+    <linearGradient id="v0Card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="lovableCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a1b3d"/>
+      <stop offset="100%" stop-color="#150d24"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="280" cy="180" r="320" fill="#3b82f6" opacity="0.06"/>
+  <circle cx="1320" cy="740" r="360" fill="#ec4899" opacity="0.06"/>
+  <circle cx="800" cy="450" r="280" fill="#8b5cf6" opacity="0.04"/>
+
+  <text x="100" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">v0 vs Lovable</text>
+  <text x="100" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#94a3b8">Comparing AI Web App Builders for Full-Stack React &amp; Next.js in 2026</text>
+
+  <g filter="url(#cardShadow)">
+    <rect x="100" y="220" width="670" height="570" rx="24" fill="url(#v0Card)" stroke="#3f3f46" stroke-width="2"/>
+    <rect x="140" y="260" width="100" height="34" rx="8" fill="#ffffff" fill-opacity="0.12"/>
+    <text x="190" y="283" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">v0 (VERCEL)</text>
+    <text x="140" y="335" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Component-First Generative UI</text>
+    <text x="140" y="365" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8">Modular Next.js, Tailwind CSS &amp; shadcn/ui primitives</text>
+
+    <rect x="140" y="405" width="590" height="100" rx="14" fill="#09090b" stroke="#27272a" stroke-width="1.5"/>
+    <circle cx="170" cy="435" r="8" fill="#ffffff"/>
+    <text x="195" y="440" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Architectural Philosophy</text>
+    <text x="195" y="468" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Generates isolated, accessible UI blocks designed for developer integration.</text>
+    <text x="195" y="490" font-family="system-ui, sans-serif" font-size="13" fill="#71717a">Strict shadcn/ui adherence with no custom CSS spaghetti or vendor lock-in.</text>
+
+    <rect x="140" y="525" width="590" height="100" rx="14" fill="#09090b" stroke="#27272a" stroke-width="1.5"/>
+    <circle cx="170" cy="555" r="8" fill="#38bdf8"/>
+    <text x="195" y="560" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Developer Workflow &amp; Ejection</text>
+    <text x="195" y="588" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Instant copy-paste, element-level visual canvas, and npx CLI sync.</text>
+    <text x="195" y="610" font-family="system-ui, sans-serif" font-size="13" fill="#71717a">Seamlessly ports directly into existing professional repositories.</text>
+
+    <rect x="140" y="645" width="590" height="110" rx="14" fill="#09090b" stroke="#27272a" stroke-width="1.5"/>
+    <circle cx="170" cy="675" r="8" fill="#4ade80"/>
+    <text x="195" y="680" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Pricing &amp; Credit Model</text>
+    <text x="195" y="708" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Free tier (200 credits/mo) and Premium at $20/month for 5,000 credits.</text>
+    <text x="195" y="730" font-family="system-ui, sans-serif" font-size="13" fill="#71717a">Predictable credit burn based on component generation and prompt edits.</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <rect x="830" y="220" width="670" height="570" rx="24" fill="url(#lovableCard)" stroke="#7c3aed" stroke-width="2"/>
+    <rect x="870" y="260" width="100" height="34" rx="8" fill="#ec4899" fill-opacity="0.2"/>
+    <text x="920" y="283" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f472b6" text-anchor="middle">LOVABLE</text>
+    <text x="870" y="335" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Full-Stack Prompt-to-App</text>
+    <text x="870" y="365" font-family="system-ui, sans-serif" font-size="16" fill="#c084fc">Complete database, auth, and cloud hosting from prompt</text>
+
+    <rect x="870" y="405" width="590" height="100" rx="14" fill="#130924" stroke="#6b21a8" stroke-width="1.5"/>
+    <circle cx="900" cy="435" r="8" fill="#ec4899"/>
+    <text x="925" y="440" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Architectural Philosophy</text>
+    <text x="925" y="468" font-family="system-ui, sans-serif" font-size="14" fill="#c084fc">Scaffolds entire multi-page repositories, schemas, and live deployments.</text>
+    <text x="925" y="490" font-family="system-ui, sans-serif" font-size="13" fill="#9333ea">Automated Supabase backend with PostgreSQL tables and RLS policies.</text>
+
+    <rect x="870" y="525" width="590" height="100" rx="14" fill="#130924" stroke="#6b21a8" stroke-width="1.5"/>
+    <circle cx="900" cy="555" r="8" fill="#a855f7"/>
+    <text x="925" y="560" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Developer Workflow &amp; Ejection</text>
+    <text x="925" y="588" font-family="system-ui, sans-serif" font-size="14" fill="#c084fc">Chat-driven vibe coding canvas, visual WYSIWYG, and two-way GitHub sync.</text>
+    <text x="925" y="610" font-family="system-ui, sans-serif" font-size="13" fill="#9333ea">Ideal for solo founders launching zero-boilerplate functional MVPs.</text>
+
+    <rect x="870" y="645" width="590" height="110" rx="14" fill="#130924" stroke="#6b21a8" stroke-width="1.5"/>
+    <circle cx="900" cy="675" r="8" fill="#f43f5e"/>
+    <text x="925" y="680" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Pricing &amp; Credit Model</text>
+    <text x="925" y="708" font-family="system-ui, sans-serif" font-size="14" fill="#c084fc">Free tier with daily quota, Starter at $20/month with message packs.</text>
+    <text x="925" y="730" font-family="system-ui, sans-serif" font-size="13" fill="#9333ea">Higher credit burn risk during complex multi-file architectural refactoring.</text>
+  </g>
+
+  <text x="800" y="845" font-family="system-ui, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">Editorial comparison grounded in public product specifications, developer workflows, and pricing tiers. Not an official benchmark.</text>
+</svg>

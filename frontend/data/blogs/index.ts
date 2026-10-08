@@ -1,3 +1,4 @@
+import { v0_vs_lovable_comparison } from './v0-vs-lovable';
 import { cursor_vs_windsurf_comparison } from './cursor-vs-windsurf';
 import { lovable_vs_bolt_comparison } from './lovable-vs-bolt';
 import { framer_ai_review } from './framer-ai';
@@ -14,6 +15,7 @@ import { ai_voice_agents_2026 } from './ai-voice-agents-2026';
 import { BlogPost } from '../../data';
 
 export const BLOG_POSTS: BlogPost[] = [
+  v0_vs_lovable_comparison,
   cursor_vs_windsurf_comparison,
   lovable_vs_bolt_comparison,
   framer_ai_review,
