@@ -37,6 +37,7 @@ import { synthesiaAnalysis } from './synthesia.ts';
 import { descriptAnalysis } from './descript.ts';
 import { ideogramAnalysis } from './ideogram.ts';
 import { photoroomAnalysis } from './photoroom.ts';
+import { elicitAnalysis } from './elicit.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -76,4 +77,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   descript: descriptAnalysis,
   ideogram: ideogramAnalysis,
   photoroom: photoroomAnalysis,
+  elicit: elicitAnalysis,
 };
