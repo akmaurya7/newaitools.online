@@ -39,6 +39,7 @@ import { ideogramAnalysis } from './ideogram.ts';
 import { photoroomAnalysis } from './photoroom.ts';
 import { elicitAnalysis } from './elicit.ts';
 import { replitAnalysis } from './replit.ts';
+import { boltAnalysis } from './bolt.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -80,4 +81,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   photoroom: photoroomAnalysis,
   elicit: elicitAnalysis,
   replit: replitAnalysis,
+  bolt: boltAnalysis,
 };
