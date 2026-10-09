@@ -46,6 +46,7 @@ import { notionAiAnalysis } from './notion-ai.ts';
 import { gammaAnalysis } from './gamma.ts';
 import { n8nAnalysis } from './n8n.ts';
 import { klingAiAnalysis } from './kling-ai.ts';
+import { zapierAnalysis } from './zapier.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -93,4 +94,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   gamma: gammaAnalysis,
   n8n: n8nAnalysis,
   'kling-ai': klingAiAnalysis,
+  zapier: zapierAnalysis,
 };
