@@ -50,6 +50,7 @@ import { zapierAnalysis } from './zapier.ts';
 import { makeAnalysis } from './make.ts';
 import { claudeCodeAnalysis } from './claude-code.ts';
 
+import { mistralAnalysis } from './mistral.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -99,4 +100,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   zapier: zapierAnalysis,
   make: makeAnalysis,
   'claude-code': claudeCodeAnalysis,
+  mistral: mistralAnalysis,
 };
