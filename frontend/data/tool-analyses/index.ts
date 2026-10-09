@@ -52,6 +52,7 @@ import { claudeCodeAnalysis } from './claude-code.ts';
 
 import { mistralAnalysis } from './mistral.ts';
 import { crewAiAnalysis } from './crew-ai.ts';
+import { juliusAnalysis } from './julius.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -103,4 +104,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'claude-code': claudeCodeAnalysis,
   mistral: mistralAnalysis,
   'crew-ai': crewAiAnalysis,
+  julius: juliusAnalysis,
 };
