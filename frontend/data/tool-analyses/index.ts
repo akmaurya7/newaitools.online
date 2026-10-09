@@ -56,6 +56,7 @@ import { juliusAnalysis } from './julius.ts';
 import { clayAnalysis } from './clay.ts';
 import { apolloAnalysis } from './apollo.ts';
 import { deeplAnalysis } from './deepl.ts';
+import { opusclipAnalysis } from './opusclip.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -111,4 +112,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   clay: clayAnalysis,
   apollo: apolloAnalysis,
   deepl: deeplAnalysis,
+  opusclip: opusclipAnalysis,
 };
