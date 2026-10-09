@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Perplexity vs ChatGPT: AI Search and Deep Research in 2026</title>
+  <desc id="desc">Technical architectural comparison between Perplexity retrieval-first cited answer engine and ChatGPT generative reasoning with OpenAI Deep Research.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#141c2e"/>
+    </linearGradient>
+    <linearGradient id="perpCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#132738"/>
+      <stop offset="100%" stop-color="#0c1724"/>
+    </linearGradient>
+    <linearGradient id="chatgptCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#122c26"/>
+      <stop offset="100%" stop-color="#091b17"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="260" cy="160" r="340" fill="#0ea5e9" opacity="0.08"/>
+  <circle cx="1340" cy="740" r="380" fill="#10b981" opacity="0.08"/>
+  <circle cx="800" cy="450" r="260" fill="#6366f1" opacity="0.04"/>
+
+  <!-- Top Header -->
+  <text x="100" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">Perplexity vs ChatGPT</text>
+  <text x="100" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#94a3b8">Comparing AI Search, Deep Research &amp; Academic Grounding in 2026</text>
+
+  <!-- Left Card: Perplexity -->
+  <g filter="url(#cardShadow)">
+    <rect x="100" y="220" width="670" height="580" rx="24" fill="url(#perpCard)" stroke="#0284c7" stroke-width="2"/>
+    <rect x="140" y="260" width="160" height="34" rx="8" fill="#0284c7" fill-opacity="0.25"/>
+    <text x="220" y="283" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#38bdf8" text-anchor="middle">PERPLEXITY AI</text>
+    
+    <text x="140" y="335" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Retrieval-First Answer Engine</text>
+    <text x="140" y="365" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8">Real-time web indexing, inline citations &amp; multi-model selection</text>
+
+    <!-- Sub Box 1 -->
+    <rect x="140" y="405" width="590" height="85" rx="14" fill="#081521" stroke="#0369a1" stroke-width="1.2"/>
+    <circle cx="170" cy="435" r="8" fill="#38bdf8"/>
+    <text x="195" y="440" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Primary Architecture</text>
+    <text x="195" y="468" font-family="system-ui, sans-serif" font-size="15" fill="#94a3b8">Neural web retrieval + RAG context injection by default</text>
+
+    <!-- Sub Box 2 -->
+    <rect x="140" y="505" width="590" height="85" rx="14" fill="#081521" stroke="#0369a1" stroke-width="1.2"/>
+    <circle cx="170" cy="535" r="8" fill="#38bdf8"/>
+    <text x="195" y="540" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Citation &amp; Transparency</text>
+    <text x="195" y="568" font-family="system-ui, sans-serif" font-size="15" fill="#94a3b8">Direct numbered footnotes tied to verified web URLs</text>
+
+    <!-- Sub Box 3 -->
+    <rect x="140" y="605" width="590" height="85" rx="14" fill="#081521" stroke="#0369a1" stroke-width="1.2"/>
+    <circle cx="170" cy="635" r="8" fill="#38bdf8"/>
+    <text x="195" y="640" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Model Switcher &amp; Pricing</text>
+    <text x="195" y="668" font-family="system-ui, sans-serif" font-size="15" fill="#94a3b8">Toggle Sonar, Claude 3.7, GPT-4o | $20/mo Pro (300+ searches/day)</text>
+
+    <text x="140" y="735" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#38bdf8">Optimal For: Real-time fact-checking, academic sourcing &amp; daily search</text>
+  </g>
+
+  <!-- Right Card: ChatGPT -->
+  <g filter="url(#cardShadow)">
+    <rect x="830" y="220" width="670" height="580" rx="24" fill="url(#chatgptCard)" stroke="#059669" stroke-width="2"/>
+    <rect x="870" y="260" width="160" height="34" rx="8" fill="#059669" fill-opacity="0.25"/>
+    <text x="950" y="283" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#34d399" text-anchor="middle">CHATGPT (OPENAI)</text>
+    
+    <text x="870" y="335" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Generative Reasoning &amp; Code Sandbox</text>
+    <text x="870" y="365" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8">Autonomous Deep Research, Python execution &amp; custom GPTs</text>
+
+    <!-- Sub Box 1 -->
+    <rect x="870" y="405" width="590" height="85" rx="14" fill="#071914" stroke="#047857" stroke-width="1.2"/>
+    <circle cx="900" cy="435" r="8" fill="#34d399"/>
+    <text x="925" y="440" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Primary Architecture</text>
+    <text x="925" y="468" font-family="system-ui, sans-serif" font-size="15" fill="#94a3b8">Parametric foundation + on-demand browsing &amp; tool-calling</text>
+
+    <!-- Sub Box 2 -->
+    <rect x="870" y="505" width="590" height="85" rx="14" fill="#071914" stroke="#047857" stroke-width="1.2"/>
+    <circle cx="900" cy="535" r="8" fill="#34d399"/>
+    <text x="925" y="540" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">OpenAI Deep Research</text>
+    <text x="925" y="568" font-family="system-ui, sans-serif" font-size="15" fill="#94a3b8">Autonomous 15-minute agent crawling dozens of sources for 15+ page reports</text>
+
+    <!-- Sub Box 3 -->
+    <rect x="870" y="605" width="590" height="85" rx="14" fill="#071914" stroke="#047857" stroke-width="1.2"/>
+    <circle cx="900" cy="635" r="8" fill="#34d399"/>
+    <text x="925" y="640" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Execution &amp; Reasoning</text>
+    <text x="925" y="668" font-family="system-ui, sans-serif" font-size="15" fill="#94a3b8">Python interpreter, o1/o3-mini reasoning | $20/mo Plus / $200 Pro</text>
+
+    <text x="870" y="735" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#34d399">Optimal For: Complex data synthesis, coding analysis &amp; multi-page reports</text>
+  </g>
+</svg>

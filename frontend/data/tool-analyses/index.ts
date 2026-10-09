@@ -44,6 +44,7 @@ import { deepseekAnalysis } from './deepseek.ts';
 
 import { notionAiAnalysis } from './notion-ai.ts';
 import { gammaAnalysis } from './gamma.ts';
+import { n8nAnalysis } from './n8n.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -88,4 +89,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   deepseek: deepseekAnalysis,
   'notion-ai': notionAiAnalysis,
   gamma: gammaAnalysis,
+  n8n: n8nAnalysis,
 };
