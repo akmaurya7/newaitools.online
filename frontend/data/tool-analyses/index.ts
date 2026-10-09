@@ -48,6 +48,7 @@ import { n8nAnalysis } from './n8n.ts';
 import { klingAiAnalysis } from './kling-ai.ts';
 import { zapierAnalysis } from './zapier.ts';
 import { makeAnalysis } from './make.ts';
+import { claudeCodeAnalysis } from './claude-code.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -97,4 +98,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'kling-ai': klingAiAnalysis,
   zapier: zapierAnalysis,
   make: makeAnalysis,
+  'claude-code': claudeCodeAnalysis,
 };
