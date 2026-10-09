@@ -54,6 +54,7 @@ import { mistralAnalysis } from './mistral.ts';
 import { crewAiAnalysis } from './crew-ai.ts';
 import { juliusAnalysis } from './julius.ts';
 import { clayAnalysis } from './clay.ts';
+import { apolloAnalysis } from './apollo.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -107,4 +108,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'crew-ai': crewAiAnalysis,
   julius: juliusAnalysis,
   clay: clayAnalysis,
+  apollo: apolloAnalysis,
 };
