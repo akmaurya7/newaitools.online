@@ -67,6 +67,7 @@ import { microsoftCopilotAnalysis } from './microsoft-copilot.ts';
 import { semrushAnalysis } from './semrush.ts';
 import { ahrefsAnalysis } from './ahrefs.ts';
 import { surferAnalysis } from './surfer.ts';
+import { clearscopeAnalysis } from './clearscope.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -133,4 +134,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   semrush: semrushAnalysis,
   ahrefs: ahrefsAnalysis,
   surfer: surferAnalysis,
+  clearscope: clearscopeAnalysis,
 };
