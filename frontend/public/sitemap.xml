@@ -645,8 +645,8 @@
   <url>
     <loc>https://www.newaitools.online/tool/pika</loc>
     <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newaitools.online/tool/luma</loc>
