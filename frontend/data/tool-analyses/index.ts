@@ -70,6 +70,7 @@ import { surferAnalysis } from './surfer.ts';
 import { clearscopeAnalysis } from './clearscope.ts';
 import { fraseAnalysis } from './frase.ts';
 import { relumeAnalysis } from './relume.ts';
+import { otterAnalysis } from './otter.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -139,4 +140,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   clearscope: clearscopeAnalysis,
   frase: fraseAnalysis,
   relume: relumeAnalysis,
+  otter: otterAnalysis,
 };
