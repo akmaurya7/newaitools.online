@@ -66,6 +66,7 @@ import { figmaAiAnalysis } from './figma-ai.ts';
 import { microsoftCopilotAnalysis } from './microsoft-copilot.ts';
 import { semrushAnalysis } from './semrush.ts';
 import { ahrefsAnalysis } from './ahrefs.ts';
+import { surferAnalysis } from './surfer.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -131,4 +132,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'microsoft-copilot': microsoftCopilotAnalysis,
   semrush: semrushAnalysis,
   ahrefs: ahrefsAnalysis,
+  surfer: surferAnalysis,
 };
