@@ -59,6 +59,7 @@ import { deeplAnalysis } from './deepl.ts';
 import { opusclipAnalysis } from './opusclip.ts';
 import { pikaAnalysis } from './pika.ts';
 import { udioAnalysis } from './udio.ts';
+import { lumaAnalysis } from './luma.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -117,4 +118,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   opusclip: opusclipAnalysis,
   pika: pikaAnalysis,
   udio: udioAnalysis,
+  luma: lumaAnalysis,
 };
