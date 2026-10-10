@@ -63,6 +63,7 @@ import { lumaAnalysis } from './luma.ts';
 import { webflowAnalysis } from './webflow.ts';
 import { soraAnalysis } from './sora.ts';
 import { figmaAiAnalysis } from './figma-ai.ts';
+import { microsoftCopilotAnalysis } from './microsoft-copilot.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -125,4 +126,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   webflow: webflowAnalysis,
   sora: soraAnalysis,
   'figma-ai': figmaAiAnalysis,
+  'microsoft-copilot': microsoftCopilotAnalysis,
 };
