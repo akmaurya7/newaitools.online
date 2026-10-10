@@ -61,6 +61,7 @@ import { pikaAnalysis } from './pika.ts';
 import { udioAnalysis } from './udio.ts';
 import { lumaAnalysis } from './luma.ts';
 import { webflowAnalysis } from './webflow.ts';
+import { soraAnalysis } from './sora.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -121,4 +122,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   udio: udioAnalysis,
   luma: lumaAnalysis,
   webflow: webflowAnalysis,
+  sora: soraAnalysis,
 };
