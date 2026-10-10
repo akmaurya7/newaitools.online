@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">n8n vs Zapier: 2026 AI Agent Automation Benchmark</title>
+  <desc id="desc">Technical comparison graphic illustrating n8n node-based AI orchestration with LangChain and self-hosting versus Zapier multi-step cloud automation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080e1a"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e142b"/>
+    </linearGradient>
+    <linearGradient id="n8nCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="zapierCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#271c1b"/>
+      <stop offset="100%" stop-color="#181014"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="280" cy="180" r="320" fill="#f97316" opacity="0.05"/>
+  <circle cx="1320" cy="740" r="360" fill="#ff4f00" opacity="0.05"/>
+  <circle cx="800" cy="450" r="280" fill="#38bdf8" opacity="0.04"/>
+
+  <text x="100" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">n8n vs Zapier</text>
+  <text x="100" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#94a3b8">The 2026 AI Agent Automation &amp; Real-Cost Benchmark</text>
+
+  <!-- Left: n8n Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="100" y="220" width="670" height="570" rx="24" fill="url(#n8nCard)" stroke="#ea580c" stroke-opacity="0.3" stroke-width="2"/>
+    <rect x="140" y="260" width="120" height="34" rx="8" fill="#ea580c" fill-opacity="0.18"/>
+    <text x="200" y="283" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fb923c" text-anchor="middle">N8N</text>
+    <text x="140" y="335" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Open-Core AI Agent Canvas</text>
+    <text x="140" y="365" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8">Self-hosted orchestration &amp; native LangChain primitives</text>
+
+    <rect x="140" y="405" width="590" height="95" rx="14" fill="#0b1220" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="170" cy="435" r="8" fill="#f97316"/>
+    <text x="195" y="440" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">LangChain Node Ecosystem</text>
+    <text x="195" y="468" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Native vector stores (Pinecone, Qdrant), tools &amp; memory buffers</text>
+
+    <rect x="140" y="515" width="590" height="95" rx="14" fill="#0b1220" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="170" cy="545" r="8" fill="#38bdf8"/>
+    <text x="195" y="550" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Per-Execution / $0 Self-Host</text>
+    <text x="195" y="578" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Flat VPS hosting ($10/mo) or execution-based cloud tiers</text>
+
+    <rect x="140" y="625" width="590" height="95" rx="14" fill="#0b1220" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="170" cy="655" r="8" fill="#10b981"/>
+    <text x="195" y="660" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Data Sovereignty &amp; Local LLMs</text>
+    <text x="195" y="688" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Private VPC, air-gapped security &amp; local inference via Ollama</text>
+
+    <rect x="140" y="738" width="280" height="34" rx="8" fill="#ea580c" fill-opacity="0.1" stroke="#ea580c" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="280" y="760" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#fb923c" text-anchor="middle">Best for Engineers &amp; High-Volume AI</text>
+  </g>
+
+  <!-- Right: Zapier Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="830" y="220" width="670" height="570" rx="24" fill="url(#zapierCard)" stroke="#ff4f00" stroke-opacity="0.3" stroke-width="2"/>
+    <rect x="870" y="260" width="120" height="34" rx="8" fill="#ff4f00" fill-opacity="0.18"/>
+    <text x="930" y="283" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ff7336" text-anchor="middle">ZAPIER</text>
+    <text x="870" y="335" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Turnkey Cloud Integration SaaS</text>
+    <text x="870" y="365" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8">Zero-maintenance business pipelines &amp; instant app connections</text>
+
+    <rect x="870" y="405" width="590" height="95" rx="14" fill="#1c1316" stroke="#4a2824" stroke-width="1.5"/>
+    <circle cx="900" cy="435" r="8" fill="#ff7336"/>
+    <text x="925" y="440" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">8,000+ Pre-Built Integrations</text>
+    <text x="925" y="468" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Unmatched SaaS coverage with zero-config OAuth authentication</text>
+
+    <rect x="870" y="515" width="590" height="95" rx="14" fill="#1c1316" stroke="#4a2824" stroke-width="1.5"/>
+    <circle cx="900" cy="545" r="8" fill="#a855f7"/>
+    <text x="925" y="550" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Zapier Central &amp; AI Actions</text>
+    <text x="925" y="578" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Conversational assistant builders &amp; basic step-by-step LLM actions</text>
+
+    <rect x="870" y="625" width="590" height="95" rx="14" fill="#1c1316" stroke="#4a2824" stroke-width="1.5"/>
+    <circle cx="900" cy="655" r="8" fill="#eab308"/>
+    <text x="925" y="660" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Per-Task Action Billing</text>
+    <text x="925" y="688" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Every step consumes a task; costs scale sharply with complexity</text>
+
+    <rect x="870" y="738" width="300" height="34" rx="8" fill="#ff4f00" fill-opacity="0.1" stroke="#ff4f00" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="1020" y="760" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#ff7336" text-anchor="middle">Best for Non-Technical Ops &amp; Fast Setup</text>
+  </g>
+
+  <!-- Center Versus Badge -->
+  <circle cx="800" cy="505" r="34" fill="#020617" stroke="#475569" stroke-width="2"/>
+  <text x="800" y="512" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#f8fafc" text-anchor="middle">VS</text>
+</svg>
