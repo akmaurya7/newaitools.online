@@ -69,6 +69,7 @@ import { ahrefsAnalysis } from './ahrefs.ts';
 import { surferAnalysis } from './surfer.ts';
 import { clearscopeAnalysis } from './clearscope.ts';
 import { fraseAnalysis } from './frase.ts';
+import { relumeAnalysis } from './relume.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -137,4 +138,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   surfer: surferAnalysis,
   clearscope: clearscopeAnalysis,
   frase: fraseAnalysis,
+  relume: relumeAnalysis,
 };
