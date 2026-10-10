@@ -64,6 +64,7 @@ import { webflowAnalysis } from './webflow.ts';
 import { soraAnalysis } from './sora.ts';
 import { figmaAiAnalysis } from './figma-ai.ts';
 import { microsoftCopilotAnalysis } from './microsoft-copilot.ts';
+import { semrushAnalysis } from './semrush.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -127,4 +128,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   sora: soraAnalysis,
   'figma-ai': figmaAiAnalysis,
   'microsoft-copilot': microsoftCopilotAnalysis,
+  semrush: semrushAnalysis,
 };
