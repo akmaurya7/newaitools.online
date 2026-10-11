@@ -74,6 +74,7 @@ import { otterAnalysis } from './otter.ts';
 import { capcutAnalysis } from './capcut.ts';
 import { firefliesAnalysis } from './fireflies.ts';
 import { stableDiffusionAnalysis } from './stable-diffusion.ts';
+import { llamaAnalysis } from './llama.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -147,4 +148,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   capcut: capcutAnalysis,
   fireflies: firefliesAnalysis,
   'stable-diffusion': stableDiffusionAnalysis,
+  llama: llamaAnalysis,
 };
