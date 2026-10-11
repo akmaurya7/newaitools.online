@@ -78,6 +78,7 @@ import { llamaAnalysis } from './llama.ts';
 import { autogenAnalysis } from './autogen.ts';
 import { qwenAnalysis } from './qwen.ts';
 import { beautifulAiAnalysis } from './beautiful-ai.ts';
+import { chatgptDeepResearchAnalysis } from './chatgpt-deep-research.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -155,4 +156,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   autogen: autogenAnalysis,
   qwen: qwenAnalysis,
   'beautiful-ai': beautifulAiAnalysis,
+  'chatgpt-deep-research': chatgptDeepResearchAnalysis,
 };
