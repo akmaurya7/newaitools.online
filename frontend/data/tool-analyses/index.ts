@@ -80,6 +80,7 @@ import { qwenAnalysis } from './qwen.ts';
 import { beautifulAiAnalysis } from './beautiful-ai.ts';
 import { chatgptDeepResearchAnalysis } from './chatgpt-deep-research.ts';
 import { geminiDeepResearchAnalysis } from './gemini-deep-research.ts';
+import { amazonQAnalysis } from './amazon-q.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -159,4 +160,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'beautiful-ai': beautifulAiAnalysis,
   'chatgpt-deep-research': chatgptDeepResearchAnalysis,
   'gemini-deep-research': geminiDeepResearchAnalysis,
+  'amazon-q': amazonQAnalysis,
 };
