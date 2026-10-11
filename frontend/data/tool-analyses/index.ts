@@ -81,6 +81,8 @@ import { beautifulAiAnalysis } from './beautiful-ai.ts';
 import { chatgptDeepResearchAnalysis } from './chatgpt-deep-research.ts';
 import { geminiDeepResearchAnalysis } from './gemini-deep-research.ts';
 import { amazonQAnalysis } from './amazon-q.ts';
+import { dIdAnalysis } from './d-id.ts';
+
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -161,4 +163,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'chatgpt-deep-research': chatgptDeepResearchAnalysis,
   'gemini-deep-research': geminiDeepResearchAnalysis,
   'amazon-q': amazonQAnalysis,
+  'd-id': dIdAnalysis,
 };
