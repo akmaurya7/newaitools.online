@@ -76,6 +76,7 @@ import { firefliesAnalysis } from './fireflies.ts';
 import { stableDiffusionAnalysis } from './stable-diffusion.ts';
 import { llamaAnalysis } from './llama.ts';
 import { autogenAnalysis } from './autogen.ts';
+import { qwenAnalysis } from './qwen.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -151,4 +152,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'stable-diffusion': stableDiffusionAnalysis,
   llama: llamaAnalysis,
   autogen: autogenAnalysis,
+  qwen: qwenAnalysis,
 };
