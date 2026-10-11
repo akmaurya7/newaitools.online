@@ -85,6 +85,7 @@ import { dIdAnalysis } from './d-id.ts';
 import { tavusAnalysis } from './tavus.ts';
 
 import { intercomAnalysis } from './intercom.ts';
+import { meshyAnalysis } from './meshy.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -169,4 +170,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'd-id': dIdAnalysis,
   tavus: tavusAnalysis,
   intercom: intercomAnalysis,
+  meshy: meshyAnalysis,
 };
