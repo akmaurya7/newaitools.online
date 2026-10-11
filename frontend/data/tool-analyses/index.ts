@@ -84,6 +84,8 @@ import { amazonQAnalysis } from './amazon-q.ts';
 import { dIdAnalysis } from './d-id.ts';
 import { tavusAnalysis } from './tavus.ts';
 
+import { intercomAnalysis } from './intercom.ts';
+
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -166,4 +168,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'amazon-q': amazonQAnalysis,
   'd-id': dIdAnalysis,
   tavus: tavusAnalysis,
+  intercom: intercomAnalysis,
 };
