@@ -82,6 +82,7 @@ import { chatgptDeepResearchAnalysis } from './chatgpt-deep-research.ts';
 import { geminiDeepResearchAnalysis } from './gemini-deep-research.ts';
 import { amazonQAnalysis } from './amazon-q.ts';
 import { dIdAnalysis } from './d-id.ts';
+import { tavusAnalysis } from './tavus.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -164,4 +165,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'gemini-deep-research': geminiDeepResearchAnalysis,
   'amazon-q': amazonQAnalysis,
   'd-id': dIdAnalysis,
+  tavus: tavusAnalysis,
 };
