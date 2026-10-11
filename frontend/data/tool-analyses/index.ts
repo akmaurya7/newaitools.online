@@ -77,6 +77,7 @@ import { stableDiffusionAnalysis } from './stable-diffusion.ts';
 import { llamaAnalysis } from './llama.ts';
 import { autogenAnalysis } from './autogen.ts';
 import { qwenAnalysis } from './qwen.ts';
+import { beautifulAiAnalysis } from './beautiful-ai.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -153,4 +154,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   llama: llamaAnalysis,
   autogen: autogenAnalysis,
   qwen: qwenAnalysis,
+  'beautiful-ai': beautifulAiAnalysis,
 };
