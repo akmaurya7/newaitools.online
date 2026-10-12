@@ -90,6 +90,7 @@ import { granolaAnalysis } from './granola.ts';
 import { hubspotAnalysis } from './hubspot.ts';
 
 import { krispAnalysis } from './krisp.ts';
+import { fathomAnalysis } from './fathom.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -178,4 +179,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   granola: granolaAnalysis,
   hubspot: hubspotAnalysis,
   krisp: krispAnalysis,
+  fathom: fathomAnalysis,
 };
