@@ -89,6 +89,8 @@ import { meshyAnalysis } from './meshy.ts';
 import { granolaAnalysis } from './granola.ts';
 import { hubspotAnalysis } from './hubspot.ts';
 
+import { krispAnalysis } from './krisp.ts';
+
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -175,4 +177,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   meshy: meshyAnalysis,
   granola: granolaAnalysis,
   hubspot: hubspotAnalysis,
+  krisp: krispAnalysis,
 };
