@@ -87,6 +87,7 @@ import { tavusAnalysis } from './tavus.ts';
 import { intercomAnalysis } from './intercom.ts';
 import { meshyAnalysis } from './meshy.ts';
 import { granolaAnalysis } from './granola.ts';
+import { hubspotAnalysis } from './hubspot.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -173,4 +174,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   intercom: intercomAnalysis,
   meshy: meshyAnalysis,
   granola: granolaAnalysis,
+  hubspot: hubspotAnalysis,
 };
