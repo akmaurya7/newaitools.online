@@ -1,3 +1,5 @@
+﻿import { heygen_vs_synthesia_2026_comparison } from './heygen-vs-synthesia-2026';
+import { n8n_vs_zapier_2026_comparison } from './n8n-vs-zapier-2026';
 import { perplexity_vs_chatgpt_comparison } from './perplexity-vs-chatgpt';
 import { v0_vs_lovable_comparison } from './v0-vs-lovable';
 import { cursor_vs_windsurf_comparison } from './cursor-vs-windsurf';
@@ -14,9 +16,9 @@ import { hostinger_ai_builder_2026 } from './hostinger-ai-builder-2026';
 import { ai_voice_agents_2026 } from './ai-voice-agents-2026';
 
 import { BlogPost } from '../../data';
-import { n8n_vs_zapier_2026_comparison } from './n8n-vs-zapier-2026';
 
 export const BLOG_POSTS: BlogPost[] = [
+  heygen_vs_synthesia_2026_comparison,
   n8n_vs_zapier_2026_comparison,
   perplexity_vs_chatgpt_comparison,
   v0_vs_lovable_comparison,

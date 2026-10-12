@@ -1,0 +1,88 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">HeyGen vs Synthesia: 2026 AI Avatar Video Benchmark</title>
+  <desc id="desc">Technical comparison graphic illustrating HeyGen expressive AI avatar generation versus Synthesia enterprise slide-based video creation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080e1a"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1b122e"/>
+    </linearGradient>
+    <linearGradient id="heygenCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1838"/>
+      <stop offset="100%" stop-color="#0f1026"/>
+    </linearGradient>
+    <linearGradient id="synthesiaCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#112733"/>
+      <stop offset="100%" stop-color="#09141d"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="280" cy="180" r="320" fill="#8b5cf6" opacity="0.06"/>
+  <circle cx="1320" cy="740" r="360" fill="#0ea5e9" opacity="0.06"/>
+  <circle cx="800" cy="450" r="280" fill="#a855f7" opacity="0.04"/>
+
+  <text x="100" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">HeyGen vs Synthesia</text>
+  <text x="100" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#94a3b8">The 2026 AI Avatar Video Benchmark (Real Costs, Credit Burn &amp; Studio Limits)</text>
+
+  <!-- Left: HeyGen Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="100" y="220" width="670" height="570" rx="24" fill="url(#heygenCard)" stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="2"/>
+    <rect x="140" y="260" width="130" height="34" rx="8" fill="#8b5cf6" fill-opacity="0.2"/>
+    <text x="205" y="283" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#c084fc" text-anchor="middle">HEYGEN</text>
+    <text x="140" y="335" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Expressive Creative Studio</text>
+    <text x="140" y="365" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8">Dynamic micro-expressions, social hooks &amp; voice translation</text>
+
+    <rect x="140" y="405" width="590" height="95" rx="14" fill="#0d0f22" stroke="#3730a3" stroke-width="1.5"/>
+    <circle cx="170" cy="435" r="8" fill="#a855f7"/>
+    <text x="195" y="440" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Avatar IV/V Photorealism</text>
+    <text x="195" y="468" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Natural shoulder sway, head tilts, eye contact &amp; phoneme matching</text>
+
+    <rect x="140" y="515" width="590" height="95" rx="14" fill="#0d0f22" stroke="#3730a3" stroke-width="1.5"/>
+    <circle cx="170" cy="545" r="8" fill="#ec4899"/>
+    <text x="195" y="550" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Video-to-Video Localization</text>
+    <text x="195" y="578" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Translates existing footage with speaker voice clone &amp; mouth sync</text>
+
+    <rect x="140" y="625" width="590" height="95" rx="14" fill="#0d0f22" stroke="#3730a3" stroke-width="1.5"/>
+    <circle cx="170" cy="655" r="8" fill="#eab308"/>
+    <text x="195" y="660" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Credit Burn Architecture</text>
+    <text x="195" y="688" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Base tiers start at $29/mo; high-tier avatars consume 20 to 50 credits/min</text>
+
+    <rect x="140" y="738" width="310" height="34" rx="8" fill="#8b5cf6" fill-opacity="0.12" stroke="#8b5cf6" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="295" y="760" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#c084fc" text-anchor="middle">Best for Marketing, Ads &amp; Creator Outreach</text>
+  </g>
+
+  <!-- Right: Synthesia Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="830" y="220" width="670" height="570" rx="24" fill="url(#synthesiaCard)" stroke="#0ea5e9" stroke-opacity="0.35" stroke-width="2"/>
+    <rect x="870" y="260" width="140" height="34" rx="8" fill="#0ea5e9" fill-opacity="0.2"/>
+    <text x="940" y="283" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#38bdf8" text-anchor="middle">SYNTHESIA</text>
+    <text x="870" y="335" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">Enterprise L&amp;D Platform</text>
+    <text x="870" y="365" font-family="system-ui, sans-serif" font-size="16" fill="#94a3b8">Slide-based training, SCORM packages &amp; ISO 42001 governance</text>
+
+    <rect x="870" y="405" width="590" height="95" rx="14" fill="#071926" stroke="#0e4f73" stroke-width="1.5"/>
+    <circle cx="900" cy="435" r="8" fill="#0ea5e9"/>
+    <text x="925" y="440" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Slide-Deck Scene Architecture</text>
+    <text x="925" y="468" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">PowerPoint-like layout editor with native quiz cards and screen recording</text>
+
+    <rect x="870" y="515" width="590" height="95" rx="14" fill="#071926" stroke="#0e4f73" stroke-width="1.5"/>
+    <circle cx="900" cy="545" r="8" fill="#10b981"/>
+    <text x="925" y="550" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">160+ Language Course Duplication</text>
+    <text x="925" y="578" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">One-click global localization across complete enterprise training decks</text>
+
+    <rect x="870" y="625" width="590" height="95" rx="14" fill="#071926" stroke="#0e4f73" stroke-width="1.5"/>
+    <circle cx="900" cy="655" r="8" fill="#f59e0b"/>
+    <text x="925" y="660" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Strict Minute Metering</text>
+    <text x="925" y="688" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Starter capped at 10 mins/mo; Creator capped at 30 mins/mo; re-render tax</text>
+
+    <rect x="870" y="738" width="310" height="34" rx="8" fill="#0ea5e9" fill-opacity="0.12" stroke="#0ea5e9" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="1025" y="760" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#38bdf8" text-anchor="middle">Best for Corporate Training, HR &amp; Compliance</text>
+  </g>
+
+  <!-- Center Versus Badge -->
+  <circle cx="800" cy="505" r="34" fill="#020617" stroke="#475569" stroke-width="2"/>
+  <text x="800" y="512" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#f8fafc" text-anchor="middle">VS</text>
+</svg>
