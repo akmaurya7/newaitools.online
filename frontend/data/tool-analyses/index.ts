@@ -93,6 +93,7 @@ import { krispAnalysis } from './krisp.ts';
 import { fathomAnalysis } from './fathom.ts';
 import { zoomAiCompanionAnalysis } from './zoom-ai-companion.ts';
 import { shopifyMagicAnalysis } from './shopify-magic.ts';
+import { wixAnalysis } from './wix.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -184,4 +185,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   fathom: fathomAnalysis,
   'zoom-ai-companion': zoomAiCompanionAnalysis,
   'shopify-magic': shopifyMagicAnalysis,
+  wix: wixAnalysis,
 };
