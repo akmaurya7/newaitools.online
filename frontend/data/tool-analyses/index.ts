@@ -92,6 +92,7 @@ import { hubspotAnalysis } from './hubspot.ts';
 import { krispAnalysis } from './krisp.ts';
 import { fathomAnalysis } from './fathom.ts';
 import { zoomAiCompanionAnalysis } from './zoom-ai-companion.ts';
+import { shopifyMagicAnalysis } from './shopify-magic.ts';
 
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
@@ -182,4 +183,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   krisp: krispAnalysis,
   fathom: fathomAnalysis,
   'zoom-ai-companion': zoomAiCompanionAnalysis,
+  'shopify-magic': shopifyMagicAnalysis,
 };
