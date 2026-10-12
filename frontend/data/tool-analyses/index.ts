@@ -95,6 +95,7 @@ import { zoomAiCompanionAnalysis } from './zoom-ai-companion.ts';
 import { shopifyMagicAnalysis } from './shopify-magic.ts';
 import { wixAnalysis } from './wix.ts';
 
+import { powerBiAnalysis } from './power-bi.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -186,4 +187,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'zoom-ai-companion': zoomAiCompanionAnalysis,
   'shopify-magic': shopifyMagicAnalysis,
   wix: wixAnalysis,
+  'power-bi': powerBiAnalysis,
 };
