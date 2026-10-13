@@ -1,3 +1,4 @@
+import { sudowriteAnalysis } from './sudowrite.ts';
 import { consensusAnalysis } from './consensus.ts';
 import { tripoAnalysis } from './tripo.ts';
 import type { ToolAnalysis } from './types.ts';
@@ -200,4 +201,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   glean: gleanAnalysis,
   'relevance-ai': relevanceAiAnalysis,
   tripo: tripoAnalysis,
+  sudowrite: sudowriteAnalysis,
 };
