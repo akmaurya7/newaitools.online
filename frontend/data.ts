@@ -301,7 +301,7 @@ export const TOOLS: Tool[] = [
     ['rytr','Rytr','Writing & Text','Writing assistant for marketing copy, articles, and everyday text.','https://rytr.me/','Freemium'],
     ['chatgpt-deep-research','ChatGPT Deep Research','Research & Knowledge','Research mode for investigating a topic and compiling a sourced report.','https://chatgpt.com/','Freemium'],
     ['gemini-deep-research','Gemini Deep Research','Research & Knowledge','Research experience that explores a topic across multiple sources.','https://gemini.google.com/','Freemium'],
-    ['consensus','Consensus','Scientific & Academic','Search and synthesize scientific research with answers grounded in papers.','https://consensus.app/','Freemium'],
+    ['consensus','Consensus','Scientific & Academic','Search and synthesize scientific research with answers grounded in 200M+ peer-reviewed papers.','https://consensus.app/','Freemium'],
     ['semantic-scholar','Semantic Scholar','Scientific & Academic','Discover and explore academic papers with AI-powered research tools.','https://www.semanticscholar.org/','Free'],
     ['google-ai-tools','Google AI tools','Research & Knowledge','Explore Google AI products for research, learning, and creative work.','https://ai.google/','Freemium'],
     ['chatgpt-image-generation','ChatGPT image generation','Image & Graphic Design','Create and edit images with image generation built into ChatGPT.','https://chatgpt.com/','Freemium'],

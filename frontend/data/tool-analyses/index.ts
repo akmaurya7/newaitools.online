@@ -1,3 +1,4 @@
+import { consensusAnalysis } from './consensus.ts';
 import { tripoAnalysis } from './tripo.ts';
 import type { ToolAnalysis } from './types.ts';
 import { hostingerAnalysis } from './hostinger.ts';
@@ -102,6 +103,7 @@ import { copilotStudioAnalysis } from './copilot-studio.ts';
 import { gleanAnalysis } from './glean.ts';
 import { relevanceAiAnalysis } from './relevance-ai.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
+  consensus: consensusAnalysis,
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
   framer: framerAnalysis,
