@@ -96,6 +96,7 @@ import { shopifyMagicAnalysis } from './shopify-magic.ts';
 import { wixAnalysis } from './wix.ts';
 
 import { powerBiAnalysis } from './power-bi.ts';
+import { playhtAnalysis } from './playht.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -188,4 +189,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'shopify-magic': shopifyMagicAnalysis,
   wix: wixAnalysis,
   'power-bi': powerBiAnalysis,
+  playht: playhtAnalysis,
 };

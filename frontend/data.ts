@@ -323,7 +323,7 @@ export const TOOLS: Tool[] = [
     ['google-cloud-speech','Google Cloud AI Speech','Audio & Music','Build speech-to-text and text-to-speech experiences with Google Cloud.','https://cloud.google.com/text-to-speech','Paid'],
     ['openai-audio','OpenAI Text to Speech','Audio & Music','Generate natural-sounding speech through OpenAI audio models.','https://platform.openai.com/docs/guides/text-to-speech','Paid'],
     ['azure-ai-speech','Microsoft Azure AI Speech','Audio & Music','Create speech, transcriptions, and voice experiences with Azure AI.','https://azure.microsoft.com/products/ai-services/ai-speech','Paid'],
-    ['playht','PlayHT','Audio & Music','Generate realistic AI voices and speech for audio content.','https://playht.co/','Freemium'],
+    ['playht','PlayHT','Audio & Music','AI voice generator & real-time streaming text-to-speech for creators and conversational agents.','https://play.ht/','Freemium'],
     ['udio','Udio','Audio & Music','Generate original songs and music from text prompts.','https://www.udio.com/','Freemium'],
     ['stable-audio','Stable Audio','Audio & Music','Generate music and sound effects from text descriptions.','https://stableaudio.com/','Freemium'],
     ['adobe-podcast','Adobe Podcast','Audio & Music','Enhance speech recordings and streamline podcast production.','https://podcast.adobe.com/','Freemium'],
