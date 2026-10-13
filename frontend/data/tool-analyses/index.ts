@@ -97,6 +97,7 @@ import { wixAnalysis } from './wix.ts';
 
 import { powerBiAnalysis } from './power-bi.ts';
 import { playhtAnalysis } from './playht.ts';
+import { copilotStudioAnalysis } from './copilot-studio.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   hostinger: hostingerAnalysis,
   'canva-pro': canvaDeep,
@@ -190,4 +191,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   wix: wixAnalysis,
   'power-bi': powerBiAnalysis,
   playht: playhtAnalysis,
+  'copilot-studio': copilotStudioAnalysis,
 };
