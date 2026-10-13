@@ -1,3 +1,4 @@
+import { davinciResolveAnalysis } from './davinci-resolve.ts';
 import { adobePodcastAnalysis } from './adobe-podcast.ts';
 import { sudowriteAnalysis } from './sudowrite.ts';
 import { consensusAnalysis } from './consensus.ts';
@@ -105,6 +106,7 @@ import { copilotStudioAnalysis } from './copilot-studio.ts';
 import { gleanAnalysis } from './glean.ts';
 import { relevanceAiAnalysis } from './relevance-ai.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
+  'davinci-resolve': davinciResolveAnalysis,
   'adobe-podcast': adobePodcastAnalysis,
   consensus: consensusAnalysis,
   hostinger: hostingerAnalysis,
