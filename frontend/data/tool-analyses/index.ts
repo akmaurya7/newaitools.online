@@ -1,3 +1,4 @@
+import { tripoAnalysis } from './tripo.ts';
 import type { ToolAnalysis } from './types.ts';
 import { hostingerAnalysis } from './hostinger.ts';
 import { canvaDeep } from './canva-deep.ts';
@@ -196,4 +197,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'copilot-studio': copilotStudioAnalysis,
   glean: gleanAnalysis,
   'relevance-ai': relevanceAiAnalysis,
+  tripo: tripoAnalysis,
 };
