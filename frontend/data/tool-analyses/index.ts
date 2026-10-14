@@ -113,7 +113,9 @@ import { copilotStudioAnalysis } from './copilot-studio.ts';
 import { gleanAnalysis } from './glean.ts';
 import { relevanceAiAnalysis } from './relevance-ai.ts';
 import { geminiCodeAssistAnalysis } from './gemini-code-assist.ts';
+import { vidiqAnalysis } from './vidiq.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
+  vidiq: vidiqAnalysis,
   lindy: lindyAnalysis,
   'davinci-resolve': davinciResolveAnalysis,
   'adobe-podcast': adobePodcastAnalysis,
