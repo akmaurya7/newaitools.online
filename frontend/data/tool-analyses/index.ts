@@ -1,3 +1,4 @@
+import { openaiAgentsAnalysis } from './openai-agents.ts';
 import { lindyAnalysis } from './lindy.ts';
 import { googleVeoAnalysis } from './google-veo.ts';
 import { abridgeAnalysis } from './abridge.ts';
@@ -216,4 +217,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   harvey: harveyAnalysis,
   abridge: abridgeAnalysis,
   'google-veo': googleVeoAnalysis,
+  'openai-agents': openaiAgentsAnalysis,
 };
