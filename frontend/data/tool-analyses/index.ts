@@ -1,3 +1,4 @@
+import { googleVeoAnalysis } from './google-veo.ts';
 import { abridgeAnalysis } from './abridge.ts';
 import { harveyAnalysis } from './harvey.ts';
 import { davinciResolveAnalysis } from './davinci-resolve.ts';
@@ -212,4 +213,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'gemini-code-assist': geminiCodeAssistAnalysis,
   harvey: harveyAnalysis,
   abridge: abridgeAnalysis,
+  'google-veo': googleVeoAnalysis,
 };
