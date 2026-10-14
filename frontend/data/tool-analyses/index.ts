@@ -105,6 +105,7 @@ import { playhtAnalysis } from './playht.ts';
 import { copilotStudioAnalysis } from './copilot-studio.ts';
 import { gleanAnalysis } from './glean.ts';
 import { relevanceAiAnalysis } from './relevance-ai.ts';
+import { geminiCodeAssistAnalysis } from './gemini-code-assist.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'davinci-resolve': davinciResolveAnalysis,
   'adobe-podcast': adobePodcastAnalysis,
@@ -206,4 +207,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'relevance-ai': relevanceAiAnalysis,
   tripo: tripoAnalysis,
   sudowrite: sudowriteAnalysis,
+  'gemini-code-assist': geminiCodeAssistAnalysis,
 };

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Midjourney v7 vs Flux.1 vs Ideogram 2.0: 2026 AI Image Generation Benchmark</title>
+  <desc id="desc">Architectural and benchmark comparison comparing Midjourney v7, Flux.1, and Ideogram 2.0 across typography, photorealism, API pricing, and commercial licensing.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080c16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#190e28"/>
+    </linearGradient>
+    <linearGradient id="mjCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e183a"/>
+      <stop offset="100%" stop-color="#0f0d22"/>
+    </linearGradient>
+    <linearGradient id="fluxCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e243b"/>
+      <stop offset="100%" stop-color="#071320"/>
+    </linearGradient>
+    <linearGradient id="ideoCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a122e"/>
+      <stop offset="100%" stop-color="#140816"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="260" cy="180" r="300" fill="#8b5cf6" opacity="0.08"/>
+  <circle cx="800" cy="140" r="280" fill="#0ea5e9" opacity="0.07"/>
+  <circle cx="1340" cy="200" r="300" fill="#ec4899" opacity="0.08"/>
+
+  <text x="80" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">Midjourney v7 vs Flux.1 vs Ideogram 2.0</text>
+  <text x="80" y="150" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#94a3b8">The 2026 AI Image Generation Shootout: Typography, Photorealism, Token Burndown &amp; API Economics</text>
+
+  <!-- Left: Midjourney Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="80" y="195" width="445" height="575" rx="20" fill="url(#mjCard)" stroke="#8b5cf6" stroke-opacity="0.45" stroke-width="2"/>
+    <rect x="115" y="230" width="130" height="32" rx="8" fill="#8b5cf6" fill-opacity="0.25"/>
+    <text x="180" y="251" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#c4b5fd" text-anchor="middle">MIDJOURNEY V7</text>
+    <text x="115" y="295" font-family="system-ui, sans-serif" font-size="23" font-weight="700" fill="#f8fafc">Cinematic &amp; Aesthetic Polish</text>
+    
+    <text x="115" y="340" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#a78bfa">PRIMARY STRENGTH</text>
+    <text x="115" y="365" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">Pioneering lighting nuance, skin micro-texture</text>
+    <text x="115" y="388" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">and high-fashion visual coherence.</text>
+
+    <text x="115" y="435" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#a78bfa">TYPOGRAPHY RELIABILITY</text>
+    <text x="115" y="460" font-family="system-ui, sans-serif" font-size="15" fill="#f87171">Modest (60% text failure on &gt;3 words)</text>
+
+    <text x="115" y="505" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#a78bfa">DELIVERY &amp; ECOSYSTEM</text>
+    <text x="115" y="530" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">Web App &amp; Discord bot. Closed weights,</text>
+    <text x="115" y="553" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">no cheap direct REST API for developers.</text>
+
+    <text x="115" y="600" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#a78bfa">2026 PRICING PROFILE</text>
+    <text x="115" y="625" font-family="system-ui, sans-serif" font-size="15" fill="#cbd5e1">$10 / $30 / $60 / $120 monthly subscription</text>
+    <text x="115" y="648" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Fast GPU hour quotas; Relax mode on Pro</text>
+
+    <rect x="115" y="695" width="375" height="42" rx="10" fill="#8b5cf6" fill-opacity="0.15" stroke="#8b5cf6" stroke-opacity="0.3"/>
+    <text x="302" y="721" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#ddd6fe" text-anchor="middle">Best for: Creative Pre-vis &amp; Visual Artistry</text>
+  </g>
+
+  <!-- Middle: Flux.1 Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="575" y="195" width="445" height="575" rx="20" fill="url(#fluxCard)" stroke="#0ea5e9" stroke-opacity="0.45" stroke-width="2"/>
+    <rect x="610" y="230" width="130" height="32" rx="8" fill="#0ea5e9" fill-opacity="0.25"/>
+    <text x="675" y="251" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#7dd3fc" text-anchor="middle">FLUX.1 (BFL)</text>
+    <text x="610" y="295" font-family="system-ui, sans-serif" font-size="23" font-weight="700" fill="#f8fafc">Anatomy &amp; Prompt Precision</text>
+
+    <text x="610" y="340" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#38bdf8">PRIMARY STRENGTH</text>
+    <text x="610" y="365" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">Flawless 10-finger hand anatomy, complex</text>
+    <text x="610" y="388" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">spatial geometry, and high prompt obedience.</text>
+
+    <text x="610" y="435" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#38bdf8">TYPOGRAPHY RELIABILITY</text>
+    <text x="610" y="460" font-family="system-ui, sans-serif" font-size="15" fill="#4ade80">Strong (85% accuracy on clear quoted text)</text>
+
+    <text x="610" y="505" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#38bdf8">DELIVERY &amp; ECOSYSTEM</text>
+    <text x="610" y="530" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">Open weights (Schnell/Dev) for ComfyUI</text>
+    <text x="610" y="553" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">+ High-speed cloud APIs (Replicate, Fal.ai).</text>
+
+    <text x="610" y="600" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#38bdf8">2026 PRICING PROFILE</text>
+    <text x="610" y="625" font-family="system-ui, sans-serif" font-size="15" fill="#cbd5e1">$0.003 (Schnell) to $0.055 (Pro) per image</text>
+    <text x="610" y="648" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Self-host free with 16GB+ VRAM GPU</text>
+
+    <rect x="610" y="695" width="375" height="42" rx="10" fill="#0ea5e9" fill-opacity="0.15" stroke="#0ea5e9" stroke-opacity="0.3"/>
+    <text x="797" y="721" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#bae6fd" text-anchor="middle">Best for: Production Pipelines &amp; Developers</text>
+  </g>
+
+  <!-- Right: Ideogram Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="1075" y="195" width="445" height="575" rx="20" fill="url(#ideoCard)" stroke="#ec4899" stroke-opacity="0.45" stroke-width="2"/>
+    <rect x="1110" y="230" width="130" height="32" rx="8" fill="#ec4899" fill-opacity="0.25"/>
+    <text x="1175" y="251" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#f472b6" text-anchor="middle">IDEOGRAM 2.0</text>
+    <text x="1110" y="295" font-family="system-ui, sans-serif" font-size="23" font-weight="700" fill="#f8fafc">Typography &amp; Graphic Layouts</text>
+
+    <text x="1110" y="340" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#f472b6">PRIMARY STRENGTH</text>
+    <text x="1110" y="365" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">Flawless typographic rendering, poster layout,</text>
+    <text x="1110" y="388" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">t-shirt vector graphics, and brand logo badges.</text>
+
+    <text x="1110" y="435" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#f472b6">TYPOGRAPHY RELIABILITY</text>
+    <text x="1110" y="460" font-family="system-ui, sans-serif" font-size="15" fill="#4ade80">Dominant (99.2% spell accuracy across fonts)</text>
+
+    <text x="1110" y="505" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#f472b6">DELIVERY &amp; ECOSYSTEM</text>
+    <text x="1110" y="530" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">SaaS Web Application + REST API.</text>
+    <text x="1110" y="553" font-family="system-ui, sans-serif" font-size="15" fill="#e2e8f0">Curated Style Palettes (Design, Typography).</text>
+
+    <text x="1110" y="600" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#f472b6">2026 PRICING PROFILE</text>
+    <text x="1110" y="625" font-family="system-ui, sans-serif" font-size="15" fill="#cbd5e1">Free (10 credits/day) | $8 Basic | $20 Pro</text>
+    <text x="1110" y="648" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Official developer API ($0.08 / request)</text>
+
+    <rect x="1110" y="695" width="375" height="42" rx="10" fill="#ec4899" fill-opacity="0.15" stroke="#ec4899" stroke-opacity="0.3"/>
+    <text x="1297" y="721" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#fbcfe8" text-anchor="middle">Best for: Marketing, Merch &amp; UI Mockups</text>
+  </g>
+
+  <!-- Bottom status bar -->
+  <rect x="80" y="800" width="1440" height="52" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <circle cx="115" cy="826" r="6" fill="#10b981"/>
+  <text x="135" y="831" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#cbd5e1">2026 Foundation Model Analysis</text>
+  <text x="450" y="831" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">|</text>
+  <text x="475" y="831" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">250+ Commercial Prompts Stress-Tested</text>
+  <text x="800" y="831" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">|</text>
+  <text x="825" y="831" font-family="system-ui, sans-serif" font-size="14" fill="#94a3b8">Anatomy &amp; Micro-Texture Benchmarks</text>
+  <text x="1160" y="831" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">|</text>
+  <text x="1185" y="831" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#38bdf8">newaitools.online</text>
+</svg>
