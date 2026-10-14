@@ -1,3 +1,4 @@
+import { lindyAnalysis } from './lindy.ts';
 import { googleVeoAnalysis } from './google-veo.ts';
 import { abridgeAnalysis } from './abridge.ts';
 import { harveyAnalysis } from './harvey.ts';
@@ -110,6 +111,7 @@ import { gleanAnalysis } from './glean.ts';
 import { relevanceAiAnalysis } from './relevance-ai.ts';
 import { geminiCodeAssistAnalysis } from './gemini-code-assist.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
+  lindy: lindyAnalysis,
   'davinci-resolve': davinciResolveAnalysis,
   'adobe-podcast': adobePodcastAnalysis,
   consensus: consensusAnalysis,
