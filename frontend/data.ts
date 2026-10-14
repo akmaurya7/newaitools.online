@@ -276,7 +276,7 @@ export const TOOLS: Tool[] = [
     ['clearscope','Clearscope','SEO','Improve content relevance and organic search performance.','https://www.clearscope.io/','Paid'],
     ['otter','Otter.ai','Meetings & Communication','Transcribe meetings and capture searchable notes and actions.','https://otter.ai/','Freemium'],
     ['meshy','Meshy','3D & Game Development','Generate 3D assets from text and images for creative projects.','https://www.meshy.ai/','Freemium'],
-    ['harvey','Harvey','Legal','AI platform supporting legal research and professional workflows.','https://www.harvey.ai/','Paid'],
+    ['harvey','Harvey','Legal','Enterprise generative AI platform for contract analysis, due diligence, and legal workflows.','https://www.harvey.ai/','Paid'],
     ['abridge','Abridge','Healthcare','AI clinical documentation and conversation summarization platform.','https://www.abridge.com/','Paid'],
     ['linkedin-learning','Khanmigo','Education & Learning','AI-powered tutoring and learning support from Khan Academy.','https://www.khanacademy.org/khan-labs','Freemium'],
     ['fireflies','Fireflies','Meetings & Communication','Record, transcribe and summarize team conversations.','https://fireflies.ai/','Freemium'],

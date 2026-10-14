@@ -1,3 +1,4 @@
+import { harveyAnalysis } from './harvey.ts';
 import { davinciResolveAnalysis } from './davinci-resolve.ts';
 import { adobePodcastAnalysis } from './adobe-podcast.ts';
 import { sudowriteAnalysis } from './sudowrite.ts';
@@ -208,4 +209,5 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   tripo: tripoAnalysis,
   sudowrite: sudowriteAnalysis,
   'gemini-code-assist': geminiCodeAssistAnalysis,
+  harvey: harveyAnalysis,
 };
