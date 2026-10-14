@@ -1,3 +1,4 @@
+import { stableAudioAnalysis } from './stable-audio.ts';
 import { novelaiAnalysis } from './novelai.ts';
 import { rytrAnalysis } from './rytr.ts';
 import { claudeAgentsAnalysis } from './claude-agents.ts';
@@ -229,5 +230,6 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'openai-agents': openaiAgentsAnalysis,
   'claude-agents': claudeAgentsAnalysis,
   'gemini-agents': geminiAgentsAnalysis,
+  'stable-audio': stableAudioAnalysis,
   novelai: novelaiAnalysis,
 };
