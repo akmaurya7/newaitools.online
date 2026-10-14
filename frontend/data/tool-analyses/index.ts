@@ -1,3 +1,4 @@
+import { adobeExpressAnalysis } from './adobe-express.ts';
 import { stableAudioAnalysis } from './stable-audio.ts';
 import { novelaiAnalysis } from './novelai.ts';
 import { rytrAnalysis } from './rytr.ts';
@@ -119,6 +120,7 @@ import { geminiCodeAssistAnalysis } from './gemini-code-assist.ts';
 import { vidiqAnalysis } from './vidiq.ts';
 import { obsidianAiAnalysis } from './obsidian-ai.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
+  'adobe-express': adobeExpressAnalysis,
   rytr: rytrAnalysis,
   'obsidian-ai': obsidianAiAnalysis,
   vidiq: vidiqAnalysis,

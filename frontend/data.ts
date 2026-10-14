@@ -309,7 +309,7 @@ export const TOOLS: Tool[] = [
     ['adobe','Adobe','Image & Graphic Design','Explore Adobe creative apps and AI-powered tools for visual work.','https://www.adobe.com/creativecloud.html','Paid'],
     ['google-image-generation','Google Image Generation','Image & Graphic Design','Generate and edit images with Googleâ€™s image creation tools.','https://gemini.google.com/','Freemium'],
     ['stable-diffusion','Stable Diffusion','Image & Graphic Design','Generate and edit images using Stability AIâ€™s image models.','https://stability.ai/stable-image','Freemium'],
-    ['adobe-express','Adobe Express','Image & Graphic Design','Create social graphics, flyers, and branded designs with AI features.','https://www.adobe.com/express/','Freemium'],
+    ['adobe-express','Adobe Express','Image & Graphic Design','All-in-one AI design, social video, and marketing suite powered by Adobe Firefly.','https://www.adobe.com/express/','Freemium'],
     ['figma-ai','Figma AI','Image & Graphic Design','Use AI-assisted features to explore, design, and prototype interfaces.','https://www.figma.com/ai/','Freemium'],
     ['galileo-ai','Google Stitch (formerly Galileo AI)','Image & Graphic Design','Generate and refine interface designs with Google Stitch, the successor to Galileo AI.','https://stitch.withgoogle.com/','Freemium'],
     ['relume','Relume','Website & App Creation','Generate site maps and wireframes for website projects.','https://www.relume.ai/','Freemium'],
