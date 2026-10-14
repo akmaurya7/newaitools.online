@@ -1,3 +1,4 @@
+import { rytrAnalysis } from './rytr.ts';
 import { claudeAgentsAnalysis } from './claude-agents.ts';
 import { geminiAgentsAnalysis } from './gemini-agents.ts';
 import { openaiAgentsAnalysis } from './openai-agents.ts';
@@ -116,6 +117,7 @@ import { geminiCodeAssistAnalysis } from './gemini-code-assist.ts';
 import { vidiqAnalysis } from './vidiq.ts';
 import { obsidianAiAnalysis } from './obsidian-ai.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
+  rytr: rytrAnalysis,
   'obsidian-ai': obsidianAiAnalysis,
   vidiq: vidiqAnalysis,
   lindy: lindyAnalysis,
