@@ -125,9 +125,12 @@ import { vidiqAnalysis } from './vidiq.ts';
 import { obsidianAiAnalysis } from './obsidian-ai.ts';
 import { semanticScholarAnalysis } from './semantic-scholar.ts';
 import { hootsuiteAnalysis } from './hootsuite.ts';
+import { bufferAiAnalysis } from './buffer-ai.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   'semantic-scholar': semanticScholarAnalysis,
   hootsuite: hootsuiteAnalysis,
+  'buffer-ai': bufferAiAnalysis,
+  buffer: bufferAiAnalysis,
 
   'zendesk-ai': zendeskAiAnalysis,
   'adobe-express': adobeExpressAnalysis,
