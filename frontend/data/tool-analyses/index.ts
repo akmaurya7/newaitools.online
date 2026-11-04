@@ -123,7 +123,10 @@ import { relevanceAiAnalysis } from './relevance-ai.ts';
 import { geminiCodeAssistAnalysis } from './gemini-code-assist.ts';
 import { vidiqAnalysis } from './vidiq.ts';
 import { obsidianAiAnalysis } from './obsidian-ai.ts';
+import { semanticScholarAnalysis } from './semantic-scholar.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
+  'semantic-scholar': semanticScholarAnalysis,
+
   'zendesk-ai': zendeskAiAnalysis,
   'adobe-express': adobeExpressAnalysis,
   rytr: rytrAnalysis,
