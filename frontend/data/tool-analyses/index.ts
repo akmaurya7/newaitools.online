@@ -66,6 +66,7 @@ import { klingAiAnalysis } from './kling-ai.ts';
 import { zapierAnalysis } from './zapier.ts';
 import { makeAnalysis } from './make.ts';
 import { claudeCodeAnalysis } from './claude-code.ts';
+import { openaiCodexAnalysis } from './openai-codex.ts';
 
 import { mistralAnalysis } from './mistral.ts';
 import { crewAiAnalysis } from './crew-ai.ts';
@@ -178,6 +179,7 @@ export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
   zapier: zapierAnalysis,
   make: makeAnalysis,
   'claude-code': claudeCodeAnalysis,
+  'openai-codex': openaiCodexAnalysis,
   mistral: mistralAnalysis,
   'crew-ai': crewAiAnalysis,
   julius: juliusAnalysis,
