@@ -1,3 +1,4 @@
+import { adaAnalysis } from './ada.ts';
 import { zendeskAiAnalysis } from './zendesk-ai.ts';
 import { adobeExpressAnalysis } from './adobe-express.ts';
 import { stableAudioAnalysis } from './stable-audio.ts';
@@ -127,6 +128,7 @@ import { semanticScholarAnalysis } from './semantic-scholar.ts';
 import { hootsuiteAnalysis } from './hootsuite.ts';
 import { bufferAiAnalysis } from './buffer-ai.ts';
 export const TOOL_ANALYSES: Record<string, ToolAnalysis> = {
+  'ada': adaAnalysis,
   'semantic-scholar': semanticScholarAnalysis,
   hootsuite: hootsuiteAnalysis,
   'buffer-ai': bufferAiAnalysis,
